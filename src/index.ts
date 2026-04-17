@@ -4,6 +4,7 @@ import helmet from "helmet";
 import dotenv from "dotenv";
 import mongoose from "mongoose";
 import authRoutes from "./routes/auth.route.js";
+import "./cache/index.js";
 
 dotenv.config();
 

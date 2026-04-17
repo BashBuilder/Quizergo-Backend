@@ -5,7 +5,7 @@ const redisUrl = `redis://${redisConfig.password}@${redisConfig.host}:${redisCon
 
 const redisClient = createClient({ url: redisUrl });
 
-redisClient.on("connetc", () => console.log("Redis client connected"));
+redisClient.on("connect", () => console.log("Redis client connected"));
 redisClient.on("ready", () => console.log("Redis client ready"));
 redisClient.on("error", (err) => console.error("Redis client error", err));
 redisClient.on("end", () => console.log("Redis client disconnected"));
