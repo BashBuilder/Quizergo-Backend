@@ -11,7 +11,7 @@ redisClient.on("error", (err) => console.error("Redis client error", err));
 redisClient.on("end", () => console.log("Redis client disconnected"));
 redisClient.on("reconnecting", () => console.log("Redis client reconnecting"));
 
-async function connectRedis() {
+export async function connectRedis() {
   try {
     await redisClient.connect();
   } catch (error) {
@@ -20,7 +20,7 @@ async function connectRedis() {
   }
 }
 
-connectRedis();
+// connectRedis();
 
 process.on("SIGINT", async () => {
   try {

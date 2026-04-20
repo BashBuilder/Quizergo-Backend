@@ -5,6 +5,8 @@ import dotenv from "dotenv";
 import mongoose from "mongoose";
 import authRoutes from "./routes/auth.route.js";
 import "./cache/index.js";
+import { prisma } from "./config/prisma.js";
+import { connectRedis } from "./cache/index.js";
 
 dotenv.config();
 
@@ -33,8 +35,13 @@ app.use(`/${version}/auth`, authRoutes);
 
 const startServer = async () => {
   try {
-    await mongoose.connect(process.env.DATABASE_URL || "");
-    console.log("Database connected successfully");
+    await mongoose
+      .connect(process.env.DATABASE_URL || "")
+      .then(() => console.log("Connected to MongoDB database"));
+    await prisma
+      .$connect()
+      .then(() => console.log("Connected to PostgreSQL database"));
+    await connectRedis().then(() => console.log("Connected to Redis cache"));
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
@@ -42,5 +49,11 @@ const startServer = async () => {
     console.log("Error starting server:", error);
   }
 };
+
+process.on("SIGINT", () => {
+  console.log("Shutting down server...");
+  mongoose.connection.close();
+  prisma.$disconnect();
+});
 
 startServer();
