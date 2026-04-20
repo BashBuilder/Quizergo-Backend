@@ -1,7 +1,7 @@
 import { createClient } from "redis";
 import { redisConfig } from "../config/redis.js";
 
-const redisUrl = `redis://${redisConfig.password}@${redisConfig.host}:${redisConfig.port}`;
+const redisUrl = `redis://default:${redisConfig.password}@${redisConfig.host}:${redisConfig.port}`;
 
 const redisClient = createClient({ url: redisUrl });
 
@@ -32,3 +32,5 @@ process.on("SIGINT", async () => {
     process.exit(1);
   }
 });
+
+export default redisClient;
