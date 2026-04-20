@@ -4,8 +4,8 @@ import { throttleNetwork } from "../lib/middleware.js";
 
 const authRoutes = Router();
 
-authRoutes.post("/register", authController.register);
-authRoutes.post("/login", throttleNetwork(500), authController.login);
+authRoutes.post("/register", authController.registerUser);
+// authRoutes.post("/login", throttleNetwork(500), authController.login);
 // authRoutes.post("/logout");
 // authRoutes.post("/refresh");
 // authRoutes.get("/profile");

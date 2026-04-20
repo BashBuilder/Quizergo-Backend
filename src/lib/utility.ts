@@ -1,5 +1,6 @@
 import bcrypt from "bcrypt";
 import redisClient from "../cache/index.js";
+import { sendOTPEmail } from "./resend.js";
 
 export const generateOtp = async (email: string) => {
   try {
@@ -9,6 +10,8 @@ export const generateOtp = async (email: string) => {
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
     const key = `otp:${email}`;
     await redisClient.set(key, otp, { EX: 300 }); // OTP expires in 5 minutes
+    const emailRes = await sendOTPEmail(email, otp);
+    console.log("OTP email sent:", emailRes);
     return otp;
   } catch (error) {
     console.error("Error generating OTP:", error);

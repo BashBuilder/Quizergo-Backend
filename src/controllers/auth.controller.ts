@@ -39,7 +39,7 @@ export const registerUser = async (req: Request, res: Response) => {
         firstName,
         lastName,
         password: hashedPassword,
-        isVerified: false,
+        // isVerified: false,
       },
     });
     await sendWelcomeEmail(email, firstName);

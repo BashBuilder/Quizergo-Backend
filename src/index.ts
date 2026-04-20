@@ -1,14 +1,12 @@
 import express from "express";
+import "dotenv/config.js";
 import cors from "cors";
 import helmet from "helmet";
-import dotenv from "dotenv";
 import mongoose from "mongoose";
 import authRoutes from "./routes/auth.route.js";
 import "./cache/index.js";
 import { prisma } from "./config/prisma.js";
 import { connectRedis } from "./cache/index.js";
-
-dotenv.config();
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -25,6 +23,8 @@ app.get("/", (_, res) => {
   res.send("Hell There, Welcome to QUIZERGO API");
 });
 app.get("/health", (_, res) => {
+  console.log("Health check endpoint hit");
+  console.log("Testing health check point");
   res.json({
     status: "OK",
     version,
