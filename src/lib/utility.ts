@@ -19,6 +19,24 @@ export const generateOtp = async (email: string) => {
   }
 };
 
+export const verifyOtp = async (email: string, otp: string) => {
+  try {
+    if (!email || !otp) {
+      throw new Error("Email and OTP are required for verification");
+    }
+    const key = `otp:${email}`;
+    const storedOtp = await redisClient.get(key);
+    if (storedOtp === otp) {
+      await redisClient.del(key); // OTP is valid, remove it from cache
+      return true;
+    }
+    return false;
+  } catch (error) {
+    console.error("Error verifying OTP:", error);
+    throw new Error("Failed to verify OTP");
+  }
+};
+
 export const hashPassword = async (password: string) => {
   try {
     const saltRounds = 10;

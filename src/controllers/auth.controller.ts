@@ -1,7 +1,7 @@
 import { Request, Response } from "express";
 import { z } from "zod";
 import { prisma } from "../config/prisma.js";
-import { generateOtp, hashPassword } from "../lib/utility.js";
+import { generateOtp, hashPassword, verifyOtp } from "../lib/utility.js";
 import { sendWelcomeEmail } from "../lib/resend.js";
 
 export const registerUser = async (req: Request, res: Response) => {
@@ -39,7 +39,6 @@ export const registerUser = async (req: Request, res: Response) => {
         firstName,
         lastName,
         password: hashedPassword,
-        // isVerified: false,
       },
     });
     await sendWelcomeEmail(email, firstName);
@@ -50,8 +49,43 @@ export const registerUser = async (req: Request, res: Response) => {
   } catch (error: any) {
     console.error("Error registering user:", error);
     res.status(500).json({
-      message:
-        error?.message || "Error registering user, internal server error",
+      message: error?.message || "Error registering user",
+    });
+  }
+};
+
+export const verifyUser = async (req: Request, res: Response) => {
+  const retriesLeft = res.retriesLeft || 0;
+  try {
+    const { email, otp } = req.body;
+    const schema = z.object({
+      email: z.email(),
+      otp: z.string().length(6),
+    });
+    const validation = schema.safeParse({ email, otp });
+    if (!validation.success) {
+      return res
+        .status(400)
+        .json({ message: validation.error.message, retriesLeft });
+    }
+    const user = await prisma.user.findUnique({ where: { email } });
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    const isValid = await verifyOtp(email, otp);
+    if (!isValid) {
+      return res.status(400).json({ message: "Invalid OTP", retriesLeft });
+    }
+    await prisma.user.update({
+      where: { email },
+      data: { isVerified: true },
+    });
+    res.status(200).json({ message: "User verified successfully" });
+  } catch (error: any) {
+    console.error("Error verifying user:", error);
+    res.status(500).json({
+      message: error?.message || "Error verifying user, internal server error",
+      retriesLeft,
     });
   }
 };
