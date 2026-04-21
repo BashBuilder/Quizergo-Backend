@@ -70,11 +70,11 @@ export const verifyUser = async (req: Request, res: Response) => {
     }
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
-      return res.status(404).json({ message: "User not found" });
+      return res.status(404).json({ message: "User not found", retriesLeft });
     }
-    const isValid = await verifyOtp(email, otp);
-    if (!isValid) {
-      return res.status(400).json({ message: "Invalid OTP", retriesLeft });
+    const otpRes = await verifyOtp(email, otp);
+    if (!(otpRes.status === "verified")) {
+      return res.status(400).json({ message: otpRes.message, retriesLeft });
     }
     await prisma.user.update({
       where: { email },
