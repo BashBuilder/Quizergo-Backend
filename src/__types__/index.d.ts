@@ -1,1 +1,6 @@
-// // attach trotrleRetries types to res object
+declare interface TokenPayload {
+  id: string;
+  email: string;
+  firstName?: string;
+  lastName?: string;
+}

@@ -1,9 +1,13 @@
 import { Request, Response, NextFunction } from "express";
 import redisClient from "../cache/index.js";
+import { verifyToken } from "./utility.js";
+import { getUserById } from "../services/auth.service.js";
+import { User } from "../generated/prisma/client.js";
 
 declare global {
   namespace Express {
-    interface Response {
+    interface Request {
+      user?: User;
       retriesLeft?: number;
     }
   }
@@ -29,7 +33,7 @@ export const throttleNetwork = (
           retryAfter: ttl,
         });
       }
-      res.retriesLeft = limit - current;
+      req.retriesLeft = limit - current;
       next();
     } catch (error) {
       console.error("Error in throttleNetwork middleware:", error);
@@ -67,4 +71,28 @@ export const debounceNetwork = (window: number = 5) => {
       next(); // fail open
     }
   };
+};
+
+export const validateUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const token = req.headers.authorization?.split(" ")[1];
+    if (!token) return res.status(401).json({ message: "Token not valid" });
+
+    const payload: TokenPayload = verifyToken(token);
+    if (!payload || !payload?.id)
+      return res.status(401).json({ message: "Unauthorized user" });
+
+    const user = await getUserById(payload.id);
+    if (!user) return res.status(401).json({ message: "User not authorized" });
+
+    req.user = user;
+    next();
+  } catch (error) {
+    console.error("Error in validateUser middleware:", error);
+    res.status(401).json({ message: "Unauthorized" });
+  }
 };

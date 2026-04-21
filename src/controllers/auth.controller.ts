@@ -1,7 +1,14 @@
 import { Request, Response } from "express";
 import { z } from "zod";
 import { prisma } from "../config/prisma.js";
-import { generateOtp, hashPassword, verifyOtp } from "../lib/utility.js";
+import {
+  createToken,
+  decryptPassword,
+  generateOtp,
+  hashPassword,
+  revokeAllTokens,
+  verifyOtp,
+} from "../lib/utility.js";
 import { sendWelcomeEmail } from "../lib/resend.js";
 
 export const registerUser = async (req: Request, res: Response) => {
@@ -55,7 +62,7 @@ export const registerUser = async (req: Request, res: Response) => {
 };
 
 export const verifyUser = async (req: Request, res: Response) => {
-  const retriesLeft = res.retriesLeft || 0;
+  const retriesLeft = req.retriesLeft || 0;
   try {
     const { email, otp } = req.body;
     const schema = z.object({
@@ -90,11 +97,58 @@ export const verifyUser = async (req: Request, res: Response) => {
   }
 };
 
-export const login = (req: Request, res: Response) => {
+export const loginUser = async (req: Request, res: Response) => {
   try {
-  } catch (error) {}
+    const { email, password } = req.body;
+    const schema = z.object({
+      email: z.email(),
+      password: z.string(),
+    });
+    const validataion = schema.safeParse({ email, password });
+    if (!validataion.success) {
+      return res.status(400).json({ message: validataion.error.message });
+    }
+    const user = await prisma.user.findUnique({ where: { email } });
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    if (!user.isVerified) {
+      return res.status(400).json({ message: "User not verified" });
+    }
+    const isPasswordValid = await decryptPassword(password, user.password);
+    if (!isPasswordValid) {
+      return res.status(400).json({ message: "Invalid password" });
+    }
+
+    const { password: userPassword, ...rest } = user;
+
+    const token = await createToken({
+      id: user.id,
+      email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
+    });
+
+    res
+      .status(200)
+      .json({ message: "User logged in successfully", ...token, user: rest });
+  } catch (error: any) {
+    console.error("Error logging in user:", error);
+    res.status(500).json({
+      message: error?.message || "Error logging in user, internal server error",
+    });
+  }
 };
-export const register = (req: Request, res: Response) => {
+
+export const logoutUser = async (req: Request, res: Response) => {
   try {
-  } catch (error) {}
+    // await revokeAllTokens(req.userId!);
+    res.status(200).json({ message: "User logged out successfully" });
+  } catch (error: any) {
+    console.error("Error logging out user:", error);
+    res.status(500).json({
+      message:
+        error?.message || "Error logging out user, internal server error",
+    });
+  }
 };

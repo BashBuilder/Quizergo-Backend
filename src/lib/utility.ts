@@ -6,13 +6,6 @@ import { randomBytes, createHash } from "crypto";
 import "dotenv/config";
 import { getUserById } from "../services/auth.service.js";
 
-interface TokenPayload {
-  id: string;
-  email: string;
-  firstName?: string;
-  lastName?: string;
-}
-
 interface TokenResponse {
   accessToken: string;
   refreshToken: string;
