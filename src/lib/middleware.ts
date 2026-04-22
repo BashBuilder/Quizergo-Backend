@@ -23,6 +23,7 @@ export const throttleNetwork = (
       const ip = req.ip || req.headers["x-forwarded-for"];
       const key = `throttle:${email}:${ip}:${action}`;
       const current = await redisClient.incr(key);
+      console.log(`Throttle key: ${key}, current count: ${current}`);
       if (current === 1) {
         await redisClient.expire(key, window);
       }

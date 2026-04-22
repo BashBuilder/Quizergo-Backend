@@ -1,7 +1,7 @@
 import bcrypt from "bcrypt";
 import redisClient from "../cache/index.js";
 import { sendOTPEmail } from "./resend.js";
-import jwt, { TokenExpiredError, JsonWebTokenError } from "jsonwebtoken";
+import jwt from "jsonwebtoken";
 import { randomBytes, createHash } from "crypto";
 import "dotenv/config";
 import { getUserById } from "../services/auth.service.js";
@@ -11,25 +11,31 @@ interface TokenResponse {
   refreshToken: string;
 }
 
-export const generateOtp = async (email: string) => {
+export const generateOtp = async (email: string, action: string) => {
   try {
+    const key = `otp:${action}:${email}`;
+    const existingOtp = await redisClient.get(key);
+    if (existingOtp) {
+      throw new Error(
+        "OTP already sent. Please wait before requesting a new one.",
+      );
+    }
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
-    const key = `otp:${email}`;
-    await redisClient.set(key, otp, { EX: 300 }); // OTP expires in 5 minutes
+    await redisClient.set(key, otp, { EX: 7200 });
     await sendOTPEmail(email, otp);
     return otp;
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error generating OTP:", error);
-    throw new Error("Failed to generate OTP");
+    throw new Error(error?.message || "Failed to generate OTP");
   }
 };
 
-export const verifyOtp = async (email: string, otp: string) => {
+export const verifyOtp = async (email: string, otp: string, action: string) => {
   try {
-    const key = `otp:${email}`;
+    const key = `otp:${action}:${email}`;
     const storedOtp = await redisClient.get(key);
     if (!storedOtp) {
-      await generateOtp(email);
+      await generateOtp(email, action);
       return {
         message: "OTP expired. A new OTP has been sent to your email.",
         status: "expired",
@@ -46,9 +52,9 @@ export const verifyOtp = async (email: string, otp: string) => {
       message: "Invalid OTP",
       status: "invalid",
     };
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error verifying OTP:", error);
-    throw new Error("Failed to verify OTP");
+    throw new Error(error?.message || "Failed to verify OTP");
   }
 };
 
@@ -100,9 +106,9 @@ export const createToken = async (
       accessToken,
       refreshToken: `${tokenId}.${refreshToken}`,
     };
-  } catch (error) {
+  } catch (error: any) {
     console.error("Error creating token:", error);
-    throw new Error("Failed to create token");
+    throw new Error(error?.message || "Failed to create token");
   }
 };
 
@@ -111,12 +117,12 @@ export const verifyToken = (token: string): TokenPayload => {
     return jwt.verify(token, getSecret()) as TokenPayload;
   } catch (error) {
     console.error("Error verifying token:", error);
-    if (error instanceof TokenExpiredError) {
-      throw new Error("Token expired");
-    }
-    if (error instanceof JsonWebTokenError) {
-      throw new Error("Invalid token");
-    }
+    // if (error instanceof TokenExpiredError) {
+    //   throw new Error("Token expired");
+    // }
+    // if (error instanceof JsonWebTokenError) {
+    //   throw new Error("Invalid token");
+    // }
     throw new Error("Failed to verify token");
   }
 };
@@ -171,7 +177,7 @@ export const refreshAccessToken = async (
     return { accessToken: newAccessToken, refreshToken: newRefreshToken };
   } catch (error: any) {
     console.log("Error refreshing token:", error);
-    throw new Error(error.message || "Failed to refresh token");
+    throw new Error(error?.message || "Failed to refresh token");
   }
 };
 

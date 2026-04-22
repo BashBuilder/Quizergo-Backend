@@ -39,7 +39,7 @@ export const registerUser = async (req: Request, res: Response) => {
       return res.status(400).json({ message: "User already exist" });
     }
     const hashedPassword = await hashPassword(password);
-    await generateOtp(email);
+    await generateOtp(email, "auth");
     await prisma.user.create({
       data: {
         email,
@@ -79,7 +79,7 @@ export const verifyUser = async (req: Request, res: Response) => {
     if (!user) {
       return res.status(404).json({ message: "User not found", retriesLeft });
     }
-    const otpRes = await verifyOtp(email, otp);
+    const otpRes = await verifyOtp(email, otp, "auth");
     if (!(otpRes.status === "verified")) {
       return res.status(400).json({ message: otpRes.message, retriesLeft });
     }
@@ -113,7 +113,12 @@ export const loginUser = async (req: Request, res: Response) => {
       return res.status(404).json({ message: "User not found" });
     }
     if (!user.isVerified) {
-      return res.status(400).json({ message: "User not verified" });
+      await generateOtp(email, "auth");
+      return res
+        .status(400)
+        .json({
+          message: "User not verified, check email for OTP verification",
+        });
     }
     const isPasswordValid = await decryptPassword(password, user.password);
     if (!isPasswordValid) {
@@ -166,7 +171,7 @@ export const forgotPassword = async (req: Request, res: Response) => {
     if (!user) {
       return res.status(404).json({ message: "User not found" });
     }
-    await generateOtp(email);
+    await generateOtp(email, "auth");
     res.status(200).json({
       message: "Otp sent to your email, verify to reset password",
     });
