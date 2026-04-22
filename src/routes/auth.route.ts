@@ -10,7 +10,11 @@ authRoutes.post(
   throttleNetwork("verify", 5, 300),
   authController.verifyUser,
 );
-// authRoutes.post("/login", throttleNetwork(500), authController.login);
+authRoutes.post(
+  "/login",
+  throttleNetwork("login", 5, 300),
+  authController.loginUser,
+);
 // authRoutes.post("/logout");
 // authRoutes.post("/refresh");
 // authRoutes.get("/profile");

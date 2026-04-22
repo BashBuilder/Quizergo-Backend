@@ -91,7 +91,7 @@ export const verifyUser = async (req: Request, res: Response) => {
   } catch (error: any) {
     console.error("Error verifying user:", error);
     res.status(500).json({
-      message: error?.message || "Error verifying user, internal server error",
+      message: error?.message || "Error verifying user, ",
       retriesLeft,
     });
   }
@@ -135,7 +135,7 @@ export const loginUser = async (req: Request, res: Response) => {
   } catch (error: any) {
     console.error("Error logging in user:", error);
     res.status(500).json({
-      message: error?.message || "Error logging in user, internal server error",
+      message: error?.message || "Error logging in user, ",
     });
   }
 };
@@ -147,8 +147,52 @@ export const logoutUser = async (req: Request, res: Response) => {
   } catch (error: any) {
     console.error("Error logging out user:", error);
     res.status(500).json({
-      message:
-        error?.message || "Error logging out user, internal server error",
+      message: error?.message || "Error logging out user, ",
+    });
+  }
+};
+
+export const forgotPassword = async (req: Request, res: Response) => {
+  try {
+    const { email } = req.body;
+    const schema = z.object({
+      email: z.email(),
+    });
+    const validation = schema.safeParse({ email });
+    if (!validation.success) {
+      return res.status(400).json({ message: validation.error.message });
+    }
+    const user = await prisma.user.findUnique({ where: { email } });
+    if (!user) {
+      return res.status(404).json({ message: "User not found" });
+    }
+    await generateOtp(email);
+    res.status(200).json({
+      message: "Otp sent to your email, verify to reset password",
+    });
+  } catch (error: any) {
+    console.error("Error handling forgot password request:", error);
+    res.status(500).json({
+      message: error?.message || "Error handling forgot password request, ",
+    });
+  }
+};
+
+export const refreshToken = async (req: Request, res: Response) => {
+  try {
+    const { refreshToken } = req.body;
+    const schema = z.object({
+      refreshToken: z.string(),
+    });
+    const validation = schema.safeParse({ refreshToken });
+    if (!validation.success) {
+      return res.status(400).json({ message: validation.error.message });
+    }
+    // const isValid = await
+  } catch (error: any) {
+    console.error("Error refreshing token:", error);
+    res.status(500).json({
+      message: error?.message || "Error refreshing token, ",
     });
   }
 };
