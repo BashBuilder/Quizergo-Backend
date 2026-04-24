@@ -8,6 +8,7 @@ import "./cache/index.js";
 import { prisma } from "./config/prisma.js";
 import { connectRedis } from "./cache/index.js";
 import "./services/email.service.js";
+import questionRoutes from "./routes/question.route.js";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -33,6 +34,7 @@ app.get("/health", (_, res) => {
 });
 
 app.use(`/${version}/auth`, authRoutes);
+app.use(`/${version}/questions`, questionRoutes);
 
 const startServer = async () => {
   try {
