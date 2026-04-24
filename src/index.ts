@@ -7,6 +7,7 @@ import authRoutes from "./routes/auth.route.js";
 import "./cache/index.js";
 import { prisma } from "./config/prisma.js";
 import { connectRedis } from "./cache/index.js";
+import "./services/email.service.js";
 
 const app = express();
 const PORT = process.env.PORT || 4000;

@@ -7,7 +7,7 @@ import { User } from "../generated/prisma/client.js";
 declare global {
   namespace Express {
     interface Request {
-      user?: User;
+      user?: TokenPayload;
       retriesLeft?: number;
     }
   }
@@ -23,7 +23,6 @@ export const throttleNetwork = (
       const ip = req.ip || req.headers["x-forwarded-for"];
       const key = `throttle:${email}:${ip}:${action}`;
       const current = await redisClient.incr(key);
-      console.log(`Throttle key: ${key}, current count: ${current}`);
       if (current === 1) {
         await redisClient.expire(key, window);
       }
@@ -87,10 +86,10 @@ export const validateUser = async (
     if (!payload || !payload?.id)
       return res.status(401).json({ message: "Unauthorized user" });
 
-    const user = await getUserById(payload.id);
-    if (!user) return res.status(401).json({ message: "User not authorized" });
+    if (!payload.id)
+      return res.status(401).json({ message: "User not authorized" });
 
-    req.user = user;
+    req.user = payload;
     next();
   } catch (error) {
     console.error("Error in validateUser middleware:", error);
