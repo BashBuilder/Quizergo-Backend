@@ -1,15 +1,20 @@
-import { Request, Response } from "express";
+import { Request, Response, NextFunction } from "express";
 import z from "zod";
 import { AlocQuestionService } from "../services/aloc.question.service.js";
+import eventEmitter from "../config/events.js";
 
-export const getQuestionsBySubject = async (req: Request, res: Response) => {
+export const getQuestionsBySubject = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   try {
     const { subject, limit } = req.query;
-    const schemat = z.object({
+    const schema = z.object({
       subject: z.string(),
       limit: z.string().optional(),
     });
-    const validation = schemat.safeParse({ subject, limit });
+    const validation = schema.safeParse({ subject, limit });
     if (!validation.success) {
       return res.status(400).json({ message: validation.error.message });
     }
@@ -20,10 +25,8 @@ export const getQuestionsBySubject = async (req: Request, res: Response) => {
     );
 
     res.status(200).json({ questions });
+    eventEmitter.emit("aloc.question.fetched", questions);
   } catch (error: any) {
-    console.log("Error fetching questions from ALOC:", error);
-    res.status(500).json({
-      message: error.message || "Failed to fetch questions from ALOC",
-    });
+    next(error);
   }
 };

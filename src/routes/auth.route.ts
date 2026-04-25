@@ -22,5 +22,10 @@ authRoutes.post(
   throttleNetwork("forgot-password", 5, 3600),
   authController.forgotPassword,
 );
+authRoutes.post(
+  "/refresh-token",
+  throttleNetwork("refresh-token", 5, 3600),
+  authController.refreshToken,
+);
 
 export default authRoutes;

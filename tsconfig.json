@@ -46,6 +46,7 @@
     "types/**/*",
     "tests/**/*",
     "prisma.config.ts",
-    "prisma/**/*"
+    "prisma/**/*",
+    "core/**/*"
   ]
 }

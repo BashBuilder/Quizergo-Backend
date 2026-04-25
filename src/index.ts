@@ -8,7 +8,10 @@ import "./cache/index.js";
 import { prisma } from "./config/prisma.js";
 import { connectRedis } from "./cache/index.js";
 import "./services/email.service.js";
+import "./services/event.service.js";
 import questionRoutes from "./routes/question.route.js";
+import { errorHandler } from "./lib/middleware.js";
+import Logger from "../core/Logger.js";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -36,6 +39,7 @@ app.get("/health", (_, res) => {
 app.use(`/${version}/auth`, authRoutes);
 app.use(`/${version}/questions`, questionRoutes);
 
+app.use(errorHandler);
 const startServer = async () => {
   try {
     // await mongoose
@@ -46,10 +50,11 @@ const startServer = async () => {
       .then(() => console.log("Connected to PostgreSQL database"));
     await connectRedis().then(() => console.log("Connected to Redis cache"));
     app.listen(PORT, () => {
-      console.log(`Server is running on port ${PORT}`);
+      Logger.info(`Server is running on port ${PORT}`);
     });
   } catch (error) {
-    console.log("Error starting server:", error);
+    // console.log("Error starting server:", error);
+    Logger.error("Error starting server", error);
   }
 };
 

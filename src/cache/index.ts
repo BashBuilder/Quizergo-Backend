@@ -1,9 +1,9 @@
-import { createClient } from "redis";
+import { createClient, RedisClientType } from "redis";
 import { redisConfig } from "../config/redis.js";
 
 const redisUrl = `redis://default:${redisConfig.password}@${redisConfig.host}:${redisConfig.port}`;
 
-const redisClient = createClient({ url: redisUrl });
+const redisClient: RedisClientType = createClient({ url: redisUrl });
 
 redisClient.on("connect", () => console.log("Redis client connected"));
 redisClient.on("ready", () => console.log("Redis client ready"));

@@ -1,12 +1,16 @@
 import "dotenv/config";
 import { alocApi } from "../config/axios.js";
 import { supportedSubjects } from "../lib/constants.js";
+import axios, { AxiosError } from "axios";
+import { handleAxiosError, ValidationError } from "../lib/errors.js";
 
 export class AlocQuestionService {
+  constructor() {}
+
   async getQuestionsBySubject(subject: string, limit: number = 10) {
     try {
       if (!supportedSubjects.includes(subject.toLowerCase())) {
-        throw new Error(
+        throw new ValidationError(
           `Subject "${subject}" is not supported. Supported subjects are: ${supportedSubjects.join(", ")}`,
         );
       }
@@ -18,8 +22,26 @@ export class AlocQuestionService {
       }>(url);
       return response.data;
     } catch (error: any) {
-      console.log("Error fetching questions from ALOC:", error);
-      throw new Error(error.message || "Failed to fetch questions from ALOC");
+      handleAxiosError(error, "fetching questions from ALOC");
+    }
+  }
+
+  async getSubjectCount(subject: string) {
+    try {
+      if (!supportedSubjects.includes(subject.toLowerCase())) {
+        throw new Error(
+          `Subject "${subject}" is not supported. Supported subjects are: ${supportedSubjects.join(", ")}`,
+        );
+      }
+      const url = `/metrics/questions-available-for/${subject}`;
+      const response = await alocApi.get<{
+        message: string;
+        status: string;
+        data: { questions: number; subject: string };
+      }>(url);
+      return response.data.data;
+    } catch (error) {
+      handleAxiosError(error, "Fetching all question counts from ALOC");
     }
   }
 }

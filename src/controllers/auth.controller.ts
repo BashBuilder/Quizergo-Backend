@@ -6,11 +6,13 @@ import {
   decryptPassword,
   generateOtp,
   hashPassword,
+  refreshAccessToken,
   revokeAllTokens,
   verifyOtp,
 } from "../lib/utility.js";
 import eventEmitter from "../config/events.js";
 import { sendWelcomeEmail } from "../lib/resend.js";
+import redisClient from "../cache/index.js";
 
 export const registerUser = async (req: Request, res: Response) => {
   try {
@@ -129,7 +131,11 @@ export const loginUser = async (req: Request, res: Response) => {
     }
 
     const { password: userPassword, ...rest } = user;
-
+    // await redisClient.del(`refresh:${user.id}:*`);
+    const keys = await redisClient.keys(`refresh:${user.id}:*`);
+    if (keys.length > 0) {
+      await redisClient.del(keys);
+    }
     const token = await createToken({
       id: user.id,
       email: user.email,
@@ -255,6 +261,13 @@ export const refreshToken = async (req: Request, res: Response) => {
     if (!validation.success) {
       return res.status(400).json({ message: validation.error.message });
     }
+    const token = await refreshAccessToken(refreshToken as string);
+    if (!token) {
+      return res.status(400).json({ message: "Invalid refresh token" });
+    }
+    return res
+      .status(200)
+      .json({ ...token, message: "Token refreshed successfully" });
     // const isValid = await
   } catch (error: any) {
     console.error("Error refreshing token:", error);

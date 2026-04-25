@@ -5,6 +5,8 @@ import jwt from "jsonwebtoken";
 import { randomBytes, createHash } from "crypto";
 import "dotenv/config";
 import { getUserById } from "../services/auth.service.js";
+import { prisma } from "../config/prisma.js";
+import { UnauthorizedError } from "./errors.js";
 
 interface TokenResponse {
   accessToken: string;
@@ -96,7 +98,9 @@ export const createToken = async (
     const REFRESH_TTL = 7 * 24 * 60 * 60; // 7 days in seconds
     const accessToken = jwt.sign(payload, privateKey, { expiresIn } as any);
 
-    const tokenId = randomBytes(16).toString("hex");
+    const tokenId = jwt.sign({ id: payload.id }, privateKey, {
+      expiresIn: "7d",
+    } as any);
     const refreshToken = randomBytes(64).toString("hex");
     const hashedRefreshToken = hashToken(refreshToken);
 
@@ -116,29 +120,34 @@ export const verifyToken = (token: string): TokenPayload => {
   try {
     return jwt.verify(token, getSecret()) as TokenPayload;
   } catch (error) {
-    console.error("Error verifying token:", error);
-    // if (error instanceof TokenExpiredError) {
-    //   throw new Error("Token expired");
-    // }
-    // if (error instanceof JsonWebTokenError) {
-    //   throw new Error("Invalid token");
-    // }
-    throw new Error("Failed to verify token");
+    throw new UnauthorizedError("Token not valid");
   }
 };
 
 export const refreshAccessToken = async (
-  userId: string,
   rawRefreshToken: string,
   expiresIn: string = "6h",
 ): Promise<TokenResponse> => {
   try {
-    const [tokenId, token] = rawRefreshToken.split(".");
+    const parts = rawRefreshToken.split(".");
+    if (parts.length !== 4) {
+      throw new Error("Invalid refresh token format");
+    }
+    const tokenId = parts.slice(0, 3).join(".");
+    const token = parts[3];
+    // const [tokenId, token] = rawRefreshToken.split(".");
+    const privateKey = getSecret();
     const REFRESH_TTL = 7 * 24 * 60 * 60; // 7 days in seconds
 
     if (!tokenId || !token) {
       throw new Error("Invalid refresh token format");
     }
+    const decoded = jwt.verify(tokenId, getSecret()) as { id: string };
+    if (!decoded || !decoded.id) {
+      throw new Error("Invalid refresh token");
+    }
+
+    const userId = decoded.id;
     const key = `refresh:${userId}:${tokenId}`;
     const storedHashedToken = await redisClient.get(key);
 
@@ -152,13 +161,17 @@ export const refreshAccessToken = async (
       throw new Error("Invalid refresh token");
     }
 
-    const newTokenId = randomBytes(16).toString("hex");
+    const newTokenId = jwt.sign({ id: userId }, privateKey, {
+      expiresIn: "7d",
+    } as any) as string;
     const newRefreshToken = randomBytes(64).toString("hex");
     const newHashed = hashToken(newRefreshToken);
+
+    await redisClient.del(key);
     const newKey = `refresh:${userId}:${newTokenId}`;
 
     await redisClient.set(newKey, newHashed, { EX: REFRESH_TTL });
-    const user = await getUserById(userId);
+    const user = await prisma.user.findUnique({ where: { id: userId } });
     if (!user) {
       await redisClient.del(newKey);
       throw new Error("User not found");
@@ -174,20 +187,13 @@ export const refreshAccessToken = async (
       process.env.JWT_SECRET as string,
       { expiresIn } as any,
     );
-    return { accessToken: newAccessToken, refreshToken: newRefreshToken };
+    return {
+      accessToken: newAccessToken,
+      refreshToken: `${newTokenId}.${newRefreshToken}`,
+    };
   } catch (error: any) {
     console.log("Error refreshing token:", error);
     throw new Error(error?.message || "Failed to refresh token");
-  }
-};
-
-export const revokeToken = async (
-  userId: string,
-  rawRefreshToken: string,
-): Promise<void> => {
-  const [tokenId] = rawRefreshToken.split(".");
-  if (tokenId) {
-    await redisClient.del(`refresh:${userId}:${tokenId}`);
   }
 };
 

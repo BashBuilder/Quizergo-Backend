@@ -1,8 +1,8 @@
 import { Request, Response, NextFunction } from "express";
 import redisClient from "../cache/index.js";
 import { verifyToken } from "./utility.js";
-import { getUserById } from "../services/auth.service.js";
-import { User } from "../generated/prisma/client.js";
+import { AppError, UnauthorizedError } from "./errors.js";
+import Logger from "../../core/Logger.js";
 
 declare global {
   namespace Express {
@@ -80,19 +80,37 @@ export const validateUser = async (
 ) => {
   try {
     const token = req.headers.authorization?.split(" ")[1];
-    if (!token) return res.status(401).json({ message: "Token not valid" });
-
+    if (!token) throw new UnauthorizedError("Token not valid");
     const payload: TokenPayload = verifyToken(token);
-    if (!payload || !payload?.id)
-      return res.status(401).json({ message: "Unauthorized user" });
-
-    if (!payload.id)
-      return res.status(401).json({ message: "User not authorized" });
-
+    if (!payload.id) throw new UnauthorizedError("User not authorized ");
     req.user = payload;
     next();
   } catch (error) {
-    console.error("Error in validateUser middleware:", error);
-    res.status(401).json({ message: "Unauthorized" });
+    next(error);
   }
+};
+
+export const errorHandler = (
+  err: any,
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  Logger.error(err?.message || "operation error occured", err);
+  if (err instanceof AppError) {
+    return res.status(err.statusCode).json({
+      success: false,
+      message: err.message,
+    });
+  }
+  if ((err as any)?.isAxiosError) {
+    return res.status(502).json({
+      success: false,
+      message: "External service error",
+    });
+  }
+  return res.status(500).json({
+    success: false,
+    message: "Something went wrong",
+  });
 };
