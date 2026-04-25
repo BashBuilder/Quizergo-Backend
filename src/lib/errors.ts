@@ -1,4 +1,6 @@
 import { AxiosError } from "axios";
+import { NextFunction } from "express";
+import { Prisma } from "../generated/prisma/client.js";
 
 // errors/AppError.ts
 export class AppError extends Error {
@@ -69,40 +71,70 @@ export class InternalServerError extends AppError {
   }
 }
 
-export function handleAxiosError(error: unknown, context?: string): never {
+export function handleFunctionError(error: unknown, context?: string): never {
   console.error(`Error in ${context || "unknown"}:`);
   if (error instanceof AxiosError) {
     const status = error.response?.status;
+    const errorMessage = error.response?.data?.message;
 
     if (error.code === "ECONNABORTED") {
       throw new TimeoutError("External API timeout");
     }
-
     switch (status) {
       case 400:
-        throw new BadRequestError("Bad request to external API");
+        throw new BadRequestError(
+          errorMessage || "Bad request to external API",
+        );
       case 401:
-        throw new UnauthorizedError("Unauthorized external API");
+        throw new UnauthorizedError(
+          errorMessage || "Unauthorized external API",
+        );
       case 403:
-        throw new ForbiddenError("Forbidden external API");
+        throw new ForbiddenError(errorMessage || "Forbidden external API");
       case 404:
-        throw new NotFoundError("Resource not found");
+        throw new NotFoundError(errorMessage || "Resource not found");
       case 409:
-        throw new ConflictError("Conflict from external API");
+        throw new ConflictError(errorMessage || "Conflict from external API");
       case 429:
-        throw new TooManyRequestsError("Rate limit exceeded");
+        throw new TooManyRequestsError(errorMessage || "Rate limit exceeded");
       case 500:
       case 502:
       case 503:
-        throw new InternalServerError("External service failure");
+        throw new InternalServerError(
+          errorMessage || "External service failure",
+        );
       default:
-        throw new InternalServerError("Unknown external API error");
+        throw new InternalServerError(
+          errorMessage || "Unknown external API error",
+        );
     }
   }
-
+  if (error instanceof Prisma.PrismaClientKnownRequestError) {
+    if (error.code === "P2002") {
+      throw new ConflictError("User with this email already exists");
+    }
+    throw new ValidationError(error.message);
+  }
+  if (error instanceof Prisma.PrismaClientValidationError) {
+    throw new ValidationError("Invalid data provided");
+  }
   if (error instanceof Error) {
     throw error;
   }
-
   throw new InternalServerError("Unknown error occurred");
 }
+
+export const handleApiError = (error: unknown, next: NextFunction) => {
+  if (error instanceof Prisma.PrismaClientKnownRequestError) {
+    if (error.code === "P2002") {
+      return next(new ConflictError("User with this email already exists"));
+    }
+    return next(new ValidationError(error.message));
+  }
+  if (error instanceof Prisma.PrismaClientValidationError) {
+    return next(new ValidationError("Invalid data provided"));
+  }
+  if (error instanceof Error) {
+    return next(error);
+  }
+};

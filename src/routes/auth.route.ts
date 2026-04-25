@@ -1,22 +1,39 @@
 import { Router } from "express";
 import * as authController from "../controllers/auth.controller.js";
 import { throttleNetwork, validateUser } from "../lib/middleware.js";
+import validateRequest, { ValidationSource } from "../helper/validator.js";
+import {
+  userLoginSchema,
+  userRegisterSchema,
+  verifyUserSchema,
+} from "../models/auth.model.js";
 
 const authRoutes: Router = Router();
 
-authRoutes.post("/register", authController.registerUser);
-authRoutes.post(
-  "/verify",
-  throttleNetwork("verify", 5, 3600),
-  authController.verifyUser,
-);
-authRoutes.post(
-  "/login",
-  throttleNetwork("login", 5, 3600),
-  authController.loginUser,
-);
-authRoutes.post("/logout", authController.logoutUser);
+authRoutes
+  .route("/register")
+  .post(
+    validateRequest(userRegisterSchema, ValidationSource.BODY),
+    authController.registerUser,
+  );
+authRoutes
+  .route("/verify")
+  .post(
+    throttleNetwork("verify", 5, 3600),
+    validateRequest(verifyUserSchema, ValidationSource.BODY),
+    authController.verifyUser,
+  );
+
+authRoutes
+  .route("/login")
+  .post(
+    throttleNetwork("login", 5, 3600),
+    validateRequest(userLoginSchema, ValidationSource.BODY),
+    authController.loginUser,
+  );
+
 authRoutes.get("/me", validateUser, authController.getCurrentUser);
+authRoutes.post("/logout", authController.logoutUser);
 authRoutes.post(
   "/forgot-password",
   throttleNetwork("forgot-password", 5, 3600),

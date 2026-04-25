@@ -1,4 +1,4 @@
-import { Request, Response } from "express";
+import { Request, Response, NextFunction } from "express";
 import { z } from "zod";
 import { prisma } from "../config/prisma.js";
 import {
@@ -13,36 +13,23 @@ import {
 import eventEmitter from "../config/events.js";
 import { sendWelcomeEmail } from "../lib/resend.js";
 import redisClient from "../cache/index.js";
+import {
+  handleFunctionError,
+  UnauthorizedError,
+  ValidationError,
+} from "../lib/errors.js";
 
-export const registerUser = async (req: Request, res: Response) => {
+export const registerUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   try {
-    const { email, firstName, lastName, password, confirmPassword } = req.body;
-    const schema = z.object({
-      email: z.email(),
-      firstName: z.string().min(1),
-      lastName: z.string().min(1),
-      password: z.string().min(6),
-      confirmPassword: z.string().min(6),
-    });
-    const validation = schema.safeParse({
-      email,
-      firstName,
-      lastName,
-      password,
-      confirmPassword,
-    });
-    if (!validation.success) {
-      return res.status(400).json({ message: validation.error.message });
-    }
-    if (password !== confirmPassword) {
-      return res.status(400).json({ message: "Passwords do not match" });
-    }
+    const { email, firstName, lastName, password } = req.body;
     const user = await prisma.user.findUnique({ where: { email } });
-    if (user) {
-      return res.status(400).json({ message: "User already exist" });
-    }
+    if (user)
+      throw new ValidationError("User already exist, login to continue");
     const hashedPassword = await hashPassword(password);
-    await sendWelcomeEmail(email, firstName);
     await generateOtp(email, "auth");
     await prisma.user.create({
       data: {
@@ -56,82 +43,60 @@ export const registerUser = async (req: Request, res: Response) => {
       message:
         "User created successfully. Otp sent to your email, verify to login",
     });
+    eventEmitter.emit("user.created", { email, firstName, lastName });
   } catch (error: any) {
-    console.error("Error registering user:", error);
-    res.status(500).json({
-      message: error?.message || "Error registering user",
-    });
+    next(handleFunctionError(error));
   }
 };
 
-export const verifyUser = async (req: Request, res: Response) => {
+export const verifyUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   const retriesLeft = req.retriesLeft || 0;
   try {
     const { email, otp } = req.body;
-    const schema = z.object({
-      email: z.email(),
-      otp: z.string().length(6),
-    });
-    const validation = schema.safeParse({ email, otp });
-    if (!validation.success) {
-      return res
-        .status(400)
-        .json({ message: validation.error.message, retriesLeft });
-    }
     const user = await prisma.user.findUnique({ where: { email } });
-    if (!user) {
-      return res.status(404).json({ message: "User not found", retriesLeft });
-    }
+    if (!user) throw new ValidationError("User does not exist");
     const otpRes = await verifyOtp(email, otp, "auth");
     if (!(otpRes.status === "verified")) {
-      return res.status(400).json({ message: otpRes.message, retriesLeft });
+      throw new ValidationError(otpRes.message);
     }
     await prisma.user.update({
       where: { email },
       data: { isVerified: true },
     });
     res.status(200).json({ message: "User verified successfully" });
-    // eventEmitter.emit("user.verified", {
-    //   email: user.email,
-    //   firstName: user.firstName,
-    // });
-  } catch (error: any) {
-    console.error("Error verifying user:", error);
-    res.status(500).json({
-      message: error?.message || "Error verifying user, ",
-      retriesLeft,
+    eventEmitter.emit("user.verified", {
+      email: user.email,
+      firstName: user.firstName,
+      lastName: user.lastName,
     });
+  } catch (error) {
+    next(handleFunctionError(error));
   }
 };
 
-export const loginUser = async (req: Request, res: Response) => {
+export const loginUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   try {
     const { email, password } = req.body;
-    const schema = z.object({
-      email: z.email(),
-      password: z.string(),
-    });
-    const validataion = schema.safeParse({ email, password });
-    if (!validataion.success) {
-      return res.status(400).json({ message: validataion.error.message });
-    }
     const user = await prisma.user.findUnique({ where: { email } });
-    if (!user) {
-      return res.status(404).json({ message: "Invalid credentials" });
-    }
+    if (!user) throw new UnauthorizedError("User does not exist");
     if (!user.isVerified) {
       await generateOtp(email, "auth");
-      return res.status(400).json({
-        message: "User not verified, check email for OTP verification",
-      });
+      throw new ValidationError(
+        "User not verified, check your email to complete registration",
+      );
     }
     const isPasswordValid = await decryptPassword(password, user.password);
-    if (!isPasswordValid) {
-      return res.status(400).json({ message: " Invalid credentials " });
-    }
+    if (!isPasswordValid) throw new ValidationError("Inalid credentials");
 
     const { password: userPassword, ...rest } = user;
-    // await redisClient.del(`refresh:${user.id}:*`);
     const keys = await redisClient.keys(`refresh:${user.id}:*`);
     if (keys.length > 0) {
       await redisClient.del(keys);
@@ -142,15 +107,11 @@ export const loginUser = async (req: Request, res: Response) => {
       firstName: user.firstName,
       lastName: user.lastName,
     });
-
     res
       .status(200)
       .json({ message: "User logged in successfully", ...token, user: rest });
-  } catch (error: any) {
-    console.error("Error logging in user:", error);
-    res.status(500).json({
-      message: error?.message || "Error logging in user, ",
-    });
+  } catch (error) {
+    next(error);
   }
 };
 

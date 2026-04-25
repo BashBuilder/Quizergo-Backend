@@ -2,7 +2,7 @@ import "dotenv/config";
 import { alocApi } from "../config/axios.js";
 import { supportedSubjects } from "../lib/constants.js";
 import axios, { AxiosError } from "axios";
-import { handleAxiosError, ValidationError } from "../lib/errors.js";
+import { handleFunctionError, ValidationError } from "../lib/errors.js";
 
 export class AlocQuestionService {
   constructor() {}
@@ -22,7 +22,7 @@ export class AlocQuestionService {
       }>(url);
       return response.data;
     } catch (error: any) {
-      handleAxiosError(error, "fetching questions from ALOC");
+      handleFunctionError(error, "fetching questions from ALOC");
     }
   }
 
@@ -41,7 +41,7 @@ export class AlocQuestionService {
       }>(url);
       return response.data.data;
     } catch (error) {
-      handleAxiosError(error, "Fetching all question counts from ALOC");
+      handleFunctionError(error, "Fetching all question counts from ALOC");
     }
   }
 }

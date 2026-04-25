@@ -4,9 +4,14 @@ import { sendOTPEmail } from "./resend.js";
 import jwt from "jsonwebtoken";
 import { randomBytes, createHash } from "crypto";
 import "dotenv/config";
-import { getUserById } from "../services/auth.service.js";
 import { prisma } from "../config/prisma.js";
-import { UnauthorizedError } from "./errors.js";
+import {
+  handleFunctionError,
+  InternalServerError,
+  TooManyRequestsError,
+  UnauthorizedError,
+  ValidationError,
+} from "./errors.js";
 
 interface TokenResponse {
   accessToken: string;
@@ -17,18 +22,16 @@ export const generateOtp = async (email: string, action: string) => {
   try {
     const key = `otp:${action}:${email}`;
     const existingOtp = await redisClient.get(key);
-    if (existingOtp) {
-      throw new Error(
+    if (existingOtp)
+      throw new TooManyRequestsError(
         "OTP already sent. Please wait before requesting a new one.",
       );
-    }
     const otp = Math.floor(100000 + Math.random() * 900000).toString();
     await redisClient.set(key, otp, { EX: 7200 });
     await sendOTPEmail(email, otp);
     return otp;
-  } catch (error: any) {
-    console.error("Error generating OTP:", error);
-    throw new Error(error?.message || "Failed to generate OTP");
+  } catch (error) {
+    throw error;
   }
 };
 
@@ -74,8 +77,7 @@ export const decryptPassword = async (password: string, hash: string) => {
   try {
     return await bcrypt.compare(password, hash);
   } catch (error) {
-    console.error("Error comparing password:", error);
-    throw new Error("Failed to compare password");
+    throw new ValidationError("Failed to compare password");
   }
 };
 
@@ -85,7 +87,8 @@ const hashToken = (token: string): string => {
 
 const getSecret = (): string => {
   const secret = process.env.JWT_SECRET;
-  if (!secret) throw new Error("JWT_SECRET not defined in environment");
+  if (!secret)
+    throw new InternalServerError("JWT_SECRET not defined in environment");
   return secret;
 };
 
@@ -111,8 +114,7 @@ export const createToken = async (
       refreshToken: `${tokenId}.${refreshToken}`,
     };
   } catch (error: any) {
-    console.error("Error creating token:", error);
-    throw new Error(error?.message || "Failed to create token");
+    handleFunctionError(error);
   }
 };
 
