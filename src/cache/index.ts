@@ -1,5 +1,6 @@
 import { createClient, RedisClientType } from "redis";
 import { redisConfig } from "../config/redis.js";
+import Logger from "../../core/Logger.js";
 
 const redisUrl = `redis://default:${redisConfig.password}@${redisConfig.host}:${redisConfig.port}`;
 
@@ -15,22 +16,15 @@ export async function connectRedis() {
   try {
     await redisClient.connect();
   } catch (error) {
-    console.error("Error connecting to Redis:", error);
-    setTimeout(connectRedis, 5000); // Retry after 5 seconds
+    Logger.error("Error connecting to Redis", error);
+    setTimeout(connectRedis, 5000);
   }
 }
 
-// connectRedis();
-
 process.on("SIGINT", async () => {
-  try {
-    await redisClient.quit();
-    console.log("Redis client disconnected");
-    process.exit(0);
-  } catch (error) {
-    console.error("Error disconnecting from Redis:", error);
-    process.exit(1);
-  }
+  await redisClient.quit();
+  console.log("Redis client disconnected");
+  process.exit(0);
 });
 
 export default redisClient;

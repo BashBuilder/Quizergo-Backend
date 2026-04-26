@@ -48,19 +48,16 @@ const startServer = async () => {
     await prisma
       .$connect()
       .then(() => console.log("Connected to PostgreSQL database"));
-    await connectRedis().then(() => console.log("Connected to Redis cache"));
+    await connectRedis();
     app.listen(PORT, () => {
       Logger.info(`Server is running on port ${PORT}`);
     });
   } catch (error) {
-    // console.log("Error starting server:", error);
     Logger.error("Error starting server", error);
   }
 };
 
 process.on("SIGINT", () => {
-  console.log("Shutting down server...");
-  // mongoose.connection.close();
   prisma.$disconnect();
 });
 

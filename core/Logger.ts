@@ -34,7 +34,6 @@ export default createLogger({
         format.errors({ stack: true }),
         format.colorize(),
         format.prettyPrint(),
-        // format.timestamp(),
       ),
     }),
     dailyRotateFile,

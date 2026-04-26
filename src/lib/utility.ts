@@ -98,7 +98,7 @@ export const createToken = async (
 ): Promise<TokenResponse> => {
   try {
     const privateKey = getSecret();
-    const REFRESH_TTL = 7 * 24 * 60 * 60; // 7 days in seconds
+    const REFRESH_TTL = 7 * 24 * 60 * 60;
     const accessToken = jwt.sign(payload, privateKey, { expiresIn } as any);
 
     const tokenId = jwt.sign({ id: payload.id }, privateKey, {
