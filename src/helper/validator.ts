@@ -6,7 +6,7 @@ export enum ValidationSource {
   BODY = "body",
   QUERY = "query",
   PARAMS = "params",
-  HEADER = "header",
+  HEADERS = "headers",
 }
 
 const validateRequest = (
