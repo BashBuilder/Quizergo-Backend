@@ -16,4 +16,23 @@ model User {
   isVerified Boolean  @default(false)
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
+
+  @@index([id, email, isVerified])
+}
+
+enum Permissions {
+  GENERAL
+  ADMIN
+}
+
+model ApiKey {
+  id          String        @id @default(uuid())
+  key         String        @unique
+  version     Int           @default(1)
+  permissions Permissions[]
+  status      String
+  createdAt   DateTime      @default(now())
+  updatedAt   DateTime      @updatedAt
+
+  @@index([id, version])
 }

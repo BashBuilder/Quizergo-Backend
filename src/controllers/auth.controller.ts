@@ -11,7 +11,6 @@ import {
   verifyOtp,
 } from "../lib/utility.js";
 import eventEmitter from "../config/events.js";
-import { sendWelcomeEmail } from "../lib/resend.js";
 import redisClient from "../cache/index.js";
 import {
   handleFunctionError,
@@ -111,7 +110,7 @@ export const loginUser = async (
       .status(200)
       .json({ message: "User logged in successfully", ...token, user: rest });
   } catch (error) {
-    next(error);
+    next(handleFunctionError(error));
   }
 };
 

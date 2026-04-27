@@ -4,14 +4,6 @@ import { verifyToken } from "./utility.js";
 import { AppError, UnauthorizedError } from "./errors.js";
 import Logger from "../../core/Logger.js";
 
-declare global {
-  namespace Express {
-    interface Request {
-      user?: TokenPayload;
-      retriesLeft?: number;
-    }
-  }
-}
 export const throttleNetwork = (
   action: string,
   limit: number = 10,
