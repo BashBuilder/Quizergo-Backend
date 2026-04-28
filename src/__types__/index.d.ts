@@ -1,12 +1,13 @@
 import { Request } from "express";
-import { ApiKey } from "../generated/prisma/client.ts";
+import { ApiKey, User } from "../generated/prisma/client.ts";
 
 declare global {
   namespace Express {
     interface Request {
-      user?: TokenPayload;
+      user?: User;
       retriesLeft?: number;
       apiKey?: ApiKey;
+      accessToken?: string;
     }
   }
   interface TokenPayload {
