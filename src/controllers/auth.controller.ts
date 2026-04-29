@@ -2,21 +2,30 @@ import { Request, Response, NextFunction } from "express";
 import { z } from "zod";
 import { prisma } from "../config/prisma.js";
 import {
-  createToken,
   decryptPassword,
   generateOtp,
   hashPassword,
-  refreshAccessToken,
   revokeAllTokens,
   verifyOtp,
 } from "../lib/utility.js";
 import eventEmitter from "../config/events.js";
 import redisClient from "../cache/index.js";
 import {
+  BadRequestError,
   handleFunctionError,
   UnauthorizedError,
   ValidationError,
 } from "../lib/errors.js";
+import crypto from "node:crypto";
+import { createUserToken } from "./keystore.controller.js";
+import {
+  createTokens,
+  getAccessToken,
+  validateToken,
+  validateTokenData,
+} from "../lib/jwt.js";
+import { environment, tokenInfo } from "../config/config.js";
+import { KeyStatus } from "../generated/prisma/enums.js";
 
 export const registerUser = async (
   req: Request,
@@ -100,15 +109,28 @@ export const loginUser = async (
     if (keys.length > 0) {
       await redisClient.del(keys);
     }
-    const token = await createToken({
-      id: user.id,
-      email: user.email,
-      firstName: user.firstName,
-      lastName: user.lastName,
-    });
+
+    const accessTokenKey = crypto.randomBytes(64).toString("hex");
+    const refreshTokenKey = crypto.randomBytes(64).toString("hex");
+
+    await createUserToken(user, accessTokenKey, refreshTokenKey);
+    const tokens = await createTokens(user, accessTokenKey, refreshTokenKey);
+
     res
       .status(200)
-      .json({ message: "User logged in successfully", ...token, user: rest });
+      .cookie("accessToken", tokens.accessToken, {
+        httpOnly: true,
+        sameSite: "strict",
+        secure: environment === "production",
+        maxAge: 24 * 60 * 60 * 1000,
+      })
+      .cookie("refreshToken", tokens.refreshToken, {
+        httpOnly: true,
+        sameSite: "strict",
+        secure: environment === "production",
+        maxAge: 30 * 24 * 60 * 60 * 1000,
+      })
+      .json({ message: "User logged in successfully", user: rest });
   } catch (error) {
     next(handleFunctionError(error));
   }
@@ -213,22 +235,44 @@ export const resetPassword = async (req: Request, res: Response) => {
 
 export const refreshToken = async (req: Request, res: Response) => {
   try {
-    const { refreshToken } = req.body;
-    const schema = z.object({
-      refreshToken: z.string(),
+    const accessToken = getAccessToken(req?.headers?.authorization);
+    if (typeof accessToken !== "string") throw accessToken;
+
+    req.accessToken = accessToken;
+    const payload = await validateToken(accessToken, tokenInfo.secret);
+    validateTokenData(payload);
+
+    const user = await prisma.user.findUnique({
+      where: { id: payload.sub },
     });
-    const validation = schema.safeParse({ refreshToken });
-    if (!validation.success) {
-      return res.status(400).json({ message: validation.error.message });
-    }
-    const token = await refreshAccessToken(refreshToken as string);
-    if (!token) {
-      return res.status(400).json({ message: "Invalid refresh token" });
-    }
-    return res
-      .status(200)
-      .json({ ...token, message: "Token refreshed successfully" });
-    // const isValid = await
+    if (!user) throw new BadRequestError("User does not exist");
+    req.user = user;
+    const keyStore = await prisma.keyStore.findUnique({
+      where: {
+        client: payload.sub,
+        primaryKey: payload.prm,
+        status: KeyStatus.ACTIVE,
+      },
+    });
+
+    if (!keyStore) throw new BadRequestError("Invalid access token");
+    req.keyStore = keyStore;
+    // const { refreshToken } = req.body;
+    // const schema = z.object({
+    //   refreshToken: z.string(),
+    // });
+    // const validation = schema.safeParse({ refreshToken });
+    // if (!validation.success) {
+    //   return res.status(400).json({ message: validation.error.message });
+    // }
+    // const token = await refreshAccessToken(refreshToken as string);
+    // if (!token) {
+    //   return res.status(400).json({ message: "Invalid refresh token" });
+    // }
+    // return res
+    //   .status(200)
+    //   .json({ ...token, message: "Token refreshed successfully" });
+    // // const isValid = await
   } catch (error: any) {
     console.error("Error refreshing token:", error);
     res.status(500).json({

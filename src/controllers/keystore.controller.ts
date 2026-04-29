@@ -1,5 +1,5 @@
 import { prisma } from "../config/prisma.js";
-import { User } from "../generated/prisma/client.js";
+import { KeyStatus, User } from "../generated/prisma/client.js";
 import { ValidationError } from "../lib/errors.js";
 
 export async function createUserToken(
@@ -9,7 +9,12 @@ export async function createUserToken(
 ) {
   try {
     return await prisma.keyStore.create({
-      data: { client: client.id, primaryKey, secondaryKey, status: "active" },
+      data: {
+        client: client.id,
+        primaryKey,
+        secondaryKey,
+        status: KeyStatus.ACTIVE,
+      },
     });
   } catch (error) {
     throw new ValidationError("Failed to create user token");

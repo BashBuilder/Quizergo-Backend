@@ -7,6 +7,7 @@ import {
   userRegisterSchema,
   verifyUserSchema,
 } from "../models/auth.model.js";
+import authMiddleware from "../middleware/auth.middleware.js";
 
 const authRoutes: Router = Router();
 
@@ -32,17 +33,17 @@ authRoutes
     authController.loginUser,
   );
 
-authRoutes.get("/me", validateUser, authController.getCurrentUser);
+authRoutes.get("/me", authMiddleware, authController.getCurrentUser);
 authRoutes.post("/logout", authController.logoutUser);
 authRoutes.post(
   "/forgot-password",
   throttleNetwork("forgot-password", 5, 3600),
   authController.forgotPassword,
 );
-authRoutes.post(
-  "/refresh-token",
-  throttleNetwork("refresh-token", 5, 3600),
-  authController.refreshToken,
-);
+// authRoutes.post(
+//   "/refresh-token",
+//   throttleNetwork("refresh-token", 5, 3600),
+//   authController.refreshToken,
+// );
 
 export default authRoutes;

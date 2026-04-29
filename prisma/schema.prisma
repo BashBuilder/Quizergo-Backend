@@ -22,14 +22,19 @@ model User {
   @@index([id, email, isVerified])
 }
 
+enum KeyStatus {
+  ACTIVE
+  DEACTIVATED
+}
+
 model KeyStore {
-  id           String   @id @default(uuid())
-  client       String   @unique
+  id           String    @id @default(uuid())
+  client       String    @unique
   primaryKey   String
   secondaryKey String
-  status       String
-  createdAt    DateTime @default(now())
-  updatedAt    DateTime @updatedAt
+  status       KeyStatus
+  createdAt    DateTime  @default(now())
+  updatedAt    DateTime  @updatedAt
 
   user User @relation(fields: [client], references: [id])
 
@@ -46,7 +51,7 @@ model ApiKey {
   key         String        @unique
   version     Int           @default(1)
   permissions Permissions[]
-  status      Boolean
+  status      String
   createdAt   DateTime      @default(now())
   updatedAt   DateTime      @updatedAt
 

@@ -1,5 +1,5 @@
 import { Request } from "express";
-import { ApiKey, User } from "../generated/prisma/client.ts";
+import { ApiKey, KeyStore, User } from "../generated/prisma/client.ts";
 
 declare global {
   namespace Express {
@@ -8,6 +8,7 @@ declare global {
       retriesLeft?: number;
       apiKey?: ApiKey;
       accessToken?: string;
+      keyStore?: KeyStore;
     }
   }
   interface TokenPayload {

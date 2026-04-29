@@ -9,12 +9,14 @@ import {
 import { tokenInfo } from "../config/config.js";
 import { prisma } from "../config/prisma.js";
 import { BadRequestError } from "../lib/errors.js";
+import { KeyStatus } from "../generated/prisma/enums.js";
+import asyncHandler from "../helper/asyncHandle.js";
 
-const authRouter: Router = Router();
+const authMiddleware: Router = Router();
 
-authRouter.use(
+authMiddleware.use(
   validateRequest(authenticateApiKeySchema, ValidationSource.HEADERS),
-  async (req: Request, res: Response, next: NextFunction) => {
+  asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
     try {
       const accessToken = getAccessToken(req?.headers?.authorization);
       if (typeof accessToken !== "string") throw accessToken;
@@ -27,19 +29,22 @@ authRouter.use(
         where: { id: payload.sub },
       });
       if (!user) throw new BadRequestError("User does not exist");
+      req.user = user;
       const keyStore = await prisma.keyStore.findUnique({
         where: {
           client: payload.sub,
           primaryKey: payload.prm,
-          status: true,
+          status: KeyStatus.ACTIVE,
         },
       });
 
       if (!keyStore) throw new BadRequestError("Invalid access token");
-
+      req.keyStore = keyStore;
       next();
     } catch (error) {
       next(error);
     }
-  },
+  }),
 );
+
+export default authMiddleware;
