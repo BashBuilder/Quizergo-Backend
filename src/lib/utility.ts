@@ -69,7 +69,7 @@ export const hashPassword = async (password: string) => {
     return await bcrypt.hash(password, saltRounds);
   } catch (error) {
     console.error("Error hashing password:", error);
-    throw new Error("Failed to hash password");
+    throw new InternalServerError("Failed to hash password");
   }
 };
 
@@ -78,124 +78,6 @@ export const decryptPassword = async (password: string, hash: string) => {
     return await bcrypt.compare(password, hash);
   } catch (error) {
     throw new ValidationError("Failed to compare password");
-  }
-};
-
-const hashToken = (token: string): string => {
-  return createHash("sha256").update(token).digest("hex");
-};
-
-const getSecret = (): string => {
-  const secret = process.env.JWT_SECRET;
-  if (!secret)
-    throw new InternalServerError("JWT_SECRET not defined in environment");
-  return secret;
-};
-
-export const createToken = async (
-  payload: TokenPayload,
-  expiresIn: string = "6h",
-): Promise<TokenResponse> => {
-  try {
-    const privateKey = getSecret();
-    const REFRESH_TTL = 7 * 24 * 60 * 60;
-    const accessToken = jwt.sign(payload, privateKey, { expiresIn } as any);
-
-    const tokenId = jwt.sign({ id: payload.id }, privateKey, {
-      expiresIn: "7d",
-    } as any);
-    const refreshToken = randomBytes(64).toString("hex");
-    const hashedRefreshToken = hashToken(refreshToken);
-
-    const key = `refresh:${payload.id}:${tokenId}`;
-    await redisClient.set(key, hashedRefreshToken, { EX: REFRESH_TTL });
-    return {
-      accessToken,
-      refreshToken: `${tokenId}.${refreshToken}`,
-    };
-  } catch (error: any) {
-    handleFunctionError(error);
-  }
-};
-
-export const verifyToken = (token: string): TokenPayload => {
-  try {
-    return jwt.verify(token, getSecret()) as TokenPayload;
-  } catch (error) {
-    throw new UnauthorizedError("Token not valid");
-  }
-};
-
-export const refreshAccessToken = async (
-  rawRefreshToken: string,
-  expiresIn: string = "6h",
-): Promise<TokenResponse> => {
-  try {
-    const parts = rawRefreshToken.split(".");
-    if (parts.length !== 4) {
-      throw new Error("Invalid refresh token format");
-    }
-    const tokenId = parts.slice(0, 3).join(".");
-    const token = parts[3];
-    // const [tokenId, token] = rawRefreshToken.split(".");
-    const privateKey = getSecret();
-    const REFRESH_TTL = 7 * 24 * 60 * 60; // 7 days in seconds
-
-    if (!tokenId || !token) {
-      throw new Error("Invalid refresh token format");
-    }
-    const decoded = jwt.verify(tokenId, getSecret()) as { id: string };
-    if (!decoded || !decoded.id) {
-      throw new Error("Invalid refresh token");
-    }
-
-    const userId = decoded.id;
-    const key = `refresh:${userId}:${tokenId}`;
-    const storedHashedToken = await redisClient.get(key);
-
-    if (!storedHashedToken) {
-      throw new Error("Refresh token not found");
-    }
-
-    const isValid = hashToken(token) === storedHashedToken;
-    if (!isValid) {
-      await redisClient.del(key);
-      throw new Error("Invalid refresh token");
-    }
-
-    const newTokenId = jwt.sign({ id: userId }, privateKey, {
-      expiresIn: "7d",
-    } as any) as string;
-    const newRefreshToken = randomBytes(64).toString("hex");
-    const newHashed = hashToken(newRefreshToken);
-
-    await redisClient.del(key);
-    const newKey = `refresh:${userId}:${newTokenId}`;
-
-    await redisClient.set(newKey, newHashed, { EX: REFRESH_TTL });
-    const user = await prisma.user.findUnique({ where: { id: userId } });
-    if (!user) {
-      await redisClient.del(newKey);
-      throw new Error("User not found");
-    }
-    // Refresh token expires in 7 days
-    const newAccessToken = jwt.sign(
-      {
-        id: userId,
-        email: user.email,
-        firstName: user.firstName,
-        lastName: user.lastName,
-      } as TokenPayload,
-      process.env.JWT_SECRET as string,
-      { expiresIn } as any,
-    );
-    return {
-      accessToken: newAccessToken,
-      refreshToken: `${newTokenId}.${newRefreshToken}`,
-    };
-  } catch (error: any) {
-    console.log("Error refreshing token:", error);
-    throw new Error(error?.message || "Failed to refresh token");
   }
 };
 

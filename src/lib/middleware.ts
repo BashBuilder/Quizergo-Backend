@@ -1,6 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import redisClient from "../cache/index.js";
-import { verifyToken } from "./utility.js";
+// import { verifyToken } from "./utility.js";
 import { AppError, UnauthorizedError } from "./errors.js";
 import Logger from "../../core/Logger.js";
 
@@ -73,9 +73,9 @@ export const validateUser = async (
   try {
     const token = req.headers.authorization?.split(" ")[1];
     if (!token) throw new UnauthorizedError("Token not valid");
-    const payload: TokenPayload = verifyToken(token);
-    if (!payload.id) throw new UnauthorizedError("User not authorized ");
-    req.user = payload;
+    // const payload: TokenPayload = verifyToken(token);
+    // if (!payload.id) throw new UnauthorizedError("User not authorized ");
+    // req.user = payload;
     next();
   } catch (error) {
     next(error);

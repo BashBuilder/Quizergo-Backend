@@ -34,6 +34,11 @@ export class UnauthorizedError extends AppError {
     super(message, 401);
   }
 }
+export class BadTokenError extends AppError {
+  constructor(message = "Unauthorized") {
+    super(message, 401);
+  }
+}
 
 export class ForbiddenError extends AppError {
   constructor(message = "Forbidden") {

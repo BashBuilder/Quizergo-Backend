@@ -1,7 +1,11 @@
 import { tokenInfo } from "../config/config.js";
 import { User } from "../generated/prisma/client.js";
-import { BadRequestError, InternalServerError } from "./errors.js";
-import jwt, { JsonWebTokenError } from "jsonwebtoken";
+import {
+  BadRequestError,
+  BadTokenError,
+  InternalServerError,
+} from "./errors.js";
+import jwt from "jsonwebtoken";
 
 export class JwtPayload {
   aud: string;
@@ -49,10 +53,10 @@ export async function decodeToken(token: string): Promise<JwtPayload> {
   try {
     const decode = jwt.decode(token);
     if (!decode || typeof decode === "string")
-      throw new JsonWebTokenError("Token decoding failed");
+      throw new BadTokenError("Token decoding failed");
     return decode as JwtPayload;
   } catch (error) {
-    throw new JsonWebTokenError("Token decoding failed");
+    throw new BadTokenError("Token decoding failed");
   }
 }
 
@@ -60,18 +64,18 @@ export async function validateToken(
   token: string,
   secret: string,
 ): Promise<JwtPayload> {
-  if (!token) throw new JsonWebTokenError("Token not defined");
+  if (!token) throw new BadTokenError("Token not defined");
   try {
     return new Promise((resole, reject) => {
       jwt.verify(token, secret, (err, decoded) => {
         if (err?.name === "TokenExpiredError")
-          reject(new JsonWebTokenError("Token expired"));
-        if (err) reject(new JsonWebTokenError("Token validation failed"));
+          reject(new BadTokenError("Token expired"));
+        if (err) reject(new BadTokenError("Token validation failed"));
         resole(decoded as JwtPayload);
       });
     });
   } catch (error) {
-    throw new JsonWebTokenError("Token validation failed");
+    throw new BadTokenError("Token validation failed");
   }
 }
 
@@ -109,7 +113,7 @@ export async function createTokens(
   }
 }
 
-export const getAccessToken = (authorization: string) => {
+export const getAccessToken = (authorization: string | undefined) => {
   if (!authorization)
     throw new BadRequestError("Authorization header not found");
   if (!authorization.startsWith("Bearer"))
@@ -126,6 +130,5 @@ export const validateTokenData = (payload: JwtPayload) => {
   if (!payload.exp) throw new BadRequestError("Expiration not found");
   if (!payload.iat) throw new BadRequestError("Issued at not found");
   if (!payload.prm) throw new BadRequestError("Permission not found");
-
   return true;
 };
