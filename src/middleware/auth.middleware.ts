@@ -8,7 +8,7 @@ import {
 } from "../lib/jwt.js";
 import { tokenInfo } from "../config/config.js";
 import { prisma } from "../config/prisma.js";
-import { BadRequestError } from "../lib/errors.js";
+import { BadRequestError, UnauthorizedError } from "../lib/errors.js";
 import { KeyStatus } from "../generated/prisma/enums.js";
 import asyncHandler from "../helper/asyncHandle.js";
 
@@ -18,9 +18,8 @@ authMiddleware.use(
   validateRequest(authenticateApiKeySchema, ValidationSource.HEADERS),
   asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const accessToken = getAccessToken(req?.headers?.authorization);
-      if (typeof accessToken !== "string") throw accessToken;
-
+      const accessToken = req?.cookies?.accessToken;
+      if (!accessToken) throw new UnauthorizedError("Token not valid");
       req.accessToken = accessToken;
       const payload = await validateToken(accessToken, tokenInfo.secret);
       validateTokenData(payload);
@@ -37,7 +36,6 @@ authMiddleware.use(
           status: KeyStatus.ACTIVE,
         },
       });
-
       if (!keyStore) throw new BadRequestError("Invalid access token");
       req.keyStore = keyStore;
       next();

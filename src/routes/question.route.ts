@@ -8,14 +8,10 @@ import authMiddleware from "../middleware/auth.middleware.js";
 
 const questionRoutes: Router = Router();
 
-questionRoutes.use(apikeyRouter);
-questionRoutes.use(permissionMiddleware(Permissions.GENERAL));
+// questionRoutes.use(apikeyRouter);
+// questionRoutes.use(permissionMiddleware(Permissions.GENERAL));
 questionRoutes.use(authMiddleware);
 
-questionRoutes.get(
-  "",
-  validateUser,
-  alocQuestionController.getQuestionsBySubject,
-);
+questionRoutes.get("", alocQuestionController.getQuestionsBySubject);
 
 export default questionRoutes;

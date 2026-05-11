@@ -68,6 +68,8 @@ export async function validateToken(
   try {
     return new Promise((resole, reject) => {
       jwt.verify(token, secret, (err, decoded) => {
+        console.log("token error", err);
+        console.log("token decoded", decoded);
         if (err?.name === "TokenExpiredError")
           reject(new BadTokenError("Token expired"));
         if (err) reject(new BadTokenError("Token validation failed"));
@@ -85,24 +87,26 @@ export async function createTokens(
   refreshTokenKey: string,
 ) {
   try {
+    const accessTokenBody = new JwtPayload(
+      tokenInfo.issuer,
+      tokenInfo.audience,
+      user.id,
+      accessTokenKey,
+      tokenInfo.accessTokenValidity,
+    );
+    const refreshTokenBody = new JwtPayload(
+      tokenInfo.issuer,
+      tokenInfo.audience,
+      user.id,
+      refreshTokenKey,
+      tokenInfo.refreshTokenValidity,
+    );
     const accessToken = await encodeToken(
-      new JwtPayload(
-        tokenInfo.issuer,
-        tokenInfo.audience,
-        user.id,
-        accessTokenKey,
-        tokenInfo.accessTokenValidity,
-      ),
+      { ...accessTokenBody },
       tokenInfo.secret,
     );
     const refreshToken = await encodeToken(
-      new JwtPayload(
-        tokenInfo.issuer,
-        tokenInfo.audience,
-        user.id,
-        refreshTokenKey,
-        tokenInfo.refreshTokenValidity,
-      ),
+      { ...refreshTokenBody },
       tokenInfo.secret,
     );
     if (!accessToken || !refreshToken)

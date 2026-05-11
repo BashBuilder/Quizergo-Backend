@@ -12,6 +12,7 @@ import "./services/event.service.js";
 import questionRoutes from "./routes/question.route.js";
 import { errorHandler } from "./lib/middleware.js";
 import Logger from "../core/Logger.js";
+import cookieParser from "cookie-parser";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -22,6 +23,7 @@ app.use(helmet());
 app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cookieParser());
 
 //Routes
 app.get("/", (_, res) => {

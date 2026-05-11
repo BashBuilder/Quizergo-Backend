@@ -102,7 +102,7 @@ export const loginUser = async (
       );
     }
     const isPasswordValid = await decryptPassword(password, user.password);
-    if (!isPasswordValid) throw new ValidationError("Inalid credentials");
+    if (!isPasswordValid) throw new ValidationError("Invalid credentials");
 
     const { password: userPassword, ...rest } = user;
     const keys = await redisClient.keys(`refresh:${user.id}:*`);
@@ -115,6 +115,7 @@ export const loginUser = async (
 
     await createUserToken(user, accessTokenKey, refreshTokenKey);
     const tokens = await createTokens(user, accessTokenKey, refreshTokenKey);
+    console.log(tokens);
 
     res
       .status(200)

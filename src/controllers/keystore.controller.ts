@@ -8,8 +8,14 @@ export async function createUserToken(
   secondaryKey: string,
 ) {
   try {
-    return await prisma.keyStore.create({
-      data: {
+    return await prisma.keyStore.upsert({
+      where: { client: client.id },
+      update: {
+        primaryKey,
+        secondaryKey,
+        status: KeyStatus.ACTIVE,
+      },
+      create: {
         client: client.id,
         primaryKey,
         secondaryKey,
