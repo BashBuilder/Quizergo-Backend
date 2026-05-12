@@ -8,6 +8,7 @@ declare global {
       retriesLeft?: number;
       apiKey?: ApiKey;
       accessToken?: string;
+      refreshToken?: string;
       keyStore?: KeyStore;
     }
   }

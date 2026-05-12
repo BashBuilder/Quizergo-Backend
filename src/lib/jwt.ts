@@ -4,6 +4,7 @@ import {
   BadRequestError,
   BadTokenError,
   InternalServerError,
+  UnauthorizedError,
 } from "./errors.js";
 import jwt from "jsonwebtoken";
 
@@ -44,7 +45,7 @@ export async function encodeToken(
       });
     });
   } catch (error) {
-    throw new InternalServerError("Token generation failed");
+    throw error;
   }
 }
 
@@ -56,7 +57,7 @@ export async function decodeToken(token: string): Promise<JwtPayload> {
       throw new BadTokenError("Token decoding failed");
     return decode as JwtPayload;
   } catch (error) {
-    throw new BadTokenError("Token decoding failed");
+    throw error;
   }
 }
 
@@ -68,8 +69,6 @@ export async function validateToken(
   try {
     return new Promise((resole, reject) => {
       jwt.verify(token, secret, (err, decoded) => {
-        console.log("token error", err);
-        console.log("token decoded", decoded);
         if (err?.name === "TokenExpiredError")
           reject(new BadTokenError("Token expired"));
         if (err) reject(new BadTokenError("Token validation failed"));
@@ -77,7 +76,7 @@ export async function validateToken(
       });
     });
   } catch (error) {
-    throw new BadTokenError("Token validation failed");
+    throw error;
   }
 }
 
@@ -118,11 +117,8 @@ export async function createTokens(
 }
 
 export const getAccessToken = (authorization: string | undefined) => {
-  if (!authorization)
-    throw new BadRequestError("Authorization header not found");
-  if (!authorization.startsWith("Bearer"))
-    return new BadRequestError("Invalid authorization header");
-  return authorization.split(" ")[1];
+  if (!authorization) throw new UnauthorizedError("Request not authorized");
+  return authorization;
 };
 
 export const validateTokenData = (payload: JwtPayload) => {

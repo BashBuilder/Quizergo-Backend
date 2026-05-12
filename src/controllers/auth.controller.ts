@@ -115,7 +115,6 @@ export const loginUser = async (
 
     await createUserToken(user, accessTokenKey, refreshTokenKey);
     const tokens = await createTokens(user, accessTokenKey, refreshTokenKey);
-    console.log(tokens);
 
     res
       .status(200)
@@ -234,15 +233,15 @@ export const resetPassword = async (req: Request, res: Response) => {
   }
 };
 
-export const refreshToken = async (req: Request, res: Response) => {
+export const refreshToken = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   try {
-    const accessToken = getAccessToken(req?.headers?.authorization);
-    if (typeof accessToken !== "string") throw accessToken;
-
-    req.accessToken = accessToken;
-    const payload = await validateToken(accessToken, tokenInfo.secret);
+    const refreshToken = getAccessToken(req?.cookies?.refreshToken);
+    const payload = await validateToken(refreshToken, tokenInfo.secret);
     validateTokenData(payload);
-
     const user = await prisma.user.findUnique({
       where: { id: payload.sub },
     });
@@ -255,29 +254,31 @@ export const refreshToken = async (req: Request, res: Response) => {
         status: KeyStatus.ACTIVE,
       },
     });
-
     if (!keyStore) throw new BadRequestError("Invalid access token");
     req.keyStore = keyStore;
-    // const { refreshToken } = req.body;
-    // const schema = z.object({
-    //   refreshToken: z.string(),
-    // });
-    // const validation = schema.safeParse({ refreshToken });
-    // if (!validation.success) {
-    //   return res.status(400).json({ message: validation.error.message });
-    // }
-    // const token = await refreshAccessToken(refreshToken as string);
-    // if (!token) {
-    //   return res.status(400).json({ message: "Invalid refresh token" });
-    // }
-    // return res
-    //   .status(200)
-    //   .json({ ...token, message: "Token refreshed successfully" });
-    // // const isValid = await
+
+    const accessTokenKey = crypto.randomBytes(64).toString("hex");
+    const refreshTokenKey = crypto.randomBytes(64).toString("hex");
+
+    await createUserToken(user, accessTokenKey, refreshTokenKey);
+    const tokens = await createTokens(user, accessTokenKey, refreshTokenKey);
+
+    res
+      .status(200)
+      .cookie("accessToken", tokens.accessToken, {
+        httpOnly: true,
+        sameSite: "strict",
+        secure: environment === "production",
+        maxAge: 24 * 60 * 60 * 1000,
+      })
+      .cookie("refreshToken", tokens.refreshToken, {
+        httpOnly: true,
+        sameSite: "strict",
+        secure: environment === "production",
+        maxAge: 30 * 24 * 60 * 60 * 1000,
+      })
+      .json({ message: "Token refreshed successfully" });
   } catch (error: any) {
-    console.error("Error refreshing token:", error);
-    res.status(500).json({
-      message: error?.message || "Error refreshing token, ",
-    });
+    next(handleFunctionError(error));
   }
 };
