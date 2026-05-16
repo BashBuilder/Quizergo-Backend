@@ -7,18 +7,20 @@ export enum ValidationSource {
   QUERY = "query",
   PARAMS = "params",
   HEADERS = "headers",
+  COOKIES = "cookies",
 }
 
 const validateRequest = (
   schema: ZodSchema,
   source: ValidationSource = ValidationSource.BODY,
 ) => {
-  return (req: Request, res: Response, next: NextFunction) => {
+  return (req: Request, _: Response, next: NextFunction) => {
     try {
       const data = schema.parse(req[source]);
       Object.assign(req[source], data);
       next();
     } catch (error) {
+      console.log("Validation failed:", error);
       if (error instanceof ZodError) {
         const message = error.issues.map((err) => err.message).join(", ");
         return next(new BadRequestError(message));

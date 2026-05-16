@@ -50,7 +50,7 @@ const authMiddleware: Router = Router();
 // );
 
 authMiddleware.use(
-  validateRequest(authenticateApiKeySchema, ValidationSource.HEADERS),
+  validateRequest(authenticateApiKeySchema, ValidationSource.COOKIES),
   asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
     try {
       const accessToken = req?.cookies?.accessToken;
@@ -63,14 +63,9 @@ authMiddleware.use(
         // Try access token first
         payload = await validateToken(accessToken, tokenInfo.secret);
       } catch (err) {
-        // Access token invalid — try refresh token inline
         const refreshTokenCookie = req?.cookies?.refreshToken;
-        if (!refreshTokenCookie)
-          throw new UnauthorizedError("Session expired, please login again");
-
         payload = await validateToken(refreshTokenCookie, tokenInfo.secret);
         validateTokenData(payload);
-
         const user = await prisma.user.findUnique({
           where: { id: payload.sub },
         });
@@ -79,7 +74,7 @@ authMiddleware.use(
         const keyStore = await prisma.keyStore.findUnique({
           where: {
             client: payload.sub,
-            primaryKey: payload.prm,
+            secondaryKey: payload.prm,
             status: KeyStatus.ACTIVE,
           },
         });

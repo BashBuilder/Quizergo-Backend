@@ -8,8 +8,10 @@ export const apiKeySchema = z.object({
 });
 
 export const authenticateApiKeySchema = z.object({
-  authorization: z
-    .string("Authorization header is required")
-    .refine((data) => data.startsWith("Bearer"), "Invalid authoriztion header")
-    .refine((data) => data.split(" ")[1], "Authorization must contain a token"),
+  accessToken: z
+    .string({ message: "Token not valid" })
+    .min(1, "Token not valid"),
+  refreshToken: z
+    .string({ message: "Session expired, please login again" })
+    .min(1, "Session expired, please login again"),
 });

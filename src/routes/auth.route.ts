@@ -25,11 +25,13 @@ authRoutes
     authController.verifyUser,
   );
 
-authRoutes.route("/login").post(
-  // throttleNetwork("login", 5, 3600),
-  validateRequest(userLoginSchema, ValidationSource.BODY),
-  authController.loginUser,
-);
+authRoutes
+  .route("/login")
+  .post(
+    throttleNetwork("login", 5, 3600),
+    validateRequest(userLoginSchema, ValidationSource.BODY),
+    authController.loginUser,
+  );
 
 authRoutes.get("/me", authMiddleware, authController.getCurrentUser);
 authRoutes.post("/logout", authController.logoutUser);
@@ -38,10 +40,5 @@ authRoutes.post(
   throttleNetwork("forgot-password", 5, 3600),
   authController.forgotPassword,
 );
-// authRoutes.post(
-//   "/refresh-token",
-//   throttleNetwork("refresh-token", 5, 3600),
-//   authController.refreshToken,
-// );
 
 export default authRoutes;
