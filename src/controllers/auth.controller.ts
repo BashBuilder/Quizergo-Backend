@@ -1,11 +1,9 @@
 import { Request, Response, NextFunction } from "express";
-import { z } from "zod";
 import { prisma } from "../config/prisma.js";
 import {
   decryptPassword,
   generateOtp,
   hashPassword,
-  revokeAllTokens,
   verifyOtp,
 } from "../lib/utility.js";
 import eventEmitter from "../config/events.js";
@@ -18,14 +16,8 @@ import {
 } from "../lib/errors.js";
 import crypto from "node:crypto";
 import { createUserToken } from "./keystore.controller.js";
-import {
-  createTokens,
-  getAccessToken,
-  validateToken,
-  validateTokenData,
-} from "../lib/jwt.js";
-import { environment, tokenInfo } from "../config/config.js";
-import { KeyStatus } from "../generated/prisma/enums.js";
+import { createTokens } from "../lib/jwt.js";
+import { environment } from "../config/config.js";
 
 export const registerUser = async (
   req: Request,
@@ -136,19 +128,22 @@ export const loginUser = async (
   }
 };
 
-export const logoutUser = async (req: Request, res: Response) => {
+export const logoutUser = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   try {
     const userId = req.user?.id;
-    if (!userId) {
-      return res.status(401).json({ message: "User not authenticated" });
-    }
-    await revokeAllTokens(userId);
+    if (!userId) throw new BadRequestError("User not found");
+    await prisma.keyStore.delete({
+      where: {
+        id: userId,
+      },
+    });
     res.status(200).json({ message: "User logged out successfully" });
   } catch (error: any) {
-    console.error("Error logging out user:", error);
-    res.status(500).json({
-      message: error?.message || "Error logging out user, ",
-    });
+    next(handleFunctionError(error));
   }
 };
 
@@ -167,13 +162,6 @@ export const getCurrentUser = async (req: Request, res: Response) => {
 export const forgotPassword = async (req: Request, res: Response) => {
   try {
     const { email } = req.body;
-    const schema = z.object({
-      email: z.email(),
-    });
-    const validation = schema.safeParse({ email });
-    if (!validation.success) {
-      return res.status(400).json({ message: validation.error.message });
-    }
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
       return res.status(404).json({ message: "Email is not registered" });
@@ -192,25 +180,7 @@ export const forgotPassword = async (req: Request, res: Response) => {
 
 export const resetPassword = async (req: Request, res: Response) => {
   try {
-    const { email, otp, newPassword, confirmNewPassword } = req.body;
-    const schema = z.object({
-      email: z.email(),
-      otp: z.string(),
-      newPassword: z.string(),
-      confirmNewPassword: z.string(),
-    });
-    const validation = schema.safeParse({
-      email,
-      otp,
-      newPassword,
-      confirmNewPassword,
-    });
-    if (!validation.success) {
-      return res.status(400).json({ message: validation.error.message });
-    }
-    if (newPassword !== confirmNewPassword) {
-      return res.status(400).json({ message: "Passwords do not match" });
-    }
+    const { email, otp, newPassword } = req.body;
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
       return res.status(404).json({ message: "User not found" });

@@ -1,6 +1,6 @@
 import { Router } from "express";
 import * as authController from "../controllers/auth.controller.js";
-import { throttleNetwork, validateUser } from "../lib/middleware.js";
+import { throttleNetwork } from "../lib/middleware.js";
 import validateRequest, { ValidationSource } from "../helper/validator.js";
 import {
   userLoginSchema,
@@ -33,7 +33,8 @@ authRoutes
     authController.loginUser,
   );
 
-authRoutes.get("/me", authMiddleware, authController.getCurrentUser);
+authRoutes.route("/me").get(authMiddleware, authController.getCurrentUser);
+
 authRoutes.post("/logout", authController.logoutUser);
 authRoutes.post(
   "/forgot-password",
