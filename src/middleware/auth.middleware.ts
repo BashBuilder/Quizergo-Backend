@@ -1,6 +1,6 @@
 import { NextFunction, Request, Response, Router } from "express";
 import { validateAuth, ValidationSource } from "../helper/validator.js";
-import { authenticateApiKeySchema } from "../models/apikey.model.js";
+import { authenticateApiSchema } from "../models/apikey.model.js";
 import {
   createTokens,
   JwtPayload,
@@ -13,43 +13,12 @@ import { UnauthorizedError } from "../lib/errors.js";
 import { KeyStatus } from "../generated/prisma/enums.js";
 import asyncHandler from "../helper/asyncHandle.js";
 import crypto from "node:crypto";
-import { createUserToken } from "../controllers/keystore.controller.js";
+import { saveUserToken } from "../controllers/keystore.controller.js";
 
 const authMiddleware: Router = Router();
 
-// authMiddleware.use(
-//   validateAuth(authenticateApiKeySchema, ValidationSource.HEADERS),
-//   asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
-//     try {
-//       const accessToken = req?.cookies?.accessToken;
-//       if (!accessToken) throw new UnauthorizedError("Token not valid");
-//       req.accessToken = accessToken;
-//       const payload = await validateToken(accessToken, tokenInfo.secret);
-//       validateTokenData(payload);
-
-//       const user = await prisma.user.findUnique({
-//         where: { id: payload.sub },
-//       });
-//       if (!user) throw new UnauthorizedError("User does not exist");
-//       req.user = user;
-//       const keyStore = await prisma.keyStore.findUnique({
-//         where: {
-//           client: payload.sub,
-//           primaryKey: payload.prm,
-//           status: KeyStatus.ACTIVE,
-//         },
-//       });
-//       if (!keyStore) throw new UnauthorizedError("Invalid access token");
-//       req.keyStore = keyStore;
-//       next();
-//     } catch (error) {
-//       next(error);
-//     }
-//   }),
-// );
-
 authMiddleware.use(
-  validateAuth(authenticateApiKeySchema, ValidationSource.COOKIES),
+  validateAuth(authenticateApiSchema, ValidationSource.COOKIES),
   asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
     try {
       const accessToken = req?.cookies?.accessToken;
@@ -78,7 +47,8 @@ authMiddleware.use(
         // Generate new tokens
         const accessTokenKey = crypto.randomBytes(64).toString("hex");
         const refreshTokenKey = crypto.randomBytes(64).toString("hex");
-        await createUserToken(user, accessTokenKey, refreshTokenKey);
+
+        await saveUserToken(user, accessTokenKey, refreshTokenKey);
         const tokens = await createTokens(
           user,
           accessTokenKey,

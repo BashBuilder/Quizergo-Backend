@@ -15,7 +15,7 @@ import {
   ValidationError,
 } from "../lib/errors.js";
 import crypto from "node:crypto";
-import { createUserToken } from "./keystore.controller.js";
+import { saveUserToken } from "./keystore.controller.js";
 import { createTokens } from "../lib/jwt.js";
 import { environment } from "../config/config.js";
 
@@ -105,19 +105,18 @@ export const loginUser = async (
     const accessTokenKey = crypto.randomBytes(64).toString("hex");
     const refreshTokenKey = crypto.randomBytes(64).toString("hex");
 
-    console.log("Generated keys:", { accessTokenKey, refreshTokenKey });
-
-    await createUserToken(user, accessTokenKey, refreshTokenKey);
+    await saveUserToken(user, accessTokenKey, refreshTokenKey);
     const tokens = await createTokens(user, accessTokenKey, refreshTokenKey);
 
     res
       .status(200)
-      // .cookie("accessToken", tokens.accessToken, {
-      //   httpOnly: true,
-      //   sameSite: "strict",
-      //   secure: environment === "production",
-      //   maxAge: 24 * 60 * 60 * 1000,
-      // })
+      // .cookie("accessToken", "token", {
+      .cookie("accessToken", tokens.accessToken, {
+        httpOnly: true,
+        sameSite: "strict",
+        secure: environment === "production",
+        maxAge: 24 * 60 * 60 * 1000,
+      })
       .cookie("refreshToken", tokens.refreshToken, {
         httpOnly: true,
         sameSite: "strict",

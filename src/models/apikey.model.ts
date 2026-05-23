@@ -7,10 +7,8 @@ export const apiKeySchema = z.object({
     .min(1, "API key is required"),
 });
 
-export const authenticateApiKeySchema = z.object({
-  accessToken: z
-    .string({ message: "Token not valid" })
-    .min(1, "Token not valid"),
+export const authenticateApiSchema = z.object({
+  accessToken: z.string({ message: "Token not valid" }).optional(),
   refreshToken: z
     .string({ message: "Session expired, please login again" })
     .min(1, "Session expired, please login again"),

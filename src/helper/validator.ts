@@ -35,7 +35,6 @@ export const validateAuth = (
 ) => {
   return (req: Request, res: Response, next: NextFunction) => {
     try {
-      console.log("Validating auth data:", req[source]);
       const data = schema.parse(req[source]);
       Object.assign(req[source], data);
       next();

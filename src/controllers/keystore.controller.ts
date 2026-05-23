@@ -2,7 +2,7 @@ import { prisma } from "../config/prisma.js";
 import { KeyStatus, User } from "../generated/prisma/client.js";
 import { ValidationError } from "../lib/errors.js";
 
-export async function createUserToken(
+export async function saveUserToken(
   client: User,
   primaryKey: string,
   secondaryKey: string,
