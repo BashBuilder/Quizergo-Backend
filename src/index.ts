@@ -36,8 +36,6 @@ app.get("/", (_, res) => {
   res.send("Hell There, Welcome to QUIZERGO API");
 });
 app.get("/health", (_, res) => {
-  console.log("Health check endpoint hit");
-  console.log("Testing health check point");
   res.json({
     status: "OK",
     version,

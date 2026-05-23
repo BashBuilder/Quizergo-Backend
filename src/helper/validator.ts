@@ -1,6 +1,6 @@
 import { ZodError, ZodSchema } from "zod";
 import { Request, Response, NextFunction } from "express";
-import { BadRequestError } from "../lib/errors.js";
+import { BadRequestError, UnauthorizedError } from "../lib/errors.js";
 
 export enum ValidationSource {
   BODY = "body",
@@ -14,13 +14,12 @@ const validateRequest = (
   schema: ZodSchema,
   source: ValidationSource = ValidationSource.BODY,
 ) => {
-  return (req: Request, _: Response, next: NextFunction) => {
+  return (req: Request, res: Response, next: NextFunction) => {
     try {
       const data = schema.parse(req[source]);
       Object.assign(req[source], data);
       next();
     } catch (error) {
-      console.log("Validation failed:", error);
       if (error instanceof ZodError) {
         const message = error.issues.map((err) => err.message).join(", ");
         return next(new BadRequestError(message));
@@ -29,4 +28,25 @@ const validateRequest = (
     }
   };
 };
+
+export const validateAuth = (
+  schema: ZodSchema,
+  source: ValidationSource = ValidationSource.BODY,
+) => {
+  return (req: Request, res: Response, next: NextFunction) => {
+    try {
+      console.log("Validating auth data:", req[source]);
+      const data = schema.parse(req[source]);
+      Object.assign(req[source], data);
+      next();
+    } catch (error) {
+      if (error instanceof ZodError) {
+        const message = error.issues.map((err) => err.message).join(", ");
+        return next(new UnauthorizedError(message));
+      }
+      next(error);
+    }
+  };
+};
+
 export default validateRequest;

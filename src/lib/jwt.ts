@@ -1,11 +1,6 @@
 import { tokenInfo } from "../config/config.js";
 import { User } from "../generated/prisma/client.js";
-import {
-  BadRequestError,
-  BadTokenError,
-  InternalServerError,
-  UnauthorizedError,
-} from "./errors.js";
+import { InternalServerError, UnauthorizedError } from "./errors.js";
 import jwt from "jsonwebtoken";
 
 export class JwtPayload {
@@ -54,7 +49,7 @@ export async function decodeToken(token: string): Promise<JwtPayload> {
   try {
     const decode = jwt.decode(token);
     if (!decode || typeof decode === "string")
-      throw new BadTokenError("Token decoding failed");
+      throw new UnauthorizedError("Token decoding failed");
     return decode as JwtPayload;
   } catch (error) {
     throw error;
@@ -65,13 +60,13 @@ export async function validateToken(
   token: string,
   secret: string,
 ): Promise<JwtPayload> {
-  if (!token) throw new BadTokenError("Token not defined");
+  if (!token) throw new UnauthorizedError("Token not defined");
   try {
     return new Promise((resole, reject) => {
       jwt.verify(token, secret, (err, decoded) => {
         if (err?.name === "TokenExpiredError")
-          reject(new BadTokenError("Token expired"));
-        if (err) reject(new BadTokenError("Token validation failed"));
+          reject(new UnauthorizedError("Token expired"));
+        if (err) reject(new UnauthorizedError("Token validation failed"));
         resole(decoded as JwtPayload);
       });
     });
@@ -123,12 +118,12 @@ export const getAccessToken = (authorization: string | undefined) => {
 
 export const validateTokenData = (payload: JwtPayload) => {
   if (payload.aud !== tokenInfo.audience)
-    throw new BadRequestError("Audience not found");
+    throw new UnauthorizedError("Audience not found");
   if (payload.iss !== tokenInfo.issuer)
-    throw new BadRequestError("Issuer not found");
-  if (!payload.sub) throw new BadRequestError("Subject not found");
-  if (!payload.exp) throw new BadRequestError("Expiration not found");
-  if (!payload.iat) throw new BadRequestError("Issued at not found");
-  if (!payload.prm) throw new BadRequestError("Permission not found");
+    throw new UnauthorizedError("Issuer not found");
+  if (!payload.sub) throw new UnauthorizedError("Subject not found");
+  if (!payload.exp) throw new UnauthorizedError("Expiration not found");
+  if (!payload.iat) throw new UnauthorizedError("Issued at not found");
+  if (!payload.prm) throw new UnauthorizedError("Permission not found");
   return true;
 };

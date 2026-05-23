@@ -58,7 +58,6 @@ export const verifyOtp = async (email: string, otp: string, action: string) => {
       status: "invalid",
     };
   } catch (error: any) {
-    console.error("Error verifying OTP:", error);
     throw new Error(error?.message || "Failed to verify OTP");
   }
 };
@@ -68,7 +67,6 @@ export const hashPassword = async (password: string) => {
     const saltRounds = 10;
     return await bcrypt.hash(password, saltRounds);
   } catch (error) {
-    console.error("Error hashing password:", error);
     throw new InternalServerError("Failed to hash password");
   }
 };
@@ -78,12 +76,5 @@ export const decryptPassword = async (password: string, hash: string) => {
     return await bcrypt.compare(password, hash);
   } catch (error) {
     throw new ValidationError("Failed to compare password");
-  }
-};
-
-export const revokeAllTokens = async (userId: string): Promise<void> => {
-  const keys = await redisClient.keys(`refresh:${userId}:*`);
-  if (keys.length > 0) {
-    await redisClient.del(keys);
   }
 };

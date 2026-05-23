@@ -1,7 +1,6 @@
 import { Request, Response, NextFunction } from "express";
 import redisClient from "../cache/index.js";
-// import { verifyToken } from "./utility.js";
-import { AppError, UnauthorizedError } from "./errors.js";
+import { AppError, ErrorCode } from "./errors.js";
 import Logger from "../../core/Logger.js";
 
 export const throttleNetwork = (
@@ -28,8 +27,7 @@ export const throttleNetwork = (
       req.retriesLeft = limit - current;
       next();
     } catch (error) {
-      console.error("Error in throttleNetwork middleware:", error);
-      next();
+      next(error);
     }
   };
 };
@@ -59,27 +57,9 @@ export const debounceNetwork = (window: number = 5) => {
 
       next();
     } catch (error) {
-      console.error("Error in debounceNetwork middleware:", error);
-      next(); // fail open
+      next(error); // fail open
     }
   };
-};
-
-export const validateUser = async (
-  req: Request,
-  res: Response,
-  next: NextFunction,
-) => {
-  try {
-    const token = req.headers.authorization?.split(" ")[1];
-    if (!token) throw new UnauthorizedError("Token not valid");
-    // const payload: TokenPayload = verifyToken(token);
-    // if (!payload.id) throw new UnauthorizedError("User not authorized ");
-    // req.user = payload;
-    next();
-  } catch (error) {
-    next(error);
-  }
 };
 
 export const errorHandler = (
@@ -93,16 +73,19 @@ export const errorHandler = (
     return res.status(err.statusCode).json({
       success: false,
       message: err.message,
+      code: err.code,
     });
   }
   if ((err as any)?.isAxiosError) {
     return res.status(502).json({
       success: false,
       message: "External service error",
+      code: ErrorCode.INTERNAL_SERVER_ERROR,
     });
   }
   return res.status(500).json({
     success: false,
     message: "Something went wrong",
+    code: ErrorCode.INTERNAL_SERVER_ERROR,
   });
 };

@@ -3,9 +3,11 @@ import * as authController from "../controllers/auth.controller.js";
 import { throttleNetwork } from "../lib/middleware.js";
 import validateRequest, { ValidationSource } from "../helper/validator.js";
 import {
+  userForgotPasswordSchema,
   userLoginSchema,
   userRegisterSchema,
   verifyUserSchema,
+  userResetPasswordSchema,
 } from "../models/auth.model.js";
 import authMiddleware from "../middleware/auth.middleware.js";
 
@@ -34,12 +36,21 @@ authRoutes
   );
 
 authRoutes.route("/me").get(authMiddleware, authController.getCurrentUser);
+authRoutes.route("/logout").post(authMiddleware, authController.logoutUser);
+authRoutes
+  .route("/forgot-password")
+  .post(
+    throttleNetwork("forgot-password", 5, 3600),
+    validateRequest(userForgotPasswordSchema, ValidationSource.BODY),
+    authController.forgotPassword,
+  );
 
-authRoutes.post("/logout", authController.logoutUser);
-authRoutes.post(
-  "/forgot-password",
-  throttleNetwork("forgot-password", 5, 3600),
-  authController.forgotPassword,
-);
+authRoutes
+  .route("/reset-password")
+  .post(
+    throttleNetwork("reset-password", 5, 3600),
+    validateRequest(userResetPasswordSchema, ValidationSource.BODY),
+    authController.resetPassword,
+  );
 
 export default authRoutes;

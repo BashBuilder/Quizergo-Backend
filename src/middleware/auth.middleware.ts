@@ -1,16 +1,15 @@
 import { NextFunction, Request, Response, Router } from "express";
-import validateRequest, { ValidationSource } from "../helper/validator.js";
+import { validateAuth, ValidationSource } from "../helper/validator.js";
 import { authenticateApiKeySchema } from "../models/apikey.model.js";
 import {
   createTokens,
-  getAccessToken,
   JwtPayload,
   validateToken,
   validateTokenData,
 } from "../lib/jwt.js";
 import { environment, tokenInfo } from "../config/config.js";
 import { prisma } from "../config/prisma.js";
-import { BadRequestError, UnauthorizedError } from "../lib/errors.js";
+import { UnauthorizedError } from "../lib/errors.js";
 import { KeyStatus } from "../generated/prisma/enums.js";
 import asyncHandler from "../helper/asyncHandle.js";
 import crypto from "node:crypto";
@@ -19,7 +18,7 @@ import { createUserToken } from "../controllers/keystore.controller.js";
 const authMiddleware: Router = Router();
 
 // authMiddleware.use(
-//   validateRequest(authenticateApiKeySchema, ValidationSource.HEADERS),
+//   validateAuth(authenticateApiKeySchema, ValidationSource.HEADERS),
 //   asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
 //     try {
 //       const accessToken = req?.cookies?.accessToken;
@@ -31,7 +30,7 @@ const authMiddleware: Router = Router();
 //       const user = await prisma.user.findUnique({
 //         where: { id: payload.sub },
 //       });
-//       if (!user) throw new BadRequestError("User does not exist");
+//       if (!user) throw new UnauthorizedError("User does not exist");
 //       req.user = user;
 //       const keyStore = await prisma.keyStore.findUnique({
 //         where: {
@@ -40,7 +39,7 @@ const authMiddleware: Router = Router();
 //           status: KeyStatus.ACTIVE,
 //         },
 //       });
-//       if (!keyStore) throw new BadRequestError("Invalid access token");
+//       if (!keyStore) throw new UnauthorizedError("Invalid access token");
 //       req.keyStore = keyStore;
 //       next();
 //     } catch (error) {
@@ -50,17 +49,13 @@ const authMiddleware: Router = Router();
 // );
 
 authMiddleware.use(
-  validateRequest(authenticateApiKeySchema, ValidationSource.COOKIES),
+  validateAuth(authenticateApiKeySchema, ValidationSource.COOKIES),
   asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
     try {
       const accessToken = req?.cookies?.accessToken;
-      if (!accessToken) throw new UnauthorizedError("Token not valid");
       req.accessToken = accessToken;
-
       let payload: JwtPayload;
-
       try {
-        // Try access token first
         payload = await validateToken(accessToken, tokenInfo.secret);
       } catch (err) {
         const refreshTokenCookie = req?.cookies?.refreshToken;
@@ -69,7 +64,7 @@ authMiddleware.use(
         const user = await prisma.user.findUnique({
           where: { id: payload.sub },
         });
-        if (!user) throw new BadRequestError("User does not exist");
+        if (!user) throw new UnauthorizedError("User does not exist");
 
         const keyStore = await prisma.keyStore.findUnique({
           where: {
@@ -78,7 +73,7 @@ authMiddleware.use(
             status: KeyStatus.ACTIVE,
           },
         });
-        if (!keyStore) throw new BadRequestError("Invalid refresh token");
+        if (!keyStore) throw new UnauthorizedError("Invalid refresh token");
 
         // Generate new tokens
         const accessTokenKey = crypto.randomBytes(64).toString("hex");
@@ -113,7 +108,7 @@ authMiddleware.use(
       // Access token was valid — continue normally
       validateTokenData(payload);
       const user = await prisma.user.findUnique({ where: { id: payload.sub } });
-      if (!user) throw new BadRequestError("User does not exist");
+      if (!user) throw new UnauthorizedError("User does not exist");
       req.user = user;
 
       const keyStore = await prisma.keyStore.findUnique({
@@ -123,7 +118,7 @@ authMiddleware.use(
           status: KeyStatus.ACTIVE,
         },
       });
-      if (!keyStore) throw new BadRequestError("Invalid access token");
+      if (!keyStore) throw new UnauthorizedError("Invalid access token");
       req.keyStore = keyStore;
 
       next();

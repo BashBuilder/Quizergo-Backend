@@ -105,17 +105,19 @@ export const loginUser = async (
     const accessTokenKey = crypto.randomBytes(64).toString("hex");
     const refreshTokenKey = crypto.randomBytes(64).toString("hex");
 
+    console.log("Generated keys:", { accessTokenKey, refreshTokenKey });
+
     await createUserToken(user, accessTokenKey, refreshTokenKey);
     const tokens = await createTokens(user, accessTokenKey, refreshTokenKey);
 
     res
       .status(200)
-      .cookie("accessToken", tokens.accessToken, {
-        httpOnly: true,
-        sameSite: "strict",
-        secure: environment === "production",
-        maxAge: 24 * 60 * 60 * 1000,
-      })
+      // .cookie("accessToken", tokens.accessToken, {
+      //   httpOnly: true,
+      //   sameSite: "strict",
+      //   secure: environment === "production",
+      //   maxAge: 24 * 60 * 60 * 1000,
+      // })
       .cookie("refreshToken", tokens.refreshToken, {
         httpOnly: true,
         sameSite: "strict",
@@ -135,13 +137,26 @@ export const logoutUser = async (
 ) => {
   try {
     const userId = req.user?.id;
-    if (!userId) throw new BadRequestError("User not found");
     await prisma.keyStore.delete({
       where: {
-        id: userId,
+        client: userId!,
       },
     });
-    res.status(200).json({ message: "User logged out successfully" });
+    res
+      .status(200)
+      .cookie("accessToken", "", {
+        httpOnly: true,
+        sameSite: "strict",
+        secure: environment === "production",
+        maxAge: 0,
+      })
+      .cookie("refreshToken", "", {
+        httpOnly: true,
+        sameSite: "strict",
+        secure: environment === "production",
+        maxAge: 0,
+      })
+      .json({ message: "User logged out successfully" });
   } catch (error: any) {
     next(handleFunctionError(error));
   }
@@ -152,43 +167,47 @@ export const getCurrentUser = async (req: Request, res: Response) => {
     const user = req.user;
     return res.status(200).json({ user });
   } catch (error: any) {
-    console.error("Error fetching current user:", error);
     res.status(500).json({
-      message: error?.message || "Error fetching current user, ",
+      message: error?.message || "An error occurred while fetching user data",
     });
   }
 };
 
-export const forgotPassword = async (req: Request, res: Response) => {
+export const forgotPassword = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   try {
     const { email } = req.body;
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
-      return res.status(404).json({ message: "Email is not registered" });
+      throw new BadRequestError("Email is not registered");
     }
     await generateOtp(email, "auth");
     res.status(200).json({
       message: "Otp sent to your email, verify to reset password",
     });
   } catch (error: any) {
-    console.error("Error handling forgot password request:", error);
-    res.status(500).json({
-      message: error?.message || "Error handling forgot password request, ",
-    });
+    next(error);
   }
 };
 
-export const resetPassword = async (req: Request, res: Response) => {
+export const resetPassword = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
   try {
-    const { email, otp, newPassword } = req.body;
+    const { email, newPassword } = req.body;
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
-      return res.status(404).json({ message: "User not found" });
+      throw new BadRequestError("Email is not registered");
     }
-    const isOtpValid = await verifyOtp(email, otp, "auth");
-    if (!(isOtpValid.status === "verified")) {
-      return res.status(400).json({ message: isOtpValid.message });
-    }
+    // const isOtpValid = await verifyOtp(email, otp, "auth");
+    // if (!(isOtpValid.status === "verified")) {
+    //   throw new BadRequestError(isOtpValid.message);
+    // }
     const hashedPassword = await hashPassword(newPassword);
     await prisma.user.update({
       where: { email },
@@ -196,9 +215,6 @@ export const resetPassword = async (req: Request, res: Response) => {
     });
     res.status(200).json({ message: "Password reset successfully" });
   } catch (error: any) {
-    console.error("Error resetting password:", error);
-    res.status(500).json({
-      message: error?.message || "Error resetting password, ",
-    });
+    next(error);
   }
 };
