@@ -7,3 +7,8 @@ export const subjectQuerySchema = z.object({
 // .strict({
 //   message: "Query params can include only name and question",
 // });
+
+export const questionQuerySchema = z.object({
+  subject: z.string("Subject must be type string"),
+  limit: z.coerce.number("Question must be type number").optional(),
+});
