@@ -13,6 +13,16 @@ enum Roles {
   TEACHER
 }
 
+enum KeyStatus {
+  ACTIVE
+  DEACTIVATED
+}
+
+enum Permissions {
+  GENERAL
+  ADMIN
+}
+
 model User {
   id         String   @id @default(uuid())
   email      String   @unique
@@ -24,14 +34,10 @@ model User {
   createdAt  DateTime @default(now())
   updatedAt  DateTime @updatedAt
 
-  keyStore KeyStore?
+  keyStore    KeyStore?
+  quizResults QuizResult[]
 
   @@index([id, email, isVerified])
-}
-
-enum KeyStatus {
-  ACTIVE
-  DEACTIVATED
 }
 
 model KeyStore {
@@ -48,11 +54,6 @@ model KeyStore {
   @@index([client, primaryKey, secondaryKey])
 }
 
-enum Permissions {
-  GENERAL
-  ADMIN
-}
-
 model ApiKey {
   id          String        @id @default(uuid())
   key         String        @unique
@@ -63,4 +64,30 @@ model ApiKey {
   updatedAt   DateTime      @updatedAt
 
   @@index([id, version, key])
+}
+
+model QuizResult {
+  id String @id @default(uuid())
+
+  userId String
+  user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+  sessionId String
+
+  score     Int
+  total     Int
+  timeTaken Int
+
+  correct   Json
+  incorrect Json
+  skipped   Json
+  breakdown Json[]
+
+  submittedAt DateTime
+
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([userId])
+  @@index([sessionId])
 }

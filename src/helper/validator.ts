@@ -16,6 +16,7 @@ const validateRequest = (
 ) => {
   return (req: Request, res: Response, next: NextFunction) => {
     try {
+      console.log(req[source]);
       const data = schema.parse(req[source]);
       Object.assign(req[source], data);
       next();
