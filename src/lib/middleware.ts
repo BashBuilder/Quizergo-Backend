@@ -83,6 +83,14 @@ export const errorHandler = (
       code: ErrorCode.INTERNAL_SERVER_ERROR,
     });
   }
+
+  if (err instanceof Error) {
+    return res.status(500).json({
+      success: false,
+      message: err.message,
+      code: ErrorCode.INTERNAL_SERVER_ERROR,
+    });
+  }
   return res.status(500).json({
     success: false,
     message: "Something went wrong",

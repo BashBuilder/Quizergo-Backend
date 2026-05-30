@@ -15,11 +15,6 @@ export const createSession = async (
   try {
     const user = req.user!;
     const { subjects, questionCount, duration } = req.body;
-    if (!subjects?.length) {
-      return res
-        .status(400)
-        .json({ message: "At least one subject is required" });
-    }
     const session = await sessionService.createSession(user.id, {
       subjects,
       questionCount,
@@ -73,7 +68,7 @@ export const submitSession = async (
     const { sessionId } = req.params;
     const { answers } = req.body;
 
-    const result = await sessionService.gradeSession(
+    const result: QuizResultReturnType = await sessionService.gradeSession(
       sessionId as string,
       user.id,
       answers ?? {},

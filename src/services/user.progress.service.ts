@@ -4,6 +4,7 @@ import { prisma } from "../config/prisma.js";
 
 export class UserProgressService {
   async saveResult(userId: string, result: QuizResultReturnType) {
+    if (!result.breakdown) return;
     await prisma.quizResult.create({
       data: {
         userId,
@@ -15,7 +16,7 @@ export class UserProgressService {
         total: result.total,
         timeTaken: result.timeTaken,
         submittedAt: new Date(result.submittedAt),
-        breakdown: result.breakdown,
+        breakdown: result.breakdown!,
       },
     });
 

@@ -13,6 +13,7 @@ import questionRoutes from "./routes/question.route.js";
 import { errorHandler } from "./lib/middleware.js";
 import Logger from "../core/Logger.js";
 import cookieParser from "cookie-parser";
+import quizRoutes from "./routes/quiz.route.js";
 
 const app = express();
 const PORT = process.env.PORT || 4000;
@@ -44,6 +45,7 @@ app.get("/health", (_, res) => {
 
 app.use(`/${version}/auth`, authRoutes);
 app.use(`/${version}/questions`, questionRoutes);
+app.use(`/${version}/quiz`, quizRoutes);
 
 app.use(errorHandler);
 const startServer = async () => {

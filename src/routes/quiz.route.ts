@@ -1,4 +1,3 @@
-// routes/quiz.routes.ts
 import { Router } from "express";
 import {
   createSession,
@@ -7,18 +6,34 @@ import {
 } from "../controllers/quiz.controller.js";
 import rateLimit from "express-rate-limit";
 import authMiddleware from "../middleware/auth.middleware.js";
+import validateRequest, { ValidationSource } from "../helper/validator.js";
+import {
+  createSessionModel,
+  answersModel,
+  sessionValidation,
+} from "../models/quiz.model.js";
 
-const quizRouter: Router = Router();
+const quizRoutes: Router = Router();
+const submitLimiter = rateLimit({ windowMs: 60_000, max: 1 });
 
-const submitLimiter = rateLimit({ windowMs: 60_000, max: 10 });
+quizRoutes.use(authMiddleware);
 
-quizRouter.post("/session", authMiddleware, createSession);
-quizRouter.patch("/session/:sessionId/sync", authMiddleware, syncAnswers);
-quizRouter.post(
+quizRoutes.post(
+  "/session",
+  validateRequest(createSessionModel, ValidationSource.BODY),
+  createSession,
+);
+quizRoutes.patch(
+  "/session/:sessionId/sync",
+  validateRequest(answersModel, ValidationSource.BODY),
+  syncAnswers,
+);
+quizRoutes.post(
   "/session/:sessionId/submit",
-  authMiddleware,
   submitLimiter,
+  validateRequest(sessionValidation, ValidationSource.PARAMS),
+  validateRequest(answersModel, ValidationSource.BODY),
   submitSession,
 );
 
-export default quizRouter;
+export default quizRoutes;

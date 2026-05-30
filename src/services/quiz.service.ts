@@ -10,8 +10,6 @@ export class QuizSessionService {
   private sanitizeQuestions(questions: AlocQuestionType[]) {
     return questions.map(({ answer, solution, ...q }) => q);
   }
-
-  // Cache questions per subject (shared across users)
   private async getCachedQuestions(
     subject: string,
   ): Promise<AlocQuestionType[] | null> {
@@ -19,7 +17,6 @@ export class QuizSessionService {
     const cached = await redisClient.get(key);
     return cached ? JSON.parse(cached) : null;
   }
-
   private async cacheQuestions(subject: string, questions: AlocQuestionType[]) {
     const key = `questions:subject:${subject}`;
     await redisClient.setEx(key, QUESTIONS_TTL, JSON.stringify(questions));
@@ -35,7 +32,7 @@ export class QuizSessionService {
     },
   ) {
     const sessionId = uuidv4();
-    const SESSION_TTL = config.duration ? (config.duration + 5) * 60 * 1000 : 0;
+    const SESSION_TTL = config.duration ? (config.duration + 5) * 60 : 0;
     const allQuestions: QuizQuestionsType[] = [];
     const sanitizedQuestions = [];
     for (const subject of config.subjects) {
@@ -100,7 +97,8 @@ export class QuizSessionService {
 
   async getSession(sessionId: string) {
     const data = await redisClient.get(`session:${sessionId}`);
-    return data ? JSON.parse(data) : null;
+    const ttl = await redisClient.ttl(`session:${sessionId}`);
+    return data && ttl ? { ...JSON.parse(data), ttl } : null;
   }
   async removeSession(sessionId: string) {
     const data = await redisClient.del(`session:${sessionId}`);
@@ -109,16 +107,17 @@ export class QuizSessionService {
 
   async syncAnswers(sessionId: string, userId: string, answers: AnswersType[]) {
     const session = await this.getSession(sessionId);
-    if (!session) throw new Error("Session not found or expired");
-    if (session.userId !== userId) throw new Error("Unauthorized");
-    if (session.submitted) throw new Error("Session already submitted");
+    if (!session) throw new ValidationError("Session not found or expired");
+    if (session.userId !== userId) throw new ValidationError("Unauthorized");
+    if (session.submitted)
+      throw new ValidationError("Session already submitted");
 
     session.answers = answers;
     session.lastSyncedAt = Date.now();
 
     await redisClient.setEx(
       `session:${sessionId}`,
-      session.expiresAt - Date.now() + 5 * 60 * 1000,
+      session.ttl,
       JSON.stringify(session),
     );
     return {

@@ -25,12 +25,13 @@ export const getQuestionsBySubject = async (
     const { subject: subjectQuery, limit } = req.query;
     const subjectValue = Array.isArray(subjectQuery)
       ? subjectQuery[0]
-      : (subjectQuery as string | undefined);
+      : (subjectQuery as string);
 
     if (!subjectValue) {
       return res.status(400).json({ message: "Subject is required" });
     }
 
+    // @ts-expect-error "type validation"
     const subject: string = subjectValue;
     const user = req.user;
     const alocService = new AlocQuestionService();
