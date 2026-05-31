@@ -7,10 +7,7 @@ const redisUrl = `redis://default:${redisConfig.password}@${redisConfig.host}:${
 const redisClient: RedisClientType = createClient({ url: redisUrl });
 
 redisClient.on("connect", () => console.log("Redis client connected"));
-redisClient.on("ready", () => console.log("Redis client ready"));
 redisClient.on("error", (err) => console.error("Redis client error", err));
-redisClient.on("end", () => console.log("Redis client disconnected"));
-redisClient.on("reconnecting", () => console.log("Redis client reconnecting"));
 
 export async function connectRedis() {
   try {
@@ -21,10 +18,10 @@ export async function connectRedis() {
   }
 }
 
-process.on("SIGINT", async () => {
-  await redisClient.quit();
-  console.log("Redis client disconnected");
-  process.exit(0);
-});
+export async function disconnectRedis() {
+  if (redisClient.isOpen) {
+    await redisClient.quit();
+  }
+}
 
 export default redisClient;

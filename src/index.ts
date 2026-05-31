@@ -1,62 +1,13 @@
-import express from "express";
-import "dotenv/config.js";
-import cors from "cors";
-import helmet from "helmet";
-// import mongoose from "mongoose";
-import authRoutes from "./routes/auth.route.js";
-import "./cache/index.js";
-import { prisma } from "./config/prisma.js";
-import { connectRedis } from "./cache/index.js";
-import "./services/email.service.js";
-import "./services/event.service.js";
-import questionRoutes from "./routes/question.route.js";
-import { errorHandler } from "./lib/middleware.js";
 import Logger from "../core/Logger.js";
-import cookieParser from "cookie-parser";
-import quizRoutes from "./routes/quiz.route.js";
+import app, { initializeApp, shutdown } from "./app.js";
 
-const app = express();
 const PORT = process.env.PORT || 4000;
-const version = "api/v1";
-
-// Middleware
-app.use(helmet());
-app.use(
-  cors({
-    origin: "http://localhost:3000",
-    credentials: true,
-    methods: ["GET", "POST", "PUT", "DELETE"],
-  }),
-);
-app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
-app.use(cookieParser());
-
-//Routes
-app.get("/", (_, res) => {
-  res.send("Hell There, Welcome to QUIZERGO API");
-});
-app.get("/health", (_, res) => {
-  res.json({
-    status: "OK",
-    version,
-  });
-});
-
-app.use(`/${version}/auth`, authRoutes);
-app.use(`/${version}/questions`, questionRoutes);
-app.use(`/${version}/quiz`, quizRoutes);
-
-app.use(errorHandler);
 const startServer = async () => {
   try {
     // await mongoose
     //   .connect(process.env.DATABASE_URL || "")
     // .then(() => console.log("Connected to MongoDB database"));
-    await prisma
-      .$connect()
-      .then(() => console.log("Connected to PostgreSQL database"));
-    await connectRedis();
+    await initializeApp();
     app.listen(PORT, () => {
       Logger.info(`Server is running on port ${PORT}`);
     });
@@ -65,8 +16,11 @@ const startServer = async () => {
   }
 };
 
-process.on("SIGINT", () => {
-  prisma.$disconnect();
+startServer();
+
+process.on("SIGINT", async () => {
+  await shutdown();
+  process.exit(0);
 });
 
-startServer();
+export default app;
