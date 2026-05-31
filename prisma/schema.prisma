@@ -66,6 +66,8 @@ model ApiKey {
   @@index([id, version, key])
 }
 
+// 
+
 model QuizResult {
   id String @id @default(uuid())
 
