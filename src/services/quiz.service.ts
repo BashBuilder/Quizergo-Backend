@@ -1,6 +1,6 @@
 import redisClient from "../cache/index.js";
 import eventEmitter from "../config/events.js";
-import { BadRequestError, ValidationError } from "../lib/errors.js";
+import { ValidationError } from "../lib/errors.js";
 import { AlocQuestionService } from "./aloc.question.service.js";
 import { v4 as uuidv4 } from "uuid";
 
@@ -129,7 +129,7 @@ export class QuizSessionService {
   async gradeSession(
     sessionId: string,
     userId: string,
-    finalAnswers: Record<number, string>,
+    finalAnswers: AnswersType[] | null,
   ) {
     const session = await this.getSession(sessionId);
     if (!session) throw new ValidationError("Session not found or expired");

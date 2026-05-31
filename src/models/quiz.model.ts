@@ -29,6 +29,7 @@ export const answersModel = z.object({
     )
     .min(1, "At least one answer is required"),
 });
+export type AnswerType = z.infer<typeof answersModel>;
 
 export const sessionValidation = z.object({
   sessionId: z.string("Session id is required"),
