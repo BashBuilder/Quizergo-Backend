@@ -58,9 +58,8 @@ export const initializeApp = async () => {
     Logger.error("Error starting server", error);
   }
 };
-process.on("SIGINT", () => {
-  prisma.$disconnect();
-});
+
+initializeApp();
 
 export async function shutdown() {
   await prisma.$disconnect();
