@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "test": "cross-env NODE_ENV=test vitest",
-    "test:run": "cross-env NODE_ENV=test vitest --run --verbose",
+    "test:run": "cross-env NODE_ENV=test vitest --run",
     "dev": "tsx watch src",
     "start": "tsx src/index.ts",
     "seed": "tsx prisma/seed.ts"

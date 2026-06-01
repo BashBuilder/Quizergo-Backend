@@ -2,7 +2,6 @@ import express, { Express } from "express";
 import "dotenv/config.js";
 import cors from "cors";
 import helmet from "helmet";
-// import mongoose from "mongoose";
 import authRoutes from "./routes/auth.route.js";
 import "./cache/index.js";
 import "./services/email.service.js";
@@ -31,17 +30,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
-//Routes
-app.get("/", (_, res) => {
-  res.send("Hell There, Welcome to QUIZERGO API");
-});
-app.get("/health", (_, res) => {
-  res.json({
-    status: "OK",
-    version,
-  });
-});
-
+app.get("/health", (_, res) => res.send("Server is ok"));
 app.use(`/${version}/auth`, authRoutes);
 app.use(`/${version}/questions`, questionRoutes);
 app.use(`/${version}/quiz`, quizRoutes);
@@ -52,7 +41,7 @@ export const initializeApp = async () => {
   try {
     await prisma
       .$connect()
-      .then(() => console.log("Connected to PostgreSQL database"));
+      .then(() => Logger.info("Connected to PostgreSQL database"));
     await connectRedis();
   } catch (error) {
     Logger.error("Error starting server", error);

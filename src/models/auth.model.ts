@@ -5,6 +5,8 @@ export const userLoginSchema = z.object({
   password: z.string("Password is required").min(1, "Password is required"),
 });
 
+export type UserLogin = z.infer<typeof userLoginSchema>;
+
 export const userRegisterSchema = z
   .object({
     email: z.email("Email not valid"),
@@ -24,14 +26,20 @@ export const userRegisterSchema = z
     path: ["confirmPassword"],
   });
 
+export type UserRegister = z.infer<typeof userRegisterSchema>;
+
 export const verifyUserSchema = z.object({
   email: z.email("Email not valid"),
   otp: z.string("Otp is required").min(1, "Otp is required"),
 });
 
+export type VerifyUser = z.infer<typeof verifyUserSchema>;
+
 export const userForgotPasswordSchema = z.object({
   email: z.email("Email not valid"),
 });
+
+export type UserForgotPassword = z.infer<typeof userForgotPasswordSchema>;
 
 export const userResetPasswordSchema = z
   .object({
@@ -48,3 +56,5 @@ export const userResetPasswordSchema = z
     message: "Passwords do not match",
     path: ["confirmPassword"],
   });
+
+export type UserResetPassword = z.infer<typeof userResetPasswordSchema>;

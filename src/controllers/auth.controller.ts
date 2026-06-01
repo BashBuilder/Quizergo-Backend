@@ -18,6 +18,7 @@ import crypto from "node:crypto";
 import { saveUserToken } from "./keystore.controller.js";
 import { createTokens } from "../lib/jwt.js";
 import { environment } from "../config/config.js";
+import { UserLogin, UserRegister, VerifyUser } from "../models/auth.model.js";
 
 export const registerUser = async (
   req: Request,
@@ -25,7 +26,7 @@ export const registerUser = async (
   next: NextFunction,
 ) => {
   try {
-    const { email, firstName, lastName, password } = req.body;
+    const { email, firstName, lastName, password } = req.body as UserRegister;
     const user = await prisma.user.findUnique({ where: { email } });
     if (user)
       throw new ValidationError("User already exist, login to continue");
@@ -54,9 +55,8 @@ export const verifyUser = async (
   res: Response,
   next: NextFunction,
 ) => {
-  const retriesLeft = req.retriesLeft || 0;
   try {
-    const { email, otp } = req.body;
+    const { email, otp } = req.body as VerifyUser;
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) throw new ValidationError("User does not exist");
     const otpRes = await verifyOtp(email, otp, "auth");
@@ -84,7 +84,7 @@ export const loginUser = async (
   next: NextFunction,
 ) => {
   try {
-    const { email, password } = req.body;
+    const { email, password } = req.body as UserLogin;
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) throw new UnauthorizedError("User does not exist");
     if (!user.isVerified) {
@@ -110,7 +110,6 @@ export const loginUser = async (
 
     res
       .status(200)
-      // .cookie("accessToken", "token", {
       .cookie("accessToken", tokens.accessToken, {
         httpOnly: true,
         sameSite: "strict",
