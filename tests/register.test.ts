@@ -4,15 +4,6 @@ import app, { version } from "../src/app.js";
 import { prisma } from "../src/config/prisma.js";
 import redisClient from "../src/cache/index.js";
 
-afterEach(async () => {
-  await prisma.keyStore.deleteMany();
-  await prisma.user.deleteMany();
-});
-
-afterAll(async () => {
-  // await prisma.$disconnect();
-});
-
 describe("Registeration and User email verification ", () => {
   const userPayload = {
     firstName: "Joe",
