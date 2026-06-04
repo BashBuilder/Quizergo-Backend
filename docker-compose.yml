@@ -1,3 +1,48 @@
+# services:
+#   app:
+#     build: .
+#     container_name: quizergo_backend
+#     ports:
+#       - "4000:4000"
+#     environment:
+#       - REDIS_HOST=redis
+#     depends_on:
+#       - redis
+#       - postgres
+#     restart: unless-stopped
+
+#   redis:
+#     image: redis/redis-stack:latest
+#     container_name: quizergo_redis
+#     ports:
+#       - "6379:6379"
+#       - "8001:8001"
+#     volumes:
+#       - redis_data:/data
+#     command:
+#       -["redis-server", "--requirepass", "password"]
+#       -["redis-server", "--appendonly", "yes"]
+
+#     restart: unless-stopped
+
+#   postgres:
+#     image: postgres:latest
+#     container_name: quizergo_postgres
+#     environment:
+#       - POSTGRES_HOST=postgres
+#       - POSTGRES_USER=postgres
+#       - POSTGRES_PASSWORD=postgres
+#       - POSTGRES_DB=postgres
+#     ports:
+#       - "5432:5432"
+#     volumes:
+#       - postgres_data:/var/lib/postgresql/data
+#     restart: unless-stopped
+
+# volumes:
+#   redis_data:
+#   postgres_data:
+
 services:
   app:
     build: .
@@ -5,7 +50,15 @@ services:
     ports:
       - "4000:4000"
     environment:
-      - REDIS_HOST=redis
+      REDIS_HOST: redis
+      REDIS_PORT: 6379
+
+      POSTGRES_HOST: postgres
+      POSTGRES_PORT: 5432
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: 12345
+      POSTGRES_DB: quizergo
+
     depends_on:
       - redis
       - postgres
@@ -19,24 +72,34 @@ services:
       - "8001:8001"
     volumes:
       - redis_data:/data
-    command: -["redis-server", "--requirepass", "password"]
-      -["redis-server", "--appendonly", "yes"]
-
+    command:
+      ["redis-server", "--appendonly", "yes", "--requirepass", "password"]
     restart: unless-stopped
 
   postgres:
-    image: postgres:latest
+    image: postgres:16-alpine
     container_name: quizergo_postgres
-    environment:
-      - POSTGRES_HOST=postgres
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
-      - POSTGRES_DB=postgres
     ports:
       - "5432:5432"
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: postgres
+      POSTGRES_DB: quizergo
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
+
+  pgadmin:
+    image: dpage/pgadmin4:latest
+    container_name: quizergo_pgadmin
+    ports:
+      - "5050:80"
+    environment:
+      PGADMIN_DEFAULT_EMAIL: iamadelowotan@gmail.com
+      PGADMIN_DEFAULT_PASSWORD: 12345
+    restart: unless-stopped
+    depends_on:
+      - postgres
 
 volumes:
   redis_data:
