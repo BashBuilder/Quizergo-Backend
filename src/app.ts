@@ -31,6 +31,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
 app.get("/health", (_, res) => res.send("Server is ok"));
+
 app.use(`/${version}/auth`, authRoutes);
 app.use(`/${version}/questions`, questionRoutes);
 app.use(`/${version}/quiz`, quizRoutes);

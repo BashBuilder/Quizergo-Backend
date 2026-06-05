@@ -1,63 +1,20 @@
-# services:
-#   app:
-#     build: .
-#     container_name: quizergo_backend
-#     ports:
-#       - "4000:4000"
-#     environment:
-#       - REDIS_HOST=redis
-#     depends_on:
-#       - redis
-#       - postgres
-#     restart: unless-stopped
-
-#   redis:
-#     image: redis/redis-stack:latest
-#     container_name: quizergo_redis
-#     ports:
-#       - "6379:6379"
-#       - "8001:8001"
-#     volumes:
-#       - redis_data:/data
-#     command:
-#       -["redis-server", "--requirepass", "password"]
-#       -["redis-server", "--appendonly", "yes"]
-
-#     restart: unless-stopped
-
-#   postgres:
-#     image: postgres:latest
-#     container_name: quizergo_postgres
-#     environment:
-#       - POSTGRES_HOST=postgres
-#       - POSTGRES_USER=postgres
-#       - POSTGRES_PASSWORD=postgres
-#       - POSTGRES_DB=postgres
-#     ports:
-#       - "5432:5432"
-#     volumes:
-#       - postgres_data:/var/lib/postgresql/data
-#     restart: unless-stopped
-
-# volumes:
-#   redis_data:
-#   postgres_data:
-
 services:
   app:
     build: .
     container_name: quizergo_backend
     ports:
       - "4000:4000"
+    volumes:
+      - .:/app
+      - node_modules:/app/node_modules
+    command: pnpm dev
     environment:
+      CHOKIDAR_USEPOLLING: "true"
+      # Redis environment
       REDIS_HOST: redis
-      REDIS_PORT: 6379
 
+      # PostgreSQL environment variables
       POSTGRES_HOST: postgres
-      POSTGRES_PORT: 5432
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: 12345
-      POSTGRES_DB: quizergo
 
     depends_on:
       - redis
@@ -82,9 +39,9 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_USER: postgres
-      POSTGRES_PASSWORD: postgres
-      POSTGRES_DB: quizergo
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+      POSTGRES_DB: ${POSTGRES_DB}
     volumes:
       - postgres_data:/var/lib/postgresql/data
     restart: unless-stopped
@@ -95,12 +52,13 @@ services:
     ports:
       - "5050:80"
     environment:
-      PGADMIN_DEFAULT_EMAIL: iamadelowotan@gmail.com
-      PGADMIN_DEFAULT_PASSWORD: 12345
+      PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL}
+      PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD}
     restart: unless-stopped
     depends_on:
       - postgres
 
 volumes:
+  node_modules:
   redis_data:
   postgres_data:
