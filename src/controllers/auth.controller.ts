@@ -11,7 +11,6 @@ import redisClient from "../cache/index.js";
 import {
   BadRequestError,
   handleFunctionError,
-  UnauthorizedError,
   ValidationError,
 } from "../lib/errors.js";
 import crypto from "node:crypto";
@@ -86,7 +85,7 @@ export const loginUser = async (
   try {
     const { email, password } = req.body as UserLogin;
     const user = await prisma.user.findUnique({ where: { email } });
-    if (!user) throw new UnauthorizedError("User does not exist");
+    if (!user) throw new ValidationError("User does not exist");
     if (!user.isVerified) {
       await generateOtp(email, "auth");
       throw new ValidationError(
