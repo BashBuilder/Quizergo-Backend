@@ -66,7 +66,28 @@ model ApiKey {
   @@index([id, version, key])
 }
 
-// 
+model Questions {
+  id       String @id @default(uuid())
+  question String
+  options  Json
+  answer   String
+
+  mockId      Int
+  section     String?
+  image       String?
+  solution    String?
+  examtype    String?
+  examyear    String?
+  questionNub Int
+  hasPassage  Boolean @default(false)
+  category    String?
+
+  version   Int      @default(1)
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@index([id])
+}
 
 model QuizResult {
   id String @id @default(uuid())
