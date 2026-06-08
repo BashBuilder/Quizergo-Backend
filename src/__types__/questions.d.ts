@@ -27,40 +27,57 @@ declare global {
     answers: Record<number, string>;
   }
 
+  interface AnswerType {
+    answers: AnswersType[] | null;
+  }
+
   interface QuizQuestionsType {
     subject: string;
     questions: AlocQuestionType[];
   }
 
+  interface BreakdownQuestion {
+    questionId: number; // mockId
+    question: string;
+    userAnswer: string | null;
+    correctAnswer: string;
+    solution: string | null;
+    status: "correct" | "incorrect" | "skipped";
+  }
+  interface BreakdownGroup {
+    subject: string;
+    questions: BreakdownQuestion[];
+  }
+
   interface QuizResultReturnType {
     sessionId: string;
     score: number;
-    correct: {
-      subject: string;
-      count: number;
-    }[];
-    incorrect: {
-      subject: string;
-      count: number;
-    }[];
-    skipped: {
-      subject: string;
-      count: number;
-    }[];
     total: number;
+    correct: { subject: string; count: number }[];
+    incorrect: { subject: string; count: number }[];
+    skipped: { subject: string; count: number }[];
     timeTaken: number;
-    breakdown: {
-      subject: string;
-      questions: {
-        questionId: number;
-        question: string;
-        userAnswer: string | undefined;
-        correctAnswer: string;
-        solution: string;
-        status: string;
-      }[];
-    }[];
+    breakdown: BreakdownGroup[];
     submittedAt: number;
+  }
+}
+
+// types/quiz.d.ts
+declare global {
+  interface QuizResultReturnType {
+    sessionId: string;
+    score: number;
+    total: number;
+    correct: { subject: string; count: number }[];
+    incorrect: { subject: string; count: number }[];
+    skipped: { subject: string; count: number }[];
+    timeTaken: number;
+    breakdown: BreakdownGroup[];
+    submittedAt: number;
+  }
+
+  interface AnswerType {
+    answers: AnswersType[] | null;
   }
 }
 

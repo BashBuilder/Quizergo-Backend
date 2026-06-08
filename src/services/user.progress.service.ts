@@ -1,93 +1,78 @@
-// services/user.progress.service.ts
+// // services/user.progress.service.ts
 
+// import { prisma } from "../config/prisma.js";
+
+// export class UserProgressService {
+//   async saveResult(userId: string, result: QuizResultReturnType) {
+//     if (!result.breakdown) return;
+//     await prisma.quizResult.create({
+//       data: {
+//         userId,
+//         sessionId: result.sessionId,
+//         score: result.score,
+//         correct: result.correct,
+//         incorrect: result.incorrect,
+//         skipped: result.skipped,
+//         total: result.total,
+//         timeTaken: result.timeTaken,
+//         submittedAt: new Date(result.submittedAt),
+//         breakdown: result.breakdown!,
+//       },
+//     });
+
+//   }
+// }
+
+// services/user.progress.service.ts
 import { prisma } from "../config/prisma.js";
 
 export class UserProgressService {
   async saveResult(userId: string, result: QuizResultReturnType) {
-    if (!result.breakdown) return;
+    if (!result.breakdown?.length) return;
+
+    // Collect all mockIds from breakdown
+    const mockIds = result.breakdown.flatMap((group) =>
+      group.questions.map((q) => q.questionId),
+    );
+
+    // Batch fetch Prisma Question records by mockId
+    const dbQuestions = await prisma.question.findMany({
+      where: { mockId: { in: mockIds } },
+      select: { id: true, mockId: true },
+    });
+
+    // Build mockId -> prisma UUID map
+    const mockIdToUuid = new Map(dbQuestions.map((q) => [q.mockId, q.id]));
+
+    // Build QuizAnswer create payloads
+    const answerPayloads = result.breakdown.flatMap((group) =>
+      group.questions
+        .filter((q) => mockIdToUuid.has(q.questionId)) // skip if question not in DB
+        .map((q) => ({
+          questionId: mockIdToUuid.get(q.questionId)!,
+          subject: group.subject,
+          userAnswer: q.userAnswer ?? null,
+          status: q.status.toUpperCase() as "CORRECT" | "INCORRECT" | "SKIPPED",
+          questionSnapshot: {
+            question: q.question,
+            correctAnswer: q.correctAnswer,
+            solution: q.solution,
+          },
+        })),
+    );
+
     await prisma.quizResult.create({
       data: {
         userId,
         sessionId: result.sessionId,
         score: result.score,
-        correct: result.correct,
-        incorrect: result.incorrect,
-        skipped: result.skipped,
         total: result.total,
         timeTaken: result.timeTaken,
         submittedAt: new Date(result.submittedAt),
-        breakdown: result.breakdown!,
+        answers: {
+          create: answerPayloads,
+        },
       },
     });
-
-    // Update user stats atomically
-    // await prisma.userStats.upsert({
-    //   where: { userId },
-    //   create: {
-    //     userId,
-    //     totalSessions: 1,
-    //     totalCorrect: result.correct,
-    //     totalQuestions: result.total,
-    //     bestScore: result.score,
-    //     totalXp: this.calculateXp(result),
-    //   },
-    //   update: {
-    //     totalSessions: { increment: 1 },
-    //     totalCorrect: { increment: result.correct },
-    //     totalQuestions: { increment: result.total },
-    //     bestScore: { set: undefined }, // handled below
-    //     totalXp: { increment: this.calculateXp(result) },
-    //   },
-    // });
-
-    // Update best score separately if improved
-    // await prisma.userStats.updateMany({
-    //   where: { userId, bestScore: { lt: result.score } },
-    //   data: { bestScore: result.score },
-    // });
-
-    // Update streak
-    // await this.updateStreak(userId);
   }
-
-  // private calculateXp(result: {
-  //   score: number;
-  //   total: number;
-  //   timeTaken: number;
-  // }) {
-  //   const base = result.total * 6;
-  //   const bonus = Math.round((result.score / 100) * result.total * 4);
-  //   // Speed bonus: full marks if under 1 min per question
-  //   const speedBonus = result.timeTaken < result.total * 60 ? 20 : 0;
-  //   return base + bonus + speedBonus;
-  // }
-
-  // private async updateStreak(userId: string) {
-  //   const today = new Date();
-  //   today.setHours(0, 0, 0, 0);
-
-  //   const stats = await prisma.userStats.findUnique({ where: { userId } });
-  //   if (!stats) return;
-
-  //   const lastActive = stats.lastActiveDate;
-  //   const yesterday = new Date(today);
-  //   yesterday.setDate(yesterday.getDate() - 1);
-
-  //   const isConsecutive =
-  //     lastActive &&
-  //     new Date(lastActive).setHours(0, 0, 0, 0) === yesterday.getTime();
-  //   const alreadyToday =
-  //     lastActive &&
-  //     new Date(lastActive).setHours(0, 0, 0, 0) === today.getTime();
-
-  //   if (alreadyToday) return; // already counted today
-
-  //   await prisma.userStats.update({
-  //     where: { userId },
-  //     data: {
-  //       streak: isConsecutive ? { increment: 1 } : 1,
-  //       lastActiveDate: today,
-  //     },
-  //   });
-  // }
 }

@@ -23,6 +23,12 @@ enum Permissions {
   ADMIN
 }
 
+enum QuestionStatus {
+  CORRECT
+  INCORRECT
+  SKIPPED
+}
+
 model User {
   id         String   @id @default(uuid())
   email      String   @unique
@@ -66,23 +72,20 @@ model ApiKey {
   @@index([id, version, key])
 }
 
-// {
-//   "a": "100",
-//   "b": "200",
-//   "c": "300",
-//   "d": "400"
-// }
-
 model Question {
   id String @id @default(uuid())
 
-  mockId String
+  mockId Int @unique
 
   subject String
   topic   String?
 
-  question String
-  answer   String
+  question    String
+  answer      String
+  section     String
+  questionNub Int?
+  hasPassage  Boolean @default(false)
+  category    String?
 
   options Json
 
@@ -101,33 +104,10 @@ model Question {
   quizAnswers QuizAnswer[]
 
   @@index([subject])
+  @@index([subject, topic])
+  @@index([subject, examYear])
+  @@index([mockId, subject])
 }
-
-// model QuizResult {
-//   id String @id @default(uuid())
-
-//   userId String
-//   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
-
-//   sessionId String
-
-//   score     Int
-//   total     Int
-//   timeTaken Int
-
-//   correct   Json
-//   incorrect Json
-//   skipped   Json
-//   breakdown Json[]
-
-//   submittedAt DateTime
-
-//   createdAt DateTime @default(now())
-//   updatedAt DateTime @updatedAt
-
-//   @@index([userId])
-//   @@index([sessionId])
-// }
 
 model QuizResult {
   id String @id @default(uuid())
@@ -140,16 +120,37 @@ model QuizResult {
   score Int
   total Int
 
-  percentage Float
+  answers QuizAnswer[]
 
-  timeTaken Int
-
+  timeTaken   Int
   submittedAt DateTime
-
-  // answers       QuizAnswer[]
-
-  createdAt DateTime @default(now())
+  createdAt   DateTime @default(now())
 
   @@index([userId])
   @@index([submittedAt])
+}
+
+model QuizAnswer {
+  id String @id @default(uuid())
+
+  quizResultId String
+  quizResult   QuizResult @relation(fields: [quizResultId], references: [id], onDelete: Cascade)
+
+  questionId String
+  question   Question @relation(fields: [questionId], references: [id])
+
+  subject String
+
+  userAnswer String?
+
+  status QuestionStatus
+
+  questionSnapshot Json
+
+  createdAt DateTime @default(now())
+
+  @@index([quizResultId])
+  @@index([questionId])
+  @@index([subject])
+  @@index([status])
 }
