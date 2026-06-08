@@ -66,28 +66,68 @@ model ApiKey {
   @@index([id, version, key])
 }
 
-model Questions {
-  id       String @id @default(uuid())
+// {
+//   "a": "100",
+//   "b": "200",
+//   "c": "300",
+//   "d": "400"
+// }
+
+model Question {
+  id String @id @default(uuid())
+
+  mockId String
+
+  subject String
+  topic   String?
+
   question String
-  options  Json
   answer   String
 
-  mockId      Int
-  section     String?
-  image       String?
-  solution    String?
-  examtype    String?
-  examyear    String?
-  questionNub Int
-  hasPassage  Boolean @default(false)
-  category    String?
+  options Json
 
-  version   Int      @default(1)
+  solution String?
+
+  image String?
+
+  examType String?
+  examYear String?
+
+  version Int @default(1)
+
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
 
-  @@index([id])
+  quizAnswers QuizAnswer[]
+
+  @@index([subject])
 }
+
+// model QuizResult {
+//   id String @id @default(uuid())
+
+//   userId String
+//   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
+
+//   sessionId String
+
+//   score     Int
+//   total     Int
+//   timeTaken Int
+
+//   correct   Json
+//   incorrect Json
+//   skipped   Json
+//   breakdown Json[]
+
+//   submittedAt DateTime
+
+//   createdAt DateTime @default(now())
+//   updatedAt DateTime @updatedAt
+
+//   @@index([userId])
+//   @@index([sessionId])
+// }
 
 model QuizResult {
   id String @id @default(uuid())
@@ -95,22 +135,21 @@ model QuizResult {
   userId String
   user   User   @relation(fields: [userId], references: [id], onDelete: Cascade)
 
-  sessionId String
+  sessionId String @unique
 
-  score     Int
-  total     Int
+  score Int
+  total Int
+
+  percentage Float
+
   timeTaken Int
-
-  correct   Json
-  incorrect Json
-  skipped   Json
-  breakdown Json[]
 
   submittedAt DateTime
 
+  // answers       QuizAnswer[]
+
   createdAt DateTime @default(now())
-  updatedAt DateTime @updatedAt
 
   @@index([userId])
-  @@index([sessionId])
+  @@index([submittedAt])
 }
