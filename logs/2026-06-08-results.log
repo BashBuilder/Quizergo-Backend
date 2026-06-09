@@ -8,3 +8,5 @@
 {"level":"info","message":"Connected to PostgreSQL database","timestamp":"2026-06-08T08:05:50.430Z"}
 {"level":"info","message":"Server is running on port 4000","timestamp":"2026-06-08T08:06:10.458Z"}
 {"level":"info","message":"Connected to PostgreSQL database","timestamp":"2026-06-08T08:06:10.791Z"}
+{"level":"info","message":"Server is running on port 4000","timestamp":"2026-06-08T08:07:06.674Z"}
+{"level":"info","message":"Connected to PostgreSQL database","timestamp":"2026-06-08T08:07:07.077Z"}

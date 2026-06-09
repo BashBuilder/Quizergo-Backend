@@ -1,47 +1,15 @@
-// // services/user.progress.service.ts
-
-// import { prisma } from "../config/prisma.js";
-
-// export class UserProgressService {
-//   async saveResult(userId: string, result: QuizResultReturnType) {
-//     if (!result.breakdown) return;
-//     await prisma.quizResult.create({
-//       data: {
-//         userId,
-//         sessionId: result.sessionId,
-//         score: result.score,
-//         correct: result.correct,
-//         incorrect: result.incorrect,
-//         skipped: result.skipped,
-//         total: result.total,
-//         timeTaken: result.timeTaken,
-//         submittedAt: new Date(result.submittedAt),
-//         breakdown: result.breakdown!,
-//       },
-//     });
-
-//   }
-// }
-
-// services/user.progress.service.ts
 import { prisma } from "../config/prisma.js";
 
 export class UserProgressService {
   async saveResult(userId: string, result: QuizResultReturnType) {
     if (!result.breakdown?.length) return;
-
-    // Collect all mockIds from breakdown
     const mockIds = result.breakdown.flatMap((group) =>
       group.questions.map((q) => q.questionId),
     );
-
-    // Batch fetch Prisma Question records by mockId
     const dbQuestions = await prisma.question.findMany({
       where: { mockId: { in: mockIds } },
       select: { id: true, mockId: true },
     });
-
-    // Build mockId -> prisma UUID map
     const mockIdToUuid = new Map(dbQuestions.map((q) => [q.mockId, q.id]));
 
     // Build QuizAnswer create payloads

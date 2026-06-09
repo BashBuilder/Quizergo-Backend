@@ -12,6 +12,8 @@ export const createSessionModel = z.object({
     .min(1, "Duration is required"),
 });
 
+export type CreateSessionType = z.infer<typeof createSessionModel>;
+
 export const answersModel = z.object({
   answers: z
     .array(
@@ -34,3 +36,5 @@ export type AnswerType = z.infer<typeof answersModel>;
 export const sessionValidation = z.object({
   sessionId: z.string("Session id is required"),
 });
+
+export type SessionValidationType = z.infer<typeof sessionValidation>;
