@@ -1,6 +1,6 @@
 import "dotenv/config";
 import { defineConfig } from "prisma/config";
-import { postresConnectionString } from "./src/config/prisma.js";
+import { postresConnectionString } from "./src/config/config.js";
 
 export default defineConfig({
   schema: "prisma/schema.prisma",
