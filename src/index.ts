@@ -1,5 +1,6 @@
+import "dotenv/config.js";
 import Logger from "../core/Logger.js";
-import app, { initializeApp, shutdown } from "./app.js";
+import app, { shutdown } from "./app.js";
 
 const PORT = process.env.PORT || 4000;
 const startServer = async () => {
@@ -11,12 +12,8 @@ const startServer = async () => {
     Logger.error("Error starting server", error);
   }
 };
-
 startServer();
-
 process.on("SIGINT", async () => {
   await shutdown();
   process.exit(0);
 });
-
-export default app;

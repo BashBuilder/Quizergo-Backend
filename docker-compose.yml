@@ -12,7 +12,6 @@ services:
       CHOKIDAR_USEPOLLING: "true"
       # Redis environment
       REDIS_HOST: redis
-
       # PostgreSQL environment variables
       POSTGRES_HOST: postgres
 

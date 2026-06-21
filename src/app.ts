@@ -4,7 +4,6 @@ import cors from "cors";
 import helmet from "helmet";
 import authRoutes from "./routes/auth.route.js";
 import "./cache/index.js";
-import "./services/email.service.js";
 import "./services/event.service.js";
 import questionRoutes from "./routes/question.route.js";
 import { errorHandler } from "./lib/middleware.js";
@@ -30,14 +29,14 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 app.use(cookieParser());
 
+// Routes
 app.get("/health", (_, res) => res.send("Server is ok"));
-
 app.use(`/${version}/auth`, authRoutes);
 app.use(`/${version}/questions`, questionRoutes);
 app.use(`/${version}/quiz`, quizRoutes);
 
+// Error handler interceptor
 app.use(errorHandler);
-
 export const initializeApp = async () => {
   try {
     await prisma
