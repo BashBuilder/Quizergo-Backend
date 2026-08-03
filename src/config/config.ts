@@ -25,4 +25,5 @@ const TEST_DB = process.env["POSTGRES_TEST_DB"] || "";
 
 const db = environment === "test" ? TEST_DB : DB;
 
-export const postresConnectionString = `postgresql://${USER}:${PASSWORD}@${HOST}:${PORT}/${db}`;
+// export const postresConnectionString = `postgresql://${USER}:${PASSWORD}@${HOST}:${PORT}/${db}`;
+export const postresConnectionString = process.env.DB_URL || "";

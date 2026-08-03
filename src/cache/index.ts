@@ -2,7 +2,7 @@ import { createClient, RedisClientType } from "redis";
 import { redisConfig } from "../config/redis.js";
 import Logger from "../../core/Logger.js";
 
-const redisUrl = `redis://default:${redisConfig.password}@${redisConfig.host}:${redisConfig.port}`;
+const redisUrl = redisConfig.url;
 
 const redisClient: RedisClientType = createClient({ url: redisUrl });
 
