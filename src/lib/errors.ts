@@ -52,11 +52,11 @@ export class ValidationError extends AppError {
   }
 }
 
-// export class BadTokenError extends AppError {
-//   constructor(message = "Unauthorized") {
-//     super(message, 401, ErrorCode.UNAUTHORIZED);
-//   }
-// }
+export class BadTokenError extends AppError {
+  constructor(message = "Invalid token") {
+    super(message, 401, ErrorCode.UNAUTHORIZED);
+  }
+}
 
 export class ForbiddenError extends AppError {
   constructor(message = "Forbidden") {

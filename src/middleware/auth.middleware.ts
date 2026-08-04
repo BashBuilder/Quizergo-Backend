@@ -9,70 +9,27 @@ import {
 } from "../lib/jwt.js";
 import { environment, tokenInfo } from "../config/config.js";
 import { prisma } from "../config/prisma.js";
-import { UnauthorizedError } from "../lib/errors.js";
+import { BadTokenError, UnauthorizedError } from "../lib/errors.js";
 import { KeyStatus } from "../generated/prisma/enums.js";
 import asyncHandler from "../helper/asyncHandle.js";
-import crypto from "node:crypto";
-import { saveUserToken } from "../controllers/keystore.controller.js";
 
-const authMiddleware: Router = Router();
+const requireAuth: Router = Router();
 
-authMiddleware.use(
-  validateAuth(authenticateApiSchema, ValidationSource.COOKIES),
+requireAuth.use(
+  // validateAuth(authenticateApiSchema, ValidationSource.COOKIES),
+  // validateAuth(authenticateApiSchema, ValidationSource.HEADERS),
   asyncHandler(async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const accessToken = req?.cookies?.accessToken;
+      // const accessToken = req?.cookies?.accessToken;
+      const accessToken = req?.headers?.authorization?.split(" ")[1];
+      if (!accessToken) throw new UnauthorizedError("Access token not found");
+
       req.accessToken = accessToken;
       let payload: JwtPayload;
       try {
         payload = await validateToken(accessToken, tokenInfo.secret);
       } catch (err) {
-        const refreshTokenCookie = req?.cookies?.refreshToken;
-        payload = await validateToken(refreshTokenCookie, tokenInfo.secret);
-        validateTokenData(payload);
-        const user = await prisma.user.findUnique({
-          where: { id: payload.sub },
-        });
-        if (!user) throw new UnauthorizedError("User does not exist");
-
-        const keyStore = await prisma.keyStore.findUnique({
-          where: {
-            client: payload.sub,
-            secondaryKey: payload.prm,
-            status: KeyStatus.ACTIVE,
-          },
-        });
-        if (!keyStore) throw new UnauthorizedError("Invalid refresh token");
-
-        // Generate new tokens
-        const accessTokenKey = crypto.randomBytes(64).toString("hex");
-        const refreshTokenKey = crypto.randomBytes(64).toString("hex");
-
-        await saveUserToken(user, accessTokenKey, refreshTokenKey);
-        const tokens = await createTokens(
-          user,
-          accessTokenKey,
-          refreshTokenKey,
-        );
-
-        // Set new cookies on the same response
-        res
-          .cookie("accessToken", tokens.accessToken, {
-            httpOnly: true,
-            sameSite: "strict",
-            secure: environment === "production",
-            maxAge: 24 * 60 * 60 * 1000,
-          })
-          .cookie("refreshToken", tokens.refreshToken, {
-            httpOnly: true,
-            sameSite: "strict",
-            secure: environment === "production",
-            maxAge: 30 * 24 * 60 * 60 * 1000,
-          });
-
-        req.user = user;
-        req.keyStore = keyStore;
-        return next(); // skip the rest, already populated
+        throw new BadTokenError();
       }
 
       // Access token was valid — continue normally
@@ -88,9 +45,8 @@ authMiddleware.use(
           status: KeyStatus.ACTIVE,
         },
       });
-      if (!keyStore) throw new UnauthorizedError("Invalid access token");
+      if (!keyStore) throw new BadTokenError();
       req.keyStore = keyStore;
-
       next();
     } catch (error) {
       next(error);
@@ -98,4 +54,4 @@ authMiddleware.use(
   }),
 );
 
-export default authMiddleware;
+export default requireAuth;

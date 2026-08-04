@@ -5,7 +5,7 @@ import {
   submitSession,
 } from "../controllers/quiz.controller.js";
 import rateLimit from "express-rate-limit";
-import authMiddleware from "../middleware/auth.middleware.js";
+import requireAuth from "../middleware/auth.middleware.js";
 import validateRequest, { ValidationSource } from "../helper/validator.js";
 import {
   createSessionModel,
@@ -16,7 +16,7 @@ import {
 const quizRoutes: Router = Router();
 const submitLimiter = rateLimit({ windowMs: 60_000, max: 1 });
 
-quizRoutes.use(authMiddleware);
+quizRoutes.use(requireAuth);
 
 quizRoutes.post(
   "/session",

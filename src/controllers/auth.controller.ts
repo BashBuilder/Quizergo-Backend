@@ -10,14 +10,16 @@ import eventEmitter from "../config/events.js";
 import redisClient from "../cache/index.js";
 import {
   BadRequestError,
+  BadTokenError,
   handleFunctionError,
   ValidationError,
 } from "../lib/errors.js";
 import crypto from "node:crypto";
 import { saveUserToken } from "./keystore.controller.js";
-import { createTokens } from "../lib/jwt.js";
-import { environment } from "../config/config.js";
+import { createTokens, validateToken, validateTokenData } from "../lib/jwt.js";
+import { environment, tokenInfo } from "../config/config.js";
 import { UserLogin, UserRegister, VerifyUser } from "../models/auth.model.js";
+import { KeyStatus } from "../generated/prisma/enums.js";
 
 export const registerUser = async (
   req: Request,
@@ -121,7 +123,12 @@ export const loginUser = async (
         secure: environment === "production",
         maxAge: 30 * 24 * 60 * 60 * 1000,
       })
-      .json({ message: "User logged in successfully", user: rest });
+      .json({
+        message: "User logged in successfully",
+        accessToken: tokens.accessToken,
+        refreshToken: tokens.refreshToken,
+        user: rest,
+      });
   } catch (error) {
     next(handleFunctionError(error));
   }
@@ -212,6 +219,74 @@ export const resetPassword = async (
     });
     res.status(200).json({ message: "Password reset successfully" });
   } catch (error: any) {
+    next(error);
+  }
+};
+
+export const refreshToken = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const accessToken = req?.headers?.authorization?.split(" ")[1];
+    const { refreshToken: refreshTokenBody } = req.body;
+
+    if (accessToken) {
+      try {
+        const payload = await validateToken(accessToken, tokenInfo.secret);
+        validateTokenData(payload);
+
+        return res.status(200).json({
+          accessToken,
+          refreshToken: refreshTokenBody,
+        });
+      } catch {}
+    }
+
+    const payload = await validateToken(refreshTokenBody, tokenInfo.secret);
+    validateTokenData(payload);
+    const user = await prisma.user.findUnique({
+      where: { id: payload.sub },
+    });
+    if (!user) throw new BadTokenError();
+
+    const keyStore = await prisma.keyStore.findUnique({
+      where: {
+        client: payload.sub,
+        secondaryKey: payload.prm,
+        status: KeyStatus.ACTIVE,
+      },
+    });
+    if (!keyStore) throw new BadTokenError("Invalid refresh token");
+
+    // Generate new tokens
+    const accessTokenKey = crypto.randomBytes(64).toString("hex");
+    const refreshTokenKey = crypto.randomBytes(64).toString("hex");
+
+    await saveUserToken(user, accessTokenKey, refreshTokenKey);
+    const tokens = await createTokens(user, accessTokenKey, refreshTokenKey);
+
+    // Set new cookies on the same response
+    // res
+    //   .cookie("accessToken", tokens.accessToken, {
+    //     httpOnly: true,
+    //     sameSite: "strict",
+    //     secure: environment === "production",
+    //     maxAge: 24 * 60 * 60 * 1000,
+    //   })
+    //   .cookie("refreshToken", tokens.refreshToken, {
+    //     httpOnly: true,
+    //     sameSite: "strict",
+    //     secure: environment === "production",
+    //     maxAge: 30 * 24 * 60 * 60 * 1000,
+    // });
+
+    req.user = user;
+    req.keyStore = keyStore;
+
+    res.status(200).json(tokens);
+  } catch (error) {
     next(error);
   }
 };

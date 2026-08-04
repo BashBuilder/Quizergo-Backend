@@ -9,7 +9,7 @@ import {
   verifyUserSchema,
   userResetPasswordSchema,
 } from "../models/auth.model.js";
-import authMiddleware from "../middleware/auth.middleware.js";
+import requireAuth from "../middleware/auth.middleware.js";
 
 const authRoutes: Router = Router();
 
@@ -35,8 +35,8 @@ authRoutes
     authController.loginUser,
   );
 
-authRoutes.route("/me").get(authMiddleware, authController.getCurrentUser);
-authRoutes.route("/logout").post(authMiddleware, authController.logoutUser);
+authRoutes.route("/me").get(requireAuth, authController.getCurrentUser);
+authRoutes.route("/logout").post(requireAuth, authController.logoutUser);
 authRoutes
   .route("/forgot-password")
   .post(
@@ -52,5 +52,9 @@ authRoutes
     validateRequest(userResetPasswordSchema, ValidationSource.BODY),
     authController.resetPassword,
   );
+
+authRoutes
+  .route("/refresh")
+  .post(throttleNetwork("refresh", 5, 3600), authController.refreshToken);
 
 export default authRoutes;
