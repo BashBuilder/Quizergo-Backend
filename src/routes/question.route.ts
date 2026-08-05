@@ -16,7 +16,7 @@ const questionRoutes: Router = Router();
 questionRoutes.route("/subjects").get(questionController.getSubjectLists);
 
 questionRoutes
-  .route("/questions")
+  .route("")
   .get(
     requireAuth,
     validateRequest(questionQuerySchema, ValidationSource.QUERY),

@@ -19,17 +19,17 @@ const submitLimiter = rateLimit({ windowMs: 60_000, max: 1 });
 quizRoutes.use(requireAuth);
 
 quizRoutes.post(
-  "/session",
+  "",
   validateRequest(createSessionModel, ValidationSource.BODY),
   createSession,
 );
 quizRoutes.patch(
-  "/session/:sessionId/sync",
+  "/:sessionId/sync",
   validateRequest(answersModel, ValidationSource.BODY),
   syncAnswers,
 );
 quizRoutes.post(
-  "/session/:sessionId/submit",
+  "/:sessionId/submit",
   submitLimiter,
   validateRequest(sessionValidation, ValidationSource.PARAMS),
   validateRequest(answersModel, ValidationSource.BODY),

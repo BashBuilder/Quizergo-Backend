@@ -3,7 +3,7 @@ import eventEmitter from "../config/events.js";
 import { QuizSessionService } from "../services/quiz.service.js";
 import { UserProgressService } from "../services/user.progress.service.js";
 import {
-  AnswerValidationType,
+  AnswerType,
   CreateSessionType,
   SessionValidationType,
 } from "../models/quiz.model.js";
@@ -45,7 +45,7 @@ export const syncAnswers = async (
   try {
     const user = req.user!;
     const { sessionId } = req.params as SessionValidationType;
-    const { answers } = req.body as AnswerValidationType;
+    const { answers } = req.body as AnswerType;
 
     const result = await sessionService.syncAnswers(
       sessionId as string,
@@ -69,7 +69,7 @@ export const submitSession = async (
   try {
     const user = req.user!;
     const { sessionId } = req.params as SessionValidationType;
-    const { answers } = req.body as AnswerValidationType;
+    const { answers } = req.body as AnswerType;
 
     const result = await sessionService.gradeSession(
       sessionId,
