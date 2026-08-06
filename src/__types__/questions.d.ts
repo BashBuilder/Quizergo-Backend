@@ -27,10 +27,6 @@ declare global {
     answers: Record<number, string>;
   }
 
-  // interface AnswerType {
-  //   answers: AnswersType[] | null;
-  // }
-
   interface QuizQuestionsType {
     subject: string;
     questions: AlocQuestionType[];
@@ -39,6 +35,7 @@ declare global {
   interface BreakdownQuestion {
     questionId: number; // mockId
     question: string;
+    option: Option;
     userAnswer: string | null;
     correctAnswer: string;
     solution: string | null;

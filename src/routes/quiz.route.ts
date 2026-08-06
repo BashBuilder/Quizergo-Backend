@@ -14,7 +14,7 @@ import {
 } from "../models/quiz.model.js";
 
 const quizRoutes: Router = Router();
-const submitLimiter = rateLimit({ windowMs: 60_000, max: 1 });
+const submitLimiter = rateLimit({ windowMs: 10_000, max: 1 });
 
 quizRoutes.use(requireAuth);
 

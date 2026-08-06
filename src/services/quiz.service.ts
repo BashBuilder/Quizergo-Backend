@@ -200,6 +200,7 @@ export class QuizSessionService {
         return {
           questionId: q.id, // mockId
           question: q.question,
+          option: q.option,
           userAnswer,
           correctAnswer: q.answer,
           solution: q.solution ?? null,
