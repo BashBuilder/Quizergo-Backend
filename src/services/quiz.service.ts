@@ -201,6 +201,7 @@ export class QuizSessionService {
           questionId: q.id, // mockId
           question: q.question,
           option: q.option,
+          image: q.image ?? null,
           userAnswer,
           correctAnswer: q.answer,
           solution: q.solution ?? null,

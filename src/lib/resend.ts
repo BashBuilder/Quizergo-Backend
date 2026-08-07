@@ -2,7 +2,7 @@ import { resend } from "../config/resend.js";
 
 export const sendWelcomeEmail = async (email: string, name: string) => {
   await resend.emails.send({
-    from: "Timmy <anthony@quizergo.com>",
+    from: "Timmy <anthony@quizergo.online>",
     to: email,
     subject: "Welcome to QUIZERGO!",
     html: `<!DOCTYPE html>
@@ -73,7 +73,7 @@ export const sendWelcomeEmail = async (email: string, name: string) => {
 
 export const sendOTPEmail = async (email: string, otp: string) => {
   await resend.emails.send({
-    from: "Timmy <anthony@quizergo.com>",
+    from: "Timmy <anthony@quizergo.online>",
     to: email,
     subject: "QUIZERGO OTP",
     html: `<!DOCTYPE html>
@@ -130,7 +130,7 @@ export const sendOTPEmail = async (email: string, otp: string) => {
         <p>OTP: ${otp}</p>
         <p>Best regards,<br>
           The QUIZERGO Team</p>
-        <p class="footer">If you have any questions, please contact us at <a href="mailto:s4d0g@example.com">s4d0g@example.com</a></p>
+        <p class="footer">If you have any questions, please contact us at <a href="mailto:contact@email.quizergo.online">contact@email.quizergo.online</a></p>
       </div>
     </body>
     </html>`,

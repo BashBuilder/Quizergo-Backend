@@ -36,6 +36,7 @@ declare global {
     questionId: number; // mockId
     question: string;
     option: Option;
+    image: string | null;
     userAnswer: string | null;
     correctAnswer: string;
     solution: string | null;
