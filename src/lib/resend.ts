@@ -1,5 +1,5 @@
 import Logger from "../../core/Logger.js";
-import { resend } from "../config/resend.js";
+import { resend, RESEND_CONTACT_EMAIL } from "../config/resend.js";
 
 const LOGO_URL = "https://i.postimg.cc/0jXWMx1m/logo.png";
 const APP_URL = "https://quizergo.online";
@@ -174,5 +174,44 @@ export const sendOTPEmail = async (email: string, otp: string) => {
   } catch (error) {
     Logger.error("Failed to send OTP email", error);
     throw new Error("Failed to send OTP email");
+  }
+};
+
+export const forwardContactEmail = async (
+  email: string,
+  subject: string,
+  message: string,
+) => {
+  const bodyHtml = `
+    <h1 style="margin:0 0 12px; font-size:24px; font-weight:700; color:${BRAND_DARK};">
+      New contact message from QuizerGo user with email ${email}
+    </h1>
+    <p style="margin:0 0 24px; font-size:15px; line-height:24px; color:${BRAND_MUTED};">
+      ${message}
+    </p>
+
+    <p style="margin:0 0 24px; font-size:13px; line-height:20px; color:#a8a29e;">
+      Didn't request this code? You can safely ignore this email.
+    </p>
+
+    <p style="margin:0; font-size:14px; line-height:22px; color:${BRAND_MUTED};">
+      Best,<br />
+      <strong style="color:${BRAND_DARK};">The QuizerGo Team</strong>
+    </p>
+  `;
+
+  try {
+    await resend.emails.send({
+      from: "QuizerGo Contact <contact@quizergo.online>",
+      to: RESEND_CONTACT_EMAIL,
+      subject: subject,
+      html: emailLayout({
+        previewText: `You have a new contact message from QuizerGo user.`,
+        bodyHtml,
+      }),
+    });
+  } catch (error) {
+    Logger.error("Failed to send contact email", error);
+    throw new Error("Failed to send contact email");
   }
 };
