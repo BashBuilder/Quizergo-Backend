@@ -20,3 +20,5 @@
 {"level":"info","message":"Server is running on port 4000","timestamp":"2026-08-08T08:40:39.411Z"}
 {"level":"info","message":"Connected to PostgreSQL database","timestamp":"2026-08-08T08:40:51.667Z"}
 {"level":"info","message":"Server is running on port 4000","timestamp":"2026-08-08T08:40:51.689Z"}
+{"level":"info","message":"Connected to PostgreSQL database","timestamp":"2026-08-08T08:41:08.919Z"}
+{"level":"info","message":"Server is running on port 4000","timestamp":"2026-08-08T08:41:08.942Z"}
