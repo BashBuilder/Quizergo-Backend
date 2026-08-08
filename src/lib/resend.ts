@@ -1,4 +1,4 @@
-import Logger from "../../core/Logger.js";
+import Logger from "../core/Logger.js";
 import { resend, RESEND_CONTACT_EMAIL } from "../config/resend.js";
 
 const LOGO_URL = "https://i.postimg.cc/0jXWMx1m/logo.png";

@@ -1,6 +1,6 @@
 import { createClient, RedisClientType } from "redis";
 import { redisConfig } from "../config/redis.js";
-import Logger from "../../core/Logger.js";
+import Logger from "../core/Logger.js";
 
 const redisUrl = redisConfig.url;
 

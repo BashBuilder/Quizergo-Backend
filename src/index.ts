@@ -1,5 +1,5 @@
 import "dotenv/config.js";
-import Logger from "../core/Logger.js";
+import Logger from "./core/Logger.js";
 import app, { shutdown } from "./app.js";
 
 const PORT = process.env.PORT || 4000;

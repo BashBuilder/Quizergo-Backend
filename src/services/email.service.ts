@@ -1,4 +1,4 @@
-import Logger from "../../core/Logger.js";
+import Logger from "../core/Logger.js";
 import eventEmitter from "../config/events.js";
 import { sendWelcomeEmail } from "../lib/resend.js";
 

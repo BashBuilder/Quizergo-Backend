@@ -1,7 +1,7 @@
 import { Request, Response, NextFunction } from "express";
 import redisClient from "../cache/index.js";
 import { AppError, ErrorCode } from "./errors.js";
-import Logger from "../../core/Logger.js";
+import Logger from "../core/Logger.js";
 
 export const throttleNetwork = (
   action: string,

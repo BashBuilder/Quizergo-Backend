@@ -8,7 +8,7 @@ import { errorHandler } from "./lib/middleware.js";
 import cookieParser from "cookie-parser";
 import { prisma } from "./config/prisma.js";
 import { connectRedis, disconnectRedis } from "./cache/index.js";
-import Logger from "../core/Logger.js";
+import Logger from "./core/Logger.js";
 import { registerRoutes } from "./routes/index.js";
 
 const app: Express = express();

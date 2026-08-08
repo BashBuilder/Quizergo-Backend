@@ -37,7 +37,7 @@
     "prisma",
     "tests",
     "types",
-    "core",
+    "src/core",
     "prisma.config.ts"
   ]
 }
