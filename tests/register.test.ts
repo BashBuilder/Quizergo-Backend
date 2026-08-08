@@ -1,8 +1,9 @@
 import { it, describe, expect, afterEach, afterAll, vi } from "vitest";
 import request from "supertest";
-import app, { version } from "../src/app.js";
+import app from "../src/app.js";
 import { prisma } from "../src/config/prisma.js";
 import redisClient from "../src/cache/index.js";
+import { version } from "../src/routes/index.js";
 
 describe("Registeration and User email verification ", () => {
   const userPayload = {
