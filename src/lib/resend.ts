@@ -88,25 +88,26 @@ function emailLayout({
 
 // --- Welcome email ---------------------------------------------------------
 
+// <table role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 0 28px;">
+//   <tr>
+//     <td style="border-radius:12px; background-color:${BRAND_ORANGE};">
+//       <a href="${APP_URL}" style="display:inline-block; padding:14px 28px; font-size:15px; font-weight:600; color:#ffffff; text-decoration:none;">
+//         Start practicing &rarr;
+//       </a>
+//     </td>
+//   </tr>
+// </table>
+
 export const sendWelcomeEmail = async (email: string, name: string) => {
   const bodyHtml = `
     <h1 style="margin:0 0 12px; font-size:24px; font-weight:700; color:${BRAND_DARK};">
-      Welcome, ${name}! 🎉
+      Welcome, ${name}! 
     </h1>
     <p style="margin:0 0 24px; font-size:15px; line-height:24px; color:${BRAND_MUTED};">
       You're all set. QuizerGo gives you real past questions, timed mock exams, and instant
       feedback on every attempt -- everything you need to walk into your next exam prepared.
     </p>
 
-    <table role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 0 28px;">
-      <tr>
-        <td style="border-radius:12px; background-color:${BRAND_ORANGE};">
-          <a href="${APP_URL}" style="display:inline-block; padding:14px 28px; font-size:15px; font-weight:600; color:#ffffff; text-decoration:none;">
-            Start practicing &rarr;
-          </a>
-        </td>
-      </tr>
-    </table>
 
     <p style="margin:0; font-size:14px; line-height:22px; color:${BRAND_MUTED};">
       Best,<br />
