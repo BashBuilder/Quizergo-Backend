@@ -37,6 +37,7 @@ authRoutes
 
 authRoutes.route("/me").get(requireAuth, authController.getCurrentUser);
 authRoutes.route("/logout").post(requireAuth, authController.logoutUser);
+
 authRoutes
   .route("/forgot-password")
   .post(

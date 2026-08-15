@@ -14,8 +14,6 @@ export class UserProgressService {
       select: { id: true, mockId: true },
     });
     const mockIdToUuid = new Map(dbQuestions.map((q) => [q.mockId, q.id]));
-
-    // Build QuizAnswer create payloads
     const answerPayloads: QuizAnswerCreatePayload[] = result.breakdown.flatMap(
       (group) =>
         group.questions

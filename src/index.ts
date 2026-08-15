@@ -12,7 +12,9 @@ const startServer = async () => {
     Logger.error("Error starting server", error);
   }
 };
+
 startServer();
+
 process.on("SIGINT", async () => {
   await shutdown();
   process.exit(0);
