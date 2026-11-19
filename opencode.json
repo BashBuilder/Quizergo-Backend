@@ -1,23 +1,15 @@
 {
   "$schema": "https://opencode.ai/config.json",
-  "instructions": ["backend/agent.md", "frontend/agent.md"],
+  "instructions": ["agent.md"],
   "watcher": {
     "ignore": [
       "node_modules/**",
       "**/node_modules/**",
-      ".venv/**",
-      "**/.venv/**",
-      "**/__pycache__/**",
-      "**/.pytest_cache/**",
-      "**/.mypy_cache/**",
-      "**/.ruff_cache/**",
-      "**/.next/**",
       "**/dist/**",
       "**/build/**",
       "**/coverage/**",
-      "**/playwright-report/**",
-      "**/test-results/**",
-      "**/generated_assets/**",
+      "logs/**",
+      "src/generated/**",
       ".git/**"
     ]
   },
@@ -30,33 +22,27 @@
       "*.pem": "deny",
       "*.key": "deny",
       "*node_modules/*": "deny",
-      "*.venv/*": "deny",
-      "*__pycache__/*": "deny",
-      "*.pytest_cache/*": "deny",
-      "*.mypy_cache/*": "deny",
-      "*.ruff_cache/*": "deny",
-      "*.next/*": "deny",
       "*dist/*": "deny",
       "*build/*": "deny",
       "*coverage/*": "deny",
-      "*playwright-report/*": "deny",
-      "*test-results/*": "deny",
-      "*generated_assets/*": "deny",
+      "logs/*": "deny",
+      "*.log": "deny",
+      "*.log.gz": "deny",
       "*pnpm-lock.yaml": "deny",
-      "*package-lock.json": "deny",
-      "*uv.lock": "deny",
-      "*.png": "deny",
-      "*.jpg": "deny",
-      "*.jpeg": "deny",
-      "*.webp": "deny",
-      "*.mp4": "deny",
-      "*.safetensors": "deny"
+      "*package-lock.json": "deny"
+    },
+    "edit": {
+      "*": "allow",
+      "src/generated/*": "deny",
+      "*pnpm-lock.yaml": "deny",
+      "*.env": "deny",
+      "*.env.*": "deny",
+      "*.env.example": "allow"
     },
     "bash": {
       "*": "allow",
       "*node_modules*": "deny",
-      "*pnpm-lock.yaml*": "deny",
-      "*uv.lock*": "deny"
+      "*pnpm-lock.yaml*": "deny"
     }
   }
 }
