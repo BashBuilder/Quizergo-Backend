@@ -18,18 +18,12 @@ registerRoutes(app);
 
 app.use(errorHandler);
 export const initializeApp = async () => {
-  try {
-    await handleEnv();
-    // await prisma
-    //   .$connect()
-    //   .then(() => Logger.info("Connected to PostgreSQL database"));
-    // await connectRedis();
-  } catch (error) {
-    Logger.error("Error starting server", error);
-  }
+  await handleEnv();
+  await prisma
+    .$connect()
+    .then(() => Logger.info("Connected to PostgreSQL database"));
+  await connectRedis();
 };
-
-initializeApp();
 
 export async function shutdown() {
   await prisma.$disconnect();

@@ -61,10 +61,11 @@ See `.env.example`. Never read, print, or commit `.env`. Code actually reads:
 `JWT_ALGORITHM`, `ALOC_API_KEY`, `ALOC_BASE_URL`, `DB_URL` (Postgres connection
 string), `REDIS_URL`, `RESEND_API_KEY`, `RESEND_CONTACT_EMAIL`.
 
-> Note: `.env.example` is out of sync with the code (it lists `POSTGRES_*` and
-> `REDIS_HOST/PORT/PASSWORD`, but the code uses `DB_URL` and `REDIS_URL`, and
-> `RESEND_CONTACT_EMAIL` is missing). When you add a new env var, add it to
-> `.env.example` with a comment, and read it **only** through `src/config/`.
+> Note: every env var is validated at startup by the Zod schema in
+> `src/utils/env.util.ts` (`handleEnv`), so keep that schema, `.env.example`
+> and this list in sync when adding a variable. When you add a new env var, add
+> it to `.env.example` with a comment, add it to the schema, and read it
+> **only** through `src/config/`. Never log env values.
 
 ## 5. Project structure
 
@@ -297,9 +298,12 @@ Example: adding a `leaderboard` feature.
 
 Be aware of these; don't copy them into new code, and flag them if relevant to your task.
 
-1. `src/utils/env.util.ts` `handleEnv()` **always throws** (and logs `JWT_SECRET`
-   to the console). `app.ts` catches and logs it, so it currently does nothing
-   useful. It should validate required env vars with Zod and must never log secrets.
+1. `src/utils/env.util.ts` `handleEnv()` validates every required env var with
+   Zod (messages name the variable, never its value) and throws a
+   `ConfigurationError` when one is missing/invalid. `initializeApp()` is
+   `await`ed in `src/index.ts` before `app.listen`, so a bad environment exits
+   the process instead of starting a broken server. Keep the schema in sync
+   when adding env vars.
 2. `connectRedis()` and `prisma.$connect()` are **commented out** in
    `initializeApp()`, so the Redis connection is not explicitly established at
    startup. Verify the connection path before relying on Redis in new code.

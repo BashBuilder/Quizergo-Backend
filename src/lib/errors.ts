@@ -11,6 +11,7 @@ export enum ErrorCode {
   TOO_MANY_REQUESTS = "TOO_MANY_REQUESTS",
   TIMEOUT = "TIMEOUT",
   INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR",
+  CONFIGURATION_ERROR = "CONFIGURATION_ERROR",
 }
 
 // errors/AppError.ts
@@ -91,6 +92,12 @@ export class TimeoutError extends AppError {
 export class InternalServerError extends AppError {
   constructor(message = "Internal Server Error") {
     super(message, 500, ErrorCode.INTERNAL_SERVER_ERROR);
+  }
+}
+
+export class ConfigurationError extends AppError {
+  constructor(message = "Invalid application configuration") {
+    super(message, 500, ErrorCode.CONFIGURATION_ERROR);
   }
 }
 
