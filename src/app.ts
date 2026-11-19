@@ -9,6 +9,7 @@ import { connectRedis, disconnectRedis } from "./cache/index.js";
 import Logger from "./core/Logger.js";
 import { registerRoutes } from "./routes/index.js";
 import registerMiddleware from "./middleware/index.js";
+import { handleEnv } from "./utils/env.util.js";
 
 const app: Express = express();
 
@@ -18,10 +19,11 @@ registerRoutes(app);
 app.use(errorHandler);
 export const initializeApp = async () => {
   try {
-    await prisma
-      .$connect()
-      .then(() => Logger.info("Connected to PostgreSQL database"));
-    await connectRedis();
+    await handleEnv();
+    // await prisma
+    //   .$connect()
+    //   .then(() => Logger.info("Connected to PostgreSQL database"));
+    // await connectRedis();
   } catch (error) {
     Logger.error("Error starting server", error);
   }
