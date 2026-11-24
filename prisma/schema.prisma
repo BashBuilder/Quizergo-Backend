@@ -75,7 +75,7 @@ model ApiKey {
 model Question {
   id String @id @default(uuid())
 
-  mockId Int @unique
+  mockId Int?
 
   subject String
   topic   String?
@@ -107,6 +107,7 @@ model Question {
   @@index([subject, topic])
   @@index([subject, examYear])
   @@index([mockId, subject])
+  @@unique([subject, mockId])
 }
 
 model QuizResult {

@@ -17,6 +17,58 @@ Questions are **not owned by this service**. They are fetched from the external
 ALOC API, cached in Redis, and graded server-side. Only finished results are
 persisted to PostgreSQL.
 
+## Question Format and Data Structure
+
+When generating or populating questions for any subject, follow these requirements:
+
+1. **Data File**
+   - Create a JSON file inside the `data/` directory, named after the subject (e.g., `literature.json`, `mathematics.json`, `english.json`).
+   - Each file must contain a valid JSON array of question objects as already declared in the project.
+   - Ensure the JSON is properly structured, valid, and consistent with the existing question schema.
+
+2. **Question Sources and Authenticity**
+   - Research and retrieve authentic JAMB questions for the specified examination year (2026 by default).
+   - Prioritize credible sources such as MySchool, ALOC and other reputable educational platforms.
+   - Do not fabricate questions or present generated questions as authentic past examination questions.
+   - Where possible, cross-reference questions and answers across multiple credible sources.
+   - If an original question cannot be verified, clearly distinguish it from an officially sourced JAMB question.
+
+3. **Question Formatting**
+   - Questions must follow the standard JAMB examination structure and conventions.
+   - Format question content for HTML rendering using appropriate semantic HTML elements where necessary.
+   - Use elements such as `<strong>`, `<em>`, `<u>`, `<sub>`, `<sup>`, `<p>`, `<ol>`, `<ul>`, `<br>` and others where appropriate.
+   - Preserve mathematical expressions, scientific notation, special characters, tables, passages, and other subject-specific formatting requirements.
+   - Ensure questions remain readable and render correctly in the application's question interface.
+
+4. **Question Structure**
+   - Follow the standard JAMB question count and examination structure for the relevant subject. Where the examination format specifies 40 questions, provide exactly 40 questions per examination set.
+   - Each question must contain the appropriate answer options (A, B, C, and D), except where the official examination format specifies otherwise.
+   - Every question must have one clearly identified correct answer.
+   - Avoid duplicated questions, repeated options, ambiguous wording, and incorrect answer mappings.
+
+5. **Solutions and Explanations**
+   - Every question must include a `solutions` field containing a correct, comprehensive, step-by-step explanation.
+   - Explanations must be written in simple language that a child or beginner can easily understand.
+   - Explain the reasoning behind the correct answer rather than simply restating it.
+   - Where applicable, explain calculations, formulas, definitions, concepts, and why the other options are incorrect.
+   - Use appropriate HTML formatting in explanations to improve readability.
+   - Never include unverified answers or explanations. Validate correctness before adding questions to the dataset.
+
+6. **Categories and Topics**
+   - The `category` field must contain the appropriate official JAMB syllabus topic for the question.
+   - Use the official syllabus for the relevant subject to determine topic classifications.
+   - Do not use arbitrary categories, broad generic labels, or topics that do not accurately represent the question being tested.
+   - Ensure topic names remain consistent across questions belonging to the same syllabus topic.
+
+7. **Quality Assurance**
+   - Validate the JSON structure before completing the task.
+   - Confirm that every question has all required fields and valid answer options.
+   - Verify that the correct answer matches the explanation.
+   - Check for duplicates, formatting errors, missing solutions, and incorrect topic classifications.
+   - Ensure all questions meet the required examination standard and are suitable for the intended learners.
+
+**Important:** These requirements apply universally to every subject supported by the application. Subject-specific differences, including question counts, examination structure, answer options, and formatting conventions, must follow the applicable official JAMB syllabus and examination guidelines rather than assuming that every subject uses an identical format.
+
 ## 2. Tech stack
 
 | Concern       | Choice                                                         |
@@ -43,6 +95,7 @@ pnpm start          # node dist/index.js
 pnpm test           # vitest (watch), NODE_ENV=test
 pnpm test:run       # vitest --run
 pnpm seed           # creates an API key (prints raw key once)
+pnpm import:questions data/mathematics.json mathematics  # bulk-import questions (dedup by subject + exam year + question number, DB assigns UUID, mockId left NULL)
 
 pnpm prisma migrate dev --name <what_changed>   # create + apply migration
 pnpm prisma generate                            # regenerate client

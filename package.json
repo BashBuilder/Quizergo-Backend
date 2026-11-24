@@ -9,7 +9,8 @@
     "dev": "tsx watch src/index.ts",
     "build": "prisma generate && tsc",
     "start": "node dist/index.js",
-    "seed": "tsx prisma/seed.ts"
+    "seed": "tsx prisma/seed.ts",
+    "import:questions": "tsx prisma/import.questions.ts"
   },
   "prisma": {
     "seed": "tsx prisma/seed.ts"

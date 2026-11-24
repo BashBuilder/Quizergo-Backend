@@ -1,0 +1,762 @@
+[
+  {
+    "id": 79385,
+    "question": "When two statements or comparisons are apparently contradictory, we have an example of",
+    "option": {
+      "a": "contrast",
+      "b": "irony",
+      "c": "paradox",
+      "d": "parallelism"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>A <strong>paradox</strong> is a statement or comparison that seems contradictory but may still be true.</p><p>Irony is a contrast between what is expected and what happens; contrast is a general difference; parallelism is balanced grammatical structure.</p><p>Therefore, <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 1,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79386,
+    "question": "The theme of a literary work is the",
+    "option": {
+      "a": "different views on a particular topic",
+      "b": "dominant pre-occupation of the work",
+      "c": "psychological issues in the work",
+      "d": "interesting issues raised in the work"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>A theme is the central idea or the dominant concern that runs through a literary work.</p><p>It is more than a topic or an interesting issue; it is the main idea the writer keeps exploring.</p><p>Therefore, <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 2,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79387,
+    "question": "When a protagonist is purged of the dominant emotions of pity and fear at the end of a tragedy, it is called",
+    "option": {
+      "a": "dementia",
+      "b": "redemption",
+      "c": "purgation",
+      "d": "catharsis"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p><strong>Catharsis</strong> is the emotional cleansing or purging of pity and fear that the audience experiences at the end of a tragedy.</p><p>Redemption means rescue or salvation, while dementia is unrelated to drama.</p><p>Therefore, <strong>option D</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 3,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79388,
+    "question": "An exaggeration or overstatement in literature is a",
+    "option": {
+      "a": "metaphor",
+      "b": "hyperbole",
+      "c": "soliloquy",
+      "d": "hexameter"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p><strong>Hyperbole</strong> is deliberate exaggeration or overstatement used for emphasis or effect.</p><p>A metaphor is a comparison, a soliloquy is a speech made alone on stage, and a hexameter is a metrical line.</p><p>Therefore, <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 4,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79467,
+    "question": "A melodramatic play is based on",
+    "option": {
+      "a": "sensational plot and characters",
+      "b": "the playwright's didactic overtones",
+      "c": "a melodious manipulation of events",
+      "d": "ingredients that mellow down events"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p><strong>Melodrama</strong> relies on sensational plots, exaggerated characters, and strong emotional appeal.</p><p>It is not defined by didactic overtones, pleasant music, or events that calm down.</p><p>Therefore, <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 5,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79468,
+    "question": "In drama, a conspicuous weakness in the character of the protagonist contributing to his downfall is referred to as",
+    "option": {
+      "a": "a catharsis",
+      "b": "a tragic flaw",
+      "c": "an anagnorisis",
+      "d": "a catastrophe"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>A <strong>tragic flaw</strong> (hamartia) is a weakness in the protagonist that helps to bring about his downfall.</p><p>Catharsis is emotional purging, anagnorisis is a moment of recognition, and catastrophe is the final disaster.</p><p>Therefore, <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 6,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79470,
+    "question": "Comic relief is",
+    "option": {
+      "a": "a device used in the theatre where a play ends in marriage",
+      "b": "the use of hearty and wholesome laughter in plays",
+      "c": "a figure of speech used in comic theatre",
+      "d": "the use of humorous characters' speeches or scenes in a tragic work"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p><strong>Comic relief</strong> is a humorous scene, speech, or character introduced into a serious or tragic work.</p><p>It breaks tension for the audience; it is not simply a play ending in marriage or a figure of speech.</p><p>Therefore, <strong>option D</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 7,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79472,
+    "question": "The technique used to bring the plot of a play to an abrupt end is called",
+    "option": {
+      "a": "denouement",
+      "b": "endnote",
+      "c": "deus ex machina",
+      "d": "startnote"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p><strong>Deus ex machina</strong> is an unexpected intervention or device that solves a difficult situation and ends the plot abruptly.</p><p>Denouement is the gradual unravelling of the plot, while “endnote” and “startnote” are not dramatic techniques.</p><p>Therefore, <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 8,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79473,
+    "question": "When a story is told in a song and passed down by word of mouth, it is called",
+    "option": {
+      "a": "a sonnet",
+      "b": "an epic",
+      "c": "a singer's story",
+      "d": "a ballad"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>A <strong>ballad</strong> is a song-like narrative poem that is often passed down orally.</p><p>A sonnet is a fourteen-line poem, an epic is a long heroic narrative, and “a singer's story” is not the literary term.</p><p>Therefore, <strong>option D</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 9,
+    "hasPassage": 0,
+    "category": "General Literary Principles"
+  },
+  {
+    "id": 79389,
+    "question": "The poem above is memorable for its",
+    "option": {
+      "a": "metaphor",
+      "b": "lyricism",
+      "c": "pun",
+      "d": "heroism"
+    },
+    "section": "<p><em>Ibadan, running splash of rust and gold – flung and scattered among seven hills like broken china in the sun.</em><br>— J.P. Clark, “Ibadan”</p>",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The extract uses vivid, musical language and striking imagery: “running splash of rust and gold” and “broken china in the sun”.</p><p>This song-like, emotional quality is <strong>lyricism</strong>. A simile is present (“like broken china”), but the question asks what makes the whole poem memorable.</p><p>Pun and heroism are not the main qualities here, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 10,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79390,
+    "question": "The landscape described in the passage above is",
+    "option": {
+      "a": "overpowering",
+      "b": "hostile",
+      "c": "formidable",
+      "d": "friendly"
+    },
+    "section": "<p>Going up the river was like travelling back to the earliest beginnings of the world when vegetation rioted on the earth, and the big trees were kings. An empty stream, a great silence, an impenetrable forest. The air was warm, thick, heavy, sluggish.</p><p>— Joseph Conrad, <em>Heart of Darkness</em></p>",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The landscape is huge, dark, silent, and threatening: “impenetrable forest” and air that is “warm, thick, heavy, sluggish”.</p><p>This creates an atmosphere that is awe-inspiring and fearful, that is, <strong>formidable</strong>.</p><p>It is certainly not friendly; “hostile” is close but too one-sided, while <strong>option C</strong> best captures both awe and fear.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 11,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79391,
+    "question": "The beauty of this poem is built upon its",
+    "option": {
+      "a": "extended images of treasure and gun",
+      "b": "the protagonist's boastfulness",
+      "c": "the arrangement of the lines",
+      "d": "rhythm"
+    },
+    "section": "<p>“…Akosua Nowa has touched my manhood;<br>Tell her, red ant upon the tree;<br>If she passes this way, I am gone,<br>I am gone to load my gun<br>No matter how hidden deep her treasure,<br>By my father's coffin I swear<br>I'll shoot my way to it this day;<br>Son of the hunter King<br>There is liquid fire in my gun!”<br>— Joe de Graft, “Akosua Nowa”</p>",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The poem sustains images of the treasure, the gun, the red ant, and “liquid fire” across several lines.</p><p>These recurring, <strong>extended images</strong> build the poem's beauty and intensity.</p><p>Boastfulness is the persona's tone, not the source of the poem's beauty; line arrangement and rhythm are secondary, so <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 12,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79392,
+    "question": "The above lines are an example of",
+    "option": {
+      "a": "alliteration",
+      "b": "tautology",
+      "c": "euphemism",
+      "d": "comic relief"
+    },
+    "section": "<p>“With beaded bubbles winking at the brim,<br>And purple-stained mouth,”<br>— John Keats, “Ode to a Nightingale”</p>",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>“<strong>b</strong>eaded <strong>b</strong>ubbles” repeats the initial /b/ sound, and “<strong>p</strong>urple-stained” adds a /p/ sound.</p><p>The repetition of initial consonant sounds is <strong>alliteration</strong>.</p><p>Tautology is needless repetition of meaning, euphemism is mild language, and comic relief is a dramatic device, so <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 13,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79393,
+    "question": "One dominant image presented in the poem above is that of",
+    "option": {
+      "a": "tiredness",
+      "b": "spent life",
+      "c": "death",
+      "d": "summer"
+    },
+    "section": "<p>The leaves are withered. Roses fold and shrink<br>Dog, the panting athlete shows his tongue<br>A dwarfed shadow flees. Hides under legs.<br>Nuts wrinkle and crack<br>— W. Kamera, “Poems in Four Parts”</p>",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>Withered leaves, shrinking roses, a panting dog, a fleeing shadow, and cracked nuts all suggest intense heat and drought.</p><p>Together these are images of <strong>summer</strong>.</p><p>Tiredness and spent life are possible feelings, but the dominant seasonal image is summer; death is too extreme, so <strong>option D</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 14,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79444,
+    "question": "In the passage above, the author evokes the atmosphere of",
+    "option": {
+      "a": "cannibalism",
+      "b": "monstrosity",
+      "c": "doom",
+      "d": "evil"
+    },
+    "section": "<p>“At the most remote end of the crypt there appeared another less spacious. Its walls had been lined with human remains piled to the vault overhead, in the fashion of the great catacombs of Paris. Three sides of this interior crypt were still ornamented in this manner. From the fourth the bones had been thrown down, and lay promiscuously upon the earth, forming at one point a mound of some size.”</p><p>— Edgar Allan Poe, “The Cask of Amontillado”</p>",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The crypt, human remains, scattered bones, and darkness create a gloomy, fatal atmosphere.</p><p>This is an atmosphere of <strong>doom</strong> — the feeling that death and disaster are near.</p><p>Cannibalism and monstrosity are not suggested, and “evil” is too abstract, so <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 15,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79474,
+    "question": "The dominant device in the extract above is",
+    "option": {
+      "a": "rhetorical emphasis",
+      "b": "progressive repetition",
+      "c": "progressive amplification",
+      "d": "bold contrast"
+    },
+    "section": "<p>“Beautiful Kareendi, flower of my heart. No one but you can type them. For I want to send them care of the address of your heart, by the post of your heart, to be read by the eye of your heart, thereafter to be kept within your heart, sealed there forever and ever.”</p>",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The phrase “of your heart” is repeated and expanded: the address of your heart, the post of your heart, the eye of your heart, kept within your heart.</p><p>This repetition builds in intensity and detail, which is <strong>progressive amplification</strong>.</p><p>It is more than simple repetition or contrast, so <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 16,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79475,
+    "question": "Effect in the above passage is achieved through the use of",
+    "option": {
+      "a": "visual images",
+      "b": "detailed description",
+      "c": "adequate punctuation",
+      "d": "subdued tone"
+    },
+    "section": "<p>“A slight breeze murmured in the air. Grasses swayed as if in resentment. Over the horizon, just beneath the spectrum of the ascending sun, horizontal bands of red cloud hung menacingly above the tips of the trees and the morning air smelled of burnt clay.”</p><p>— Isidore Okpewho, <em>The Victims</em></p>",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The passage appeals strongly to sight: red cloud, the ascending sun, swaying grasses, and burnt clay.</p><p>The effect is therefore achieved mainly through <strong>visual images</strong>.</p><p>Detailed description and punctuation support the effect, but the dominant device is visual imagery; the tone is not subdued, so <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 17,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79476,
+    "question": "The writer of the lines above",
+    "option": {
+      "a": "is critical of the modern woman",
+      "b": "ridicules Ocol's value judgment",
+      "c": "shuns the old type of woman",
+      "d": "appraises people who speak English"
+    },
+    "section": "<p>Ocol rejects the old type.<br>He is in love with a modern woman<br>He is in love with a beautiful girl<br>Who speaks English.<br>— Okot p'Bitek, “Song of Lawino”</p>",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The lines present Ocol rejecting the “old type” and choosing a girl simply because she “speaks English”.</p><p>The writer is mocking Ocol's shallow <strong>value judgment</strong>.</p><p>The poem does not attack the modern woman or praise English speakers, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 18,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79478,
+    "question": "The mood in the lines above is one of",
+    "option": {
+      "a": "joy",
+      "b": "fear",
+      "c": "indignation",
+      "d": "sorrow"
+    },
+    "section": "<p>“You amble on<br>we can no longer wait for nature's course<br>we must deliver you with force”<br>— Amelia House, “Our Sun Rises”</p>",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>“We can no longer wait” and “we must deliver you with force” express impatience and anger.</p><p>The mood is therefore <strong>indignation</strong>.</p><p>It is not joy, fear, or sorrow, so <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 19,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 79480,
+    "question": "In the stanza above, the poet recognizes that",
+    "option": {
+      "a": "he is near his death",
+      "b": "he is a choir master",
+      "c": "God is his creator",
+      "d": "there is music in heaven"
+    },
+    "section": "<p>“SINCE I am coming to that Holy roome,<br>Where, with thy Quire of Saints for evermore<br>I shall be made thy Musique; As I come<br>I tune the Instrument here at the dore,<br>And what I must doe then, thinke here before.”<br>— John Donne, “Hymn to God my God”</p>",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The poet speaks of “coming to that Holy roome” and tuning the instrument “here at the dore”.</p><p>These images suggest that he is preparing for death and the afterlife, so he recognizes that <strong>he is near his death</strong>.</p><p>He is not literally a choir master; the other options miss the central meaning, so <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 20,
+    "hasPassage": 1,
+    "category": "Literary Appreciation"
+  },
+  {
+    "id": 78966,
+    "question": "This question is based on <em>The Marriage of Anansewa</em>. What theme is emphasised when bride prices are accepted from multiple chiefs?",
+    "option": {
+      "a": "national unity",
+      "b": "colonial resistance",
+      "c": "the commodification of women",
+      "d": "heroism"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>Ananse accepts bride prices and gifts from several chiefs for one daughter.</p><p>This treats Anansewa as a valuable object to be traded for wealth, which is the <strong>commodification of women</strong>.</p><p>The play is not about national unity, colonial resistance, or heroism in this scene, so <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 21,
+    "hasPassage": 0,
+    "category": "Drama"
+  },
+  {
+    "id": 78968,
+    "question": "This question is based on <em>The Marriage of Anansewa</em>. Which of these best describes Ananse?",
+    "option": {
+      "a": "wise but poor",
+      "b": "generous",
+      "c": "trickster",
+      "d": "naive"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>Ananse lies to four chiefs, collects their gifts, and stages Anansewa's death to escape the consequences.</p><p>These are the actions of a <strong>trickster</strong>.</p><p>He is poor, but “wise but poor” misses his cunning; he is neither generous nor naive, so <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 22,
+    "hasPassage": 0,
+    "category": "Drama"
+  },
+  {
+    "id": 78974,
+    "question": "This question is based on <em>Antony and Cleopatra</em>. Antony blames Cleopatra for",
+    "option": {
+      "a": "marrying Caesar in secret",
+      "b": "causing the loss at Actium by fleeing",
+      "c": "betraying him to Octavius",
+      "d": "encouraging war with Lepidus"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>After the sea battle at Actium, Cleopatra's ships flee and Antony follows them.</p><p>Antony later accuses Cleopatra of fleeing and causing his defeat.</p><p>He does not blame her for marrying Caesar, betraying him to Octavius, or urging war with Lepidus, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 23,
+    "hasPassage": 0,
+    "category": "Drama"
+  },
+  {
+    "id": 79463,
+    "question": "This question is based on <em>Antony and Cleopatra</em>. What emotion drives Enobarbus in this speech?",
+    "option": {
+      "a": "revenge",
+      "b": "gratitude",
+      "c": "pride",
+      "d": "guilt"
+    },
+    "section": "<p>Enobarbus: “I am alone the villain of the earth,<br>And feel I am so most. O Antony,<br>Thou mine of bounty, how wouldst thou have paid<br>My better service, when my turpitude<br>Thou dost so crown with gold!”</p>",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>Enobarbus has deserted Antony, yet Antony sends his treasure after him.</p><p>Enobarbus calls himself “the villain of the earth” and feels unworthy of Antony's generosity.</p><p>This is <strong>guilt</strong>, not revenge, gratitude, or pride, so <strong>option D</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 24,
+    "hasPassage": 1,
+    "category": "Drama"
+  },
+  {
+    "id": 78954,
+    "question": "This question is based on <em>So the Path Does Not Die</em>. Fina's character is best described as",
+    "option": {
+      "a": "passive",
+      "b": "irrational",
+      "c": "resilient",
+      "d": "detached"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>Fina survives circumcision, rape, displacement, and the challenges of life in America, and she keeps rebuilding her life.</p><p>This shows <strong>resilience</strong> — the ability to recover and keep going.</p><p>She is not passive, irrational, or detached, so <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 25,
+    "hasPassage": 0,
+    "category": "Prose"
+  },
+  {
+    "id": 79459,
+    "question": "This question is based on <em>So the Path Does Not Die</em>. Fina's insistence on supporting her sister Isa, despite Cammy's protest, stems from",
+    "option": {
+      "a": "religious guilt",
+      "b": "feminist ideology",
+      "c": "political ideology",
+      "d": "African communal values"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>Fina keeps supporting Isa because she believes in family obligation and does not want to “cut the rope”.</p><p>This reflects <strong>African communal values</strong>, where the individual remains tied to the family and community.</p><p>It is not mainly religious guilt, feminism, or political ideology, so <strong>option D</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 26,
+    "hasPassage": 0,
+    "category": "Prose"
+  },
+  {
+    "id": 78950,
+    "question": "This question is based on <em>Redemption Road</em>. What is the significance of Cobra's polite and religious demeanor after the war?",
+    "option": {
+      "a": "It disguises unresolved guilt and denial",
+      "b": "It shows he has been reformed",
+      "c": "It confirms his legal innocence",
+      "d": "It prepares him for exile"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>After the war, Cobra presents himself as a polite, religious man, but he is still involved in corruption and violence.</p><p>His respectable image <strong>disguises unresolved guilt and denial</strong> about his wartime crimes.</p><p>He is not reformed, innocent, or preparing for exile, so <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 27,
+    "hasPassage": 0,
+    "category": "Prose"
+  },
+  {
+    "id": 79491,
+    "question": "This question is based on <em>Redemption Road</em>. Letter-writing in the novel serves as",
+    "option": {
+      "a": "propaganda tool",
+      "b": "a tool for personal healing",
+      "c": "legal testimony",
+      "d": "a tool for political indoctrination"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>Bendu writes a symbolic letter to those who hurt her, and Tenneh writes to her mother.</p><p>Writing helps them confront trauma and begin to heal, so it is <strong>a tool for personal healing</strong>.</p><p>It is not propaganda, legal testimony, or political indoctrination, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 28,
+    "hasPassage": 0,
+    "category": "Prose"
+  },
+  {
+    "id": 78939,
+    "question": "This question is based on <em>Path of Lucas: The Journey He Endured</em>. Which narrative technique best defines the structure of the novel?",
+    "option": {
+      "a": "non-linear flashback",
+      "b": "stream-of-consciousness",
+      "c": "epistolary narration",
+      "d": "third-person omniscience"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The novel frames Lucas's life story as a present-day hospital vigil, then moves back into the past and across several decades.</p><p>This is a <strong>non-linear flashback</strong> structure.</p><p>It is not stream of consciousness, a novel in letters, or a detached third-person omniscient narration, so <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 29,
+    "hasPassage": 0,
+    "category": "Prose"
+  },
+  {
+    "id": 78945,
+    "question": "This question is based on <em>Path of Lucas: The Journey He Endured</em>. What does Lucas's refusal to remarry after Isabelle's death reveal about his core values?",
+    "option": {
+      "a": "He resents women",
+      "b": "He is socially pressured",
+      "c": "His loyalty and emotional fidelity transcend death",
+      "d": "He feels guilty for her illness"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>After Isabelle dies, Lucas does not remarry and continues to honour her memory.</p><p>This shows <strong>loyalty and emotional fidelity that transcend death</strong>.</p><p>He does not hate women, act from social pressure, or merely feel guilty, so <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 30,
+    "hasPassage": 0,
+    "category": "Prose"
+  },
+  {
+    "id": 79450,
+    "question": "This question is based on <em>Once Upon a Time</em>. The line “like a fixed portrait smile” suggests that the speaker's smile is",
+    "option": {
+      "a": "genuine",
+      "b": "artificial",
+      "c": "artistic",
+      "d": "changing constantly"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>“Like a fixed portrait smile” compares the smile to a painted portrait that cannot change.</p><p>This suggests a fake, <strong>artificial</strong> smile, not a genuine one.</p><p>It is not artistic in a positive sense or constantly changing, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 31,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 79446,
+    "question": "This question is based on <em>New Tongue</em>. What is the thematic preoccupation of this poem?",
+    "option": {
+      "a": "The past should never be erased",
+      "b": "The past should be rewritten",
+      "c": "The past is a burden",
+      "d": "Memory is irrelevant to progress"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The poem laments the younger generation's abandonment of their language and traditions.</p><p>Its message is that the past and cultural roots <strong>should never be erased</strong>.</p><p>It does not say the past should be rewritten or that memory is irrelevant, so <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 32,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 78934,
+    "question": "This question is based on <em>Night</em>. “Faceless, silent as night thieves” contributes to which theme in the poem?",
+    "option": {
+      "a": "freedom",
+      "b": "truth",
+      "c": "fear",
+      "d": "celebration of community"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>“Faceless, silent as night thieves” presents the night as stealthy and threatening.</p><p>This creates a sense of dread and contributes to the theme of <strong>fear</strong>.</p><p>It does not suggest freedom, truth, or celebration, so <strong>option C</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 33,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 78935,
+    "question": "This question is based on <em>Not My Business</em>. A central theme in the poem is",
+    "option": {
+      "a": "greed",
+      "b": "political complacency",
+      "c": "courage",
+      "d": "success"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The persona ignores the arrests of his neighbours because they do not affect him.</p><p>This is <strong>political complacency</strong> — the failure to act against injustice until it reaches one's own door.</p><p>It is not greed, courage, or success, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 34,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 79445,
+    "question": "This question is based on <em>Hearty Garlands</em>. What is the occasion that inspires the poem?",
+    "option": {
+      "a": "A retirement send-off",
+      "b": "An eighty-fifth birthday celebration",
+      "c": "A funeral tribute",
+      "d": "A political victory"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The poem honours an elder who has reached eighty-five and celebrates his achievements and wisdom.</p><p>The occasion is therefore an <strong>eighty-fifth birthday celebration</strong>.</p><p>It is not a retirement, funeral, or political victory, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 35,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 78962,
+    "question": "This question is based on <em>The Breast of the Sea</em>. The image “coelacanth was recaptured” suggests",
+    "option": {
+      "a": "humanity's domination of all species",
+      "b": "a failed military operation",
+      "c": "a mythological event",
+      "d": "the rediscovery of something ancient and resilient"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The coelacanth is an ancient fish once thought extinct but later found alive.</p><p>The image therefore suggests <strong>the rediscovery of something ancient and resilient</strong>.</p><p>It is not about domination, a military operation, or a myth, so <strong>option D</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 36,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 78952,
+    "question": "This question is based on <em>She Walks in Beauty</em>. What does the poet mean by “all that's best of dark and bright”?",
+    "option": {
+      "a": "The woman is both good and evil",
+      "b": "Her personality is confusing",
+      "c": "She is indecisive in character",
+      "d": "She reflects a perfect balance of opposites"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The phrase refers to the woman's dark hair and bright features coming together in harmony.</p><p>It means she reflects <strong>a perfect balance of opposites</strong>, not that she is morally good and evil.</p><p>The line does not suggest confusion or indecision, so <strong>option D</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 37,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 78971,
+    "question": "This question is based on <em>The Nun's Priest's Tale</em>. The final escape of Chanticleer is due to",
+    "option": {
+      "a": "his flying ability",
+      "b": "his use of flattery",
+      "c": "the hen's distraction",
+      "d": "the widow's intervention"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>Chanticleer escapes by flattering the fox, persuading him to open his mouth to boast.</p><p>The fox loosens his grip, and Chanticleer flies away. The escape is due to <strong>his use of flattery</strong>.</p><p>It is not his flying ability alone, the hen's distraction, or the widow's intervention, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 38,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 78970,
+    "question": "This question is based on <em>The Telephone Call</em>. The term “Ultra-Super Global Special” is an example of",
+    "option": {
+      "a": "hyperbole",
+      "b": "litotes",
+      "c": "synecdoche",
+      "d": "paradox"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>“Ultra-Super Global Special” is an exaggerated, inflated name for the fake prize.</p><p>Deliberate exaggeration is <strong>hyperbole</strong>.</p><p>Litotes is understatement, synecdoche uses a part for a whole, and paradox is a seeming contradiction, so <strong>option A</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 39,
+    "hasPassage": 0,
+    "category": "Poetry"
+  },
+  {
+    "id": 78963,
+    "question": "This question is based on <em>The Stone</em>. The woman's final sigh symbolises",
+    "option": {
+      "a": "the release of her lover's spirit",
+      "b": "the release of pent-up sorrow",
+      "c": "her readiness to remarry",
+      "d": "the end of the carving process"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>After the stone is finished, the woman breathes her lover's name and sighs.</p><p>The sigh releases the grief she had held in silently, so it symbolises <strong>the release of pent-up sorrow</strong>.</p><p>It does not release his spirit, show readiness to remarry, or merely mark the end of carving, so <strong>option B</strong> is correct.</p>",
+    "examtype": "utme",
+    "examyear": "2026",
+    "questionNub": 40,
+    "hasPassage": 0,
+    "category": "Poetry"
+  }
+]
