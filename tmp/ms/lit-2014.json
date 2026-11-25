@@ -1,0 +1,2309 @@
+{
+  "total": 48,
+  "questions": [
+    {
+      "id": 30651,
+      "collection_id": 479,
+      "question": "An action in a play that stimulates the audience to pity a character is",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 127952,
+          "question_id": 30651,
+          "description": "pyrrhic",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 127953,
+          "question_id": 30651,
+          "description": "props",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 127954,
+          "question_id": 30651,
+          "description": "pathos",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 127955,
+          "question_id": 30651,
+          "description": "parody",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30652,
+      "collection_id": 479,
+      "question": "<p>Purgation of emotion, pity and fear is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 127956,
+          "question_id": 30652,
+          "description": "catharsis",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 127957,
+          "question_id": 30652,
+          "description": "catastrophe",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 127958,
+          "question_id": 30652,
+          "description": "epilogue",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127959,
+          "question_id": 30652,
+          "description": "exposition",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30653,
+      "collection_id": 479,
+      "question": "A device in drama where a character speaks alone is",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 127960,
+          "question_id": 30653,
+          "description": "soliloquy",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 127961,
+          "question_id": 30653,
+          "description": "aside",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 127962,
+          "question_id": 30653,
+          "description": "apostrophe",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127963,
+          "question_id": 30653,
+          "description": "dialogue",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30654,
+      "collection_id": 479,
+      "question": "A plot in a literary work is about",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 127964,
+          "question_id": 30654,
+          "description": "character delineation",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 127965,
+          "question_id": 30654,
+          "description": "casual arrangement of events",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 127966,
+          "question_id": 30654,
+          "description": "resolution of conflicts",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127967,
+          "question_id": 30654,
+          "description": "law of poetic justic",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30655,
+      "collection_id": 479,
+      "question": "Tone and mood of a poem refers to",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 127968,
+          "question_id": 30655,
+          "description": "locale",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 127969,
+          "question_id": 30655,
+          "description": "atmosphere",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 127970,
+          "question_id": 30655,
+          "description": "setting",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127971,
+          "question_id": 30655,
+          "description": "space",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30656,
+      "collection_id": 479,
+      "question": "A funny incident within a serious situation is",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 127972,
+          "question_id": 30656,
+          "description": "comedy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 127973,
+          "question_id": 30656,
+          "description": "comic relief",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 127974,
+          "question_id": 30656,
+          "description": "tragic comedy",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127975,
+          "question_id": 30656,
+          "description": "tragic hero",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30658,
+      "collection_id": 479,
+      "question": "In literature, a flat character can be described as one who",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 127976,
+          "question_id": 30658,
+          "description": "is undeveloped",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 127977,
+          "question_id": 30658,
+          "description": "undergoes changes",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 127978,
+          "question_id": 30658,
+          "description": "dies  abruptly",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127979,
+          "question_id": 30658,
+          "description": "achieves greatness",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30659,
+      "collection_id": 479,
+      "question": "Dramatis personae in a play refers to",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 127980,
+          "question_id": 30659,
+          "description": "a list of characters",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 127981,
+          "question_id": 30659,
+          "description": "order of appearance",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 127982,
+          "question_id": 30659,
+          "description": "cast list",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127983,
+          "question_id": 30659,
+          "description": "protagonist and antagonist",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30660,
+      "collection_id": 479,
+      "question": "The speech made at the end of a dramatic performance is generally called",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 127984,
+          "question_id": 30660,
+          "description": "a prologue",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 127985,
+          "question_id": 30660,
+          "description": "an epilogue",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 127986,
+          "question_id": 30660,
+          "description": "a dirge",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127987,
+          "question_id": 30660,
+          "description": "a monologue",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30661,
+      "collection_id": 479,
+      "question": "<p>Which of the following is central to narrative fiction ?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 7,
+      "options": [
+        {
+          "id": 127988,
+          "question_id": 30661,
+          "description": "Verisimilitude",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 127989,
+          "question_id": 30661,
+          "description": "Dialogue",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 127990,
+          "question_id": 30661,
+          "description": "Objectivity",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127991,
+          "question_id": 30661,
+          "description": "Subjectivity",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30662,
+      "collection_id": 479,
+      "question": "He put himself in uniform, made one for<br>\r\nhis five-year-old son, and marched with<br>\r\nthe infant from dawn till noon every<br>\r\nmarket day, on the main road singing<br>\r\n'Kayiwawa beturi...<br>\r\n<br>\r\nThe persona in the excerpt above is portrayed as",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 127992,
+          "question_id": 30662,
+          "description": "a soldier",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 127993,
+          "question_id": 30662,
+          "description": "abnormal",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 127994,
+          "question_id": 30662,
+          "description": "energetic",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127995,
+          "question_id": 30662,
+          "description": "a policeman",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30663,
+      "collection_id": 479,
+      "question": "He is a faithful liar<br>\r\nThe line above is an example of",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 127996,
+          "question_id": 30663,
+          "description": "euphemism",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 127997,
+          "question_id": 30663,
+          "description": "antithesis",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 127998,
+          "question_id": 30663,
+          "description": "epigram",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 127999,
+          "question_id": 30663,
+          "description": "oxymoron",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30664,
+      "collection_id": 479,
+      "question": "<p>Fights by the book of arithmetic<br />\r\nThe figure of speech in the line above is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 128000,
+          "question_id": 30664,
+          "description": "litotes",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 128001,
+          "question_id": 30664,
+          "description": "innuendo",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 128002,
+          "question_id": 30664,
+          "description": "hyperbole",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 128003,
+          "question_id": 30664,
+          "description": "euphemism",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30665,
+      "collection_id": 479,
+      "question": "<p>And when you trudge on your&nbsp;horny Pads<br />\r\ngullied like the soles of modern shoes<br />\r\nPads that even jiggers cannot conquer<br />\r\n<br />\r\nHorny pads in the lines above is a reference to a</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 128004,
+          "question_id": 30665,
+          "description": "sole of a pauper",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 128005,
+          "question_id": 30665,
+          "description": "sole of a soldier",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 128006,
+          "question_id": 30665,
+          "description": "policeman",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 128007,
+          "question_id": 30665,
+          "description": "madman",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30666,
+      "collection_id": 479,
+      "question": "\"Lift not the painted veil which those who live<br>\r\ncall life:through unreal shapes be pictured there,<br>\r\nAnd it mimic all we would believe<br>\r\nWith colors idly spread,-behind, lurk fear.'<br>\r\n<br>\r\n                              P.B. Shelley:Sonnet<br>\r\n<br>\r\nThe stanza above is an example of a",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 128008,
+          "question_id": 30666,
+          "description": "couplet",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 128009,
+          "question_id": 30666,
+          "description": "sestet",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 128010,
+          "question_id": 30666,
+          "description": "quatrain",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 128011,
+          "question_id": 30666,
+          "description": "sonnet",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 30672,
+      "collection_id": 479,
+      "question": "'This thing you are doing is too heavy<br>\r\nfor you, he said.'I went to school only a little<br>\r\nbut i have killed many more years in this<br>\r\nworld than you have.'<br>\r\n <br>\r\n                             G. Okara: The Voice<br>\r\n<br>\r\nIt can be inferred from the the passage above that the",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 128032,
+          "question_id": 30672,
+          "description": "listener is more experienced",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 128033,
+          "question_id": 30672,
+          "description": "speaker is more experienced",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 128034,
+          "question_id": 30672,
+          "description": "listener is wise",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 128035,
+          "question_id": 30672,
+          "description": "speaker is a porter",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 57045,
+      "collection_id": 479,
+      "question": "<p>Based on Femi Osofisan&#39;s Women of Owu, the gods are portrayed as</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 27,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218785,
+          "question_id": 57045,
+          "description": "saviours of mankind",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218786,
+          "question_id": 57045,
+          "description": "helpless",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218787,
+          "question_id": 57045,
+          "description": "architects of man's destiny",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218788,
+          "question_id": 57045,
+          "description": "amorous",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 27,
+        "title": "Women of Owu"
+      },
+      "ref": null
+    },
+    {
+      "id": 57046,
+      "collection_id": 479,
+      "question": "<p>Based on Femi Osofisan&#39;s Women of Owu, Orisaye describes Balogun Kusa as</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 27,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218789,
+          "question_id": 57046,
+          "description": "a good leader",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218790,
+          "question_id": 57046,
+          "description": "a great warrior",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 218791,
+          "question_id": 57046,
+          "description": "an enemy and a butcher",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218792,
+          "question_id": 57046,
+          "description": "a friend in need",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 27,
+        "title": "Women of Owu"
+      },
+      "ref": null
+    },
+    {
+      "id": 57047,
+      "collection_id": 479,
+      "question": "<p>Based on Femi Osofisan&#39;s Women of Owu, Erelu is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 27,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218793,
+          "question_id": 57047,
+          "description": "the first wife of the Oba",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218794,
+          "question_id": 57047,
+          "description": "the oldest wife of  the Oba Akinjobi",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 218795,
+          "question_id": 57047,
+          "description": "a courtier to the Alaafin of Oyo",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218796,
+          "question_id": 57047,
+          "description": "the most brilliant woman in Owu",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 27,
+        "title": "Women of Owu"
+      },
+      "ref": null
+    },
+    {
+      "id": 57048,
+      "collection_id": 479,
+      "question": "<p>Based on Femi Osofisan&#39;s Women of Owu, Balogun Kusa is killed by a</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 27,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218797,
+          "question_id": 57048,
+          "description": "soldier",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218798,
+          "question_id": 57048,
+          "description": "god",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218799,
+          "question_id": 57048,
+          "description": "herbalist",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218800,
+          "question_id": 57048,
+          "description": "lunatic",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 27,
+        "title": "Women of Owu"
+      },
+      "ref": null
+    },
+    {
+      "id": 57049,
+      "collection_id": 479,
+      "question": "<p>Based on William Shakespeare&#39;s The Tempest, Ariel is identified as</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 26,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 218801,
+          "question_id": 57049,
+          "description": "assistant to Sycorax",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218802,
+          "question_id": 57049,
+          "description": "leader of the spirits",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 218803,
+          "question_id": 57049,
+          "description": "Prospero's daughter",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218804,
+          "question_id": 57049,
+          "description": "Alonso's wife",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 26,
+        "title": "Tempest"
+      },
+      "ref": null
+    },
+    {
+      "id": 57050,
+      "collection_id": 479,
+      "question": "<p>Based on William Shakespeare&#39;s The Tempest, Before the shipwreck that occurred at the beginning of the play, Prospero and his daughter lived in the island for</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 26,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218805,
+          "question_id": 57050,
+          "description": "eighteen months",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218806,
+          "question_id": 57050,
+          "description": "two decades",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218807,
+          "question_id": 57050,
+          "description": "twelve years",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218808,
+          "question_id": 57050,
+          "description": "fourty days",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 26,
+        "title": "Tempest"
+      },
+      "ref": null
+    },
+    {
+      "id": 57051,
+      "collection_id": 479,
+      "question": "<p>Based on William Shakespeare&#39;s The Tempest,Caliban&#39;s intention to rape Miranda is born out of the desire to</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 26,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218809,
+          "question_id": 57051,
+          "description": "marry her",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218810,
+          "question_id": 57051,
+          "description": "destroy the island",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218811,
+          "question_id": 57051,
+          "description": "compete with Ferdinand",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218812,
+          "question_id": 57051,
+          "description": "populate the island with Calibans",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 26,
+        "title": "Tempest"
+      },
+      "ref": null
+    },
+    {
+      "id": 57052,
+      "collection_id": 479,
+      "question": "<p>Based on Chimamanda Adichie&#39;s Purple Hibiscus, one of the changes introduced into St Agnes&#39; Church by Father Benedict is that</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 24,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 218813,
+          "question_id": 57052,
+          "description": "everyone must take holy communion",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218814,
+          "question_id": 57052,
+          "description": "there must be fasting every month",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218815,
+          "question_id": 57052,
+          "description": "the Credo must be recited in igbo",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218816,
+          "question_id": 57052,
+          "description": "the Kyrie must be rendered only in Latin",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 24,
+        "title": "Purple Hibiscus"
+      },
+      "ref": null
+    },
+    {
+      "id": 57053,
+      "collection_id": 479,
+      "question": "<p>Based on Chimamanda Adichie&#39;s Purple Hibiscus, Eugene Achike in the novel is portrayed as</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 24,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 218817,
+          "question_id": 57053,
+          "description": "a tough retired soldier",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218818,
+          "question_id": 57053,
+          "description": "a soft and gentle husband",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218819,
+          "question_id": 57053,
+          "description": "an uncompromising traditionalist",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218820,
+          "question_id": 57053,
+          "description": "a fanatical Catholic adherent",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 24,
+        "title": "Purple Hibiscus"
+      },
+      "ref": null
+    },
+    {
+      "id": 57054,
+      "collection_id": 479,
+      "question": "<p>Based on Chimamanda Adichie&#39;s Purple Hibiscus, in the Achike family,the character who is central to the theme is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 24,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218821,
+          "question_id": 57054,
+          "description": "Jaja",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218822,
+          "question_id": 57054,
+          "description": "Kambili",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218823,
+          "question_id": 57054,
+          "description": "Mama",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218824,
+          "question_id": 57054,
+          "description": "Sisi",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 24,
+        "title": "Purple Hibiscus"
+      },
+      "ref": null
+    },
+    {
+      "id": 57055,
+      "collection_id": 479,
+      "question": "<p>Based on Ernest Hemingway&#39;s The Old Man and The Sea, the type of fish caught by Santiago after days of effort is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 23,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218825,
+          "question_id": 57055,
+          "description": "geisha",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218826,
+          "question_id": 57055,
+          "description": "shark",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218827,
+          "question_id": 57055,
+          "description": "iris",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218828,
+          "question_id": 57055,
+          "description": "marlin",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 23,
+        "title": "The Old Man and the Sea"
+      },
+      "ref": null
+    },
+    {
+      "id": 57056,
+      "collection_id": 479,
+      "question": "<p>Based on Ernest Hemingway&#39;s The Old Man and The Sea,the novel demonstrates the</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 23,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218829,
+          "question_id": 57056,
+          "description": "struggle of man against defeat",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218830,
+          "question_id": 57056,
+          "description": "attempt to catch fish",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218831,
+          "question_id": 57056,
+          "description": "desire to understand life",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218832,
+          "question_id": 57056,
+          "description": "influence of the sea on man",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 23,
+        "title": "The Old Man and the Sea"
+      },
+      "ref": null
+    },
+    {
+      "id": 57057,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nThe tone of Umeh&#39;s Ambassadors of Poverty can be described as</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 218833,
+          "question_id": 57057,
+          "description": "panegyrical",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218834,
+          "question_id": 57057,
+          "description": "metaphorical",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218835,
+          "question_id": 57057,
+          "description": "sarcastic",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218836,
+          "question_id": 57057,
+          "description": "admonitory",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57058,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nIn Owonibi&#39;s Homeless, not Hopeless, the persona explains that street beggars</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 218837,
+          "question_id": 57058,
+          "description": "are concerned with their daily needs",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218838,
+          "question_id": 57058,
+          "description": "always worry about heaven",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218839,
+          "question_id": 57058,
+          "description": "rarely sleep and dream",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218840,
+          "question_id": 57058,
+          "description": "attend conferences in towns",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57059,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nCheney-Coker&#39;s Myopia is a</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218841,
+          "question_id": 57059,
+          "description": "ballad",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218842,
+          "question_id": 57059,
+          "description": "dirge",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218843,
+          "question_id": 57059,
+          "description": "lament",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218844,
+          "question_id": 57059,
+          "description": "sonnet",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57060,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nJared Angira is an African Poet from</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218845,
+          "question_id": 57060,
+          "description": "Ghana",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218846,
+          "question_id": 57060,
+          "description": "Sierra-Leone",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218847,
+          "question_id": 57060,
+          "description": "Kenya",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218848,
+          "question_id": 57060,
+          "description": "South Africa",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57061,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nThe dominant technique used in Serenade is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218849,
+          "question_id": 57061,
+          "description": "apostrophe",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218850,
+          "question_id": 57061,
+          "description": "metaphore",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218851,
+          "question_id": 57061,
+          "description": "simile",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218852,
+          "question_id": 57061,
+          "description": "oxymoron",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57062,
+      "collection_id": 479,
+      "question": "<p>Based on William Shakespeare&#39;s The Tempest,the character associated with savagery in the play is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 26,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218853,
+          "question_id": 57062,
+          "description": "Ferdinand",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218854,
+          "question_id": 57062,
+          "description": "Ariel",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218855,
+          "question_id": 57062,
+          "description": "Stephano",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218856,
+          "question_id": 57062,
+          "description": "Caliban",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 26,
+        "title": "Tempest"
+      },
+      "ref": null
+    },
+    {
+      "id": 57063,
+      "collection_id": 479,
+      "question": "<p>Based on William Shakespeare&#39;s The Tempest,Prospero is portrayed as a man who is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 26,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218857,
+          "question_id": 57063,
+          "description": "eager to conquer the world",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218858,
+          "question_id": 57063,
+          "description": "full of mistrust for everybody",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218859,
+          "question_id": 57063,
+          "description": "more interested in studying than in governance",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218860,
+          "question_id": 57063,
+          "description": "dependent on the spirits of his survival",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 26,
+        "title": "Tempest"
+      },
+      "ref": null
+    },
+    {
+      "id": 57064,
+      "collection_id": 479,
+      "question": "<p>Based on Asare Konadu&#39;s A Woman in Her Prime, the novel explores the theme of</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 25,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218861,
+          "question_id": 57064,
+          "description": "child quest of an African woman",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218862,
+          "question_id": 57064,
+          "description": "exploitation of the African woman",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218863,
+          "question_id": 57064,
+          "description": "sex discrimination in Ghana",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218864,
+          "question_id": 57064,
+          "description": "women liberation in Nigeria",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 25,
+        "title": "A Woman in her Prime"
+      },
+      "ref": null
+    },
+    {
+      "id": 57065,
+      "collection_id": 479,
+      "question": "<p>Based on Asare Konadu&#39;s A Woman in Her Prime, the worst calamity that can befall a woman is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 25,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218865,
+          "question_id": 57065,
+          "description": "barreness",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218866,
+          "question_id": 57065,
+          "description": "inability to bear male children",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218867,
+          "question_id": 57065,
+          "description": "inability to marry",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218868,
+          "question_id": 57065,
+          "description": "divorce",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 25,
+        "title": "A Woman in her Prime"
+      },
+      "ref": null
+    },
+    {
+      "id": 57066,
+      "collection_id": 479,
+      "question": "<p>Based on Asare Konadu&#39;s A Woman in Her Prime,Asogo is a game in which</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 25,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218869,
+          "question_id": 57066,
+          "description": "mothers lure their babies to sleep",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218870,
+          "question_id": 57066,
+          "description": "fathers narrate animal stories",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 218871,
+          "question_id": 57066,
+          "description": "boys abuse girls with music",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218872,
+          "question_id": 57066,
+          "description": "girls sing songs of praise and admonition",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 25,
+        "title": "A Woman in her Prime"
+      },
+      "ref": null
+    },
+    {
+      "id": 57067,
+      "collection_id": 479,
+      "question": "<p>Based on Asare Konadu&#39;s A Woman in Her Prime, the novel explores the theme of</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 25,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218873,
+          "question_id": 57067,
+          "description": "child quest of an African woman",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218874,
+          "question_id": 57067,
+          "description": "exploitation of the African woman",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218875,
+          "question_id": 57067,
+          "description": "sex discrimination in Ghana",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218876,
+          "question_id": 57067,
+          "description": "women liberation in Nigeria",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 25,
+        "title": "A Woman in her Prime"
+      },
+      "ref": null
+    },
+    {
+      "id": 57068,
+      "collection_id": 479,
+      "question": "<p>Based on Chimamanda Adichie&#39;s Purple Hibiscus, in the Achike family,the character who is central to the theme is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 24,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218877,
+          "question_id": 57068,
+          "description": "Jaja",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218878,
+          "question_id": 57068,
+          "description": "Kambili",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218879,
+          "question_id": 57068,
+          "description": "Mama",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218880,
+          "question_id": 57068,
+          "description": "Sisi",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 24,
+        "title": "Purple Hibiscus"
+      },
+      "ref": null
+    },
+    {
+      "id": 57069,
+      "collection_id": 479,
+      "question": "<p>Based on Ernest Hemingway&#39;s The Old Man and The Sea, the attitude of the old man towards nature is quite</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 23,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218881,
+          "question_id": 57069,
+          "description": "warm and friendly",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218882,
+          "question_id": 57069,
+          "description": "cautious and skeptical",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218883,
+          "question_id": 57069,
+          "description": "hostile and callous",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218884,
+          "question_id": 57069,
+          "description": "careless and indifferent",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 23,
+        "title": "The Old Man and the Sea"
+      },
+      "ref": null
+    },
+    {
+      "id": 57070,
+      "collection_id": 479,
+      "question": "<p>Based on Ernest Hemingway&#39;s The Old Man and The Sea,Santiago&#39;s second dream occurs</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 23,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218885,
+          "question_id": 57070,
+          "description": "when he sleeps on the boat for a few hours",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218886,
+          "question_id": 57070,
+          "description": "the night before his fishing expedition",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 218887,
+          "question_id": 57070,
+          "description": "in his house",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218888,
+          "question_id": 57070,
+          "description": "at the end of the book",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 23,
+        "title": "The Old Man and the Sea"
+      },
+      "ref": null
+    },
+    {
+      "id": 57071,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nThe dominant image in Adeoti&#39;s Hard Lines is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218889,
+          "question_id": 57071,
+          "description": "tactile",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218890,
+          "question_id": 57071,
+          "description": "auditory",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218891,
+          "question_id": 57071,
+          "description": "gustatory",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218892,
+          "question_id": 57071,
+          "description": "visual",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57072,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nJared Angira is an African Poet from</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218893,
+          "question_id": 57072,
+          "description": "Ghana",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218894,
+          "question_id": 57072,
+          "description": "Sierra-Leone",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218895,
+          "question_id": 57072,
+          "description": "Kenya",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218896,
+          "question_id": 57072,
+          "description": "South Africa",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57073,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nThe sun in Donne&#39;s The Sun Rising is depicted through the use of</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218897,
+          "question_id": 57073,
+          "description": "apostrophe",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218898,
+          "question_id": 57073,
+          "description": "invocation",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218899,
+          "question_id": 57073,
+          "description": "ellipsis",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218900,
+          "question_id": 57073,
+          "description": "enjambment",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57074,
+      "collection_id": 479,
+      "question": "<p>These question are based on selected poems from Johnson, R. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds): A Selection of African Poetry; Umukoro M. et al: Exam Focus: Literature in English; Eruvbetine, A.E. et al (eds.): Longman Examination Guides: Poetry for Senior Secondray Schools NWOGA, d.i. (ED.) West African Verse.<br />\r\n<br />\r\nIn Raleigh&#39;s The Soul&#39;s Errand, the soul is portrayed as a</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218901,
+          "question_id": 57074,
+          "description": "messenger of hope and peace",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218902,
+          "question_id": 57074,
+          "description": "friend of suffering masses",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218903,
+          "question_id": 57074,
+          "description": "fearless message-bearer",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218904,
+          "question_id": 57074,
+          "description": "restorer of lost glory",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57075,
+      "collection_id": 479,
+      "question": "<p>The allusion in Hugh&#39;s&nbsp;&#39;The Negro Speaks of Rivers&#39; is mainly</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218905,
+          "question_id": 57075,
+          "description": "literacy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218906,
+          "question_id": 57075,
+          "description": "bibilical",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218907,
+          "question_id": 57075,
+          "description": "historical",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218908,
+          "question_id": 57075,
+          "description": "classical",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 57076,
+      "collection_id": 479,
+      "question": "<p>Fletcher&#39;s Upon An Honest Man&#39;s Fortune encourages people to</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218909,
+          "question_id": 57076,
+          "description": "accept life as it is",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218910,
+          "question_id": 57076,
+          "description": "condemn soothsaying",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218911,
+          "question_id": 57076,
+          "description": "move in the direction of God",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218912,
+          "question_id": 57076,
+          "description": "accept soothsaying",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 479,
+        "exam_year": 2014,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    }
+  ]
+}

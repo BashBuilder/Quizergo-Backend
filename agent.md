@@ -37,7 +37,7 @@ When generating or populating questions for any subject, follow these requiremen
    - Questions must follow the standard JAMB examination structure and conventions.
    - Format question content for HTML rendering using appropriate semantic HTML elements where necessary.
    - Use elements such as `<strong>`, `<em>`, `<u>`, `<sub>`, `<sup>`, `<p>`, `<ol>`, `<ul>`, `<br>` and others where appropriate.
-   - Preserve mathematical expressions, scientific notation, special characters, tables, passages, and other subject-specific formatting requirements.
+   - Preserve mathematical expressions use <math xmlns="http://www.w3.org/1998/Math/MathML"> where necessary with math elements, scientific notation, special characters, tables, passages, and other subject-specific formatting requirements.
    - Ensure questions remain readable and render correctly in the application's question interface.
 
 4. **Question Structure**

@@ -1,0 +1,40 @@
+1 | General Literary Principles | A literary work in which the characters and events are used as symbols is known as || a) characterization | b) allegory | c) metaphor | d) paralellism || ANS b
+2 | General Literary Principles | Characterization in a novel refers to the || a) writer's opinion of the characters | b) way the characters are revealed to the reader | c) characters and the way they behave | d) reader's opinion of the characters || ANS b
+3 | General Literary Principles | In literary work, verbal irony refers to a || a) device in which the speaker means the opposite of what he says | b) situation in which a character speaks or acts against the trend of events | c) difficult situation which defies a logical or rational resolution | d) device in which the actor on stage means exactly what he says || ANS a
+4 | General Literary Principles | In the theatre, words spoken by a character that are meant to be heard by the audience but not by the other characters on stage is called || a) aside | b) soliloquy | c) accoustic | d) tone || ANS a
+5 | General Literary Principles | Drama is the representation of a complete series of actions by means of || a) movement and gesture for the screen and audience | b) speech, movement and gesture for the stage only | c) speech, movement and gesture for the stage, screen and radio | d) speech, gesture and movement for the screen and radio || ANS c
+6 | General Literary Principles | A poet's use of regular rhythm is known as || a) allegory | b) assonance | c) metre | d) onomatopoeia || ANS c
+7 | General Literary Principles | A literary genre which directly imitates human action is || a) drama | b) comedy | c) prose | d) poetry || ANS a
+8 | General Literary Principles | A fable is a story in which || a) allegations are made about characters | b) animals or things are used as characters | c) there is an important setting | d) the story is told in poetic form || ANS b
+9 | General Literary Principles | The juxtaposition of two contrasting ideas in a line of poetry is || a) euphemism | b) synedoche | c) catharsis | d) oxymoron || ANS d
+10 | General Literary Principles | The main aim of caricature is to || a) describe | b) expose | c) emphasize | d) ridicule || ANS d
+11 | Literary Appreciation | The figure of speech in the lines above is || a) antithesis | b) invocation | c) personification | d) apostrophe || ANS d
+12 | Literary Appreciation | The tone of the lines above is one of || a) sarcasm | b) sacrilege | c) chiasmus | d) eulogy || ANS a
+13 | Literary Appreciation | The rhyme scheme of the poem above is || a) bbaa | b) aabb | c) abab | d) baba || ANS b
+14 | Literary Appreciation | The lines above show that the speaker || a) detects discrimination | b) is desirous of adventure | c) hates his old wife | d) knows much of his city men || ANS a
+15 | Literary Appreciation | The feeling conveyed by the speaker above is one of || a) anger | b) alienation | c) hope | d) despair || ANS d
+16 | Literary Appreciation | Night children in the stanza above reflects the consciousness of || a) birds | b) armed robbers | c) animals | d) spirit beings || ANS d
+17 | Literary Appreciation | The poet in the excerpt above uses || a) litotes | b) symbolism | c) onomatopoeia | d) alliteration || ANS b
+18 | Literary Appreciation | The imagery created in the above excerpt is achieved through || a) metaphor | b) personification | c) synedoche | d) metonym || ANS b
+19 | Sons and Daughters | Aaron’s brother who trains as an accountant is || a) George | b) Awere | c) Owusu | d) Kofi || ANS d
+20 | Sons and Daughters | Which of the following is true of the Awere? || a) He is the fiancé of Maanan | b) He is a chartered accountant | c) He wins a scholarship to Goldsmith College | d) He wants to study dance and choreography || ANS a
+21 | Sons and Daughters | The conflict in the play centres around || a) gender | b) generation | c) religion | d) ethnicity || ANS b
+22 | Sons and Daughters | Who is the paternal aunt to Aaron and Maanan? || a) Mrs Bonu | b) Hannah | c) Fosuwa | d) Adwao || ANS c
+23 | Romeo and Juliet | The text of Shakespeare’s Romeo and Juliet is sourced in || a) 1623 second Folio | b) 1590 rehearsal guide | c) 1599 Quarto | d) 1616 manuscript || ANS a
+24 | Romeo and Juliet | “There’s no trust No faith, no honesty in men, all perjured, All forsworn, all naught, all dissembles” The speaker of the above excerpt is || a) Nurse | b) Juliet | c) Balthasaar | d) Capulet || ANS b
+25 | Romeo and Juliet | Another Suitor of Juliet in the play is || a) Mercutio | b) Gregory | c) Duke | d) Paris || ANS d
+26 | Romeo and Juliet | In the novel, the Ministry that is responsible for news, entertainment and fine arts in the Ministry of || a) Peace | b) Love | c) Plenty | d) Truth || ANS d
+27 | The Old Man and the Medal | The national day in The Old Man and the Medal is || a) 1st of October | b) 27th of May | c) 12th June | d) 14th July || ANS d
+28 | The Old Man and the Medal | "Meka, kneeling down in his usual fashion with his behind up in the air. Kelara knelt down beside him. Amalia and her husband knelt down as well." Based on Ferdinand Oyono's The Old Man and the Medal, the actions of Meka, Kelara, Amalia and her husband signify || a) parade | b) dance | c) prayer | d) celebration || ANS d
+29 | The Old Man and the Medal | the description above is in reference to the foot of || a) Kelara | b) Meka | c) Egamba | d) Mvondo || ANS b
+30 | The Old Man and the Medal | the dominant figure of speech in the excerpt above || a) rhetorical question | b) simile | c) metaphor | d) mixed metaphor || ANS b
+31 | The Joys of Motherhood | In Joys of Motherhood, Dr Meers is || a) Nnaife’s master | b) Nnuego’s uncle | c) The District Officer | d) An ombudsman || ANS a
+32 | The Joys of Motherhood | As a symbol of marital success and fulfillment, Ibuza community places a lot of importance on || a) childbirth | b) wealth | c) male child | d) female child || ANS a
+33 | The Joys of Motherhood | Ona on her dying bed appeals to Agbadi to || a) give her a befitting burial | b) take good care of her children | c) take another wife | d) allow Nnu Ego marry a man of her choice || ANS d
+34 | Nineteen Eighty-Four | The Ministry of Plenty in the Novel is responsible for || a) War | b) economic affairs | c) Population | d) Agriculture || ANS b
+35 | Nineteen Eighty-Four | George Orwell's Nineteen Eighty Four. The novel is mainly classified as a || a) metaphor | b) hyperbole | c) satire | d) fiction || ANS c
+36 | Nineteen Eighty-Four | two minutes hate is a programme designed for || a) parents | b) thought police | c) the community | d) children || ANS b
+37 | Nineteen Eighty-Four | To drop his philosophy of life and imbibe the tenets of the party, Winston is subjected to all forms of torture and inhuman treatment by || a) O'Brien | b) thought police | c) Big Brother | d) Goldstein || ANS c
+38 | Selected Poems | The movement in Adeoti's Naked Soles is characterized by || a) hope and agreement | b) freedom and self-determination | c) pricks and tears | d) dissapointed and disarray || ANS b
+39 | Selected Poems | One of the dominant themes if Rubadin's An African Thunderstorm is the || a) relationship between man and woman | b) activities of man during rainy seasons | c) effect of rain on women and children | d) problem of climate change || ANS a
+40 | Selected Poems | In Kunene's A Heritage of Liberation, the weapons are to be preserved for the generation yet unborn by the || a) gods | b) elders | c) people | d) government || ANS b

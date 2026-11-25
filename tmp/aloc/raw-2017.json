@@ -1,0 +1,646 @@
+{
+    "subject": "englishlit",
+    "status": 200,
+    "data": [
+        {
+            "id": 415,
+            "question": "The mission of the white man is revealed and Soko is enlisted into the",
+            "option": {
+                "a": "Plan of work",
+                "b": "Game plan",
+                "c": "Mission act",
+                "d": "Music game"
+            },
+            "section": "Question 14 and 15 are based on Dele Charley's \"The Blood of a stranger\"",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 440,
+            "question": "An inherent quality of the lyric is that it must",
+            "option": {
+                "a": "Be sung to a musical instrument",
+                "b": "Be sung by the poet who composes it",
+                "c": "Be simple and successful",
+                "d": "Express the Poet's subjective emotions"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 422,
+            "question": "What eyes will watch our large mouths? What ear to our pitiful anger, what heart will listen to our clamoring? Illustrate",
+            "option": {
+                "a": "Irony",
+                "b": "Metonymy",
+                "c": "Synecdoche",
+                "d": "Fable"
+            },
+            "section": "Question 21 to 25 are based on poems of Black Africa, edited by Wole Soyinka. A selection of African Poetry by K.E Senanu and T. Vincent. New poetry from Africa. Johnson etal. Poems from Ghana edited by Kofi Awoonor. Manscape in the Sierra, New and collected poems by Gbanabom Hallowell",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 406,
+            "question": "The expression \"Lay a sentence\" means",
+            "option": {
+                "a": "Decide who is guilty",
+                "b": "Offer criticism",
+                "c": "Give advice",
+                "d": "Speak politely"
+            },
+            "section": "Let me speak like yourself and Lay a sentence which, aas a grise or step may help these lovers when remedies are past, the griefs are ended, by seeing the worst which late on nopes depends. (Act I scene III)",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 412,
+            "question": "While assisting Marry, Bigger experiences mixed feelings of",
+            "option": {
+                "a": "Stubbornness and greatness",
+                "b": "Admiration and hate",
+                "c": "Surprise and shock",
+                "d": "Jealousy and avarice"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 403,
+            "question": "He is responding to",
+            "option": {
+                "a": "Montano",
+                "b": "Lago",
+                "c": "Roderigo",
+                "d": "Brabantio"
+            },
+            "section": "Let me speak like yourself and Lay a sentence which, as a grise or step may help these lovers when remedies are past, the griefs are ended, by seeing the worst which late on nopes depends. (Act I scene III)",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 431,
+            "question": "One of the themes in \"The Proud King\" is",
+            "option": {
+                "a": "A quest for fulfillment in nature",
+                "b": "Pride and the vanity of material wealth",
+                "c": "The  beauty and splendor of nature",
+                "d": "Immortality of art"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 416,
+            "question": "Kindo returns to find Mangu and queries him for giving ",
+            "option": {
+                "a": "Gin drink and evil smelling tobacco",
+                "b": "A negative advice",
+                "c": "A profitable advice",
+                "d": "Warning concerning the white man"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 429,
+            "question": "In the \"School Boy\" the poem is an example of _________ that is, a poem written in the form of a speech or statement made by individual character",
+            "option": {
+                "a": "Dramatic monologue",
+                "b": "Monologue",
+                "c": "Aside",
+                "d": "Tragic-comedy"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 439,
+            "question": "The literary term which describes the angle at which a writer tells his story is",
+            "option": {
+                "a": "Point of view",
+                "b": "Story angle",
+                "c": "Story line",
+                "d": "Aside"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 426,
+            "question": "In piano and drums, the poem is a reflection on the impossibility of living two different",
+            "option": {
+                "a": "Stanzas",
+                "b": "Struggles",
+                "c": "Cultures",
+                "d": "African and Ghana"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 420,
+            "question": "On a Friday night a few weeks later, packing boxes filled the younger apartment in prepartion for the move to their new house in a",
+            "option": {
+                "a": "White neighbourhood",
+                "b": "Black neighbourhood",
+                "c": "Outskirt of the neighbourhood",
+                "d": "City"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 405,
+            "question": "These lovers refers to",
+            "option": {
+                "a": "Lago and Emilia",
+                "b": "Cassio and Bianca",
+                "c": "Roderigo and Desdemona",
+                "d": "Othello and Desdemona"
+            },
+            "section": "Let me speak like yourself and Lay a sentence which, aas a grise or step may help these lovers when remedies are past, the griefs are ended, by seeing the worst which late on nopes depends. (Act I scene III)",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 435,
+            "question": "A play is drama because",
+            "option": {
+                "a": "It contains characters",
+                "b": "It does not contain any story",
+                "c": "It cannot be read silently",
+                "d": "It can be acted on the stage"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 433,
+            "question": "The figure of speech in which a poet implicity compares an object or idea with another totally different object or idea is called a ",
+            "option": {
+                "a": "Smile",
+                "b": "Denotation",
+                "c": "Connotation",
+                "d": "Metaphor"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 421,
+            "question": "One of the themes in A Raisin in the Sun is ",
+            "option": {
+                "a": "Warning to renegades",
+                "b": "Pain and misery",
+                "c": "Abandonment",
+                "d": "Right and choice"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 437,
+            "question": "One of the following writers is better known as a playwright that as a novelist",
+            "option": {
+                "a": "C. Achebe",
+                "b": "C. Ekwensi",
+                "c": "J.P. Clark",
+                "d": "W. Soyinka"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 414,
+            "question": "The police commissioner plays down on the cocaine matters saying \"the court as you rightly said has handled it.\" What does \"it\" refers to?",
+            "option": {
+                "a": "Naira embezzlement scandal",
+                "b": "Work schedule",
+                "c": "Airport drug case",
+                "d": "Cocaine matter"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 402,
+            "question": "The speaker is",
+            "option": {
+                "a": "Brabantio",
+                "b": "DUKE",
+                "c": "Montano",
+                "d": "Lodovio"
+            },
+            "section": "Let me speak like yourself and Lay a sentence which, as a grise or step may help these lovers when remedies are past, the griefs are ended, by seeing the worst which late on nopes depends. (Act I scene III)",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 438,
+            "question": "In \"The Executioner's Dream,\" the first line dream saw an eye, a pretty eye",
+            "option": {
+                "a": "Ironical",
+                "b": "Complimentary",
+                "c": "Exclamatory",
+                "d": "Rhetorical"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 404,
+            "question": "The setting is",
+            "option": {
+                "a": "A council chamber",
+                "b": "Venice, a street",
+                "c": "Another street outsode the sagitary",
+                "d": "The citadel of Cyprus"
+            },
+            "section": "Let me speak like yourself and Lay a sentence which, aas a grise or step may help these lovers when remedies are past, the griefs are ended, by seeing the worst which late on nopes depends. (Act I scene III)",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 428,
+            "question": "Robert frost's \"Birches\" portrays that life can be hard for",
+            "option": {
+                "a": "Children",
+                "b": "Youth",
+                "c": "Adult",
+                "d": "Society"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 425,
+            "question": "The anvil, the hammer, the foraging house, songs and rumors, new flags and anthems, splash and moan of the sea. These illustrate",
+            "option": {
+                "a": "Enjambment",
+                "b": "Metaphor",
+                "c": "Pun",
+                "d": "Assonance"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 423,
+            "question": "One of the themes found in vanity is",
+            "option": {
+                "a": "Destruction",
+                "b": "Innocence",
+                "c": "Dilemma",
+                "d": "Clash of cultures"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 434,
+            "question": "Which of the following could be applicable to all genres?",
+            "option": {
+                "a": "Symbolism",
+                "b": "Rhythm",
+                "c": "Narration",
+                "d": "Action"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 411,
+            "question": "The lady of the house Mrs. Thomas is woken up from her sleep by the clanging of an alarm clock, she shouts order at her sons",
+            "option": {
+                "a": "Buddy and Jack",
+                "b": "Dalton and Bigger",
+                "c": "Paeggy and Jack",
+                "d": "Bigger and Buddy"
+            },
+            "section": "Question 10 and 11 are based on Richard Wright's \"Native Son\"",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 419,
+            "question": "The title of A Raisin in the Sun comes from the Poem",
+            "option": {
+                "a": "Hadem",
+                "b": "Hope",
+                "c": "Promise",
+                "d": "Vanguard"
+            },
+            "section": "Question 18 to 20 are based on Lorraine Hansberry's \"A Raisin in the Sun\"",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 413,
+            "question": "Aloho has discovered that she is pregnant for chief, downcast, she sobs _____________ console's her",
+            "option": {
+                "a": "Ochuole",
+                "b": "Ogeyi",
+                "c": "ACP Yakubu",
+                "d": "Madam Hoha"
+            },
+            "section": "Question 12 and 13 are based on Fran Ogeche's \"Harvest of Corruption\"",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 432,
+            "question": "A character who remains unchanged in a work of art is called",
+            "option": {
+                "a": "A flat character",
+                "b": "A stereotypic character",
+                "c": "A round character",
+                "d": "An illusive character"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 430,
+            "question": "\"The pulley\" is a religious metaphysical poem by",
+            "option": {
+                "a": "William Shakespeare",
+                "b": "George Herbert",
+                "c": "William Blake",
+                "d": "Gbanabam Hallowell"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 441,
+            "question": "In literay criticism, a casual refrence to a figure is ",
+            "option": {
+                "a": "Alliteration",
+                "b": "Allegory",
+                "c": "Ambiguity",
+                "d": "Allusion"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 410,
+            "question": "Mute receives a strange",
+            "option": {
+                "a": "Ornament",
+                "b": "Letter",
+                "c": "Parcel",
+                "d": "Gift"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 407,
+            "question": "One of the themes in Faceless is",
+            "option": {
+                "a": "Parental irresponsibility",
+                "b": "The ineveitability of death",
+                "c": "The importance of Western Education",
+                "d": "Class oppression"
+            },
+            "section": "Question 6 and 7 are based on Amma Darko's \"Faceless\"",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 408,
+            "question": "Naa Yomo also delved into the history of how long she has been living in the house, the different expreiences she has had, the honour of the family, which she thinks people like __________ are trying to soil and so on",
+            "option": {
+                "a": "Kabria",
+                "b": "Vickie",
+                "c": "Maa Tsuru",
+                "d": "Mute"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 418,
+            "question": "Tony steals the casket containing Constance's",
+            "option": {
+                "a": "Clothes",
+                "b": "Jewels",
+                "c": "Books",
+                "d": "Letters"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 409,
+            "question": "Dina and Kabria hold a confidential talk with",
+            "option": {
+                "a": "Maa Tsuru",
+                "b": "Mute",
+                "c": "Fofo",
+                "d": "Naaa Yomo"
+            },
+            "section": "Questions 8 and 9 are based on Bayo Adebowale's \"Lonely Days\"",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 427,
+            "question": "In Alfred Tennyson \"Crossing the Bar,\" the major themes are",
+            "option": {
+                "a": "Death and hope",
+                "b": "Beauty and quest",
+                "c": "Formal education and imprisonment",
+                "d": "Sinners and the Righteous"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 424,
+            "question": "The pepper strong enough to push scorpions. This expression illustrates the use of",
+            "option": {
+                "a": "Euphemism",
+                "b": "Personification",
+                "c": "Irony",
+                "d": "Satire"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 436,
+            "question": "A figure of speech in which an absent person or an object is addressed as if present is referred to as",
+            "option": {
+                "a": "Assonance",
+                "b": "Elegy",
+                "c": "Apostrophe",
+                "d": "Personification"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 417,
+            "question": "She stoops to conquer is a play based on ",
+            "option": {
+                "a": "Comedy-tragedy",
+                "b": "Tragedy",
+                "c": "Laughing comedy",
+                "d": "Comedy"
+            },
+            "section": "Question 16 and 17 are based on Oliver Goldsmith's \"She stoops to Conquer\"",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        }
+    ]
+}

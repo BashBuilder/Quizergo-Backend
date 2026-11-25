@@ -1,0 +1,2875 @@
+{
+  "total": 61,
+  "questions": [
+    {
+      "id": 47123,
+      "collection_id": 875,
+      "question": "<p>A literary work in which the characters and events are used as symbols is known as _________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 4,
+      "options": [
+        {
+          "id": 197214,
+          "question_id": 47123,
+          "description": "characteristics",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197215,
+          "question_id": 47123,
+          "description": "allegory",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197216,
+          "question_id": 47123,
+          "description": "metaphor",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197217,
+          "question_id": 47123,
+          "description": "parallelism",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47124,
+      "collection_id": 875,
+      "question": "<p>Characterisation in a novel refers to the _____?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 5,
+      "options": [
+        {
+          "id": 197218,
+          "question_id": 47124,
+          "description": "writer's opinion of the characters",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197219,
+          "question_id": 47124,
+          "description": "way the characters are revealed to the reader",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197220,
+          "question_id": 47124,
+          "description": "characters and the way they behave",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197221,
+          "question_id": 47124,
+          "description": "reader's opinion of the character",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47125,
+      "collection_id": 875,
+      "question": "<p>In literacy work, verbal irony refers to a _________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 197222,
+          "question_id": 47125,
+          "description": "device in which the speaker means the opposite of what he says",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197223,
+          "question_id": 47125,
+          "description": "situation in which a character speaks or acts against the tread of events",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197224,
+          "question_id": 47125,
+          "description": "difficult situation which defies a local or rational resolution",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197225,
+          "question_id": 47125,
+          "description": "device in which the actor act on stage",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47126,
+      "collection_id": 875,
+      "question": "<p>In the theatre, words spoken by a character that are meant to be heard by the audience but not by the other characters on stage is called_________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 7,
+      "options": [
+        {
+          "id": 197226,
+          "question_id": 47126,
+          "description": "aside",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197227,
+          "question_id": 47126,
+          "description": "soliloquy",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197228,
+          "question_id": 47126,
+          "description": "acoustic",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197229,
+          "question_id": 47126,
+          "description": "tone",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47127,
+      "collection_id": 875,
+      "question": "<p>Drama is the representation of a complete series of actions by means of _________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 197230,
+          "question_id": 47127,
+          "description": "movement and gesture for the screen and audience",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197231,
+          "question_id": 47127,
+          "description": "speech, movement and gesture for the stage only",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197232,
+          "question_id": 47127,
+          "description": "speech, movement and gesture for the stage, screen and radio",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 197233,
+          "question_id": 47127,
+          "description": "speech, gesture and movement for the screen and radio",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47128,
+      "collection_id": 875,
+      "question": "<p>A poet&lsquo;s use of regular rhythm is known as _______?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 197235,
+          "question_id": 47128,
+          "description": "allegory",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197236,
+          "question_id": 47128,
+          "description": "assonance",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197237,
+          "question_id": 47128,
+          "description": "metre",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 197239,
+          "question_id": 47128,
+          "description": "onomatopoeia",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47129,
+      "collection_id": 875,
+      "question": "<p>A literacy genre which directly imitates human actions is______?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 197240,
+          "question_id": 47129,
+          "description": "Drama",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197242,
+          "question_id": 47129,
+          "description": "comedy",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197244,
+          "question_id": 47129,
+          "description": "Prose",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197246,
+          "question_id": 47129,
+          "description": "Poetry",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47130,
+      "collection_id": 875,
+      "question": "<p>A fable is a story in which________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 197248,
+          "question_id": 47130,
+          "description": "allegations are made about characters",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197249,
+          "question_id": 47130,
+          "description": "animal is or things are used as characters",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197250,
+          "question_id": 47130,
+          "description": "there is an important setting",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197251,
+          "question_id": 47130,
+          "description": "the story is told in poetic form",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47131,
+      "collection_id": 875,
+      "question": "<p>The juxtaposition of two contrasting ideas in a line of poetry is_________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 197252,
+          "question_id": 47131,
+          "description": "euphemism",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197253,
+          "question_id": 47131,
+          "description": "synecdoche",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197254,
+          "question_id": 47131,
+          "description": "catharsis",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197256,
+          "question_id": 47131,
+          "description": "oxymoron",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47132,
+      "collection_id": 875,
+      "question": "<p>The main aim of caricature is to_______?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 197257,
+          "question_id": 47132,
+          "description": "describe",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197258,
+          "question_id": 47132,
+          "description": "expose",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197259,
+          "question_id": 47132,
+          "description": "emphasise",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197260,
+          "question_id": 47132,
+          "description": "ridicule",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47133,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on Richard Wright&rsquo;s Native Son</strong></p>\r\n\r\n<p>Bigger kills Mary due to______?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 14,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197261,
+          "question_id": 47133,
+          "description": "Fear",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197262,
+          "question_id": 47133,
+          "description": "Hatred",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197265,
+          "question_id": 47133,
+          "description": "Envy",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197266,
+          "question_id": 47133,
+          "description": "Distrust",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 14,
+        "title": "Native Son"
+      },
+      "ref": null
+    },
+    {
+      "id": 47134,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on Richard Wright&rsquo;s Native Son</strong></p>\r\n\r\n<p>Weekly, Bigger is to be paid_________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 14,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 197267,
+          "question_id": 47134,
+          "description": "Twenty Dollars",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197268,
+          "question_id": 47134,
+          "description": "Twenty Five Dollars",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197270,
+          "question_id": 47134,
+          "description": "Thirty Dollars",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197271,
+          "question_id": 47134,
+          "description": "Thirty Five Dollars",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 14,
+        "title": "Native Son"
+      },
+      "ref": null
+    },
+    {
+      "id": 47135,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on Richard Wright&rsquo;s NATIVE SON</strong></p>\r\n\r\n<p>Mr Dalton is of the opinion that Negroes are happier when they are</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 14,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 197272,
+          "question_id": 47135,
+          "description": "together",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197273,
+          "question_id": 47135,
+          "description": "servant in the white family",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197274,
+          "question_id": 47135,
+          "description": "educated",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197276,
+          "question_id": 47135,
+          "description": "given some respect",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 14,
+        "title": "Native Son"
+      },
+      "ref": null
+    },
+    {
+      "id": 47136,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on Bayo Adebowale&#39;s LONELY DAYS</strong></p>\r\n\r\n<p>Widows mourning in Kofi wear garments that are________???</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 16,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 197277,
+          "question_id": 47136,
+          "description": "White",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197278,
+          "question_id": 47136,
+          "description": "Red",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197279,
+          "question_id": 47136,
+          "description": "Black",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 197280,
+          "question_id": 47136,
+          "description": "Green",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 16,
+        "title": "Lonely Days"
+      },
+      "ref": null
+    },
+    {
+      "id": 47137,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on Bayo Adebowale&#39;s LONELY DAYS</strong></p>\r\n\r\n<p>In the novel,<em> bage</em> cap signifies everlasting ________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 16,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 197281,
+          "question_id": 47137,
+          "description": "happiness",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197282,
+          "question_id": 47137,
+          "description": "sorrow",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197283,
+          "question_id": 47137,
+          "description": "freedom",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197285,
+          "question_id": 47137,
+          "description": "despair",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 16,
+        "title": "Lonely Days"
+      },
+      "ref": null
+    },
+    {
+      "id": 47139,
+      "collection_id": 875,
+      "question": "<p>The question is based on Bayo Adebowale&#39;s LONELY DAYS</p>\r\n\r\n<p>Yaremi&#39;s only son is______?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 16,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197292,
+          "question_id": 47139,
+          "description": "Alani",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197294,
+          "question_id": 47139,
+          "description": "Wande",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197296,
+          "question_id": 47139,
+          "description": "Olode",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197297,
+          "question_id": 47139,
+          "description": "Deyo",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 16,
+        "title": "Lonely Days"
+      },
+      "ref": null
+    },
+    {
+      "id": 47148,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on William&rsquo;s Shakespeare&rsquo;s OTHELLO</strong></p>\r\n\r\n<p>ill-starred wench: Pale as thy smoke; When we shall meet at comp&quot;&nbsp;<br />\r\nThe device used in the line above is__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 197338,
+          "question_id": 47148,
+          "description": "Simile",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197340,
+          "question_id": 47148,
+          "description": "Pun",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197342,
+          "question_id": 47148,
+          "description": "Metaphor",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197343,
+          "question_id": 47148,
+          "description": "Paradox",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 47149,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on William&rsquo;s Shakespeare&rsquo;s OTHELLO</strong></p>\r\n\r\n<p>Othello kills Desdemona because the_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197344,
+          "question_id": 47149,
+          "description": "former is jealous",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197345,
+          "question_id": 47149,
+          "description": "former's race is insulted",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197346,
+          "question_id": 47149,
+          "description": "latter is a witch",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197347,
+          "question_id": 47149,
+          "description": "latter is an idol",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 47150,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on William&rsquo;s Shakespeare&rsquo;s OTHELLO</strong></p>\r\n\r\n<p>Brabantio is opposed to the relationship between Othello and Desdemona because_________</p>\r\n\r\n<p>&nbsp;</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197348,
+          "question_id": 47150,
+          "description": "he prefers lago",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197349,
+          "question_id": 47150,
+          "description": "Othello is a moor",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197350,
+          "question_id": 47150,
+          "description": "Rodgerigo woos her first",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197352,
+          "question_id": 47150,
+          "description": "Desdemona is too young",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 47151,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on William&rsquo;s Shakespeare&rsquo;s OTHELLO</strong></p>\r\n\r\n<p>&quot;Soft you; a word or two before you go. I have done the state some service and they knew&rsquo; No more of</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197353,
+          "question_id": 47151,
+          "description": "Travelling",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197354,
+          "question_id": 47151,
+          "description": "Sick",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197355,
+          "question_id": 47151,
+          "description": "Dying",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 197356,
+          "question_id": 47151,
+          "description": "Eloping",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 47152,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on William&rsquo;s Shakespeare&#39;s OTHELLO</strong></p>\r\n\r\n<p>&quot;O heaven; How got she out?<br />\r\nO treason of the blood!<br />\r\nFather; from hence trust not your daughters&#39; minds<br />\r\nBy what you see them act. Is there not charms<br />\r\nBy which the property of youth and maid-hood<br />\r\nMay be abused?<br />\r\n<br />\r\n<br />\r\nThe speaker of the excerpt above is________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 5,
+      "options": [
+        {
+          "id": 197357,
+          "question_id": 47152,
+          "description": "Brabantio",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197358,
+          "question_id": 47152,
+          "description": "Othello",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197359,
+          "question_id": 47152,
+          "description": "Gratiano",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197360,
+          "question_id": 47152,
+          "description": "Roderigo",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 47153,
+      "collection_id": 875,
+      "question": "<p>The lines are an example of a________?</p>",
+      "ref_id": 663,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 197361,
+          "question_id": 47153,
+          "description": "limerick",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197363,
+          "question_id": 47153,
+          "description": "lampoon",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197364,
+          "question_id": 47153,
+          "description": "light verse",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 197365,
+          "question_id": 47153,
+          "description": "light opera",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 663,
+        "collection_id": 875,
+        "description": "<p><strong>Use the following excerpt to answer the question.</strong></p>\r\n\r\n<p><br />\r\n&quot;I wonder how long, you awful parasites,<br />\r\nShall share with me this little bed.<br />\r\nAnd make me,&nbsp;from my sweet dreams be lost,<br />\r\nby sucking blood from my poor head...<br />\r\nMbure: &quot;<strong>To Bed-Bug</strong>&quot;</p>",
+        "updated_at": 1758626777
+      }
+    },
+    {
+      "id": 47155,
+      "collection_id": 875,
+      "question": "<p>The most dominant figure of speech in the excerpt is________</p>",
+      "ref_id": 663,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197370,
+          "question_id": 47155,
+          "description": "metaphor",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197372,
+          "question_id": 47155,
+          "description": "simile",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197373,
+          "question_id": 47155,
+          "description": "personification",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 197374,
+          "question_id": 47155,
+          "description": "hyperbole",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 663,
+        "collection_id": 875,
+        "description": "<p><strong>Use the following excerpt to answer the question.</strong></p>\r\n\r\n<p><br />\r\n&quot;I wonder how long, you awful parasites,<br />\r\nShall share with me this little bed.<br />\r\nAnd make me,&nbsp;from my sweet dreams be lost,<br />\r\nby sucking blood from my poor head...<br />\r\nMbure: &quot;<strong>To Bed-Bug</strong>&quot;</p>",
+        "updated_at": 1758626777
+      }
+    },
+    {
+      "id": 47156,
+      "collection_id": 875,
+      "question": "<p><strong>Your head is like a drum that is beaten for spirits<br />\r\nYour ears are like the fans used for blowing fire.</strong><br />\r\n<br />\r\n<br />\r\nThe lines above are a good example of_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 4,
+      "options": [
+        {
+          "id": 197375,
+          "question_id": 47156,
+          "description": "caricature",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197376,
+          "question_id": 47156,
+          "description": "ridicule",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197377,
+          "question_id": 47156,
+          "description": "satire",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197378,
+          "question_id": 47156,
+          "description": "lampoon",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47157,
+      "collection_id": 875,
+      "question": "<p><strong>How can I look at Oyo and say I hate long shiny cars? How can I come to the children and despise international schools? And Koomson comes; and the family sees Jesus Christ in him...</strong><br />\r\n<br />\r\n<br />\r\nThe feeling conveyed by the speaker above is one of_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197379,
+          "question_id": 47157,
+          "description": "anger",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197380,
+          "question_id": 47157,
+          "description": "alienation",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197381,
+          "question_id": 47157,
+          "description": "hope",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197382,
+          "question_id": 47157,
+          "description": "despair",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47158,
+      "collection_id": 875,
+      "question": "<p><strong>&quot;Hide me now, when night children haunt the earth&quot;</strong>&nbsp;Wole Soyinka: &quot;Night&quot;.&nbsp;</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>Night children in the stanza above reflects&nbsp;the consciousness of__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 197383,
+          "question_id": 47158,
+          "description": "birds",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197384,
+          "question_id": 47158,
+          "description": "armed robbers",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197386,
+          "question_id": 47158,
+          "description": "animals",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197387,
+          "question_id": 47158,
+          "description": "spirit beings",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47159,
+      "collection_id": 875,
+      "question": "<p><strong>Serrated Shadows, through dark leaves,<br />\r\nTill, bathed in warm suffusion of your dapped cells<br />\r\nsensation pained me, faceless, silent as night thieves<br />\r\nWole Soyinka: &quot;Night&quot;&nbsp;</strong><br />\r\n<br />\r\nThe dominant mood in the lines above is one at____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197388,
+          "question_id": 47159,
+          "description": "apprehension",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 197389,
+          "question_id": 47159,
+          "description": "defiance",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 197390,
+          "question_id": 47159,
+          "description": "joy",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197391,
+          "question_id": 47159,
+          "description": "indifference",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47160,
+      "collection_id": 875,
+      "question": "<p><strong>&quot;The drum overwhelmed the guns...&quot; J.P Clark: &quot;Casualties&quot;</strong></p>\r\n\r\n<p>The poet in the excerpt above uses</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 4,
+      "options": [
+        {
+          "id": 197392,
+          "question_id": 47160,
+          "description": "litotes",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197393,
+          "question_id": 47160,
+          "description": "symbolism",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197394,
+          "question_id": 47160,
+          "description": "onomatopoeia",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197396,
+          "question_id": 47160,
+          "description": "aliteration",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47161,
+      "collection_id": 875,
+      "question": "<p><strong>&quot;... They do not see the funeral plies, At home eating up the forests...&quot; J.P Clark: &ldquo;Casualties&quot;</strong></p>\r\n\r\n<p>The imagery created in the above excerpt is achieved through______</p>\r\n\r\n<p>&nbsp;</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197397,
+          "question_id": 47161,
+          "description": "Metaphor",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197398,
+          "question_id": 47161,
+          "description": "Personification",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197399,
+          "question_id": 47161,
+          "description": "Synecdoche",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197400,
+          "question_id": 47161,
+          "description": "Metonymy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47162,
+      "collection_id": 875,
+      "question": "<p><strong>&ldquo;I cannot rest from travel: I will drink, life to the lees, all times I have enjoyed greatly, have suffered greatly&rdquo;</strong>. A.L. Tennyson: <strong>&ldquo;Ulysses&rdquo;</strong></p>\r\n\r\n<p>&nbsp; The lines above inform the reader that the poet</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 197401,
+          "question_id": 47162,
+          "description": "Is determined to suffer",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 197402,
+          "question_id": 47162,
+          "description": "Has his poetic imagination kindled",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 197404,
+          "question_id": 47162,
+          "description": "Will cure his sour mood",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 197405,
+          "question_id": 47162,
+          "description": "Will not drink much",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47507,
+      "collection_id": 875,
+      "question": "<p>He who writes a prose is a__________?</p>",
+      "ref_id": null,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 198833,
+          "question_id": 47507,
+          "description": "Poet",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198835,
+          "question_id": 47507,
+          "description": "Writer",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198836,
+          "question_id": 47507,
+          "description": "Author",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 198837,
+          "question_id": 47507,
+          "description": "Actor",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47509,
+      "collection_id": 875,
+      "question": "<p>In drama, the protagonist is ________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198842,
+          "question_id": 47509,
+          "description": "the writer of the drama",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198843,
+          "question_id": 47509,
+          "description": "the leading character",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 198844,
+          "question_id": 47509,
+          "description": "the “nice guy”",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 198845,
+          "question_id": 47509,
+          "description": "the actor",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47512,
+      "collection_id": 875,
+      "question": "<p>Tension between the protagonist and the antagonist is called______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 198854,
+          "question_id": 47512,
+          "description": "Climax",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198855,
+          "question_id": 47512,
+          "description": "Concrete",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198856,
+          "question_id": 47512,
+          "description": "Conflict",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 198857,
+          "question_id": 47512,
+          "description": "Confident",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47513,
+      "collection_id": 875,
+      "question": "<p>The phrase &ldquo;living death&rdquo; in a literary work is an example_____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198858,
+          "question_id": 47513,
+          "description": "Synecdoche",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198859,
+          "question_id": 47513,
+          "description": "Prose",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198860,
+          "question_id": 47513,
+          "description": "Oxymoron",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 198861,
+          "question_id": 47513,
+          "description": "Aside",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47516,
+      "collection_id": 875,
+      "question": "<p>Group of lines are called _____</p>",
+      "ref_id": null,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198870,
+          "question_id": 47516,
+          "description": "Sentences",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198871,
+          "question_id": 47516,
+          "description": "Stanzas",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 198872,
+          "question_id": 47516,
+          "description": "Danzas",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 198874,
+          "question_id": 47516,
+          "description": "Line Grouping",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47517,
+      "collection_id": 875,
+      "question": "<p>A literary device in which parts of a sentence are grammatically the same, or are similar in construction Is known as__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198875,
+          "question_id": 47517,
+          "description": "Simile",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198876,
+          "question_id": 47517,
+          "description": "Aside",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198877,
+          "question_id": 47517,
+          "description": "Parallelism",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 198878,
+          "question_id": 47517,
+          "description": "Irony",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47522,
+      "collection_id": 875,
+      "question": "<p>&quot;Peter&#39;s pretty partner paid the bills&quot; is an example of___________?</p>",
+      "ref_id": null,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198895,
+          "question_id": 47522,
+          "description": "Alliteration",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 198897,
+          "question_id": 47522,
+          "description": "Rhyme",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198898,
+          "question_id": 47522,
+          "description": "Satire",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 198899,
+          "question_id": 47522,
+          "description": "Digression",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47523,
+      "collection_id": 875,
+      "question": "<p>What does the playwright do?</p>",
+      "ref_id": null,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198901,
+          "question_id": 47523,
+          "description": "Writes a poem",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198903,
+          "question_id": 47523,
+          "description": "Writes a book",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198904,
+          "question_id": 47523,
+          "description": "Writes a play",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 198905,
+          "question_id": 47523,
+          "description": "Directs a drama",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47524,
+      "collection_id": 875,
+      "question": "<p>Which of these is the meaning of &ldquo;CAST&rdquo;?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198907,
+          "question_id": 47524,
+          "description": "a list of all characters in a drama",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 198908,
+          "question_id": 47524,
+          "description": "what the character is saying",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198909,
+          "question_id": 47524,
+          "description": "the person who writes the drama",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 198910,
+          "question_id": 47524,
+          "description": "a list of protagonists in a drama",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47525,
+      "collection_id": 875,
+      "question": "<p>The writer of a poem is called__________?</p>",
+      "ref_id": null,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198911,
+          "question_id": 47525,
+          "description": "Author",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198913,
+          "question_id": 47525,
+          "description": "Poet",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 198914,
+          "question_id": 47525,
+          "description": "Writer",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 198915,
+          "question_id": 47525,
+          "description": "Narrator",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47526,
+      "collection_id": 875,
+      "question": "<p>This element shows how sections are separated into parts with numbers and titles_____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198917,
+          "question_id": 47526,
+          "description": "Paragraph",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198918,
+          "question_id": 47526,
+          "description": "Theme",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198919,
+          "question_id": 47526,
+          "description": "Chapters",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 198920,
+          "question_id": 47526,
+          "description": "Characters",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47527,
+      "collection_id": 875,
+      "question": "<p>These elements are sections of text within a chapter, they are separated and contain dialogue_____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 198921,
+          "question_id": 47527,
+          "description": "Syncopation",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 198922,
+          "question_id": 47527,
+          "description": "Free Verse",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 198923,
+          "question_id": 47527,
+          "description": "Paragraphs",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 198924,
+          "question_id": 47527,
+          "description": "Euphony",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47556,
+      "collection_id": 875,
+      "question": "<p>A folk-tale is a__________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199038,
+          "question_id": 47556,
+          "description": "Novel",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199039,
+          "question_id": 47556,
+          "description": "Work Of Fiction",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 199041,
+          "question_id": 47556,
+          "description": "Biography",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199042,
+          "question_id": 47556,
+          "description": "Novelette",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47557,
+      "collection_id": 875,
+      "question": "<p>In drama, the antagonist is_____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199044,
+          "question_id": 47557,
+          "description": "the director of the drama",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199045,
+          "question_id": 47557,
+          "description": "the evil witch",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 199046,
+          "question_id": 47557,
+          "description": "the character opposing the lead character",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 199047,
+          "question_id": 47557,
+          "description": "the “harsh guy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47558,
+      "collection_id": 875,
+      "question": "<p>_____________refers to time and place of a drama?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199048,
+          "question_id": 47558,
+          "description": "place",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199049,
+          "question_id": 47558,
+          "description": "scene",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 199050,
+          "question_id": 47558,
+          "description": "setting",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 199051,
+          "question_id": 47558,
+          "description": "act",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47559,
+      "collection_id": 875,
+      "question": "<p>A &ldquo;sub-chapter&rdquo; in a piece of drama is a______________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199052,
+          "question_id": 47559,
+          "description": "Act",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199053,
+          "question_id": 47559,
+          "description": "Setting",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 199054,
+          "question_id": 47559,
+          "description": "Verse",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199055,
+          "question_id": 47559,
+          "description": "Scene",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47560,
+      "collection_id": 875,
+      "question": "<p>What structure is poetry written in?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199056,
+          "question_id": 47560,
+          "description": "sentences and paragraphs",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199057,
+          "question_id": 47560,
+          "description": "sentences and stanzas",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 199058,
+          "question_id": 47560,
+          "description": "lines and paragraphs",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199059,
+          "question_id": 47560,
+          "description": "lines and stanzas",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47591,
+      "collection_id": 875,
+      "question": "<p>&#39;&#39;Tell me not, sweet, I am unkind&quot; illustrates_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199180,
+          "question_id": 47591,
+          "description": "inversion",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 199181,
+          "question_id": 47591,
+          "description": "paradox",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 199182,
+          "question_id": 47591,
+          "description": "humor",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199183,
+          "question_id": 47591,
+          "description": "mood",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47592,
+      "collection_id": 875,
+      "question": "<p>Define &ldquo;rhyme&rdquo;?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199184,
+          "question_id": 47592,
+          "description": "comparing two things using “like” or “as”",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199185,
+          "question_id": 47592,
+          "description": "the repetition of a letter",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 199186,
+          "question_id": 47592,
+          "description": "the repetition of an ending sound",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 199187,
+          "question_id": 47592,
+          "description": "the repetition of vowel sounds",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47593,
+      "collection_id": 875,
+      "question": "<p>Which element of drama tells the actor what to do?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199188,
+          "question_id": 47593,
+          "description": "dialogue",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199189,
+          "question_id": 47593,
+          "description": "stage directions",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 199190,
+          "question_id": 47593,
+          "description": "cast",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199191,
+          "question_id": 47593,
+          "description": "scenes",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47594,
+      "collection_id": 875,
+      "question": "<p>______is a subdivision of a poem?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199192,
+          "question_id": 47594,
+          "description": "sentence",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199193,
+          "question_id": 47594,
+          "description": "lines",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 199194,
+          "question_id": 47594,
+          "description": "stanza",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199195,
+          "question_id": 47594,
+          "description": "rhyme",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47595,
+      "collection_id": 875,
+      "question": "<p>An act of speaking one&rsquo;s thought aloud by oneself, regardless of any hearer, in a play is known as____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199196,
+          "question_id": 47595,
+          "description": "metaphor",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199197,
+          "question_id": 47595,
+          "description": "fable",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 199198,
+          "question_id": 47595,
+          "description": "comedy",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199199,
+          "question_id": 47595,
+          "description": "soliloquy",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47596,
+      "collection_id": 875,
+      "question": "<p>What is the narrator of a poem called?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199200,
+          "question_id": 47596,
+          "description": "author",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 199201,
+          "question_id": 47596,
+          "description": "speaker",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 199202,
+          "question_id": 47596,
+          "description": "narrator",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199203,
+          "question_id": 47596,
+          "description": "Voice",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 47597,
+      "collection_id": 875,
+      "question": "<p>A &ldquo;chapter&rdquo; in a piece of drama is a</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 199204,
+          "question_id": 47597,
+          "description": "act",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 199205,
+          "question_id": 47597,
+          "description": "scene",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 199206,
+          "question_id": 47597,
+          "description": "setting",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 199207,
+          "question_id": 47597,
+          "description": "dialogue",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 56936,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on George Orwell&#39;s NINETEEN EIGHTY-FOUR</strong></p>\r\n\r\n<p>The novel&nbsp;draws a picture of______?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 19,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 218184,
+          "question_id": 56936,
+          "description": "useless past",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218185,
+          "question_id": 56936,
+          "description": "a totalitarian future",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218186,
+          "question_id": 56936,
+          "description": "an unstable moment",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218187,
+          "question_id": 56936,
+          "description": "a peaceful atmosphere",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 19,
+        "title": "Nineteen Eighty-Four"
+      },
+      "ref": null
+    },
+    {
+      "id": 56937,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on George Orwell&#39;s NINETEEN EIGHTY-FOUR.</strong></p>\r\n\r\n<p>The power and oppression of an irresistible evil debased Winston&rsquo;s dreams of________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 19,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218188,
+          "question_id": 56937,
+          "description": "internal security",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218189,
+          "question_id": 56937,
+          "description": "wealth and capitalism",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218190,
+          "question_id": 56937,
+          "description": "freedom and democracy",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218191,
+          "question_id": 56937,
+          "description": "sovereignty forestall reconciliation",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 19,
+        "title": "Nineteen Eighty-Four"
+      },
+      "ref": null
+    },
+    {
+      "id": 56938,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on George Orwell&#39;s NINETEEN EIGHTY-FOUR.</strong></p>\r\n\r\n<p>The novel can be described as__________?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 19,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218192,
+          "question_id": 56938,
+          "description": "optimistic",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218193,
+          "question_id": 56938,
+          "description": "antagonistic",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218194,
+          "question_id": 56938,
+          "description": "persuasive",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218195,
+          "question_id": 56938,
+          "description": "pessimistic",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 19,
+        "title": "Nineteen Eighty-Four"
+      },
+      "ref": null
+    },
+    {
+      "id": 56939,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on George Orwell&#39;s NINETEEN EIGHTY-FOUR.</strong></p>\r\n\r\n<p>Room 101 symbolises a place of________???</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 19,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218196,
+          "question_id": 56939,
+          "description": "rest",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218197,
+          "question_id": 56939,
+          "description": "fun",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218198,
+          "question_id": 56939,
+          "description": "humiliation",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218199,
+          "question_id": 56939,
+          "description": "torture",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 19,
+        "title": "Nineteen Eighty-Four"
+      },
+      "ref": null
+    },
+    {
+      "id": 56940,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on J.P Clark&#39;s WIVES&#39;&nbsp;REVOLT.</strong></p>\r\n\r\n<p>In the play the central idea is that gender equity_______?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 9,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218200,
+          "question_id": 56940,
+          "description": "both undesirable and unattainable",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218201,
+          "question_id": 56940,
+          "description": "desirable and unattainable",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218202,
+          "question_id": 56940,
+          "description": "attainable and desirable",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 218203,
+          "question_id": 56940,
+          "description": "obnoxious and desirable",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 9,
+        "title": "The Wives' Revolt"
+      },
+      "ref": null
+    },
+    {
+      "id": 56941,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on J.P Clark&#39;s WIVES&#39;&nbsp;REVOLT.</strong></p>\r\n\r\n<p>In their fight, the women settle at Eyara in order to_______?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 9,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218204,
+          "question_id": 56941,
+          "description": "Cure cross-piece",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 218205,
+          "question_id": 56941,
+          "description": "Hurt their husbands",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 218206,
+          "question_id": 56941,
+          "description": "Forestall reconciliation",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218207,
+          "question_id": 56941,
+          "description": "Seeks peace",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 9,
+        "title": "The Wives' Revolt"
+      },
+      "ref": null
+    },
+    {
+      "id": 56942,
+      "collection_id": 875,
+      "question": "<p><strong>The question is based on J.P Clark&#39;s WIVES REVOLT.</strong></p>\r\n\r\n<p>&quot;Those who have full breasts have walked out, and that leaves you, me, and the old girls returned_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 9,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 218208,
+          "question_id": 56942,
+          "description": "front of the veranda of Okoro's house",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 218209,
+          "question_id": 56942,
+          "description": "the-kitchen, upstairs",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 218210,
+          "question_id": 56942,
+          "description": "Okoro’s front yard, down stage",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 218211,
+          "question_id": 56942,
+          "description": "the direction of the kitchen, off stage",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 875,
+        "exam_year": 2018,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 9,
+        "title": "The Wives' Revolt"
+      },
+      "ref": null
+    }
+  ]
+}

@@ -1,0 +1,647 @@
+{
+    "message": "We could not find what you asked for, but got you this",
+    "subject": "englishlit",
+    "status": 200,
+    "data": [
+        {
+            "id": 288,
+            "question": "Marvel\u2019s To \u2018His Coy Mistress\u2019 is written mainly in",
+            "option": {
+                "a": "alternate rhymes",
+                "b": "blank verse",
+                "c": "heroic couplets",
+                "d": "middle rhymes."
+            },
+            "section": "Based on selected poems from Johnson, \tR. et al (eds.): New Poetry from Africa; Soyirvka, W. (ed.): Poems of Black Africa; Senanu, K.E. and Vincent, T. (eds.): A Selection of African Poetry; Maduka, C.T. et al: Exam Focus: Literature in English; Eruvbetine, A. E. et al (eds.): Longman Examination Guides; Nwoga, D. I. (ed.): West African Verse and Adeoti G.: Naked Soles.",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 498,
+            "question": "Chief Ade Haladu's crimes are made known to him in a",
+            "option": {
+                "a": "Police station",
+                "b": "Public place",
+                "c": "Court of law",
+                "d": "Hotel environment"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2019"
+        },
+        {
+            "id": 508,
+            "question": "The speech was directed to",
+            "option": {
+                "a": "Cassio",
+                "b": "Lago",
+                "c": "Roderigo",
+                "d": "Othello"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2019"
+        },
+        {
+            "id": 35,
+            "question": "Periphrasis in poetic diction is marked by ",
+            "option": {
+                "a": "circumlocution ",
+                "b": "irony ",
+                "c": "proverb ",
+                "d": "parable."
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2007"
+        },
+        {
+            "id": 225,
+            "question": "Maanan expresses dislike for Lawyer B because of",
+            "option": {
+                "a": "his condemnation of  her choice career",
+                "b": "his recent advances towards her",
+                "c": "the betrayal of her father\u2019s trust",
+                "d": "the betrayal of his wife\u2019s trust"
+            },
+            "section": "Based on J.C. De Graft\u2019s  \tSons and Daughter. ",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 166,
+            "question": "In the novel, Oceania is at war with  ",
+            "option": {
+                "a": "Romania   ",
+                "b": "Catalonia    ",
+                "c": "Eastasia ",
+                "d": "Rhodeia"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2013"
+        },
+        {
+            "id": 387,
+            "question": "In terms of physical location, Faceless is set in",
+            "option": {
+                "a": "Rumumasi",
+                "b": "Agbogbloshie",
+                "c": "Accra",
+                "d": "Kenya"
+            },
+            "section": "Question 26 is based on Amma Darko's Faceless",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 270,
+            "question": "The major reason for Juliet\u2019s grief is",
+            "option": {
+                "a": "the death of her cousin",
+                "b": "her reluctant marriage to the County",
+                "c": "the banishment of her lover",
+                "d": "her imminent death."
+            },
+            "section": "Based on William Shakespeare\u2019s Romeo and Juliet.",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 300,
+            "question": "A figurative device in which a statement is made and then withdrawn is referred to as",
+            "option": {
+                "a": "metanoia",
+                "b": "metaphysical",
+                "c": "metalanguage",
+                "d": "metalepsis."
+            },
+            "section": "Based on General Literary Principles.",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 143,
+            "question": "\u201cThere\u2019s no trust No faith, no honesty in men, all perjured, All forsworn, all naught, all dissembles\u201d The speaker of the above excerpt is ",
+            "option": {
+                "a": "Nurse  ",
+                "b": "Juliet  ",
+                "c": "Balthasaar  ",
+                "d": "Capulet "
+            },
+            "section": "Question is drawn from William Shakespeare\u2019s ROMEO and JULIET",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2012"
+        },
+        {
+            "id": 89,
+            "question": "\u2018Beholds her, single in the field you solitary Highland Lass! Reaping and singing, by herself stop here, or gently pass! Alone she cuts and blinds the gram, and sings a melancholy strain, O listen! For the Vale profound Is overflowing with the sound. The rhyming schema in the first stanza of The Solitary Reaper above is ",
+            "option": {
+                "a": "abcbddee ",
+                "b": "ababccdd ",
+                "c": "alxabcdd ",
+                "d": "abcbddef"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2009"
+        },
+        {
+            "id": 47,
+            "question": "The play Hamlet may be described as a tragedy of: ",
+            "option": {
+                "a": "belief in ghosts ",
+                "b": "marital infidelity ",
+                "c": "indecision and procrastination ",
+                "d": "inordinate love of father by son. "
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2007"
+        },
+        {
+            "id": 255,
+            "question": "The rhyme scheme in the excerpt above is",
+            "option": {
+                "a": "bbaa",
+                "b": "aabb",
+                "c": "abab",
+                "d": "abba"
+            },
+            "section": "That age is best which is the first,<br> \tWhen youth and blood are warmer, <br> \tBut being spent, the worse, and worst <br> \tTime still succeed the former. ",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 507,
+            "question": "The above speech was made by",
+            "option": {
+                "a": "Othello",
+                "b": "Lago",
+                "c": "Desdemona",
+                "d": "Roderigo"
+            },
+            "section": "Question 26 to 30 are based on William Shakespeare's \"Othello\". I have no great devotion to the deed. And yet he hath given me satisfying reasons. Tis but a man gone forth, ny sword; he dies.",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2019"
+        },
+        {
+            "id": 539,
+            "question": "Who must the narrator fight one on one at the battle royal?",
+            "option": {
+                "a": "Tatlock",
+                "b": "Jack",
+                "c": "The M.C",
+                "d": "His friend"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2020"
+        },
+        {
+            "id": 353,
+            "question": "\t\u2018My song is the root<br>\n\ttouching other roots <br>\n\tin a covenant below the crust..\u2019<br>\n\t(Niyi  Osundare: Waiting Laughters)<br>\n\nThe imagery used in the second line of the extract above is",
+            "option": {
+                "a": "olfactory",
+                "b": "visual",
+                "c": "tactile",
+                "d": "auditory"
+            },
+            "section": "based on Literary Appreciation",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2009"
+        },
+        {
+            "id": 50,
+            "question": "Which of these best define exposition in drama?",
+            "option": {
+                "a": "the author's own general introduction to the play ",
+                "b": "the author's early exposure of his dramatis personae to conflict ",
+                "c": "introduction to the characters and the general problem with which the play deals",
+                "d": "the first performance of the play on stage."
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 374,
+            "question": "A port's use of regular rhythm is know as ",
+            "option": {
+                "a": "Metre",
+                "b": "Assonance",
+                "c": "Allegory",
+                "d": "Onomatopoeia"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 445,
+            "question": "Notably, one of the themes enhances the development of A Raisin in the Sun ",
+            "option": {
+                "a": "Dreams, hopes, and plans",
+                "b": "Anxiety associated with ageing",
+                "c": "Mortality",
+                "d": "Death is inevitable"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2018"
+        },
+        {
+            "id": 304,
+            "question": "The image depicted is one of",
+            "option": {
+                "a": "destruction",
+                "b": "dejection",
+                "c": "happiness",
+                "d": "admiration."
+            },
+            "section": "based on Literary Appreciation.",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 437,
+            "question": "One of the following writers is better known as a playwright that as a novelist",
+            "option": {
+                "a": "C. Achebe",
+                "b": "C. Ekwensi",
+                "c": "J.P. Clark",
+                "d": "W. Soyinka"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 393,
+            "question": "In Birago Diop's Vanity, the poem addresses the need for Africans not to neglect their",
+            "option": {
+                "a": "Past or root",
+                "b": "Present and future",
+                "c": "Nature and principles ",
+                "d": "Culture and norms"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 262,
+            "question": "In the play, Fasuwa represents the",
+            "option": {
+                "a": "new culture",
+                "b": "patriarchy",
+                "c": "old order",
+                "d": "African civilization."
+            },
+            "section": "Based on J.C. De Graft\u2019s Sons and  \tDaughters.",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 363,
+            "question": "In Hardcastle's house, Hrdcastle and several \"awkward servants\" enter, the former instructing them on how to appear",
+            "option": {
+                "a": "Disgusting",
+                "b": "Sophisticated",
+                "c": "Friendly",
+                "d": "Fuming"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 511,
+            "question": "\"I am not merry, but I do beguile the thing I am, by seeming otherwise\"",
+            "option": {
+                "a": "Lago",
+                "b": "Desdemona",
+                "c": "Othello",
+                "d": "Cassio"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2019"
+        },
+        {
+            "id": 554,
+            "question": "From the tone of Onu Kingsley Chibuike's \"A government Driver on his Retirement\", words such as \"booze\". \"boomed\" make it",
+            "option": {
+                "a": "Happy",
+                "b": "Sorrowful",
+                "c": "Indifferent",
+                "d": "Joyful"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2020"
+        },
+        {
+            "id": 348,
+            "question": "a structural arrangement of units of composition by which one element of equal importance with another is similarly placed is called",
+            "option": {
+                "a": "repetition",
+                "b": "paradox",
+                "c": "refrain",
+                "d": "parallelism"
+            },
+            "section": "based on General Literary Principles.",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2009"
+        },
+        {
+            "id": 67,
+            "question": "The literary technique in which a reader is taken to the past of a current action in known as:",
+            "option": {
+                "a": "rewinding ",
+                "b": "fast forward ",
+                "c": "flashback ",
+                "d": "repetition."
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 420,
+            "question": "On a Friday night a few weeks later, packing boxes filled the younger apartment in prepartion for the move to their new house in a",
+            "option": {
+                "a": "White neighbourhood",
+                "b": "Black neighbourhood",
+                "c": "Outskirt of the neighbourhood",
+                "d": "City"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 386,
+            "question": "Bigger arrives at the Dalton's house and wastes no time in his efforts to ascertain the situation with",
+            "option": {
+                "a": "Mary's disapperance",
+                "b": "Mary's corpse",
+                "c": "Mary's situation",
+                "d": "Mary's Happiness"
+            },
+            "section": "Question 25 is based on Amma Darko's Faceless",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 404,
+            "question": "The setting is",
+            "option": {
+                "a": "A council chamber",
+                "b": "Venice, a street",
+                "c": "Another street outsode the sagitary",
+                "d": "The citadel of Cyprus"
+            },
+            "section": "Let me speak like yourself and Lay a sentence which, aas a grise or step may help these lovers when remedies are past, the griefs are ended, by seeing the worst which late on nopes depends. (Act I scene III)",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 460,
+            "question": "The setting is",
+            "option": {
+                "a": "A seaport in Cyprus",
+                "b": "Venice, another street",
+                "c": "A room in the castle",
+                "d": "Before the castle"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2018"
+        },
+        {
+            "id": 68,
+            "question": "One rhyme scheme typical of the English sonnet is ",
+            "option": {
+                "a": "abba abba cde dce ",
+                "b": "abba abba cde cde ",
+                "c": "abab cdcd efef gg ",
+                "d": "abcd babb cde cc."
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 367,
+            "question": "A literary work which imitates another in a distorted form is called",
+            "option": {
+                "a": "Metonumy",
+                "b": "Burlesque",
+                "c": "Exodium",
+                "d": "Isocohen"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 197,
+            "question": "The expression \u2018such a rude room of such a poor pair\u2019 illustrates",
+            "option": {
+                "a": "onomatopoeia",
+                "b": "pun",
+                "c": "rhyme",
+                "d": "alliteration"
+            },
+            "section": "A modest two-room hut built of mud and roofed with straw graciously sheltered the Mensahs. One of the rooms advertised itself as a living room. The kind earthenware pot willingly kept company with four ever-smiling stools. The pot eternally contained cool water for guests. The second room was a warm-hearted bedroom without a bed. The poor pair had to sleep on bare straw mats on the polished dirt floor. Some over washed rags deputized for blankets and sheets and pillows. Two strong dry logs, facing each other like bitter rivals burned themselves out at night, not merely to keep the couple warm but mainly to ward off hungry mosquitoes and other hostile pests.<br><br> There was no door to ward off the cold night air. Some rude \tdevices, however, were contrived to keep the room quite safe from prying eyes and curious domestic animals. Would any thief be ever tempted to peep into <strong>such a rude room of such a poor pair<\/strong>?",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "wassce",
+            "examyear": "2015"
+        },
+        {
+            "id": 513,
+            "question": "Characterization in a novel refers to the",
+            "option": {
+                "a": "Writer's opinion of the characters",
+                "b": "Way the characters are revealed to the reader",
+                "c": "Characters and the way they behave",
+                "d": "Reader's opinion of the characters"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2019"
+        },
+        {
+            "id": 123,
+            "question": "The poet personal in the poem above is: ",
+            "option": {
+                "a": "resigned to fate  ",
+                "b": "a holy man  ",
+                "c": "a daily traveler  ",
+                "d": "suffering but optimistic. "
+            },
+            "section": "\u201cI come and go\na pilgrim\ngrubbily unkempt\nstubbornly cheerful\ndefiantly whistling hope\nand grubbing for crumbs of success\nout of all near-defeats.\n",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 462,
+            "question": "\"Nor sit in learning's bower worn through with the dreary shower. How can the bird that is born for joy sit in a cage and sing? The underlined expressions above imply",
+            "option": {
+                "a": "Irony",
+                "b": "Metonymy",
+                "c": "Metaphor",
+                "d": "Satire"
+            },
+            "section": "Question 21 to 25 are based on poems of Black Africa, edited by Wole Soyinka. A selection of African Poetry by K.E Senanu and T. Vincent. New poetry from Africa. Johnson etal. Poems from Ghana edited by Kofi Awoonor. Manscape in the Sierra, New and collected poems by Gbanabom Hallowell",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2018"
+        },
+        {
+            "id": 449,
+            "question": "Whiteman gets the Villagers ____________ to subdue their consciousness",
+            "option": {
+                "a": "Happy",
+                "b": "Involve",
+                "c": "Drunk",
+                "d": "Busy"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2018"
+        },
+        {
+            "id": 417,
+            "question": "She stoops to conquer is a play based on ",
+            "option": {
+                "a": "Comedy-tragedy",
+                "b": "Tragedy",
+                "c": "Laughing comedy",
+                "d": "Comedy"
+            },
+            "section": "Question 16 and 17 are based on Oliver Goldsmith's \"She stoops to Conquer\"",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        }
+    ]
+}

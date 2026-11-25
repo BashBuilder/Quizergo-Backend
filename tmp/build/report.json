@@ -1,0 +1,181 @@
+{
+  "2010": {
+    "total": 127,
+    "valid": 127,
+    "principles": 32,
+    "appreciation": 29,
+    "texts": {
+      "Sons and Daughters": 12,
+      "Romeo and Juliet": 9,
+      "The Old Man and the Medal": 10,
+      "The Joys of Motherhood": 6,
+      "Nineteen Eighty-Four": 8,
+      "Selected Poems": 18
+    },
+    "excluded": {
+      "Things Fall Apart": 3
+    }
+  },
+  "2011": {
+    "total": 49,
+    "valid": 47,
+    "principles": 10,
+    "appreciation": 10,
+    "texts": {
+      "Sons and Daughters": 3,
+      "Romeo and Juliet": 5,
+      "The Old Man and the Medal": 3,
+      "The Joys of Motherhood": 3,
+      "Nineteen Eighty-Four": 4,
+      "Selected Poems": 10
+    },
+    "excluded": {
+      "Twelfth Night": 1
+    }
+  },
+  "2012": {
+    "total": 74,
+    "valid": 71,
+    "principles": 17,
+    "appreciation": 17,
+    "texts": {
+      "Sons and Daughters": 7,
+      "Romeo and Juliet": 9,
+      "The Old Man and the Medal": 4,
+      "The Joys of Motherhood": 4,
+      "Nineteen Eighty-Four": 5,
+      "Selected Poems": 10
+    },
+    "excluded": {
+      "Faceless": 1
+    }
+  },
+  "2013": {
+    "total": 73,
+    "valid": 72,
+    "principles": 14,
+    "appreciation": 11,
+    "texts": {
+      "Sons and Daughters": 9,
+      "Romeo and Juliet": 5,
+      "The Old Man and the Medal": 5,
+      "The Joys of Motherhood": 5,
+      "Nineteen Eighty-Four": 9,
+      "Selected Poems": 15
+    },
+    "excluded": {}
+  },
+  "2014": {
+    "total": 45,
+    "valid": 45,
+    "principles": 10,
+    "appreciation": 6,
+    "texts": {
+      "Women of Owu": 4,
+      "The Tempest": 5,
+      "Purple Hibiscus": 3,
+      "The Old Man and the Sea": 4,
+      "A Woman in Her Prime": 3,
+      "Selected Poems": 10
+    },
+    "excluded": {}
+  },
+  "2015": {
+    "total": 94,
+    "valid": 94,
+    "principles": 31,
+    "appreciation": 18,
+    "texts": {
+      "Sons and Daughters": 8,
+      "Romeo and Juliet": 5,
+      "The Old Man and the Medal": 0,
+      "The Joys of Motherhood": 6,
+      "Nineteen Eighty-Four": 1,
+      "Selected Poems": 6
+    },
+    "excluded": {
+      "Twelfth Night": 1,
+      "The Tempest": 18
+    }
+  },
+  "2016": {
+    "total": 85,
+    "valid": 84,
+    "principles": 25,
+    "appreciation": 10,
+    "texts": {
+      "Harvest of Corruption": 5,
+      "Othello": 6,
+      "Faceless": 5,
+      "Lonely Days": 4,
+      "Native Son": 7,
+      "Selected Poems": 15
+    },
+    "excluded": {
+      "Twelfth Night": 1,
+      "The Gods Are Not to Blame": 1,
+      "The Blood of a Stranger": 5,
+      "A Raisin in the Sun": 1
+    }
+  },
+  "2017": {
+    "total": 80,
+    "valid": 80,
+    "principles": 24,
+    "appreciation": 8,
+    "texts": {
+      "Harvest of Corruption": 8,
+      "Othello": 5,
+      "Faceless": 7,
+      "Lonely Days": 3,
+      "Native Son": 4,
+      "Selected Poems": 13
+    },
+    "excluded": {
+      "The School Boy": 1,
+      "The Blood of a Stranger": 2,
+      "She Stoops to Conquer": 2,
+      "A Raisin in the Sun": 3
+    }
+  },
+  "2018": {
+    "total": 92,
+    "valid": 91,
+    "principles": 38,
+    "appreciation": 12,
+    "texts": {
+      "Harvest of Corruption": 2,
+      "Othello": 9,
+      "Faceless": 3,
+      "Lonely Days": 5,
+      "Native Son": 5,
+      "Selected Poems": 3
+    },
+    "excluded": {
+      "Nineteen Eighty-Four": 4,
+      "The Wives' Revolt": 3,
+      "She Stoops to Conquer": 2,
+      "A Raisin in the Sun": 2,
+      "The Blood of a Stranger": 2,
+      "Ambush": 2
+    }
+  },
+  "2019": {
+    "total": 112,
+    "valid": 110,
+    "principles": 40,
+    "appreciation": 13,
+    "texts": {
+      "Harvest of Corruption": 8,
+      "Othello": 15,
+      "Faceless": 3,
+      "Lonely Days": 4,
+      "Native Son": 4,
+      "Selected Poems": 24
+    },
+    "excluded": {
+      "A Raisin in the Sun": 1
+    }
+  }
+}
+saved 1055 candidates

@@ -1,0 +1,3224 @@
+{
+  "total": 68,
+  "questions": [
+    {
+      "id": 8430,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nBoth comedy and tragedy have</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 35452,
+          "question_id": 8430,
+          "description": "climax",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 35453,
+          "question_id": 8430,
+          "description": "tragic hero",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 35454,
+          "question_id": 8430,
+          "description": "stanza",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35455,
+          "question_id": 8430,
+          "description": "happy ending",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8431,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nA formal dignified speech or writing praising a person or a thing for past or present deeds is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 35456,
+          "question_id": 8431,
+          "description": "eulogy",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 35457,
+          "question_id": 8431,
+          "description": "anthology",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 35458,
+          "question_id": 8431,
+          "description": "lampoon",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35459,
+          "question_id": 8431,
+          "description": "premiere",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8433,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nThe narrative style in which the hero tells his own story directly is the.</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 35464,
+          "question_id": 8433,
+          "description": "subjective",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35465,
+          "question_id": 8433,
+          "description": "first-person",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 35466,
+          "question_id": 8433,
+          "description": "third-person",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35467,
+          "question_id": 8433,
+          "description": "objective",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8434,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nThe physical,historical or cultural background of a literary work is referred to as</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 35468,
+          "question_id": 8434,
+          "description": "plot",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35469,
+          "question_id": 8434,
+          "description": "time",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 35470,
+          "question_id": 8434,
+          "description": "setting",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 35471,
+          "question_id": 8434,
+          "description": "episode",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8436,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nA plot structure that defies chronology can be described as</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 4,
+      "options": [
+        {
+          "id": 35476,
+          "question_id": 8436,
+          "description": "circular",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35477,
+          "question_id": 8436,
+          "description": "episodic",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 35478,
+          "question_id": 8436,
+          "description": "organic",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35479,
+          "question_id": 8436,
+          "description": "open-ended",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8440,
+      "collection_id": 475,
+      "question": "These questions are based on General Literary Principles.<br>\r\n<br>\r\nPun as a literary device deals with",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 35492,
+          "question_id": 8440,
+          "description": "placing words side by side",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35493,
+          "question_id": 8440,
+          "description": "playing on words",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 35494,
+          "question_id": 8440,
+          "description": "arragement of words",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35495,
+          "question_id": 8440,
+          "description": "placing two opposite phrases",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8444,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nIn a narrative poem,the poet attempts to</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 35508,
+          "question_id": 8444,
+          "description": "describe a place",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35509,
+          "question_id": 8444,
+          "description": "preach a sermon",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 35510,
+          "question_id": 8444,
+          "description": "tell a story",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 35511,
+          "question_id": 8444,
+          "description": "summarize a story",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8451,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nThe account of an experience&nbsp;of an individual&nbsp;during the course of a journey is known as</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 5,
+      "options": [
+        {
+          "id": 35536,
+          "question_id": 8451,
+          "description": "an autobiography",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35537,
+          "question_id": 8451,
+          "description": "a catalogue",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 35538,
+          "question_id": 8451,
+          "description": "a memoir",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35539,
+          "question_id": 8451,
+          "description": "a travelogue",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8460,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nSatirical writing employs</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 35572,
+          "question_id": 8460,
+          "description": "synecdoche",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35573,
+          "question_id": 8460,
+          "description": "irony",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 35574,
+          "question_id": 8460,
+          "description": "onomatopoeia",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35575,
+          "question_id": 8460,
+          "description": "epigram",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8561,
+      "collection_id": 475,
+      "question": "<p>What figure of speech is used in the expression below?<br />\r\n&#39;I have been here a thousand times.&#39;<br />\r\n&nbsp;</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 35972,
+          "question_id": 8561,
+          "description": "Apostrophe",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35973,
+          "question_id": 8561,
+          "description": "Pun",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 35974,
+          "question_id": 8561,
+          "description": "Personification",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35975,
+          "question_id": 8561,
+          "description": "Hyperbole",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8564,
+      "collection_id": 475,
+      "question": "<p>Use the quotation below to answer this question.<br />\r\n<br />\r\nBash: You dumb skull of a bone head... you will face court martial for this.<br />\r\nYou look everywhere? You search inside toilet bowl?<br />\r\nWole Soyinka: King Baabu<br />\r\n<br />\r\nFrom the tone of the speech above the speaker is obviously</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 35984,
+          "question_id": 8564,
+          "description": "lackadaisical",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35985,
+          "question_id": 8564,
+          "description": "elated",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 35986,
+          "question_id": 8564,
+          "description": "happy",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35987,
+          "question_id": 8564,
+          "description": "enraged",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8568,
+      "collection_id": 475,
+      "question": "<p>These questions are based on Literary Appreciation<br />\r\n<br />\r\n&#39;That year the harvest was sad like a funeral and many farmers wept as they dug up the miserable yams. One man tied his clothes to a tree branch and hanged himself.<br />\r\nChinua Achebe: Things Fall Apart.<br />\r\n<br />\r\nThe mood conveyed in the excerpt above is one of</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 6,
+      "options": [
+        {
+          "id": 35996,
+          "question_id": 8568,
+          "description": "frustration",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 35997,
+          "question_id": 8568,
+          "description": "sympathy",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 35998,
+          "question_id": 8568,
+          "description": "dilemma",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 35999,
+          "question_id": 8568,
+          "description": "sadness",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8598,
+      "collection_id": 475,
+      "question": "<p>These questions are based on Literary Appreciation<br />\r\n<br />\r\nThat age is best which is the first,<br />\r\nWhen youth and blood are warmer,<br />\r\nBut being spent, the worse, and worst<br />\r\nTime still succeeds the former.<br />\r\n<br />\r\nThe rhyme scheme in the excerpt above is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 36116,
+          "question_id": 8598,
+          "description": "aabb",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 36117,
+          "question_id": 8598,
+          "description": "abab",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 36118,
+          "question_id": 8598,
+          "description": "abba",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 36119,
+          "question_id": 8598,
+          "description": "bbaa",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8604,
+      "collection_id": 475,
+      "question": "<p>These questions are based on Literary Appreciation<br />\r\n<br />\r\nBut the towering earth was tired sitting in one position . She moved, suddenly, and the houses crumbled, the mountains heaved horribly, and the work of a million years was lost.<br />\r\nThe subject matter of the extract above is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 36140,
+          "question_id": 8604,
+          "description": "sea waves",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 36141,
+          "question_id": 8604,
+          "description": "house movement",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 36142,
+          "question_id": 8604,
+          "description": "earthquake",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 36143,
+          "question_id": 8604,
+          "description": "Storms",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8632,
+      "collection_id": 475,
+      "question": "<p>What figure of speech is conveyed in the sentence below?</p>\r\n\r\n<p>The booming of the gun.</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 36244,
+          "question_id": 8632,
+          "description": "onomatopoeia",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 36245,
+          "question_id": 8632,
+          "description": "synedoche",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 36246,
+          "question_id": 8632,
+          "description": "metaphor",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 36247,
+          "question_id": 8632,
+          "description": "irony",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8638,
+      "collection_id": 475,
+      "question": "<p>These questions are based on Literary Appreciation<br />\r\n<br />\r\nDon&#39;t panic. Be calm. If you are somehow upset... try to regain your exposure.<br />\r\nThe speaker in the excerpt above is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 36264,
+          "question_id": 8638,
+          "description": "uncertain",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 36265,
+          "question_id": 8638,
+          "description": "afraid",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 36266,
+          "question_id": 8638,
+          "description": "confident",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 36267,
+          "question_id": 8638,
+          "description": "hopeless",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 8647,
+      "collection_id": 475,
+      "question": "<p>The poem can be described as&nbsp;</p>\r\n\r\n<pre>\r\n\r\n\r\n&nbsp;</pre>",
+      "ref_id": 658,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 6,
+      "options": [
+        {
+          "id": 36300,
+          "question_id": 8647,
+          "description": "an epic",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 36301,
+          "question_id": 8647,
+          "description": "a sonnet",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 36302,
+          "question_id": 8647,
+          "description": "an elegy",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 36303,
+          "question_id": 8647,
+          "description": "a lyric",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 658,
+        "collection_id": 475,
+        "description": "<p>Use the lines below to answer this&nbsp;question.<br />\r\n<br />\r\nMove him into the sun<br />\r\nGently its touch awoke him once,<br />\r\nAt home, whispering of fields unsown<br />\r\nAlways it woke him even in France<br />\r\nUntil this morning and this snow<br />\r\nIf anything might rouse him now<br />\r\nThis kind old sun will know<br />\r\nThink how it wakes the seeds<br />\r\nWoke&nbsp;once the clays of a cold star<br />\r\nAre limbs&nbsp;so dear achieved are sides<br />\r\nFull-nerved still warm too hard to stir?<br />\r\nWas it for this the clay grew tall?<br />\r\nO what made fatuous sunbeams toil<br />\r\nTo break Earth&#39;s sleep at all?</p>",
+        "updated_at": 1758624833
+      }
+    },
+    {
+      "id": 8650,
+      "collection_id": 475,
+      "question": "<p>The theme of the poem is</p>",
+      "ref_id": 658,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 9,
+      "options": [
+        {
+          "id": 36312,
+          "question_id": 8650,
+          "description": "distortion of life",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 36313,
+          "question_id": 8650,
+          "description": "creation of life",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 36314,
+          "question_id": 8650,
+          "description": "vanity of life",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 36315,
+          "question_id": 8650,
+          "description": "futility of life",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 658,
+        "collection_id": 475,
+        "description": "<p>Use the lines below to answer this&nbsp;question.<br />\r\n<br />\r\nMove him into the sun<br />\r\nGently its touch awoke him once,<br />\r\nAt home, whispering of fields unsown<br />\r\nAlways it woke him even in France<br />\r\nUntil this morning and this snow<br />\r\nIf anything might rouse him now<br />\r\nThis kind old sun will know<br />\r\nThink how it wakes the seeds<br />\r\nWoke&nbsp;once the clays of a cold star<br />\r\nAre limbs&nbsp;so dear achieved are sides<br />\r\nFull-nerved still warm too hard to stir?<br />\r\nWas it for this the clay grew tall?<br />\r\nO what made fatuous sunbeams toil<br />\r\nTo break Earth&#39;s sleep at all?</p>",
+        "updated_at": 1758624833
+      }
+    },
+    {
+      "id": 8667,
+      "collection_id": 475,
+      "question": "<p>use the lines below to answer this question.<br />\r\n<br />\r\nA cursing rogue with a merry farce,<br />\r\nA bundle of rags upon a crutch,<br />\r\nStumbled upon that windy place<br />\r\nCalled Cruachan, and it was as much<br />\r\n.<br />\r\nThe rhyme scheme of the stanza above is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 36380,
+          "question_id": 8667,
+          "description": "abab",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 36381,
+          "question_id": 8667,
+          "description": "bbaa",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 36382,
+          "question_id": 8667,
+          "description": "abba",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 36383,
+          "question_id": 8667,
+          "description": "aabb",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67062,
+      "collection_id": 475,
+      "question": "<p>These questions are based on General Literary Principles.<br />\r\n<br />\r\nA play that mainly aims at provoking excessive laughter is called.</p>\r\n\r\n<p>&nbsp;</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 253322,
+          "question_id": 67062,
+          "description": " Comedy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253323,
+          "question_id": 67062,
+          "description": "Farce",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253324,
+          "question_id": 67062,
+          "description": "Satire",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253325,
+          "question_id": 67062,
+          "description": "A Tragic-comedy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67063,
+      "collection_id": 475,
+      "question": "<p><strong>&#39;Yet in their finger upon<br />\r\nOur navel<br />\r\nThe midwives of the spirit say<br />\r\nThey feel a foetal throb.&#39;</strong><br />\r\nThe dominant literary device used in the extract above from Acquahs&#39; <strong>In the Navel of the Soul</strong> is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 253326,
+          "question_id": 67063,
+          "description": "epigram",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253327,
+          "question_id": 67063,
+          "description": "rhythm",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253328,
+          "question_id": 67063,
+          "description": "allegory",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253329,
+          "question_id": 67063,
+          "description": "enjambment",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67064,
+      "collection_id": 475,
+      "question": "<p><strong>And your laughter like a flame<br />\r\npiercing the shadows<br />\r\nHas revealed Africa to me beyond<br />\r\nthe snow of yesterday.</strong><br />\r\nFrom the poem above, <em>shadow</em> means</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253330,
+          "question_id": 67064,
+          "description": "bleak future",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253331,
+          "question_id": 67064,
+          "description": "period of suffering",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253332,
+          "question_id": 67064,
+          "description": "abstract ideas",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253333,
+          "question_id": 67064,
+          "description": "famine",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67065,
+      "collection_id": 475,
+      "question": "<p><strong>Caliph: ....... son, Open all your ears.<br />\r\nMay Allah grant us the fortitude to accept his commands<br />\r\n.... Now the rest is my burden.<br />\r\nI am willing to accept Allah&#39;s<br />\r\nwill in the matter.</strong><br />\r\nThe language of the speaker above is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253334,
+          "question_id": 67065,
+          "description": "inciting",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253335,
+          "question_id": 67065,
+          "description": "diplomatic",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253336,
+          "question_id": 67065,
+          "description": "imploring",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253337,
+          "question_id": 67065,
+          "description": "submissive",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67066,
+      "collection_id": 475,
+      "question": "<p><strong>&#39;Emonewua: You it is who own me, and I speak by your permission. When I came home with my husband this morning, believing my mother was ill and<br />\r\nneeded nursing, little knew I was walking into a house of ruin</strong><br />\r\nJ.P Clark-Bekederemo: The Boat<br />\r\nFrom the excerpt above, the speaker is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 253338,
+          "question_id": 67066,
+          "description": "trained nurse",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253339,
+          "question_id": 67066,
+          "description": "homeless",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253340,
+          "question_id": 67066,
+          "description": "bereaved",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253341,
+          "question_id": 67066,
+          "description": "recovering from an illness",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67067,
+      "collection_id": 475,
+      "question": "<p>That quality in a literal work which evokes tenderness, pity or sorrow is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253342,
+          "question_id": 67067,
+          "description": "pathos",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253343,
+          "question_id": 67067,
+          "description": "patois",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253344,
+          "question_id": 67067,
+          "description": "pathopoeia",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253345,
+          "question_id": 67067,
+          "description": "pataphysics",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67068,
+      "collection_id": 475,
+      "question": "<p>Black theatre is a drama concerned with</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 253346,
+          "question_id": 67068,
+          "description": "Mouners dressed in black",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253347,
+          "question_id": 67068,
+          "description": "The identity of black Americans",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253348,
+          "question_id": 67068,
+          "description": "Africans of west Indian origin",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253349,
+          "question_id": 67068,
+          "description": "Actors of black origin",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67069,
+      "collection_id": 475,
+      "question": "<p>A final stanza of a poem that is shorter than the preceding one is called</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253350,
+          "question_id": 67069,
+          "description": "Envoi",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253351,
+          "question_id": 67069,
+          "description": "Antithesis",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253352,
+          "question_id": 67069,
+          "description": "Epanalepsis",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253353,
+          "question_id": 67069,
+          "description": "Irony",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67070,
+      "collection_id": 475,
+      "question": "<p>Monometer is a</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253354,
+          "question_id": 67070,
+          "description": "Line of verse consisting of a metrical foot",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253355,
+          "question_id": 67070,
+          "description": "Single foot used in John Milton's sonnets",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253356,
+          "question_id": 67070,
+          "description": "line repeated in first syllable of a word",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253357,
+          "question_id": 67070,
+          "description": "Single meter of Coleridge's poem, 'Christabel.'",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67072,
+      "collection_id": 475,
+      "question": "<p>A character that heavily relies on cultural types for his manner of speech, his personality and other distinguishing characteristics is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253362,
+          "question_id": 67072,
+          "description": "A stock character",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253363,
+          "question_id": 67072,
+          "description": "A rounded character",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253364,
+          "question_id": 67072,
+          "description": "An antagonist",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253365,
+          "question_id": 67072,
+          "description": "A fiction character",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67073,
+      "collection_id": 475,
+      "question": "<p>The form of poetry that celebrates with nostalgia the ideal world of the countryside is referred to as</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253366,
+          "question_id": 67073,
+          "description": "a pastoral",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253367,
+          "question_id": 67073,
+          "description": "a ballad",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253368,
+          "question_id": 67073,
+          "description": "an ode",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253369,
+          "question_id": 67073,
+          "description": "an elegy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67074,
+      "collection_id": 475,
+      "question": "<p><strong>&#39;To see a world in a grain of sand<br />\r\nAnd a heaven in a wild flower<br />\r\nHold infinity in the palm of your hand<br />\r\nAnd eternity in an hour&#39;</strong><br />\r\n- William Blake<br />\r\nTo see a World In a Grain of Sand.<br />\r\nThe predominant figure of speech used in the lines above is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 253370,
+          "question_id": 67074,
+          "description": "metaphor",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253371,
+          "question_id": 67074,
+          "description": "paradox",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253372,
+          "question_id": 67074,
+          "description": "hyperbole",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253373,
+          "question_id": 67074,
+          "description": "simile",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67075,
+      "collection_id": 475,
+      "question": "<p><strong>I am informed the day recycles itself today<br />\r\nWhen I slept in the Lord in February .<br />\r\nI blame no one for an untimely death<br />\r\nI bless God for a noble departure- His words The Lord taketh the righteous away before evil days.&#39;</strong><br />\r\n<br />\r\nThe persona in the poem appear happy to have died</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253374,
+          "question_id": 67075,
+          "description": "a noble death",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253375,
+          "question_id": 67075,
+          "description": "at an old age",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253376,
+          "question_id": 67075,
+          "description": "an untimely death",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253377,
+          "question_id": 67075,
+          "description": "during the day",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67076,
+      "collection_id": 475,
+      "question": "<p>The tragic character is the person whose experiences arouse pity and</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253378,
+          "question_id": 67076,
+          "description": "frustration",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253379,
+          "question_id": 67076,
+          "description": "terror",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253380,
+          "question_id": 67076,
+          "description": "horror",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253381,
+          "question_id": 67076,
+          "description": "sympathy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67077,
+      "collection_id": 475,
+      "question": "<p>A panegyric poem is composed to</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253382,
+          "question_id": 67077,
+          "description": "praise",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253383,
+          "question_id": 67077,
+          "description": "abuse",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253384,
+          "question_id": 67077,
+          "description": "condemn",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253385,
+          "question_id": 67077,
+          "description": "elaborate",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67078,
+      "collection_id": 475,
+      "question": "<p>A trilogy is the</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253386,
+          "question_id": 67078,
+          "description": "set of three one-act drama written by related authors",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253387,
+          "question_id": 67078,
+          "description": "sequence of three plays written by the same author",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253388,
+          "question_id": 67078,
+          "description": "series of related stories divided into three equal parts",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253389,
+          "question_id": 67078,
+          "description": "collection of three poems of equal length",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67079,
+      "collection_id": 475,
+      "question": "<p>The term given to a type of incident or device which recurs frequently in literature is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253390,
+          "question_id": 67079,
+          "description": "ritual",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253391,
+          "question_id": 67079,
+          "description": "concept",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253392,
+          "question_id": 67079,
+          "description": "myth",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253393,
+          "question_id": 67079,
+          "description": "motif",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67080,
+      "collection_id": 475,
+      "question": "<p>The term for the moral flaw or&nbsp;weakness that leads to downfall of a major character in drama is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253394,
+          "question_id": 67080,
+          "description": "denouement",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253395,
+          "question_id": 67080,
+          "description": "hamartia",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253396,
+          "question_id": 67080,
+          "description": "chaos",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253397,
+          "question_id": 67080,
+          "description": "reversal",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67081,
+      "collection_id": 475,
+      "question": "<p>The narrator in a prose work who is also a character is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 253398,
+          "question_id": 67081,
+          "description": "omniscient narrator",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253399,
+          "question_id": 67081,
+          "description": "participatory narrator",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253400,
+          "question_id": 67081,
+          "description": "objective narrator",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253401,
+          "question_id": 67081,
+          "description": "subjective narrator",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67082,
+      "collection_id": 475,
+      "question": "<p><strong>Africa my Africa of proud warriors in ancestral savannahs.<br />\r\nI have never known you<br />\r\nbut your blood flows in my vein<br />\r\nYour beautiful black blood that irrigates<br />\r\nthe field...</strong><br />\r\nDavid Diop, &#39;Africa&#39;<br />\r\nIn the lines above, Diop uses</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253402,
+          "question_id": 67082,
+          "description": "onomatopoeia",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253403,
+          "question_id": 67082,
+          "description": "metaphor",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253404,
+          "question_id": 67082,
+          "description": "personification",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253405,
+          "question_id": 67082,
+          "description": "simile",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67083,
+      "collection_id": 475,
+      "question": "<p>The figure of speech in which a character makes a statement that has or would have deep and serious implication in the play is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 253406,
+          "question_id": 67083,
+          "description": "dramatic irony",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253407,
+          "question_id": 67083,
+          "description": "aside",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253408,
+          "question_id": 67083,
+          "description": "textual contrast",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253409,
+          "question_id": 67083,
+          "description": "euphemism",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 67084,
+      "collection_id": 475,
+      "question": "<p>These question are based on selected poems from Ker, D.et al (eds.)New poetry from Africa; Soyinka, (ed.): Poems of Black Africa; Senanu K.E. and Vincent, T.(eds.): A Selection of African poetry;Umukoro, M et al (eds.): Exam focus:Literature in English: Eruvbetine, A.E.et al (eds): Longman Examination Guide and Nwoga, D.I. (eds.): West African Verse.<br />\r\n<br />\r\nIn&nbsp;Kunene&#39;s A heritage of liberation, the poet persona requests that the weapon of warfare be handed to their</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253410,
+          "question_id": 67084,
+          "description": "relations",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253411,
+          "question_id": 67084,
+          "description": "grand children",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253412,
+          "question_id": 67084,
+          "description": "families",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253413,
+          "question_id": 67084,
+          "description": "friends",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67085,
+      "collection_id": 475,
+      "question": "<p>These question are based on selected poems from Ker, D.et al (eds.)New poetry from Africa; Soyinka, (ed.): Poems of Black Africa; Senanu K.E. and Vincent, T.(eds.): A Selection of African poetry;Umukoro, M et al (eds.): Exam focus:Literature in English: Eruvbetine, A.E.et al (eds): Longman Examination Guide and Nwoga, D.I. (eds.): West African Verse.<br />\r\n<br />\r\nThe predominant device in Launko&#39;s End of war is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253414,
+          "question_id": 67085,
+          "description": "antithesis",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253415,
+          "question_id": 67085,
+          "description": "oxymoron",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253416,
+          "question_id": 67085,
+          "description": "paradox",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253417,
+          "question_id": 67085,
+          "description": "onomatopoeia",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67086,
+      "collection_id": 475,
+      "question": "<p>These question are based on selected poems from Ker, D.et al (eds.)New poetry from Africa; Soyinka, (ed.): Poems of Black Africa; Senanu K.E. and Vincent, T.(eds.): A Selection of African poetry;Umukoro, M et al (eds.): Exam focus:Literature in English: Eruvbetine, A.E.et al (eds): Longman Examination Guide and Nwoga, D.I. (eds.): West African Verse.<br />\r\n<br />\r\nThe theme of the poem &quot;Give Me The Minstrel&#39;s Seat&quot; centres on</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253418,
+          "question_id": 67086,
+          "description": "fortune",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253419,
+          "question_id": 67086,
+          "description": "marriage",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253420,
+          "question_id": 67086,
+          "description": "companionship",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253421,
+          "question_id": 67086,
+          "description": "divorce",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67087,
+      "collection_id": 475,
+      "question": "<p>These question are based on selected poems from Ker, D.et al (eds.)New poetry from Africa; Soyinka, (ed.): Poems of Black Africa; Senanu K.E. and Vincent, T.(eds.): A Selection of African poetry;Umukoro, M et al (eds.): Exam focus:Literature in English: Eruvbetine, A.E.et al (eds): Longman Examination Guide and Nwoga, D.I. (eds.): West African Verse.<br />\r\n<br />\r\nThe poet persona in Marvell&#39;s To His Coy Mistress is willing to praise the ladies eyes for</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253422,
+          "question_id": 67087,
+          "description": "six decades",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253423,
+          "question_id": 67087,
+          "description": "two centuries",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253424,
+          "question_id": 67087,
+          "description": "a century",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253425,
+          "question_id": 67087,
+          "description": "thirty thousand years",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67088,
+      "collection_id": 475,
+      "question": "<p>These question are based on selected poems from Ker, D.et al (eds.)New poetry from Africa; Soyinka, (ed.): Poems of Black Africa; Senanu K.E. and Vincent, T.(eds.): A Selection of African poetry;Umukoro, M et al (eds.): Exam focus:Literature in English: Eruvbetine, A.E.et al (eds): Longman Examination Guide and Nwoga, D.I. (eds.): West African Verse.<br />\r\n<br />\r\nIn Lawrence&#39;s Bat, the poet persona mistakes the bats for</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253426,
+          "question_id": 67088,
+          "description": "swallows",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253427,
+          "question_id": 67088,
+          "description": "pipistrello",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253428,
+          "question_id": 67088,
+          "description": "sparrows",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253429,
+          "question_id": 67088,
+          "description": "owls",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67089,
+      "collection_id": 475,
+      "question": "<p>These question are based on selected poems from Ker, D.et al (eds.)New poetry from Africa; Soyinka, (ed.): Poems of Black Africa; Senanu K.E. and Vincent, T.(eds.): A Selection of African poetry;Umukoro, M et al (eds.): Exam focus:Literature in English: Eruvbetine, A.E.et al (eds): Longman Examination Guide and Nwoga, D.I. (eds.): West African Verse.<br />\r\n<br />\r\nIn Elliot&#39;s Journey of the Magi, the magi&nbsp;are aided on their journey by</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 4,
+      "options": [
+        {
+          "id": 253430,
+          "question_id": 67089,
+          "description": "horses",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253431,
+          "question_id": 67089,
+          "description": "camels",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253432,
+          "question_id": 67089,
+          "description": "chariots",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253433,
+          "question_id": 67089,
+          "description": "donkeys",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67090,
+      "collection_id": 475,
+      "question": "<p>These question are based on selected poems from Ker, D.et al (eds.)New poetry from Africa; Soyinka, (ed.): Poems of Black Africa; Senanu K.E. and Vincent, T.(eds.): A Selection of African poetry;Umukoro, M et al (eds.): Exam focus:Literature in English: Eruvbetine, A.E.et al (eds): Longman Examination Guide and Nwoga, D.I. (eds.): West African Verse.<br />\r\n<br />\r\nAccording to Cope&#39;s Sonnet VII, poetry is basically</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253434,
+          "question_id": 67090,
+          "description": "therapeutic",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253435,
+          "question_id": 67090,
+          "description": "philosophical",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253436,
+          "question_id": 67090,
+          "description": "inspiring",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253437,
+          "question_id": 67090,
+          "description": "boring",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67091,
+      "collection_id": 475,
+      "question": "<p><br />\r\nThis question is based on J.C De Graft Sons and Daughters.<br />\r\n&#39;I simply don&#39;t understand what&#39;s the matter with everybody today. everybody let me down, and ......<br />\r\nThe speaker above is referring to</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 21,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253438,
+          "question_id": 67091,
+          "description": "Hannah and George",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253439,
+          "question_id": 67091,
+          "description": "Aaron and Maanan",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253440,
+          "question_id": 67091,
+          "description": "Lawyer B and Mrs. B",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253441,
+          "question_id": 67091,
+          "description": "Fosuwa and Maidservant",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 21,
+        "title": "Sons and Daughters"
+      },
+      "ref": null
+    },
+    {
+      "id": 67092,
+      "collection_id": 475,
+      "question": "<p>This question is based on Ferdinand Oyono&#39;s <em>The Old Man and the Medal</em></p>\r\n\r\n<p><br />\r\nThe disagreement betweeen Mvondo and Nti centres on the latter&#39;s claim to have</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 28,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253442,
+          "question_id": 67092,
+          "description": "assisted Meka in getting the medal",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253443,
+          "question_id": 67092,
+          "description": "been in a whiteman's office",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253444,
+          "question_id": 67092,
+          "description": "eaten more than his share of the food",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253445,
+          "question_id": 67092,
+          "description": "eaten the entire entrails of the sheep",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 28,
+        "title": "The Old Man and the Medal"
+      },
+      "ref": null
+    },
+    {
+      "id": 67093,
+      "collection_id": 475,
+      "question": "<p>This question is based on Ferdinand Oyono&#39;s <em>The Old Man and the Medal</em><br />\r\n<br />\r\nMeka can best be described as</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 28,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253446,
+          "question_id": 67093,
+          "description": "an impulsive old man",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253447,
+          "question_id": 67093,
+          "description": "an old religious bigot",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253448,
+          "question_id": 67093,
+          "description": "an egocentric old man",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253449,
+          "question_id": 67093,
+          "description": "a simple hearted old man",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 28,
+        "title": "The Old Man and the Medal"
+      },
+      "ref": null
+    },
+    {
+      "id": 67094,
+      "collection_id": 475,
+      "question": "<p>This question is based on Ferdinand Oyono&#39;s <em>The Old Man and the Medal</em><br />\r\n<br />\r\nIn the novel, the colonialists treat the Africans with</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 28,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253450,
+          "question_id": 67094,
+          "description": "indifference",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253451,
+          "question_id": 67094,
+          "description": "honour",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253452,
+          "question_id": 67094,
+          "description": "disdain",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253453,
+          "question_id": 67094,
+          "description": "kid gloves",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 28,
+        "title": "The Old Man and the Medal"
+      },
+      "ref": null
+    },
+    {
+      "id": 67096,
+      "collection_id": 475,
+      "question": "<p>This question is based on Buchi Emecheta&#39;s <em>The Joys of Motherhood</em>.<br />\r\n<br />\r\nIn the novel, the society puts high value on</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 22,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253458,
+          "question_id": 67096,
+          "description": "egalitarianism",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253459,
+          "question_id": 67096,
+          "description": "male ascendency",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253460,
+          "question_id": 67096,
+          "description": "gender equity",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253461,
+          "question_id": 67096,
+          "description": "procreation",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 22,
+        "title": "The Joys of Motherhood"
+      },
+      "ref": null
+    },
+    {
+      "id": 67097,
+      "collection_id": 475,
+      "question": "<p>This question is based on Buchi Emecheta&#39;s <em>The Joys of Motherhood</em>.<br />\r\n<br />\r\nThe medicine man links the lump discovered on Nnu Ego at birth, to the</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 22,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253462,
+          "question_id": 67097,
+          "description": "ill-luck and tragic events attributed to a predestined fate",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253463,
+          "question_id": 67097,
+          "description": "possession of physical admirable qualities that make her an epitome of perfection",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253464,
+          "question_id": 67097,
+          "description": "wound inflicted on the slave woman buried with Agbadi's wife",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253465,
+          "question_id": 67097,
+          "description": "coming back of the Agunwa to the society to live again",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 22,
+        "title": "The Joys of Motherhood"
+      },
+      "ref": null
+    },
+    {
+      "id": 67098,
+      "collection_id": 475,
+      "question": "<p>This question is based on Buchi Emecheta&#39;s <em>The Joys of Motherhood</em>.<br />\r\n<br />\r\nThe constant companion of Nnaife&#39;s family are</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 22,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253466,
+          "question_id": 67098,
+          "description": "sickness and joblessness",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253467,
+          "question_id": 67098,
+          "description": "togetherness and happiness",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253468,
+          "question_id": 67098,
+          "description": "disagreement and humiliation",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253469,
+          "question_id": 67098,
+          "description": "poverty and hunger",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 22,
+        "title": "The Joys of Motherhood"
+      },
+      "ref": null
+    },
+    {
+      "id": 67099,
+      "collection_id": 475,
+      "question": "<p>This question is based on selected poems from Ker, D. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black African; Senanu, K.E. and Vincent, T.(ds.): A Selection of African Poetry; Umukoro, M. et al (eds.); Exam Focus: Literature-in-English; Eruvbetine, A.E. et al (eds.) Longman Examination Guides and Nwoga, D.I. (ed.):West African Verse</p>\r\n\r\n<p>Rubadiri&#39;s <strong>An African Thunderstorm</strong>, says that during thunderstorm in the village</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253470,
+          "question_id": 67099,
+          "description": "children are delighted while women move in and out",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253471,
+          "question_id": 67099,
+          "description": "children play in the rain",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253472,
+          "question_id": 67099,
+          "description": "both women and children are delighted",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253473,
+          "question_id": 67099,
+          "description": "women cook their food.",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67100,
+      "collection_id": 475,
+      "question": "<p><br />\r\nThis question is based on George Orwell&#39;s Nighteen Eighty-four.<br />\r\n<br />\r\nThe Ministry of Peace is concerned with making</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 19,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253474,
+          "question_id": 67100,
+          "description": "weapons",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253475,
+          "question_id": 67100,
+          "description": "instruments",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253476,
+          "question_id": 67100,
+          "description": "wars",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253477,
+          "question_id": 67100,
+          "description": "reconciliation",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 19,
+        "title": "Nineteen Eighty-Four"
+      },
+      "ref": null
+    },
+    {
+      "id": 67101,
+      "collection_id": 475,
+      "question": "<p>This question is based on George Orwell&#39;s Nighteen Eighty-four.<br />\r\n<br />\r\nThe subject matter of the novel is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 19,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253478,
+          "question_id": 67101,
+          "description": "totalitarian dictatorship",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253479,
+          "question_id": 67101,
+          "description": "retributive justice",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253480,
+          "question_id": 67101,
+          "description": "class segregation",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253481,
+          "question_id": 67101,
+          "description": "exploitation and cruelty",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 19,
+        "title": "Nineteen Eighty-Four"
+      },
+      "ref": null
+    },
+    {
+      "id": 67102,
+      "collection_id": 475,
+      "question": "<p>This question is based on George Orwell&#39;s Nighteen Eighty-four.<br />\r\n<br />\r\nHow did Winston start his rebellion against the state?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 19,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253482,
+          "question_id": 67102,
+          "description": "By engaging in anti-party activities",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253483,
+          "question_id": 67102,
+          "description": "When He spied on the party",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253484,
+          "question_id": 67102,
+          "description": "When He started a secret affair",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253485,
+          "question_id": 67102,
+          "description": "By keeping a private diary",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 19,
+        "title": "Nineteen Eighty-Four"
+      },
+      "ref": null
+    },
+    {
+      "id": 67103,
+      "collection_id": 475,
+      "question": "<p>This question is based on George Orwell&#39;s Nighteen Eighty-four.<br />\r\n<br />\r\nThe party seeks power for</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 19,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253486,
+          "question_id": 67103,
+          "description": "its own sake",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253487,
+          "question_id": 67103,
+          "description": "its members",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253488,
+          "question_id": 67103,
+          "description": "peoples' sake",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253489,
+          "question_id": 67103,
+          "description": "the nation",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 19,
+        "title": "Nineteen Eighty-Four"
+      },
+      "ref": null
+    },
+    {
+      "id": 67104,
+      "collection_id": 475,
+      "question": "<p>This question is based on selected poems from Ker, D. et al (eds.): New Poetry from Africa; Soyinka, W. (ed.): Poems of Black African; Senanu, K.E. and Vincent, T.(ds.): A Selection of African Poetry; Umukoro, M. et al (eds.); Exam Focus: Literature-in-English; Eruvbetine, A.E. et al (eds.) Longman Examination Guides and Nwoga, D.I. (ed.):West African Verse</p>\r\n\r\n<p>As the dancers move through paths strewn with glass chips, the images in Adeoti&#39;s <strong>Naked Soles</strong> change from</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253490,
+          "question_id": 67104,
+          "description": "pain to grief",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253491,
+          "question_id": 67104,
+          "description": "sorrow to joy",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253492,
+          "question_id": 67104,
+          "description": "joy to excitement",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253493,
+          "question_id": 67104,
+          "description": "inaction to action",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 67105,
+      "collection_id": 475,
+      "question": "<p>This question is based on William Shakespeare&#39;s <em>Romeo and Juliet</em><br />\r\n<br />\r\nThe play is mostly written in</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 20,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253494,
+          "question_id": 67105,
+          "description": "metres",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253495,
+          "question_id": 67105,
+          "description": "foot",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253496,
+          "question_id": 67105,
+          "description": "blank verse",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 253497,
+          "question_id": 67105,
+          "description": "free verse",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 20,
+        "title": "Romeo and Juliet"
+      },
+      "ref": null
+    },
+    {
+      "id": 67106,
+      "collection_id": 475,
+      "question": "<p>This question is based on William Shakespeare&#39;s <em>Romeo and Juliet</em><br />\r\n<br />\r\n<strong>&#39;O serpent heart, hid with a flowering face!&#39;</strong><br />\r\nThe statement above refers to</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 20,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253498,
+          "question_id": 67106,
+          "description": "Juliet",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253499,
+          "question_id": 67106,
+          "description": "Romeo",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253500,
+          "question_id": 67106,
+          "description": "Benvoli",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253501,
+          "question_id": 67106,
+          "description": "Tybalt",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 20,
+        "title": "Romeo and Juliet"
+      },
+      "ref": null
+    },
+    {
+      "id": 67107,
+      "collection_id": 475,
+      "question": "<p>This question is based on William Shakespeare&#39;s <em>Romeo and Juliet</em><br />\r\n<br />\r\nThe spatial setting of the play is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 20,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253502,
+          "question_id": 67107,
+          "description": "Athens",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253503,
+          "question_id": 67107,
+          "description": "Venice",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253504,
+          "question_id": 67107,
+          "description": "Padua",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253505,
+          "question_id": 67107,
+          "description": "Verona",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 20,
+        "title": "Romeo and Juliet"
+      },
+      "ref": null
+    },
+    {
+      "id": 67108,
+      "collection_id": 475,
+      "question": "<p>This question is based on William Shakespeare&#39;s <em>Romeo and Juliet</em><br />\r\n<br />\r\nRomeo is banished from Mantua because he</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 20,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253506,
+          "question_id": 67108,
+          "description": "kills Tybalt in a street's duel",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253507,
+          "question_id": 67108,
+          "description": "marries Juliet without parental consent",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253508,
+          "question_id": 67108,
+          "description": "attends Capulet's party uninvited",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253509,
+          "question_id": 67108,
+          "description": "attempts to kill Paris, his rival",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 20,
+        "title": "Romeo and Juliet"
+      },
+      "ref": null
+    },
+    {
+      "id": 67110,
+      "collection_id": 475,
+      "question": "<p>This question is based on J.C. De Graft&#39;s <em>Sons and Daughters</em>.<br />\r\n<br />\r\nMaanan expresses dislike for lawyer B because of</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 21,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253514,
+          "question_id": 67110,
+          "description": "the betrayal of his wife's trust",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253515,
+          "question_id": 67110,
+          "description": "the betrayal of her father's trust",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253516,
+          "question_id": 67110,
+          "description": "his condemnation of her choice of career",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253517,
+          "question_id": 67110,
+          "description": "his recent advances towards her",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 21,
+        "title": "Sons and Daughters"
+      },
+      "ref": null
+    },
+    {
+      "id": 67111,
+      "collection_id": 475,
+      "question": "<p>This question is based on J.C. De Graft&#39;s <em>Sons and Daughters</em>.<br />\r\n<br />\r\nThe traditional order in the play is represented by</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 21,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253518,
+          "question_id": 67111,
+          "description": "Mrs. B",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 253519,
+          "question_id": 67111,
+          "description": "Aunt",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 253520,
+          "question_id": 67111,
+          "description": "Hannah",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253521,
+          "question_id": 67111,
+          "description": "Maanan",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 21,
+        "title": "Sons and Daughters"
+      },
+      "ref": null
+    },
+    {
+      "id": 67112,
+      "collection_id": 475,
+      "question": "<p>This question is based on J.C. De Graft&#39;s <em>Sons and Daughters</em>.<br />\r\n<br />\r\nWhere does the play take place?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 21,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253522,
+          "question_id": 67112,
+          "description": "In Ofosu's place",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253523,
+          "question_id": 67112,
+          "description": "On the street",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253524,
+          "question_id": 67112,
+          "description": "In George's place",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253525,
+          "question_id": 67112,
+          "description": "In aunt's house",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 21,
+        "title": "Sons and Daughters"
+      },
+      "ref": null
+    },
+    {
+      "id": 67116,
+      "collection_id": 475,
+      "question": "<p>Use the quotation below to answer this question.<br />\r\n<strong>Basha: You dumb skull of a bone head...you will face court martial for this. You look everywhere? You search inside toilet bowl?</strong><br />\r\nWole Soyinka: King Baabu.<br />\r\nThe person being addressed above is a</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 253538,
+          "question_id": 67116,
+          "description": "soldier",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 253539,
+          "question_id": 67116,
+          "description": "lawyer",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 253540,
+          "question_id": 67116,
+          "description": "student",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 253541,
+          "question_id": 67116,
+          "description": "domestic servant",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 475,
+        "exam_year": 2010,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    }
+  ]
+}

@@ -1,0 +1,2018 @@
+{
+  "total": 42,
+  "questions": [
+    {
+      "id": 46548,
+      "collection_id": 482,
+      "question": "<p>This question is based on Richard Wright&#39;s Native Son<br />\r\n<br />\r\nThe story is narrated using the</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 14,
+      "comments_count": 7,
+      "options": [
+        {
+          "id": 194951,
+          "question_id": 46548,
+          "description": "Omniscient",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 194952,
+          "question_id": 46548,
+          "description": "limited omniscient",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 194953,
+          "question_id": 46548,
+          "description": "objective",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 194954,
+          "question_id": 46548,
+          "description": "first person",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 14,
+        "title": "Native Son"
+      },
+      "ref": null
+    },
+    {
+      "id": 46549,
+      "collection_id": 482,
+      "question": "<p>This question is based on Selected Poems from Johnson, R et al(eds): New Poetry from Africa; Soyinka, (ed); Poems of Black Africa; Senanu, K.E, and Vicent, T.(ed.):<br />\r\nA Selection of African Poetry; Gbemisola A.: Naked Soles; Hayward, J.(ed.); The Penguin Book of English Verse and Nwoga, D.(ed.): West African Verse.<br />\r\n<br />\r\nThe mood of Peter&#39;s The Panic of Growing Older can be described as</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 71,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 194955,
+          "question_id": 46549,
+          "description": "sober",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 194956,
+          "question_id": 46549,
+          "description": "boastful",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 194957,
+          "question_id": 46549,
+          "description": "defiant",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 194958,
+          "question_id": 46549,
+          "description": "languid",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 46550,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Frank Ogodo Ogbeche&#39;s Harvest of Corruption</strong><br />\r\n<br />\r\n&quot;Trust me. My duty is to convince her to play ball with him and then the usual commission keeps rolling in, shee you get?...&quot;<br />\r\n<br />\r\nThe speaker in the excerpt above is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 18,
+      "comments_count": 6,
+      "options": [
+        {
+          "id": 194959,
+          "question_id": 46550,
+          "description": "Aloho",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 194960,
+          "question_id": 46550,
+          "description": "Ogeyi",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 194961,
+          "question_id": 46550,
+          "description": "Odili",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 194962,
+          "question_id": 46550,
+          "description": "Ochuole",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 46552,
+      "collection_id": 482,
+      "question": "\"The bees are <u>buzzing</u> and <u>humming</u> with great zest. <br>\r\nthe doves are cooing, and the children <u>chatter</u> as they <u>clatter</u> downstairs to come and dabble in the cool system.<br>\r\n<br>\r\nUse the extract above to answer the question below<br>\r\n<br>\r\nThe predicament sound device in the extract is",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 194967,
+          "question_id": 46552,
+          "description": "assonance",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 194968,
+          "question_id": 46552,
+          "description": "consonance",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 194969,
+          "question_id": 46552,
+          "description": "onomatopoeia",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 194970,
+          "question_id": 46552,
+          "description": "alliteration",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46553,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Selected Poems from Johnson, R et al(eds): New Poetry from Africa; Soyinka, (ed); Poems of Black Africa; Senanu, K.E, and Vicent, T.(ed.):<br />\r\nA Selection of African Poetry; Gbemisola A.: Naked Soles; Hayward, J.(ed.); The Penguin Book of English Verse and Nwoga, D.(ed.): West African Verse.</strong><br />\r\n<br />\r\nPiano and Drums according to Okara&#39;s Piano and Drums are musical instruments of __________</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 71,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 194971,
+          "question_id": 46553,
+          "description": "contradictory tunes",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 194972,
+          "question_id": 46553,
+          "description": "complementary tunes",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 194973,
+          "question_id": 46553,
+          "description": "different cultural milieus",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 194974,
+          "question_id": 46553,
+          "description": "different rhythmic appeals",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 46555,
+      "collection_id": 482,
+      "question": "<p>A poem that describes the simple life of rural people is called ___</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 194979,
+          "question_id": 46555,
+          "description": "elegy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 194980,
+          "question_id": 46555,
+          "description": "ode",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 194981,
+          "question_id": 46555,
+          "description": "lyrics",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 194982,
+          "question_id": 46555,
+          "description": "pastoral",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46559,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on William Shakespheare&#39;s Othello</strong><br />\r\n<br />\r\n&ldquo; ...Fathers, from hence trust not daughters&#39; minds. By what you see them act. Is there not charms. By which the property of youth and maidhood May be abused?. &rdquo;<br />\r\n<br />\r\nIn the excerpt it is implied that daughters are</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 17,
+      "comments_count": 5,
+      "options": [
+        {
+          "id": 194995,
+          "question_id": 46559,
+          "description": "lascivious",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 194996,
+          "question_id": 46559,
+          "description": "petty",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 194997,
+          "question_id": 46559,
+          "description": "pretentious",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 194998,
+          "question_id": 46559,
+          "description": "thieves",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 46560,
+      "collection_id": 482,
+      "question": "<p>How many stanza and lines does William Moris&#39; poem &quot;the proud king&quot; has?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 71,
+      "comments_count": 8,
+      "options": [
+        {
+          "id": 194999,
+          "question_id": 46560,
+          "description": "119 stanzas and 849 lines",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 195000,
+          "question_id": 46560,
+          "description": "109 stanzas and 849 lines",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195001,
+          "question_id": 46560,
+          "description": "119 stanzas and 850 lines",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195002,
+          "question_id": 46560,
+          "description": "109 stanzas and 850 lines",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 46563,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Selected Poems from Johnson, R et al(eds): New Poetry from Africa; Soyinka, (ed); Poems of Black Africa; Senanu, K.E, and Vicent, T.(ed.):<br />\r\nA Selection of African Poetry; Gbemisola A.: Naked Soles; Hayward, J.(ed.); The Penguin Book of English Verse and Nwoga, D.(ed.): West African Verse.</strong><br />\r\n<br />\r\nOne of the thematic preoccupations of Awonoor&#39;s The Anvil and the Hammer is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 71,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195011,
+          "question_id": 46563,
+          "description": "clash of cultures",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 195012,
+          "question_id": 46563,
+          "description": "revival of colonalism",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195013,
+          "question_id": 46563,
+          "description": "the changing face of colonial masters",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195014,
+          "question_id": 46563,
+          "description": "the good attributes of colonalism",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 46564,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Bayo Adebowale&#39;s Lonely Days.</strong><br />\r\n<br />\r\nThe cap-picking ceremony is to</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 16,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195015,
+          "question_id": 46564,
+          "description": "break the strong will of Yaremi",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195016,
+          "question_id": 46564,
+          "description": "make Yaremi remarry",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195017,
+          "question_id": 46564,
+          "description": "establish that she is wicked",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195018,
+          "question_id": 46564,
+          "description": "prove that Ajumobi is not the best",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 16,
+        "title": "Lonely Days"
+      },
+      "ref": null
+    },
+    {
+      "id": 46566,
+      "collection_id": 482,
+      "question": "<p>This Question is based on General Literacy principles and Literacy Appreciations.<br />\r\n<br />\r\nA poem used to express grief on the occasion of someone&#39;s death is _______?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 10,
+      "options": [
+        {
+          "id": 195023,
+          "question_id": 46566,
+          "description": "elegy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195024,
+          "question_id": 46566,
+          "description": "epic",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195025,
+          "question_id": 46566,
+          "description": "dirge",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195026,
+          "question_id": 46566,
+          "description": "sonnet",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46567,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Frank Ogodo Ogbeche&#39;s Harvest of Corruption </strong><br />\r\n<br />\r\n(ACP Yakubu in his office)...<br />\r\n<br />\r\nHow can that old crook of a Judge acquit and discharge a very clear case of cocaine pushing. What evidence is he looking for?...&#39; The technique used in the excerpt above is called</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 18,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 195027,
+          "question_id": 46567,
+          "description": "interior monologue",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195028,
+          "question_id": 46567,
+          "description": "apostrophe",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195029,
+          "question_id": 46567,
+          "description": "dramatic monologue",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195030,
+          "question_id": 46567,
+          "description": "soliloquy",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 46568,
+      "collection_id": 482,
+      "question": "<p>&quot;And blossoms blown away&quot;<br />\r\n<br />\r\nThe line above from William Blake&#39;s poem &quot; The school boy&quot; is an example of</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 5,
+      "options": [
+        {
+          "id": 195031,
+          "question_id": 46568,
+          "description": "personification",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195032,
+          "question_id": 46568,
+          "description": "euphemism",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195033,
+          "question_id": 46568,
+          "description": "alliteration",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195034,
+          "question_id": 46568,
+          "description": "consonance",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46569,
+      "collection_id": 482,
+      "question": "<p>Who succeeded Othello as Governor of Cyprus?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 17,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195035,
+          "question_id": 46569,
+          "description": "Cassio",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 195036,
+          "question_id": 46569,
+          "description": "Iago",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195037,
+          "question_id": 46569,
+          "description": "Montano",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195038,
+          "question_id": 46569,
+          "description": "Gratiano",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 46570,
+      "collection_id": 482,
+      "question": "<p>A character whose name is also the source of the title of the narrative is called ___?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 195039,
+          "question_id": 46570,
+          "description": "round",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195040,
+          "question_id": 46570,
+          "description": "eponymous",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195041,
+          "question_id": 46570,
+          "description": "flat",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195042,
+          "question_id": 46570,
+          "description": "titled",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46572,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Amma Darko&#39;s Faceless</strong><br />\r\n<br />\r\nThe dominant tone of the novel is one of</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 15,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195047,
+          "question_id": 46572,
+          "description": "bitterness",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 195048,
+          "question_id": 46572,
+          "description": "hope",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195049,
+          "question_id": 46572,
+          "description": "fear",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195050,
+          "question_id": 46572,
+          "description": "joy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 15,
+        "title": "Faceless"
+      },
+      "ref": null
+    },
+    {
+      "id": 46573,
+      "collection_id": 482,
+      "question": "<p><strong>This&nbsp;question is based on Frank Ogodo Ogbeche&#39;s Harvest of Corruption</strong><br />\r\n<br />\r\nIt can be deduced from the play that</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 18,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 195051,
+          "question_id": 46573,
+          "description": "drug pushing is lucrative",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195052,
+          "question_id": 46573,
+          "description": "no crime will go unpunished",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195053,
+          "question_id": 46573,
+          "description": "the wealthy also cry",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195054,
+          "question_id": 46573,
+          "description": "people will always complain",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 46574,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on General Literary principle</strong><br />\r\n<br />\r\nMyths differ from legend in that myths</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 195055,
+          "question_id": 46574,
+          "description": "have more of the historical background and less of the supernatural",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195056,
+          "question_id": 46574,
+          "description": "are less concerned with moral didacticism",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195057,
+          "question_id": 46574,
+          "description": "are more concerned with moral didactism",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195058,
+          "question_id": 46574,
+          "description": "have less of historical background and more of the supernatural",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46576,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Richard Wright&#39;s Native Son.</strong><br />\r\n<br />\r\nThis novel can be described as</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 14,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195063,
+          "question_id": 46576,
+          "description": "satirical",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 195064,
+          "question_id": 46576,
+          "description": "metaphysical",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195065,
+          "question_id": 46576,
+          "description": "paradoxical",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195066,
+          "question_id": 46576,
+          "description": "allegorical",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 14,
+        "title": "Native Son"
+      },
+      "ref": null
+    },
+    {
+      "id": 46577,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Selected Poems from Johnson, R et al(eds): New Poetry from Africa; Soyinka, (ed); Poems of Black Africa; Senanu, K.E, and Vicent, T.(ed.):<br />\r\nA Selection of African Poetry; Gbemisola A.: Naked Soles; Hayward, J.(ed.); The Penguin Book of English Verse and Nwoga, D.(ed.): West African Verse.</strong><br />\r\n<br />\r\nIn Morris&#39; The Proud King, Jovinian assembled the throne when he was</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195067,
+          "question_id": 46577,
+          "description": "poor",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195068,
+          "question_id": 46577,
+          "description": "rich",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195069,
+          "question_id": 46577,
+          "description": "young",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195070,
+          "question_id": 46577,
+          "description": "old",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 46578,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on William Shakespeare&#39;s Othello.</strong><br />\r\n<br />\r\n&quot;Though I do hate him as I do pains, yet for necessity of present life, I must show out a flag and sign of love, which is indeed but sign...&quot;<br />\r\n<br />\r\nThe speaker of the excerpt above can be described as</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 17,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195071,
+          "question_id": 46578,
+          "description": "trusting",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195072,
+          "question_id": 46578,
+          "description": "a concubine",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195073,
+          "question_id": 46578,
+          "description": "a schemer",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195074,
+          "question_id": 46578,
+          "description": "ambitious",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 46579,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Selec ted Poems from Johnson, R et al(eds): New Poetry from Africa; Soyinka,(ed); Poems of Black Africa; Senanu, K.E, and Vincent, T.(ed): A Selection of African Poetry; Gbemisola A.: Naked Soles; Hayward, J.(ed.); The Penguin Book of English Verse and Nwoga, D.(ed): West African verse.</strong><br />\r\n<br />\r\n&nbsp;...where guerillas walk the land while crocodiles surf.&nbsp;<br />\r\n<br />\r\nThe lines above in Hallowell&#39;s&nbsp;The Dining Table signify _______?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 71,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195075,
+          "question_id": 46579,
+          "description": "danger",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 195076,
+          "question_id": 46579,
+          "description": "calmness",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195077,
+          "question_id": 46579,
+          "description": "pity",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195078,
+          "question_id": 46579,
+          "description": "saddness",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 46580,
+      "collection_id": 482,
+      "question": "\"Carrying a heavy bundle of tightly wrapped bits and pieces of junk drooping over his face\" <br>\r\n<br>\r\nThe excerpt above exemplifies _______?",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 195079,
+          "question_id": 46580,
+          "description": "Irony",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195080,
+          "question_id": 46580,
+          "description": "synedoche",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195081,
+          "question_id": 46580,
+          "description": "symbolism",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195082,
+          "question_id": 46580,
+          "description": "euphemism",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46581,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Selected Poems from Johnson, R et al(eds): New Poetry from Africa; Soyinka,(ed); Poems of Black Africa; Senanu, K.E, and Vincent, T.(ed): A Selection of African Poetry; Gbemisola A.: Naked Soles; Hayward, J.(ed.); The Penguin Book of English Verse and Nwoga, D.(ed): West African verse.</strong><br />\r\n<br />\r\n... goodness lead him not, yet weariness May toss him to my breast&#39;<br />\r\n<br />\r\nThe literary device in the extract above from Herbert&#39;s The Pulley is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195083,
+          "question_id": 46581,
+          "description": "metonymy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195084,
+          "question_id": 46581,
+          "description": "personification",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195085,
+          "question_id": 46581,
+          "description": "oxymoron",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195086,
+          "question_id": 46581,
+          "description": "irony",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 46582,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on William Shakesphere&#39;s Othello.</strong><br />\r\n<br />\r\n&quot;...Fathers, from hence trust not your daughters&#39; minds. By what you see them act. Is there not charms. By which the property of youth and maidhood May be abused?.....&quot;<br />\r\n<br />\r\nThe speaker in the excerpt above addresses _______?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 17,
+      "comments_count": 5,
+      "options": [
+        {
+          "id": 195087,
+          "question_id": 46582,
+          "description": "Othello",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195088,
+          "question_id": 46582,
+          "description": "Iago",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195089,
+          "question_id": 46582,
+          "description": "Brabantio",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195090,
+          "question_id": 46582,
+          "description": "Roderigo",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 46583,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Frank Ogodo Ogbeche&#39;s Harvest of Corruption</strong><br />\r\n<br />\r\nThe Two dominant themes of the play are</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 18,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 195091,
+          "question_id": 46583,
+          "description": "honesty and decency",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195092,
+          "question_id": 46583,
+          "description": "immorality and greed",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195093,
+          "question_id": 46583,
+          "description": "poverty and education",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195094,
+          "question_id": 46583,
+          "description": "weeding and planting",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 46585,
+      "collection_id": 482,
+      "question": "<B>This question is based on General Literacy Principles</B> <br>\r\n<br>\r\nAt the peak of the trumpeter's performance, his cheeks were as if they were balloons and his eyes spoke many words. The literacy devices in the extract above are ________?",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 195099,
+          "question_id": 46585,
+          "description": "metaphor and paradox",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195100,
+          "question_id": 46585,
+          "description": "simile and metaphor",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195101,
+          "question_id": 46585,
+          "description": "simile and personification",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195102,
+          "question_id": 46585,
+          "description": "paradox and simile",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46586,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Frank Ogodo Ogbeche&#39;s Harvest of Corruption</strong><br />\r\n<br />\r\nThe play portrays the judiciary as</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 18,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195103,
+          "question_id": 46586,
+          "description": "unserious and lenient",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195104,
+          "question_id": 46586,
+          "description": "consistent and just",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195105,
+          "question_id": 46586,
+          "description": "corrupt and weak",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195106,
+          "question_id": 46586,
+          "description": "patronising and self-righteous",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 46588,
+      "collection_id": 482,
+      "question": "<p>This question is based on General Literacy Principles<br />\r\n<br />\r\nA prose work which centres on moral growth and character formation of an individual is called</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 195111,
+          "question_id": 46588,
+          "description": "psychological novel",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 195112,
+          "question_id": 46588,
+          "description": "picaresque",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195113,
+          "question_id": 46588,
+          "description": "autobiography",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195114,
+          "question_id": 46588,
+          "description": "satirical novel",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46591,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Amma Darko&#39;s Faceless</strong><br />\r\n<br />\r\nThe narrative style adopted in the novel is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 15,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195123,
+          "question_id": 46591,
+          "description": "second persons",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195124,
+          "question_id": 46591,
+          "description": "third person",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195125,
+          "question_id": 46591,
+          "description": "interior monologue",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195126,
+          "question_id": 46591,
+          "description": "first person",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 15,
+        "title": "Faceless"
+      },
+      "ref": null
+    },
+    {
+      "id": 46592,
+      "collection_id": 482,
+      "question": "<p>This question is based on Literary Appreciation<br />\r\n<br />\r\n&ldquo; How wonderful it is that nobody need wait a single moment before starting to improve the world &rdquo; Anne Frank The Diary of a young Girl<br />\r\n<br />\r\nThe writer of the passage above is ________?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195127,
+          "question_id": 46592,
+          "description": "assertive",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 195128,
+          "question_id": 46592,
+          "description": "retrogressive",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195129,
+          "question_id": 46592,
+          "description": "optimistic",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195130,
+          "question_id": 46592,
+          "description": "antagonistic",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46594,
+      "collection_id": 482,
+      "question": "This question is based on General Literacy Principles<br>\r\n<br>\r\nAn example of a narrative poem is ________?",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195135,
+          "question_id": 46594,
+          "description": "elegy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195136,
+          "question_id": 46594,
+          "description": "epic",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195137,
+          "question_id": 46594,
+          "description": "dirge",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195138,
+          "question_id": 46594,
+          "description": "sonnet",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46596,
+      "collection_id": 482,
+      "question": "<B>This question is based on Literary.</B> <br>\r\n<br>\r\nOur third jailer made little or me. He was one of the many struggled in order to feed their families. Be seemed to be very much controlled by the other two. Elechi Amadi Sunset in Biafra<br>\r\n<br>\r\nThe speaker's attitude towards the jailer in the passage above is that of",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195143,
+          "question_id": 46596,
+          "description": "admiration",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195144,
+          "question_id": 46596,
+          "description": "condemnation",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195145,
+          "question_id": 46596,
+          "description": "spite",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195146,
+          "question_id": 46596,
+          "description": "respect",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46597,
+      "collection_id": 482,
+      "question": "This question is based on General Literacy Principles <br>\r\n<br>\r\nA literacy device wherein the author places a person, concept, idea or theme parallel to another is ________?",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195147,
+          "question_id": 46597,
+          "description": "allusion",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195148,
+          "question_id": 46597,
+          "description": "juxtaposition",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195149,
+          "question_id": 46597,
+          "description": "symbolism",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195150,
+          "question_id": 46597,
+          "description": "memoir",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46598,
+      "collection_id": 482,
+      "question": "\"I can stand well enough and I speak well enough\". The excerpt above exemplifies ___ ?",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195151,
+          "question_id": 46598,
+          "description": "synedole",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195152,
+          "question_id": 46598,
+          "description": "euphemism",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195153,
+          "question_id": 46598,
+          "description": "repetition",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195154,
+          "question_id": 46598,
+          "description": "irony",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46600,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Amma Darko&#39;s Facesless.</strong><br />\r\n<br />\r\nThe street phenomenon in the novel is a universal theme because</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 15,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195159,
+          "question_id": 46600,
+          "description": "It only occurs in Ghana",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195160,
+          "question_id": 46600,
+          "description": "It could be found only in Africa",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195161,
+          "question_id": 46600,
+          "description": "It is common to almost all nations of the world",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195162,
+          "question_id": 46600,
+          "description": "the novel is read in all parts of the world",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 15,
+        "title": "Faceless"
+      },
+      "ref": null
+    },
+    {
+      "id": 46601,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on William Shakespeare&#39;s Othello.</strong><br />\r\n<br />\r\nAccording to the highest estimate, how many ships in the Turkish fleet were said to head for the Island of Cyprus?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 17,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 195163,
+          "question_id": 46601,
+          "description": "107",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195164,
+          "question_id": 46601,
+          "description": "230",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195165,
+          "question_id": 46601,
+          "description": "200",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195166,
+          "question_id": 46601,
+          "description": "140",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 46603,
+      "collection_id": 482,
+      "question": "<p>Tennyson&#39;s Crossing the Bar is ________?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 71,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195171,
+          "question_id": 46603,
+          "description": "a celebration of life",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195172,
+          "question_id": 46603,
+          "description": "an appreciation of nature",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195173,
+          "question_id": 46603,
+          "description": "a demystification of death",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195174,
+          "question_id": 46603,
+          "description": "a celebration of the final passage",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 46606,
+      "collection_id": 482,
+      "question": "<p>This question is based on Faceless by Amma Darko<br />\r\n<br />\r\nWhat is the reason that caused Odarley&#39;s mother to send her&nbsp;away from home?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 15,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 195183,
+          "question_id": 46606,
+          "description": "she chose to go to the street",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195184,
+          "question_id": 46606,
+          "description": "her mother remarried",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195185,
+          "question_id": 46606,
+          "description": "she steals her mother things",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195186,
+          "question_id": 46606,
+          "description": "she wants to poison her boyfriend",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 15,
+        "title": "Faceless"
+      },
+      "ref": null
+    },
+    {
+      "id": 46609,
+      "collection_id": 482,
+      "question": "_______ In literature is the sequential arrangement of events in a creative work",
+      "ref_id": null,
+      "image": "",
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 195195,
+          "question_id": 46609,
+          "description": "Cast",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195196,
+          "question_id": 46609,
+          "description": "Summary",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195197,
+          "question_id": 46609,
+          "description": "Flaw",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195198,
+          "question_id": 46609,
+          "description": "Plot",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 46610,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Frank Ogodo Ogbeche&#39;s Harvest of Corruption</strong><br />\r\n<br />\r\nWho impregnated Aloho?</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 18,
+      "comments_count": 7,
+      "options": [
+        {
+          "id": 195199,
+          "question_id": 46610,
+          "description": "The Commissioner",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195200,
+          "question_id": 46610,
+          "description": "Chief Haladu",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 195201,
+          "question_id": 46610,
+          "description": "Justice Odili",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 195202,
+          "question_id": 46610,
+          "description": "Inspector Inaku",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 46611,
+      "collection_id": 482,
+      "question": "<p><strong>This question is based on Bayo Adebowale&#39;s Lonely Days</strong><br />\r\n<br />\r\nYaremi&#39;s main job is</p>",
+      "ref_id": 0,
+      "image": "",
+      "novel_id": 16,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 195203,
+          "question_id": 46611,
+          "description": "selling cassava",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 195204,
+          "question_id": 46611,
+          "description": "harvesting cassava",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 195205,
+          "question_id": 46611,
+          "description": "dyeing taffeta cloths",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 195206,
+          "question_id": 46611,
+          "description": "sewing taffeta cloths",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 482,
+        "exam_year": 2017,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 16,
+        "title": "Lonely Days"
+      },
+      "ref": null
+    }
+  ]
+}

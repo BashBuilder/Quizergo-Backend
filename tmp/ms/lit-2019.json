@@ -1,0 +1,3858 @@
+{
+  "total": 80,
+  "questions": [
+    {
+      "id": 55107,
+      "collection_id": 950,
+      "question": "<p>When a writer deviates from the chronological arrangement of events in a literary piece, he uses ...</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 212936,
+          "question_id": 55107,
+          "description": "Anadiplosis",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212937,
+          "question_id": 55107,
+          "description": "Anachrony",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 212938,
+          "question_id": 55107,
+          "description": "Chrestomathy",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212939,
+          "question_id": 55107,
+          "description": "Anagnorisis",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55108,
+      "collection_id": 950,
+      "question": "<p>The literary term for conflict in literature is_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 212940,
+          "question_id": 55108,
+          "description": "Agon",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 212941,
+          "question_id": 55108,
+          "description": "Hubris",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212942,
+          "question_id": 55108,
+          "description": "Hamartia",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212943,
+          "question_id": 55108,
+          "description": "Anaphora",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55109,
+      "collection_id": 950,
+      "question": "<p>_______ is used to describe the situation where a character recognize his mistake</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 212944,
+          "question_id": 55109,
+          "description": "Tragic flaw",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212945,
+          "question_id": 55109,
+          "description": "Hubris",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212946,
+          "question_id": 55109,
+          "description": "Denouement",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212947,
+          "question_id": 55109,
+          "description": "Anagnorisis",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55110,
+      "collection_id": 950,
+      "question": "<p>&quot;Nightfall! Nightfall!! You are my mortal enemy&quot;. The dominant figure of speech above is a/an________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 212948,
+          "question_id": 55110,
+          "description": "Ode",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212949,
+          "question_id": 55110,
+          "description": "Apostrophe",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 212950,
+          "question_id": 55110,
+          "description": "Allusion",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212951,
+          "question_id": 55110,
+          "description": "Metaphor",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55111,
+      "collection_id": 950,
+      "question": "<p>________is used to describe the &#39;god of inspiration&#39; in literature</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 212952,
+          "question_id": 55111,
+          "description": "Muse",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 212953,
+          "question_id": 55111,
+          "description": "Premiere",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212954,
+          "question_id": 55111,
+          "description": "Mood",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212955,
+          "question_id": 55111,
+          "description": "Deux Ex Machina",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55112,
+      "collection_id": 950,
+      "question": "<p>_____ is used to describe the predetermination of a future event in a literary piece</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 212956,
+          "question_id": 55112,
+          "description": "Analepsis",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212957,
+          "question_id": 55112,
+          "description": "Prolepsis",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 212958,
+          "question_id": 55112,
+          "description": "Interlude",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212959,
+          "question_id": 55112,
+          "description": "Fatalism",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55113,
+      "collection_id": 950,
+      "question": "<p>The theme that runs through Hallowell&#39;s Dining Table is that of________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 212960,
+          "question_id": 55113,
+          "description": "Conflict",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212961,
+          "question_id": 55113,
+          "description": "Brutality",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 212962,
+          "question_id": 55113,
+          "description": "Poverty",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212963,
+          "question_id": 55113,
+          "description": "Loneliness",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55114,
+      "collection_id": 950,
+      "question": "<p>Which one of the following does not relate to the tone in Diop&#39;s Vanity?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 212964,
+          "question_id": 55114,
+          "description": "Sarcasm",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212965,
+          "question_id": 55114,
+          "description": "Condemnation",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212966,
+          "question_id": 55114,
+          "description": "Rejuvenation",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 212967,
+          "question_id": 55114,
+          "description": "Concern",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55115,
+      "collection_id": 950,
+      "question": "<p>The mood of the writer is that of _____?</p>",
+      "ref_id": 664,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 5,
+      "options": [
+        {
+          "id": 212968,
+          "question_id": 55115,
+          "description": "Elation",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 212969,
+          "question_id": 55115,
+          "description": "Sarcasm",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212970,
+          "question_id": 55115,
+          "description": "Sorrow",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212971,
+          "question_id": 55115,
+          "description": "Anxiety",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 664,
+        "collection_id": 950,
+        "description": "<p>Use the extract below to answer questions<br />\r\n<br />\r\nLine 1: My heart leaps up when I behold<br />\r\nLine 2: A rainbow in the sky<br />\r\nLine 3: so was it when my life began<br />\r\nLine 4: so is it now<br />\r\nLine 5: so is it when I have grown<br />\r\nLine 6: the child is the father of the man.</p>",
+        "updated_at": 1758627019
+      }
+    },
+    {
+      "id": 55116,
+      "collection_id": 950,
+      "question": "<p>The rhyme scheme of the poem is_________</p>\r\n\r\n<p>&nbsp;</p>",
+      "ref_id": 664,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 10,
+      "options": [
+        {
+          "id": 212972,
+          "question_id": 55116,
+          "description": "acbcca",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212973,
+          "question_id": 55116,
+          "description": "abccdc",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212974,
+          "question_id": 55116,
+          "description": "abcdcc",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 212975,
+          "question_id": 55116,
+          "description": "abacbc",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 664,
+        "collection_id": 950,
+        "description": "<p>Use the extract below to answer questions<br />\r\n<br />\r\nLine 1: My heart leaps up when I behold<br />\r\nLine 2: A rainbow in the sky<br />\r\nLine 3: so was it when my life began<br />\r\nLine 4: so is it now<br />\r\nLine 5: so is it when I have grown<br />\r\nLine 6: the child is the father of the man.</p>",
+        "updated_at": 1758627019
+      }
+    },
+    {
+      "id": 55117,
+      "collection_id": 950,
+      "question": "<p>The object of the extract is____?</p>\r\n\r\n<p>&nbsp;</p>",
+      "ref_id": 664,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 212976,
+          "question_id": 55117,
+          "description": "childishness",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 212977,
+          "question_id": 55117,
+          "description": "the unchanging cycle of nature",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212978,
+          "question_id": 55117,
+          "description": "the adverse effect of old age",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212979,
+          "question_id": 55117,
+          "description": "human being",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 664,
+        "collection_id": 950,
+        "description": "<p>Use the extract below to answer questions<br />\r\n<br />\r\nLine 1: My heart leaps up when I behold<br />\r\nLine 2: A rainbow in the sky<br />\r\nLine 3: so was it when my life began<br />\r\nLine 4: so is it now<br />\r\nLine 5: so is it when I have grown<br />\r\nLine 6: the child is the father of the man.</p>",
+        "updated_at": 1758627019
+      }
+    },
+    {
+      "id": 55118,
+      "collection_id": 950,
+      "question": "<p>The literary device used in line 1 is ________</p>",
+      "ref_id": 664,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 212980,
+          "question_id": 55118,
+          "description": "Simile",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212981,
+          "question_id": 55118,
+          "description": "Alliteration",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212982,
+          "question_id": 55118,
+          "description": "Litotes",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212983,
+          "question_id": 55118,
+          "description": "Personification",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 664,
+        "collection_id": 950,
+        "description": "<p>Use the extract below to answer questions<br />\r\n<br />\r\nLine 1: My heart leaps up when I behold<br />\r\nLine 2: A rainbow in the sky<br />\r\nLine 3: so was it when my life began<br />\r\nLine 4: so is it now<br />\r\nLine 5: so is it when I have grown<br />\r\nLine 6: the child is the father of the man.</p>",
+        "updated_at": 1758627019
+      }
+    },
+    {
+      "id": 55119,
+      "collection_id": 950,
+      "question": "<p>The literary device used in line 6 is an example of______</p>\r\n\r\n<p>&nbsp;</p>",
+      "ref_id": 664,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 212984,
+          "question_id": 55119,
+          "description": "Synecdoche",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212985,
+          "question_id": 55119,
+          "description": "Irony",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212986,
+          "question_id": 55119,
+          "description": "Paradox",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 212987,
+          "question_id": 55119,
+          "description": "Hyperbole",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 664,
+        "collection_id": 950,
+        "description": "<p>Use the extract below to answer questions<br />\r\n<br />\r\nLine 1: My heart leaps up when I behold<br />\r\nLine 2: A rainbow in the sky<br />\r\nLine 3: so was it when my life began<br />\r\nLine 4: so is it now<br />\r\nLine 5: so is it when I have grown<br />\r\nLine 6: the child is the father of the man.</p>",
+        "updated_at": 1758627019
+      }
+    },
+    {
+      "id": 55120,
+      "collection_id": 950,
+      "question": "<p>The atmosphere of a poem has to do with_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 212988,
+          "question_id": 55120,
+          "description": "Time and Place",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 212989,
+          "question_id": 55120,
+          "description": "Rhythm and Rhyme",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212990,
+          "question_id": 55120,
+          "description": "Tone and Mood",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 212991,
+          "question_id": 55120,
+          "description": "Versification and Lineation",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55121,
+      "collection_id": 950,
+      "question": "<p>An overused expression is a/an _________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 212992,
+          "question_id": 55121,
+          "description": "Cliche",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 212993,
+          "question_id": 55121,
+          "description": "Cacophony",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212994,
+          "question_id": 55121,
+          "description": "Epigram",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212995,
+          "question_id": 55121,
+          "description": "Archetype",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55122,
+      "collection_id": 950,
+      "question": "<p>What basically distinguishes literature from other disciplines is its________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 212996,
+          "question_id": 55122,
+          "description": "use of creative imagination",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 212997,
+          "question_id": 55122,
+          "description": "exposition of human experiences",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 212998,
+          "question_id": 55122,
+          "description": "communication of ideas",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 212999,
+          "question_id": 55122,
+          "description": "portrayal of places",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55123,
+      "collection_id": 950,
+      "question": "<p>In drama, comic reliefs often occur in_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213000,
+          "question_id": 55123,
+          "description": "comedies",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213001,
+          "question_id": 55123,
+          "description": "tragedies",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213002,
+          "question_id": 55123,
+          "description": "historical plays",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213003,
+          "question_id": 55123,
+          "description": "romantic plays",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55124,
+      "collection_id": 950,
+      "question": "<p>&#39;A trouble shared is a trouble halved&#39; illustrates the use of______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 6,
+      "options": [
+        {
+          "id": 213004,
+          "question_id": 55124,
+          "description": "Paradox",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 213005,
+          "question_id": 55124,
+          "description": "Cliche",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213006,
+          "question_id": 55124,
+          "description": "Pun",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213007,
+          "question_id": 55124,
+          "description": "Metaphor",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55125,
+      "collection_id": 950,
+      "question": "<p>The art of using persuasive words in literary works is known as_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 213008,
+          "question_id": 55125,
+          "description": "Rhetoric",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 213009,
+          "question_id": 55125,
+          "description": "Dilemma",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213010,
+          "question_id": 55125,
+          "description": "Parody",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213011,
+          "question_id": 55125,
+          "description": "Paronomasia",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55126,
+      "collection_id": 950,
+      "question": "<p>A poem is said to be good if it________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 213012,
+          "question_id": 55126,
+          "description": "has elevated style",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213013,
+          "question_id": 55126,
+          "description": "has rhyme and reason",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213014,
+          "question_id": 55126,
+          "description": "is difficult to understand",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213015,
+          "question_id": 55126,
+          "description": "has a regular rhythm",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55127,
+      "collection_id": 950,
+      "question": "<p>A struggle between opposing forces in a story/play is________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213016,
+          "question_id": 55127,
+          "description": "Denouement",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213017,
+          "question_id": 55127,
+          "description": "Conflict",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213018,
+          "question_id": 55127,
+          "description": "Comedy",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213019,
+          "question_id": 55127,
+          "description": "Tragedy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55128,
+      "collection_id": 950,
+      "question": "<p>The second stanza of Awonoor&#39;s Anvil and the Hammer ________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 213020,
+          "question_id": 55128,
+          "description": "deals with the conflict between African traditions and westernisation",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213021,
+          "question_id": 55128,
+          "description": "deals with the disregard for African tradition",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213022,
+          "question_id": 55128,
+          "description": "offers solution to the conflict between African traditions and westernisation",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 213023,
+          "question_id": 55128,
+          "description": "advocates for a radical change in the perception of Africans about their culture",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55129,
+      "collection_id": 950,
+      "question": "<p>The dominant mood in Tennyson&#39;s Crossing the Bar is that of___________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 7,
+      "options": [
+        {
+          "id": 213024,
+          "question_id": 55129,
+          "description": "Acceptance",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213025,
+          "question_id": 55129,
+          "description": "Anxiety",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213026,
+          "question_id": 55129,
+          "description": "Uncertainty",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213027,
+          "question_id": 55129,
+          "description": "Readiness",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55130,
+      "collection_id": 950,
+      "question": "<p>Iago&#39;s hatred for Othello is deep rooted because__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213028,
+          "question_id": 55130,
+          "description": "he accused Othello of stealing",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213029,
+          "question_id": 55130,
+          "description": "he loves Desdemona who is married to Othello",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213030,
+          "question_id": 55130,
+          "description": "Othello is a better warrior that he is",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213031,
+          "question_id": 55130,
+          "description": "Othello didn't make him the Lieutenant",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 55131,
+      "collection_id": 950,
+      "question": "<p>The narrative technique adopted in Bayo Adebowale&#39;s Lonely Days is that of_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 16,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213032,
+          "question_id": 55131,
+          "description": "a second person narrator",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213033,
+          "question_id": 55131,
+          "description": "a first person narrator",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213034,
+          "question_id": 55131,
+          "description": "an omniscient narrator",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 213035,
+          "question_id": 55131,
+          "description": "none",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 16,
+        "title": "Lonely Days"
+      },
+      "ref": null
+    },
+    {
+      "id": 55132,
+      "collection_id": 950,
+      "question": "<p>The specie of conflict exemplified in the Native Son is that of_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 14,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213036,
+          "question_id": 55132,
+          "description": "man against society",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 213037,
+          "question_id": 55132,
+          "description": "man against nature",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213038,
+          "question_id": 55132,
+          "description": "man against culture",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213039,
+          "question_id": 55132,
+          "description": "man against man",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 14,
+        "title": "Native Son"
+      },
+      "ref": null
+    },
+    {
+      "id": 55133,
+      "collection_id": 950,
+      "question": "<p>Amma Darko&#39;s Faceless may be best described as a___________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 15,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213040,
+          "question_id": 55133,
+          "description": "Travelogue",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213041,
+          "question_id": 55133,
+          "description": "Satire",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213042,
+          "question_id": 55133,
+          "description": "Lampoon",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213043,
+          "question_id": 55133,
+          "description": "Tragedy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 15,
+        "title": "Faceless"
+      },
+      "ref": null
+    },
+    {
+      "id": 55134,
+      "collection_id": 950,
+      "question": "<p>&quot;You can call me a rebel, but I need a job. That&#39;s what matters to me.&quot; The repercussion of this statement by Aloho is a pointer to the theme ____</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213044,
+          "question_id": 55134,
+          "description": "Of Corruption",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213045,
+          "question_id": 55134,
+          "description": "That patience is a virtue",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213046,
+          "question_id": 55134,
+          "description": "On Unemployment",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213047,
+          "question_id": 55134,
+          "description": "Of Retributive Justice",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55135,
+      "collection_id": 950,
+      "question": "<p>A short poem that expresses an idea in a clever way is called _____</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 213048,
+          "question_id": 55135,
+          "description": "An Epigram",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 213049,
+          "question_id": 55135,
+          "description": "A Limerick",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213050,
+          "question_id": 55135,
+          "description": "An Ode",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213051,
+          "question_id": 55135,
+          "description": "A Lyric",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55136,
+      "collection_id": 950,
+      "question": "<p>Adeoti&#39;s Ambush may be best described as____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213052,
+          "question_id": 55136,
+          "description": "Prosaic",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213053,
+          "question_id": 55136,
+          "description": "Lyrical",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213054,
+          "question_id": 55136,
+          "description": "Analogical",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213055,
+          "question_id": 55136,
+          "description": "Metaphorical",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55137,
+      "collection_id": 950,
+      "question": "<p>The most dominant poetic device used in Okara&#39;s &#39;Panio and Drums&#39; is_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213056,
+          "question_id": 55137,
+          "description": "Metaphor",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213057,
+          "question_id": 55137,
+          "description": "Symbolism",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213058,
+          "question_id": 55137,
+          "description": "Pathetic Fallacy",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213059,
+          "question_id": 55137,
+          "description": "Analogy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55138,
+      "collection_id": 950,
+      "question": "<p>In Lenrie&#39;s &#39;The Panic of Growing Older&#39;, another significant theme therein is on the___________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213060,
+          "question_id": 55138,
+          "description": "fear of natural disasters",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213061,
+          "question_id": 55138,
+          "description": "uncertainties of life",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213062,
+          "question_id": 55138,
+          "description": "futility of war",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213063,
+          "question_id": 55138,
+          "description": "essence of mankind and nature",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55139,
+      "collection_id": 950,
+      "question": "<p>The withdrawal of rest from man according to George Herbert in &#39;The Pulley&#39; is particularly because_____</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213064,
+          "question_id": 55139,
+          "description": "man by nature has the tendencies to be lazy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213065,
+          "question_id": 55139,
+          "description": "of the need for human survival",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213066,
+          "question_id": 55139,
+          "description": "God wants man to feel less of himself",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213067,
+          "question_id": 55139,
+          "description": "of the space for God's worship",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55140,
+      "collection_id": 950,
+      "question": "<p>Blake&#39;s &#39;The School Boy&#39; advocates for____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213068,
+          "question_id": 55140,
+          "description": "a fine balancing between work and pleasure for a child's development",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 213069,
+          "question_id": 55140,
+          "description": "the liberty of the child to explore nature and life without restraints",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213070,
+          "question_id": 55140,
+          "description": "the promotion of the culture of excellence in a child's academic endavour",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213071,
+          "question_id": 55140,
+          "description": "a proper disciplinary culture for the training of a child",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55141,
+      "collection_id": 950,
+      "question": "<p>A significant literary device employed by Morris in &#39;The Proud King&#39; is that of________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213072,
+          "question_id": 55141,
+          "description": "Suspense",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213073,
+          "question_id": 55141,
+          "description": "Nemesis",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213074,
+          "question_id": 55141,
+          "description": "Agon",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213075,
+          "question_id": 55141,
+          "description": "Interlude",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55142,
+      "collection_id": 950,
+      "question": "<p>Aloho begins her harvest of corruption when____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 18,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213076,
+          "question_id": 55142,
+          "description": "she found out the truth about Chief Ade Amaka",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213077,
+          "question_id": 55142,
+          "description": "she discovered she was 3 months pregnant and abortion was impossible",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213078,
+          "question_id": 55142,
+          "description": "her best friend warned her about the deceitfulness of Chief Ade Amaka",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213079,
+          "question_id": 55142,
+          "description": "she eventually died after giving birth to a baby girl",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 55143,
+      "collection_id": 950,
+      "question": "<p>The metaphorical significance of Frank Ogodo&#39;s &#39;Harvest of Corruption&#39; is seen in the theme of_____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 18,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 213080,
+          "question_id": 55143,
+          "description": "corruption",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213081,
+          "question_id": 55143,
+          "description": "unemployment",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213082,
+          "question_id": 55143,
+          "description": "retribution",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 213083,
+          "question_id": 55143,
+          "description": "betrayal of public trust",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 55144,
+      "collection_id": 950,
+      "question": "<p>The voice of reason in the &#39;Harvest of Corruption&#39; is exemplified in the character of___________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 18,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213084,
+          "question_id": 55144,
+          "description": "Ochuole",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213085,
+          "question_id": 55144,
+          "description": "Ogeyi",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213086,
+          "question_id": 55144,
+          "description": "Madam Hoha",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213087,
+          "question_id": 55144,
+          "description": "Aloho",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 55145,
+      "collection_id": 950,
+      "question": "<p>The characterisation of Othello maybe pointed out in that__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213088,
+          "question_id": 55145,
+          "description": "he remains at a distance from much of the action that concerns and affects him at the beginning",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213089,
+          "question_id": 55145,
+          "description": "he refuses to appoint Iago as the Lieutenant",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 213090,
+          "question_id": 55145,
+          "description": "although he is a cultural outsider in Venice, his military skills are valuable to the State",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 213091,
+          "question_id": 55145,
+          "description": "Iago sees him as an enemy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 55146,
+      "collection_id": 950,
+      "question": "<p>The setting of Shakespeare&#39;s Othello is____________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 213092,
+          "question_id": 55146,
+          "description": "Verona",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 213093,
+          "question_id": 55146,
+          "description": "Venice",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 213094,
+          "question_id": 55146,
+          "description": "the Faroe Islands",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 213095,
+          "question_id": 55146,
+          "description": "Bulgaria",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": null
+    },
+    {
+      "id": 55457,
+      "collection_id": 950,
+      "question": "<p>Bayo Adebowale portrayed Yaremi as resilient, self reliant and strong willed particularly to__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 16,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214328,
+          "question_id": 55457,
+          "description": "rebuke African superstitious beliefs",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214329,
+          "question_id": 55457,
+          "description": "represent the image of African traditionalism",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214330,
+          "question_id": 55457,
+          "description": "condemn male chauvinism",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214331,
+          "question_id": 55457,
+          "description": "demonstrate the plight of widowhood",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 16,
+        "title": "Lonely Days"
+      },
+      "ref": null
+    },
+    {
+      "id": 55458,
+      "collection_id": 950,
+      "question": "<p>&#39;They are as fearsome as they are fearless&#39; is an example of______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 214332,
+          "question_id": 55458,
+          "description": "antithesis",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214333,
+          "question_id": 55458,
+          "description": "pun",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214334,
+          "question_id": 55458,
+          "description": "oxymoron",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214335,
+          "question_id": 55458,
+          "description": "simile",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55459,
+      "collection_id": 950,
+      "question": "<p>In Herbert&#39;s &quot;The Pulley&quot;, God&#39;s supremacy is exemplified through______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214336,
+          "question_id": 55459,
+          "description": "His withholding of the gift of rest",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214337,
+          "question_id": 55459,
+          "description": "the insatiable nature of man's needs",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214338,
+          "question_id": 55459,
+          "description": "His unending love for mankind",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214339,
+          "question_id": 55459,
+          "description": "His blessings of man with many gifts",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55460,
+      "collection_id": 950,
+      "question": "<p><strong>&#39;The fair breeze blew<br />\r\nThe white foam flew<br />\r\nThe furrow followed free<br />\r\nWe were the first that ever burst<br />\r\nInto that silent sea.&#39;</strong><br />\r\n<br />\r\nThe dominant figure of speech in the above passage is</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 214340,
+          "question_id": 55460,
+          "description": "alliteration",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214341,
+          "question_id": 55460,
+          "description": "repetition",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214342,
+          "question_id": 55460,
+          "description": "paradox",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214343,
+          "question_id": 55460,
+          "description": "rhyme scheme",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55462,
+      "collection_id": 950,
+      "question": "<p>Awonoor&#39;s &#39;The Anvil and the Hammer&#39; is best described as a/an___________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214348,
+          "question_id": 55462,
+          "description": "free verse",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214349,
+          "question_id": 55462,
+          "description": "blank verse",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214350,
+          "question_id": 55462,
+          "description": "ode",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214351,
+          "question_id": 55462,
+          "description": "apologue",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55464,
+      "collection_id": 950,
+      "question": "<p>The theme of the poem is__________</p>",
+      "ref_id": 665,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 214356,
+          "question_id": 55464,
+          "description": "drought and heat",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214357,
+          "question_id": 55464,
+          "description": "abomination and retribution",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214358,
+          "question_id": 55464,
+          "description": "sickness and death",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214359,
+          "question_id": 55464,
+          "description": "famine and disease",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 665,
+        "collection_id": 950,
+        "description": "<p>Read the poem and answer the question<br />\r\n<br />\r\nAt dawn must I rise to till the rock<br />\r\nThat our land has turned into<br />\r\nThe land where on we&#39;d gleefully harvested paddy<br />\r\nPlanted and nurtured and tended on plots marshy<br />\r\nOur woes are bloody woes of accursed revenges<br />\r\nOf the land spirits aggrieved by paltry human respect<br />\r\nFor the life of fellow man by his fellow<br />\r\nKindred blood has counted for less than no value<br />\r\nBrother&#39;s wife has been wife to other brother&#39;s brother<br />\r\nCommunal loot has emptied our country silos<br />\r\nThe earth has stopped breathing and sighed<br />\r\nSoldered tears has the moon shed<br />\r\nThe earth was scorched at noon-day night<br />\r\nAnd our land has turned to hoeing rock.</p>",
+        "updated_at": 1758627244
+      }
+    },
+    {
+      "id": 55466,
+      "collection_id": 950,
+      "question": "<p>The mood of the poet is one of________</p>",
+      "ref_id": 665,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214364,
+          "question_id": 55466,
+          "description": "loneliness",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214365,
+          "question_id": 55466,
+          "description": "hopelessness",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214366,
+          "question_id": 55466,
+          "description": "happiness",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214367,
+          "question_id": 55466,
+          "description": "recklessness",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 665,
+        "collection_id": 950,
+        "description": "<p>Read the poem and answer the question<br />\r\n<br />\r\nAt dawn must I rise to till the rock<br />\r\nThat our land has turned into<br />\r\nThe land where on we&#39;d gleefully harvested paddy<br />\r\nPlanted and nurtured and tended on plots marshy<br />\r\nOur woes are bloody woes of accursed revenges<br />\r\nOf the land spirits aggrieved by paltry human respect<br />\r\nFor the life of fellow man by his fellow<br />\r\nKindred blood has counted for less than no value<br />\r\nBrother&#39;s wife has been wife to other brother&#39;s brother<br />\r\nCommunal loot has emptied our country silos<br />\r\nThe earth has stopped breathing and sighed<br />\r\nSoldered tears has the moon shed<br />\r\nThe earth was scorched at noon-day night<br />\r\nAnd our land has turned to hoeing rock.</p>",
+        "updated_at": 1758627244
+      }
+    },
+    {
+      "id": 55467,
+      "collection_id": 950,
+      "question": "<p>&#39;The earth has stopped breathing and sighed&#39; illustrates__________</p>",
+      "ref_id": 665,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214368,
+          "question_id": 55467,
+          "description": "bathos",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214369,
+          "question_id": 55467,
+          "description": "paradox",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214370,
+          "question_id": 55467,
+          "description": "climax",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214371,
+          "question_id": 55467,
+          "description": "personification",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 665,
+        "collection_id": 950,
+        "description": "<p>Read the poem and answer the question<br />\r\n<br />\r\nAt dawn must I rise to till the rock<br />\r\nThat our land has turned into<br />\r\nThe land where on we&#39;d gleefully harvested paddy<br />\r\nPlanted and nurtured and tended on plots marshy<br />\r\nOur woes are bloody woes of accursed revenges<br />\r\nOf the land spirits aggrieved by paltry human respect<br />\r\nFor the life of fellow man by his fellow<br />\r\nKindred blood has counted for less than no value<br />\r\nBrother&#39;s wife has been wife to other brother&#39;s brother<br />\r\nCommunal loot has emptied our country silos<br />\r\nThe earth has stopped breathing and sighed<br />\r\nSoldered tears has the moon shed<br />\r\nThe earth was scorched at noon-day night<br />\r\nAnd our land has turned to hoeing rock.</p>",
+        "updated_at": 1758627244
+      }
+    },
+    {
+      "id": 55469,
+      "collection_id": 950,
+      "question": "<p>The run-on lines convey the speaker&#39;s_______</p>\r\n\r\n<p>&nbsp;</p>",
+      "ref_id": 665,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214376,
+          "question_id": 55469,
+          "description": "lamentation",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214377,
+          "question_id": 55469,
+          "description": "disappointment",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214378,
+          "question_id": 55469,
+          "description": "defiance",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214379,
+          "question_id": 55469,
+          "description": "indignation",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 665,
+        "collection_id": 950,
+        "description": "<p>Read the poem and answer the question<br />\r\n<br />\r\nAt dawn must I rise to till the rock<br />\r\nThat our land has turned into<br />\r\nThe land where on we&#39;d gleefully harvested paddy<br />\r\nPlanted and nurtured and tended on plots marshy<br />\r\nOur woes are bloody woes of accursed revenges<br />\r\nOf the land spirits aggrieved by paltry human respect<br />\r\nFor the life of fellow man by his fellow<br />\r\nKindred blood has counted for less than no value<br />\r\nBrother&#39;s wife has been wife to other brother&#39;s brother<br />\r\nCommunal loot has emptied our country silos<br />\r\nThe earth has stopped breathing and sighed<br />\r\nSoldered tears has the moon shed<br />\r\nThe earth was scorched at noon-day night<br />\r\nAnd our land has turned to hoeing rock.</p>",
+        "updated_at": 1758627244
+      }
+    },
+    {
+      "id": 55470,
+      "collection_id": 950,
+      "question": "<p>There is a predominance of words associated with________</p>",
+      "ref_id": 665,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214380,
+          "question_id": 55470,
+          "description": "governance",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214381,
+          "question_id": 55470,
+          "description": "nature",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214382,
+          "question_id": 55470,
+          "description": "nurture",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214383,
+          "question_id": 55470,
+          "description": "celebration",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": {
+        "id": 665,
+        "collection_id": 950,
+        "description": "<p>Read the poem and answer the question<br />\r\n<br />\r\nAt dawn must I rise to till the rock<br />\r\nThat our land has turned into<br />\r\nThe land where on we&#39;d gleefully harvested paddy<br />\r\nPlanted and nurtured and tended on plots marshy<br />\r\nOur woes are bloody woes of accursed revenges<br />\r\nOf the land spirits aggrieved by paltry human respect<br />\r\nFor the life of fellow man by his fellow<br />\r\nKindred blood has counted for less than no value<br />\r\nBrother&#39;s wife has been wife to other brother&#39;s brother<br />\r\nCommunal loot has emptied our country silos<br />\r\nThe earth has stopped breathing and sighed<br />\r\nSoldered tears has the moon shed<br />\r\nThe earth was scorched at noon-day night<br />\r\nAnd our land has turned to hoeing rock.</p>",
+        "updated_at": 1758627244
+      }
+    },
+    {
+      "id": 55471,
+      "collection_id": 950,
+      "question": "<p>Which one of the following is most influential to the substance of Hallowell&#39;s &quot;The Dinning Table&quot;?</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 214384,
+          "question_id": 55471,
+          "description": "the structure of the poem",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214385,
+          "question_id": 55471,
+          "description": "the atmosphere of the poem",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214386,
+          "question_id": 55471,
+          "description": "the poetic style",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214387,
+          "question_id": 55471,
+          "description": "the setting of the poem",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55472,
+      "collection_id": 950,
+      "question": "<p><strong>&#39;Nightfall! Nightfall!<br />\r\nYou are my mortal enemy&#39;</strong><br />\r\n<br />\r\nThe figurative name for the manner in which Nightfall is directly addressed is______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214388,
+          "question_id": 55472,
+          "description": "allusion",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214389,
+          "question_id": 55472,
+          "description": "an ode",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214390,
+          "question_id": 55472,
+          "description": "metaphor",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214391,
+          "question_id": 55472,
+          "description": "apostrophe",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55473,
+      "collection_id": 950,
+      "question": "<p>The mood of Diop&#39;s &#39;Vanity&#39; is__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214392,
+          "question_id": 55473,
+          "description": "expressed through rhetorical questions",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214393,
+          "question_id": 55473,
+          "description": "condemnation",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214394,
+          "question_id": 55473,
+          "description": "expressed through the use of innuendos",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214395,
+          "question_id": 55473,
+          "description": "concern",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55475,
+      "collection_id": 950,
+      "question": "<p>... is the illustration which serves to persuasively sustain the interest of the readers in a literary piece</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 214400,
+          "question_id": 55475,
+          "description": "storyline",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214401,
+          "question_id": 55475,
+          "description": "narrative hook",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214402,
+          "question_id": 55475,
+          "description": "plot",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214403,
+          "question_id": 55475,
+          "description": "suspense",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55476,
+      "collection_id": 950,
+      "question": "<p>In literary criticism, a casual reference to a figure or an event is regarded as a/an_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214404,
+          "question_id": 55476,
+          "description": "personification",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214405,
+          "question_id": 55476,
+          "description": "metonymy",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214406,
+          "question_id": 55476,
+          "description": "metaphor",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214407,
+          "question_id": 55476,
+          "description": "allusion",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55477,
+      "collection_id": 950,
+      "question": "<p>A transferred epithet is popularly known as a/an ........</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214408,
+          "question_id": 55477,
+          "description": "Epistrophe",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214409,
+          "question_id": 55477,
+          "description": "Ellipsis",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214410,
+          "question_id": 55477,
+          "description": "Hypallage",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214411,
+          "question_id": 55477,
+          "description": "Hendiady",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55478,
+      "collection_id": 950,
+      "question": "<p>A dramatic type directed against an individual or a private institute with the intent to severely ridicule is called_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 2,
+      "options": [
+        {
+          "id": 214412,
+          "question_id": 55478,
+          "description": "satire",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214413,
+          "question_id": 55478,
+          "description": "burlesque",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214414,
+          "question_id": 55478,
+          "description": "caricature",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214415,
+          "question_id": 55478,
+          "description": "lampoon",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55479,
+      "collection_id": 950,
+      "question": "<p>A novel written in form of a letter is said to be_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214416,
+          "question_id": 55479,
+          "description": "gothic",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214417,
+          "question_id": 55479,
+          "description": "biographical",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214418,
+          "question_id": 55479,
+          "description": "epistolary",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214419,
+          "question_id": 55479,
+          "description": "autobiographical",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55480,
+      "collection_id": 950,
+      "question": "<p>Adeoti&#39;s &quot;Ambush&quot; ends on a note of___________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214420,
+          "question_id": 55480,
+          "description": "despair",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214421,
+          "question_id": 55480,
+          "description": "bright aspirations",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214422,
+          "question_id": 55480,
+          "description": "courage",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214423,
+          "question_id": 55480,
+          "description": "uncertainty",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55482,
+      "collection_id": 950,
+      "question": "<p>What incident ignited the excerpt above?</p>",
+      "ref_id": 666,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214428,
+          "question_id": 55482,
+          "description": "the taking of a vow of revenge",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214429,
+          "question_id": 55482,
+          "description": "Othello's rage about Desdemona's betrayal",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214430,
+          "question_id": 55482,
+          "description": "Iago's conspiracy with Brabantio to kill Othello",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214431,
+          "question_id": 55482,
+          "description": "Desdemona and Emilia's discussion on the lost handkerchief",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": {
+        "id": 666,
+        "collection_id": 950,
+        "description": "<p>Use the excerpt below to answer the question:<br />\r\n<br />\r\n&quot;Now, by yond marble<br />\r\nheaven,<br />\r\nIn the due reverence of a sacred vow<br />\r\nI here enrage my words.&quot; (Shakespeare&#39;s Othello)</p>",
+        "updated_at": 1758627418
+      }
+    },
+    {
+      "id": 55484,
+      "collection_id": 950,
+      "question": "<p>The prevailing activity in the extract is</p>",
+      "ref_id": 666,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214436,
+          "question_id": 55484,
+          "description": "the vow of revenge and pledge of loyalty by Iago to Othello",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214437,
+          "question_id": 55484,
+          "description": "evident of the conspiracy between Iago and Othello",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214438,
+          "question_id": 55484,
+          "description": "the vow by Iago to revenge upon Othello",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214439,
+          "question_id": 55484,
+          "description": "reflective of Othello's rage",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": {
+        "id": 666,
+        "collection_id": 950,
+        "description": "<p>Use the excerpt below to answer the question:<br />\r\n<br />\r\n&quot;Now, by yond marble<br />\r\nheaven,<br />\r\nIn the due reverence of a sacred vow<br />\r\nI here enrage my words.&quot; (Shakespeare&#39;s Othello)</p>",
+        "updated_at": 1758627418
+      }
+    },
+    {
+      "id": 55486,
+      "collection_id": 950,
+      "question": "<p>Consequent upon the act in the excerpt, ...</p>",
+      "ref_id": 666,
+      "image": null,
+      "novel_id": 17,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214444,
+          "question_id": 55486,
+          "description": "Desdemona reconfessed her love for Othello",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214445,
+          "question_id": 55486,
+          "description": "Othello became Iago's sworn enemy",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214446,
+          "question_id": 55486,
+          "description": "Iago successfully executed Othello",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214447,
+          "question_id": 55486,
+          "description": "Othello changed from being the hero to a villain",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 17,
+        "title": "Othello"
+      },
+      "ref": {
+        "id": 666,
+        "collection_id": 950,
+        "description": "<p>Use the excerpt below to answer the question:<br />\r\n<br />\r\n&quot;Now, by yond marble<br />\r\nheaven,<br />\r\nIn the due reverence of a sacred vow<br />\r\nI here enrage my words.&quot; (Shakespeare&#39;s Othello)</p>",
+        "updated_at": 1758627418
+      }
+    },
+    {
+      "id": 55487,
+      "collection_id": 950,
+      "question": "<p>The bar in Tennyson&#39;s &quot;Crossing the Bar&quot; is a symbol for the___________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214448,
+          "question_id": 55487,
+          "description": "presence of God's and his guiding force",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214449,
+          "question_id": 55487,
+          "description": "world",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214450,
+          "question_id": 55487,
+          "description": "boundary between life and death",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214451,
+          "question_id": 55487,
+          "description": "grave",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55489,
+      "collection_id": 950,
+      "question": "<p>A story which explains a natural phenomenon is_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 3,
+      "options": [
+        {
+          "id": 214456,
+          "question_id": 55489,
+          "description": "parable",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214457,
+          "question_id": 55489,
+          "description": "legend",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214458,
+          "question_id": 55489,
+          "description": "myth",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214459,
+          "question_id": 55489,
+          "description": "fiction",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55491,
+      "collection_id": 950,
+      "question": "<p>... may be said to be a critical subject of concern in Blake&#39;s &quot;School Boy&quot;</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214464,
+          "question_id": 55491,
+          "description": "adventurism",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214465,
+          "question_id": 55491,
+          "description": "futility of life and time",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214466,
+          "question_id": 55491,
+          "description": "moral rectitude",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214467,
+          "question_id": 55491,
+          "description": "academic development",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55492,
+      "collection_id": 950,
+      "question": "<p>Amma Darko&#39;s &quot;Faceless&quot; ended with________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 15,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214468,
+          "question_id": 55492,
+          "description": "an inclination of tragi-comedy",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214469,
+          "question_id": 55492,
+          "description": "an epilogue narrating how Baby T's spirit revenged her death",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214470,
+          "question_id": 55492,
+          "description": "an epilogue narrating how Fofo started her early childhood",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214471,
+          "question_id": 55492,
+          "description": "an inclination of indecisiveness",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 15,
+        "title": "Faceless"
+      },
+      "ref": null
+    },
+    {
+      "id": 55494,
+      "collection_id": 950,
+      "question": "<p>Richard Wright&#39;s &quot; Native Son&quot; may be described to a/an_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 14,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214476,
+          "question_id": 55494,
+          "description": "parody",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214477,
+          "question_id": 55494,
+          "description": "picaresque",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214478,
+          "question_id": 55494,
+          "description": "bildungsroman",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214479,
+          "question_id": 55494,
+          "description": "travelogue",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 14,
+        "title": "Native Son"
+      },
+      "ref": null
+    },
+    {
+      "id": 55495,
+      "collection_id": 950,
+      "question": "<p>&quot;The sudden throb of pain&quot; in Lenrie&#39;s &#39;The Panic of Growing Old&#39; signifies the_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214480,
+          "question_id": 55495,
+          "description": "negative impacts of aging",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214481,
+          "question_id": 55495,
+          "description": "difficulties of life",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214482,
+          "question_id": 55495,
+          "description": "youthful age",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214483,
+          "question_id": 55495,
+          "description": "uncertainties of life",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55496,
+      "collection_id": 950,
+      "question": "<p>A character whose action or qualities serve to heighten those of the hero through contrast is__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214484,
+          "question_id": 55496,
+          "description": "an antagonist",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214485,
+          "question_id": 55496,
+          "description": "a foil",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214486,
+          "question_id": 55496,
+          "description": "an adversary",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214487,
+          "question_id": 55496,
+          "description": "a protagonist",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55497,
+      "collection_id": 950,
+      "question": "<p>A poem of 14 lines is known as__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 214488,
+          "question_id": 55497,
+          "description": "sonnet",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214489,
+          "question_id": 55497,
+          "description": "octave",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214490,
+          "question_id": 55497,
+          "description": "sestet",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214491,
+          "question_id": 55497,
+          "description": "quatrain",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55498,
+      "collection_id": 950,
+      "question": "<p>Okara&#39;s reminiscence in the &quot;Piano and Drums&quot; as to how he walks to the farm with no shoes, marching thorns and dangerous leafs, and still finds this enjoyable creates a feeling of___________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 214492,
+          "question_id": 55498,
+          "description": "nostalgia",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214493,
+          "question_id": 55498,
+          "description": "neglect of African culture for civilized styles",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214494,
+          "question_id": 55498,
+          "description": "clash of culture",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214495,
+          "question_id": 55498,
+          "description": "confusion",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55501,
+      "collection_id": 950,
+      "question": "<p>Analogy is the arrangement of two ideas that are_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214504,
+          "question_id": 55501,
+          "description": "opposite",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214505,
+          "question_id": 55501,
+          "description": "similar",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214506,
+          "question_id": 55501,
+          "description": "symbolic",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214507,
+          "question_id": 55501,
+          "description": "repetitive",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55504,
+      "collection_id": 950,
+      "question": "<p>... a didactic poem, especially such with animals as characters may be distinctively described as a/an_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214516,
+          "question_id": 55504,
+          "description": "Romance",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214517,
+          "question_id": 55504,
+          "description": "gothic poem",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214518,
+          "question_id": 55504,
+          "description": "limerick",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214519,
+          "question_id": 55504,
+          "description": "apologue",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55505,
+      "collection_id": 950,
+      "question": "<p>One of the following is not significant to Morris&#39; &quot;The Proud King&quot;</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 71,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214520,
+          "question_id": 55505,
+          "description": "didacticism",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214521,
+          "question_id": 55505,
+          "description": "allusion",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214522,
+          "question_id": 55505,
+          "description": "parable",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214523,
+          "question_id": 55505,
+          "description": "allegory",
+          "tag": "d",
+          "is_correct": 1
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 71,
+        "title": "Selected Poems from: New Poetry from Africa; Poems of Black Africa;  A Selection of African Poetry; Exam Focus: Literature-in-English; Longman Examination Guides; West African Verse"
+      },
+      "ref": null
+    },
+    {
+      "id": 55507,
+      "collection_id": 950,
+      "question": "<p>&#39;The dun dun of a drum&#39; is an example of an__________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214528,
+          "question_id": 55507,
+          "description": "euphemism",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214529,
+          "question_id": 55507,
+          "description": "onomatopoeia",
+          "tag": "b",
+          "is_correct": 1
+        },
+        {
+          "id": 214530,
+          "question_id": 55507,
+          "description": "assonance",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214531,
+          "question_id": 55507,
+          "description": "oxymoron",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55509,
+      "collection_id": 950,
+      "question": "<p><strong>&quot;A time to sow,<br />\r\nA time to reap,<br />\r\nA time to born,<br />\r\nA time to die&quot;</strong></p>\r\n\r\n<p>This exemplies the use of ...</p>\r\n\r\n<p>&nbsp;</p>\r\n\r\n<p>&nbsp;</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214536,
+          "question_id": 55509,
+          "description": "anadiplosis",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214537,
+          "question_id": 55509,
+          "description": "chiasmus",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214538,
+          "question_id": 55509,
+          "description": "anaphora",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214539,
+          "question_id": 55509,
+          "description": "hendiadys",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55511,
+      "collection_id": 950,
+      "question": "<p>Asides being a satire, Ogodo&#39;s &quot;Harvest of Corruption&quot; may also be regarded as a________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 18,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214544,
+          "question_id": 55511,
+          "description": "parody",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214545,
+          "question_id": 55511,
+          "description": "travelogue",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214546,
+          "question_id": 55511,
+          "description": "tragedy",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214547,
+          "question_id": 55511,
+          "description": "tragicomedy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 55513,
+      "collection_id": 950,
+      "question": "<p>Chief Ade Amaka portrays_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": 18,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214552,
+          "question_id": 55513,
+          "description": "betrayal of public trust",
+          "tag": "a",
+          "is_correct": 1
+        },
+        {
+          "id": 214553,
+          "question_id": 55513,
+          "description": "fraud and misfortune",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214554,
+          "question_id": 55513,
+          "description": "lust and deceitfulness",
+          "tag": "c",
+          "is_correct": 0
+        },
+        {
+          "id": 214555,
+          "question_id": 55513,
+          "description": "the evils of capitalism",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": {
+        "id": 18,
+        "title": "Harvest of Corruption"
+      },
+      "ref": null
+    },
+    {
+      "id": 55514,
+      "collection_id": 950,
+      "question": "<p>&#39;poisonous pleasure of wine&#39; illustrates the use of_______</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 0,
+      "options": [
+        {
+          "id": 214556,
+          "question_id": 55514,
+          "description": "antithesis",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214557,
+          "question_id": 55514,
+          "description": "metaphor",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214558,
+          "question_id": 55514,
+          "description": "oxymoron",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214559,
+          "question_id": 55514,
+          "description": "synecdoche",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    },
+    {
+      "id": 55515,
+      "collection_id": 950,
+      "question": "<p>Fatalism is crucial element in_________</p>",
+      "ref_id": 0,
+      "image": null,
+      "novel_id": null,
+      "comments_count": 1,
+      "options": [
+        {
+          "id": 214560,
+          "question_id": 55515,
+          "description": "melodrama",
+          "tag": "a",
+          "is_correct": 0
+        },
+        {
+          "id": 214561,
+          "question_id": 55515,
+          "description": "tragi-comedy",
+          "tag": "b",
+          "is_correct": 0
+        },
+        {
+          "id": 214562,
+          "question_id": 55515,
+          "description": "tragedy",
+          "tag": "c",
+          "is_correct": 1
+        },
+        {
+          "id": 214563,
+          "question_id": 55515,
+          "description": "comedy",
+          "tag": "d",
+          "is_correct": 0
+        }
+      ],
+      "collection": {
+        "id": 950,
+        "exam_year": 2019,
+        "exam_type": "jamb"
+      },
+      "novel": null,
+      "ref": null
+    }
+  ]
+}

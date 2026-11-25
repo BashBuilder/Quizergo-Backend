@@ -1,0 +1,647 @@
+{
+    "message": "We could not find what you asked for, but got you this",
+    "subject": "englishlit",
+    "status": 200,
+    "data": [
+        {
+            "id": 444,
+            "question": "Beneatha's spraying of the apartments seems symbolic of her dissatisfaction with her surroundings, she wants to rid herself and her family of what she later refers to as",
+            "option": {
+                "a": "Graphic terrors",
+                "b": "Acute ghetto it is",
+                "c": "Ocomogoslay",
+                "d": "Claybourne"
+            },
+            "section": "Questions 3 to 4 are based on Lorraine Hansberry's \"A Raisin in the sun\"",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2018"
+        },
+        {
+            "id": 246,
+            "question": "The physical, historical or cultural background of a literary work is referred to as",
+            "option": {
+                "a": "episode",
+                "b": "plot",
+                "c": "time",
+                "d": "setting"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 178,
+            "question": "The stanza is an example of",
+            "option": {
+                "a": "appellation",
+                "b": "apostrophe",
+                "c": "euphemism",
+                "d": "elegy"
+            },
+            "section": "Pan, O great Pan, to thee'<br> \t\tThus do we sing!<br> \t\tThou who keep\u2019st chaste and free<br> \t\tAs the young spring<br> \t\tEver be thy honour spake<br> \t\tFrom that place the morn is broke<br> \t\tTo the place day doth unyoke",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "wassce",
+            "examyear": "2015"
+        },
+        {
+            "id": 381,
+            "question": "In the theme of greed and ambition, the key characters are",
+            "option": {
+                "a": "King Santigo and Soko",
+                "b": "Whitehead, Maligu, and Soko",
+                "c": "Wara, Soko, and whitehead",
+                "d": "Maligu, Wara, and Soko"
+            },
+            "section": "Question 16 to 20 are based on Dele Charley's \"The Blood of a Stranger\"",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 350,
+            "question": "metrical foot of two stressed or long syllables is called",
+            "option": {
+                "a": "a spondee",
+                "b": "a trochee",
+                "c": "an anapest",
+                "d": "an iamb"
+            },
+            "section": "based on General Literary Principles.",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2009"
+        },
+        {
+            "id": 120,
+            "question": "\u201cO mother, my mother!...How could I be expected to know? I was a child when I left this house four months ago. Why didn\u2019t  you tell me there was danger in men-folk? Why didn\u2019t you warn me?\u201d the speech above achieves its literary effect through the use of: ",
+            "option": {
+                "a": "litotes  ",
+                "b": "onomatopoeia ",
+                "c": "allusion  ",
+                "d": "repetition."
+            },
+            "section": "Question is  based on literary appreciation",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 464,
+            "question": "Vanity by Birago Diop. What eyes will watch our large mouths. Sad complaining voices of beggars. The underlined expressions imply",
+            "option": {
+                "a": "Irony",
+                "b": "Humour",
+                "c": "Metaphor",
+                "d": "Personification"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2018"
+        },
+        {
+            "id": 40,
+            "question": "\"Taxi Driver\" in Timothy Wangusa's \"A Taxi Driver on his Death\" can be interpreted as a metaphor describing ",
+            "option": {
+                "a": "a careful driver ",
+                "b": "a ruthless dictator ",
+                "c": "a drunkard ",
+                "d": "a careless man."
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2007"
+        },
+        {
+            "id": 66,
+            "question": "\"The man dies in him who keeps silent in the face of tyranny.\" This statement can be described as: ",
+            "option": {
+                "a": "Metaphoric ",
+                "b": "Literal ",
+                "c": "Tragic ",
+                "d": "A smile."
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 85,
+            "question": "Caricature is used to ",
+            "option": {
+                "a": "censure an individual by emphasizing his weakness ",
+                "b": "expose the folly  in literature  ",
+                "c": "ridicule a person by distorting his most prominent features ",
+                "d": "elicit the artistic potential of dramatist."
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2009"
+        },
+        {
+            "id": 194,
+            "question": "The writer\u2019s attitude to the couple is one of",
+            "option": {
+                "a": "resignation",
+                "b": "indifference",
+                "c": "patronage",
+                "d": "praise"
+            },
+            "section": "A modest two-room hut built of mud and roofed with straw graciously sheltered the Mensahs. One of the rooms advertised itself as a living room. The kind earthenware pot willingly kept company with four ever-smiling stools. The pot eternally contained cool water for guests. The second room was a warm-hearted bedroom without a bed. The poor pair had to sleep on bare straw mats on the polished dirt floor. Some over washed rags deputized for blankets and sheets and pillows. Two strong dry logs, facing each other like bitter rivals burned themselves out at night, not merely to keep the couple warm but mainly to ward off hungry mosquitoes and other hostile pests.<br><br> There was no door to ward off the cold night air. Some rude \tdevices, however, were contrived to keep the room quite safe from prying eyes and curious domestic animals. Would any thief be ever tempted to peep into <strong>such a rude room of such a poor pair<\/strong>?",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "wassce",
+            "examyear": "2015"
+        },
+        {
+            "id": 313,
+            "question": "James Ofosu\u2019s desire is to see Maanan trained as",
+            "option": {
+                "a": "a choreographer",
+                "b": "an attorney",
+                "c": "an accountant",
+                "d": "a surgeon"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2009"
+        },
+        {
+            "id": 266,
+            "question": "The change in fortune is achieved in the play when",
+            "option": {
+                "a": "James agrees that Aaron and Maanan should study what they want",
+                "b": "Lawyer B harasses Maanan in his office",
+                "c": "Haanah, James\u2019 wife convinces him",
+                "d": "Aaron and Maanan agree to read the courses James chooses for them."
+            },
+            "section": "Based on J.C. De Graft\u2019s Sons and  \tDaughters.",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 374,
+            "question": "A port's use of regular rhythm is know as ",
+            "option": {
+                "a": "Metre",
+                "b": "Assonance",
+                "c": "Allegory",
+                "d": "Onomatopoeia"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 447,
+            "question": "Ogeyi bothered by what corruption has apparently done to Aloho, her friend decides to go to ____________ with her story",
+            "option": {
+                "a": "Chief Ade Amaka and Ocbuole",
+                "b": "ACP Yakubu and Inspector Inaku",
+                "c": "Madam Hoha and ACP Yakubu",
+                "d": "Justice odili and Ayo"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2018"
+        },
+        {
+            "id": 248,
+            "question": "Pun as a literary device deals with",
+            "option": {
+                "a": "placing two opposite phrase",
+                "b": "placing words side by side",
+                "c": "playing on words",
+                "d": "arrangement of words"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 537,
+            "question": "What do the gold coins that boys must scramble for at the battle royal turnout to be?",
+            "option": {
+                "a": "Chocolate candies",
+                "b": "Wooden coins",
+                "c": "Brass pocket token",
+                "d": "Pennies"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2020"
+        },
+        {
+            "id": 227,
+            "question": "Where does the play take place?",
+            "option": {
+                "a": "On the street",
+                "b": "In George\u2019s place",
+                "c": "In Aunt\u2019s house",
+                "d": "In Ofosu\u2019s place"
+            },
+            "section": "Based on J.C. De Graft\u2019s  \tSons and Daughter. ",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 39,
+            "question": "The name of the place where Tess and Angel Clare meet each other the second time is: ",
+            "option": {
+                "a": "Tratridge ",
+                "b": "Brazil ",
+                "c": "Dubeyfield",
+                "d": "Talbothays farm."
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2007"
+        },
+        {
+            "id": 116,
+            "question": "In Wendy Cope\u2019s Sonnet VII,  poetry is regarded as a God \u2013given weapon to: ",
+            "option": {
+                "a": "musicians ",
+                "b": "recluses ",
+                "c": "nomads ",
+                "d": "pilgrims."
+            },
+            "section": "Questions is based on Non-African Poetry",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 440,
+            "question": "An inherent quality of the lyric is that it must",
+            "option": {
+                "a": "Be sung to a musical instrument",
+                "b": "Be sung by the poet who composes it",
+                "c": "Be simple and successful",
+                "d": "Express the Poet's subjective emotions"
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 279,
+            "question": "Ona has to leave her father\u2019s house because",
+            "option": {
+                "a": "of her love for Agbadi",
+                "b": "that is the tradition",
+                "c": "her father is dead",
+                "d": "of the safety of her child."
+            },
+            "section": "Based on Buchi Emecheta\u2019s The Joys of Motherhood.",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 45,
+            "question": "One of the following is a characteristic of a novel: ",
+            "option": {
+                "a": "It is written only in dialogues ",
+                "b": "It adopts the poetic form ",
+                "c": "It is written mainly in prose",
+                "d": "It employs phrases and sentences."
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2007"
+        },
+        {
+            "id": 90,
+            "question": "The tone of the poet is ",
+            "option": {
+                "a": "optimistic ",
+                "b": "dupplicatory  ",
+                "c": "sympathetic ",
+                "d": "piteous"
+            },
+            "section": "These only tears\nDripping down the tears on your depressed face.\nWill one day be staunche.\nI swear\u2019 \n",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2009"
+        },
+        {
+            "id": 34,
+            "question": "A literary device that creates a mental picture of a situation is ",
+            "option": {
+                "a": "imagery",
+                "b": "symbolism ",
+                "c": "flashback ",
+                "d": "epilogue."
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2007"
+        },
+        {
+            "id": 300,
+            "question": "A figurative device in which a statement is made and then withdrawn is referred to as",
+            "option": {
+                "a": "metanoia",
+                "b": "metaphysical",
+                "c": "metalanguage",
+                "d": "metalepsis."
+            },
+            "section": "Based on General Literary Principles.",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 226,
+            "question": "The traditional order in the play is represented by",
+            "option": {
+                "a": "Mrs. B",
+                "b": "Hannah",
+                "c": "Maanan",
+                "d": "Aunt"
+            },
+            "section": "Based on J.C. De Graft\u2019s  \tSons and Daughter. ",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 68,
+            "question": "One rhyme scheme typical of the English sonnet is ",
+            "option": {
+                "a": "abba abba cde dce ",
+                "b": "abba abba cde cde ",
+                "c": "abab cdcd efef gg ",
+                "d": "abcd babb cde cc."
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2008"
+        },
+        {
+            "id": 165,
+            "question": "\u201cIt was an enormous  pyramidal structure of glittering white concret, soaring up, terrace after terrace, 300 metres into the air\u201d.",
+            "option": {
+                "a": "Being described in the except above is  ",
+                "b": "The party secretariat",
+                "c": "O\u2019 Brien\u2019s  residence  ",
+                "d": "The ministry of truth "
+            },
+            "section": "The Ministry of Plenty ",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2013"
+        },
+        {
+            "id": 208,
+            "question": "The speaker\u2019s utterance betrays his",
+            "option": {
+                "a": "anger",
+                "b": "pretense",
+                "c": "hatred",
+                "d": "sorrow"
+            },
+            "section": "\tWILLIAM SHAKESPEARE: The Tempest<br><br> \t\tSilence! One word more<br> \t\tShall make me chide thee, if not hate thee. What!<br> \t\tAn advocate for an impostor! Hush!<br> \t\t(Act I, Scene Two, lines 478 - 480)",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "wassce",
+            "examyear": "2015"
+        },
+        {
+            "id": 362,
+            "question": "Constance reveals that she knows Marlow's reputation, since Marlow is friends with",
+            "option": {
+                "a": "Mr. Hastings",
+                "b": "Neville",
+                "c": "Mr. Hardcastle",
+                "d": "Mrs. Hardcastle"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        },
+        {
+            "id": 184,
+            "question": "The first four lines of the Shakespearean sonnet rhyme",
+            "option": {
+                "a": "abcd",
+                "b": "abba",
+                "c": "abab",
+                "d": "cdcd"
+            },
+            "section": "",
+            "image": "",
+            "answer": "c",
+            "solution": "",
+            "examtype": "wassce",
+            "examyear": "2015"
+        },
+        {
+            "id": 145,
+            "question": "In the novel, the Ministry that is responsible for news, entertainment and fine arts in the Ministry of  ",
+            "option": {
+                "a": "Peace  ",
+                "b": "Love  ",
+                "c": "Plenty  ",
+                "d": "Truth"
+            },
+            "section": "Question is based on George Orwell\u2019s Nineteen Eight Four",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2012"
+        },
+        {
+            "id": 132,
+            "question": "This extract is an example of  ",
+            "option": {
+                "a": "dirge  ",
+                "b": "satire  ",
+                "c": "ode  ",
+                "d": "sonnet"
+            },
+            "section": "(Extract for question)\nAgosu, if you go tell them,\nTell Nyidevu, Kpeti, and Kove\nThat they have done us evil;\nTell them house is falling \nAnd the tree in the fence\nHave been eaten by termites \n",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2012"
+        },
+        {
+            "id": 415,
+            "question": "The mission of the white man is revealed and Soko is enlisted into the",
+            "option": {
+                "a": "Plan of work",
+                "b": "Game plan",
+                "c": "Mission act",
+                "d": "Music game"
+            },
+            "section": "Question 14 and 15 are based on Dele Charley's \"The Blood of a stranger\"",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 124,
+            "question": "A novel that has a very strong presence of the supernatural is known as ______ ",
+            "option": {
+                "a": "faction  ",
+                "b": "gothic  ",
+                "c": "travel tale  ",
+                "d": "fairy novel "
+            },
+            "section": "",
+            "image": "",
+            "answer": "d",
+            "solution": "",
+            "examtype": "post-utme",
+            "examyear": "2012"
+        },
+        {
+            "id": 416,
+            "question": "Kindo returns to find Mangu and queries him for giving ",
+            "option": {
+                "a": "Gin drink and evil smelling tobacco",
+                "b": "A negative advice",
+                "c": "A profitable advice",
+                "d": "Warning concerning the white man"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2017"
+        },
+        {
+            "id": 451,
+            "question": "Peggy leads Bigger into the kitchen and asks him to sit down while she gets the",
+            "option": {
+                "a": "Fruits ready",
+                "b": "Dinner ready",
+                "c": "Food ready",
+                "d": "Drinks ready"
+            },
+            "section": "",
+            "image": "",
+            "answer": "b",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2018"
+        },
+        {
+            "id": 254,
+            "question": "The mood conveyed in the excerpt above is one of",
+            "option": {
+                "a": "sadness",
+                "b": "frustration",
+                "c": "sympathy",
+                "d": "dilemma"
+            },
+            "section": "\u2018That year the harvest was sad, like a funeral, and many farmers wept as they dug up the miserable yams. One man tied his cloth to a tree branch and hanged himself.\u2019 (Chinua Achebe: Things Fall Apart)",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2010"
+        },
+        {
+            "id": 401,
+            "question": "William Marris \"The proud king\" \"And has good counsel from him, though indeed, a scanty crop has Spprung from that good seed\" The above is an example of",
+            "option": {
+                "a": "Metaphor",
+                "b": "Personification",
+                "c": "Irony",
+                "d": "Euphemism"
+            },
+            "section": "",
+            "image": "",
+            "answer": "a",
+            "solution": "",
+            "examtype": "utme",
+            "examyear": "2016"
+        }
+    ]
+}
