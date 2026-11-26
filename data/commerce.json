@@ -1,0 +1,5127 @@
+[
+  {
+    "id": 65232,
+    "question": "<p>An article used as a means of exchange in the early days of trade in West Africa was</p>",
+    "option": {
+      "a": "cedis",
+      "b": "cowrie",
+      "c": "dalasi",
+      "d": "naira"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>Before the introduction of modern money, different items were used for trade. In West Africa, <strong>cowries</strong> (shells from the sea) were widely used as a medium of exchange because they were durable, portable, and easily recognizable, unlike modern currencies like the naira, cedi, or dalasi which were introduced much later.</p>",
+    "examtype": "jamb",
+    "examyear": "2022",
+    "questionNub": 1,
+    "hasPassage": 0,
+    "category": "History of Commerce"
+  },
+  {
+    "id": 65234,
+    "question": "<p>The provision of services is classified under</p>",
+    "option": {
+      "a": "batch production",
+      "b": "flow production",
+      "c": "secondary production",
+      "d": "tertiary production"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>Production is divided into three levels: <strong>Primary</strong> (extraction), <strong>Secondary</strong> (manufacturing/processing), and <strong>Tertiary</strong> (services). Provision of services like teaching, banking, or running a shop falls under the tertiary level.</p>",
+    "examtype": "jamb",
+    "examyear": "2022",
+    "questionNub": 2,
+    "hasPassage": 0,
+    "category": "Levels of Production"
+  },
+  {
+    "id": 65236,
+    "question": "<p>The growth of commerce is not enhanced by</p>",
+    "option": {
+      "a": "development of modern forms of production",
+      "b": "government participation in business",
+      "c": "high population growth",
+      "d": "low per capita income"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>Commerce thrives when people have money to spend. <strong>Low per capita income</strong> means consumers have little purchasing power, which restricts demand for goods and limits business growth. The other factors (modern production, government involvement, population growth) generally create opportunities for trade.</p>",
+    "examtype": "jamb",
+    "examyear": "2022",
+    "questionNub": 3,
+    "hasPassage": 0,
+    "category": "Factors Affecting Commerce"
+  },
+  {
+    "id": 65238,
+    "question": "<p>One of the products of the construction industry is a</p>",
+    "option": {
+      "a": "piece of cloth",
+      "b": "bag of cement",
+      "c": "television",
+      "d": "chair"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The <strong>construction industry</strong> builds houses, roads, offices, and furniture. A <strong>chair</strong> is a product made by carpenters and furniture makers connected to construction. While cement is used in construction, a bag of cement itself comes from manufacturing, not directly from the construction industry.</p>",
+    "examtype": "jamb",
+    "examyear": "2022",
+    "questionNub": 4,
+    "hasPassage": 0,
+    "category": "Industrial Sectors"
+  },
+  {
+    "id": 65240,
+    "question": "<p>The service of a retailer is part of production because it</p>",
+    "option": {
+      "a": "creates a link between consumers and producers",
+      "b": "enables finished goods to reach consumers",
+      "c": "increases consumers standard of living",
+      "d": "is a commercial occupation"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>A retailer helps by showing products, keeping them safe, selling them to customers, and collecting payment. This whole journey from factory to your hands is what commerce is about. Without retailers, finished goods could not reach consumers even if they were made.</p>",
+    "examtype": "jamb",
+    "examyear": "2022",
+    "questionNub": 5,
+    "hasPassage": 0,
+    "category": "Functions of Commerce"
+  },
+  {
+    "id": 65242,
+    "examyear": "2022",
+    "question": "<p>The resources put together to create goods and services are</p>",
+    "answer": "c",
+    "option": {
+      "a": "working capital",
+      "b": "producer goods",
+      "c": "factors of production",
+      "d": "consumer goods"
+    },
+    "category": "Factors of Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 6,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65245,
+    "examyear": "2022",
+    "question": "<p>The main sources of credit for small scale businesses are</p>",
+    "answer": "d",
+    "option": {
+      "a": "wholesaler cooperative society",
+      "b": "thrift and credit society",
+      "c": "consumer cooperative society",
+      "d": "chamber of commerce"
+    },
+    "category": "Sources of Credit",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 7,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65247,
+    "examyear": "2022",
+    "question": "<p>The cost of goods available for sale at the end of the accounting period is</p>",
+    "answer": "b",
+    "option": {
+      "a": "below par",
+      "b": "at par",
+      "c": "at a discount",
+      "d": "above par"
+    },
+    "category": "Financial Statement",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 8,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65251,
+    "examyear": "2022",
+    "question": "<p>The formula for finding working capital is</p>",
+    "answer": "b",
+    "option": {
+      "a": "closing stock to purchase divided by 2",
+      "b": "closing stock to opening stock",
+      "c": "opening stock to closing stock divided by 2",
+      "d": "opening stock to purchases"
+    },
+    "category": "Working Capital",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 9,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65254,
+    "examyear": "2022",
+    "question": "<p>One of the characteristics of a shopping mail is that</p>",
+    "answer": "d",
+    "option": {
+      "a": "a commission",
+      "b": "an indemnity",
+      "c": "a policy",
+      "d": "a premium"
+    },
+    "category": "Marketing Channels",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 10,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65259,
+    "examyear": "2022",
+    "question": "<p>A document which shows the share capital registered of a company is</p>",
+    "answer": "a",
+    "option": {
+      "a": "Articles of Association",
+      "b": "Certificate of Incorporation",
+      "c": "Certificate of Trading",
+      "d": "Memorandum of Association"
+    },
+    "category": "Company Law",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 11,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65261,
+    "examyear": "2022",
+    "question": "<p>A document stating the types of shares owned by a shareholder is</p>",
+    "answer": "b",
+    "option": {
+      "a": "quotation",
+      "b": "credit note",
+      "c": "debit note",
+      "d": "delivery note"
+    },
+    "category": "Share Certificates",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 12,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65264,
+    "examyear": "2022",
+    "question": "<p>The amount of profit sharing is</p>",
+    "answer": "a",
+    "option": {
+      "a": "#35,000.00",
+      "b": "#20,000.00",
+      "c": "#5,000.00",
+      "d": "#14,000.00"
+    },
+    "category": "Partnership",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 13,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65266,
+    "examyear": "2022",
+    "question": "<p>The net profit after allowing for the remuneration of partners is</p>",
+    "answer": "b",
+    "option": {
+      "a": "#35,000.00",
+      "b": "#20,000.00",
+      "c": "#15,000.00",
+      "d": "#14,000.00"
+    },
+    "category": "Partnership Accounts",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 14,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65267,
+    "examyear": "2022",
+    "question": "<p>A partner who does not take part in the management of the business is</p>",
+    "answer": "d",
+    "option": {
+      "a": "a nominal partner",
+      "b": "a limited partner",
+      "c": "a general partner",
+      "d": "an active partner"
+    },
+    "category": "Partnership Types",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 15,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65268,
+    "examyear": "2022",
+    "question": "<p>The main aim of trade unions is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "pay members salaries",
+      "b": "promote members' welfare",
+      "c": "provide loans to members",
+      "d": "provide employment for members"
+    },
+    "category": "Trade Unions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 16,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65269,
+    "examyear": "2022",
+    "question": "<p>A type of outlet which sells products directly to consumers and also sells to other retailers is</p>",
+    "answer": "d",
+    "option": {
+      "a": "tied shop",
+      "b": "shopping mail",
+      "c": "hypermarket",
+      "d": "chain store"
+    },
+    "category": "Retail Outlets",
+    "solution": "<p>A retailer helps by showing products, keeping them safe, selling them to customers, and collecting payment. This whole journey from factory to your hands is what commerce is about. Without retailers, finished goods could not reach consumers even if they were made.</p>",
+    "questionNub": 17,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65270,
+    "examyear": "2022",
+    "question": "<p>Income from abroad which comes from the purchase by foreigners of goods produced in a country is called</p>",
+    "answer": "c",
+    "option": {
+      "a": "interest on loans to foreign countries",
+      "b": "profit from investment abroad",
+      "c": "earnings from goods exported",
+      "d": "dividend earned from companies"
+    },
+    "category": "Balance of Payments",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 18,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65271,
+    "examyear": "2022",
+    "question": "<p>One of the characteristics of money is that</p>",
+    "answer": "d",
+    "option": {
+      "a": "tariff",
+      "b": "poundage",
+      "c": "brokerage",
+      "d": "durability"
+    },
+    "category": "Characteristics of Money",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 19,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65273,
+    "examyear": "2022",
+    "question": "<p>One of the functions of commercial banks is to</p>",
+    "answer": "a",
+    "option": {
+      "a": "increase cash in the banking system",
+      "b": "raise revenue for commercial banks",
+      "c": "raise revenue for private investors",
+      "d": "reduce cash in circulation"
+    },
+    "category": "Functions of Banks",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 20,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65276,
+    "examyear": "2022",
+    "question": "<p>A document which is sent to an overseas supplier requesting for goods and services before the goods are delivered is known as</p>",
+    "answer": "b",
+    "option": {
+      "a": "proforma invoice",
+      "b": "open indent",
+      "c": "consular invoice",
+      "d": "closed indent"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 21,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65277,
+    "examyear": "2022",
+    "question": "<p>Trade discount given for cash purchases is called</p>",
+    "answer": "d",
+    "option": {
+      "a": "cash discount",
+      "b": "seasonal discount",
+      "c": "quantity discount",
+      "d": "trade discount"
+    },
+    "category": "Discounts",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 22,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65278,
+    "examyear": "2022",
+    "question": "<p>In insurance, the test for proximate caused is</p>",
+    "answer": "c",
+    "option": {
+      "a": "indemnity",
+      "b": "contribution",
+      "c": "proximate cause",
+      "d": "uberrimae fidei"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 23,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65279,
+    "examyear": "2022",
+    "question": "<p>A person in an insurance company who appraises claims is called</p>",
+    "answer": "d",
+    "option": {
+      "a": "actuaries",
+      "b": "promoters",
+      "c": "speculators",
+      "d": "underwriter"
+    },
+    "category": "Insurance Operations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 24,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65280,
+    "examyear": "2022",
+    "question": "<p>A non-existent company established with the view of making profit is called</p>",
+    "answer": "d",
+    "option": {
+      "a": "Established as limited liability company",
+      "b": "Established by individuals or organizations",
+      "c": "Established to issue bank notes",
+      "d": "Established with the view of making profit"
+    },
+    "category": "Company Types",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 25,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65281,
+    "examyear": "2022",
+    "question": "<p>Which of the following is NOT a function of transport?</p>",
+    "answer": "c",
+    "option": {
+      "a": "is less expensive to maintain",
+      "b": "is not prone to delays",
+      "c": "carries bulky and heavy goods",
+      "d": "enhances door-to-door delivery"
+    },
+    "category": "Transport",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 26,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65282,
+    "examyear": "2022",
+    "question": "<p>Which of the following is NOT a trade document?</p>",
+    "answer": "a",
+    "option": {
+      "a": "freight",
+      "b": "fee",
+      "c": "fare",
+      "d": "duty"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 27,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65283,
+    "examyear": "2022",
+    "question": "<p>One feature of a bearer cheque is that</p>",
+    "answer": "b",
+    "option": {
+      "a": "the name of the account holder is written between two parallel lines drawn across it",
+      "b": "it could be paid over the counter",
+      "c": "the name of the bank is written between two parallel lines drawn across it",
+      "d": "only two parallel lines are drawn across it"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 28,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65284,
+    "examyear": "2022",
+    "question": "<p>One of the functions of a cooperative society is to</p>",
+    "answer": "c",
+    "option": {
+      "a": "pay members salaries",
+      "b": "promote members' welfare",
+      "c": "provide loans to members",
+      "d": "provide employment for members"
+    },
+    "category": "Cooperative Societies",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 29,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65285,
+    "examyear": "2022",
+    "question": "<p>When a share is sold below par value, it is said to be</p>",
+    "answer": "b",
+    "option": {
+      "a": "cum div",
+      "b": "ex-div",
+      "c": "at a discount",
+      "d": "at a premium"
+    },
+    "category": "Share Trading",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 30,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65286,
+    "examyear": "2022",
+    "question": "<p>The most convenient means of transport for bulky goods is</p>",
+    "answer": "c",
+    "option": {
+      "a": "tramps",
+      "b": "ocean liners",
+      "c": "container ships",
+      "d": "ferries"
+    },
+    "category": "Transport",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 31,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65287,
+    "examyear": "2022",
+    "question": "<p>Freight, fare and duty are all examples of</p>",
+    "answer": "d",
+    "option": {
+      "a": "freight",
+      "b": "fee",
+      "c": "fare",
+      "d": "duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 32,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65288,
+    "examyear": "2022",
+    "question": "<p>An advantage of containerization is that</p>",
+    "answer": "b",
+    "option": {
+      "a": "is less expensive to maintain",
+      "b": "is not prone to delays",
+      "c": "carries bulky and heavy goods",
+      "d": "enhances door-to-door delivery"
+    },
+    "category": "Containerisation",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 33,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65289,
+    "examyear": "2022",
+    "question": "<p>Brokerage is a form of</p>",
+    "answer": "c",
+    "option": {
+      "a": "tariff",
+      "b": "poundage",
+      "c": "brokerage",
+      "d": "fee"
+    },
+    "category": "Trading Charges",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 34,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65290,
+    "examyear": "2022",
+    "question": "<p>A function of marketing is</p>",
+    "answer": "a",
+    "option": {
+      "a": "research",
+      "b": "planning",
+      "c": "distribution",
+      "d": "advertisement"
+    },
+    "category": "Marketing Functions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 35,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65291,
+    "examyear": "2022",
+    "question": "<p>Marketing involves selling goods and services directly to consumers for their satisfaction and profit</p>",
+    "answer": "d",
+    "option": {
+      "a": "sales of goods directly to customers",
+      "b": "use of promotional tools to stimulate sale",
+      "c": "mass production of goods",
+      "d": "consumer's satisfaction at a profit"
+    },
+    "category": "Marketing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 36,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65292,
+    "examyear": "2022",
+    "question": "<p>The marketing element which is a function of trade is</p>",
+    "answer": "b",
+    "option": {
+      "a": "after-sales service",
+      "b": "marketing mix",
+      "c": "market segmentation",
+      "d": "sales promotion"
+    },
+    "category": "Marketing Mix",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 37,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65293,
+    "examyear": "2022",
+    "question": "<p>One of the consumer's rights is the right to</p>",
+    "answer": "d",
+    "option": {
+      "a": "Right to a fair hearing",
+      "b": "Right to buy on credit",
+      "c": "Right to obtain replacement",
+      "d": "Right to safe product"
+    },
+    "category": "Consumer Rights",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 38,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65294,
+    "examyear": "2022",
+    "question": "<p>Advertising which is done through various media is called</p>",
+    "answer": "d",
+    "option": {
+      "a": "direct advertising",
+      "b": "indirect advertising",
+      "c": "mass advertising",
+      "d": "persuasive advertising"
+    },
+    "category": "Advertising",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 39,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 65295,
+    "examyear": "2022",
+    "question": "<p>The main aim of the Sale of Goods Act is to</p>",
+    "answer": "c",
+    "option": {
+      "a": "Weights and Measure Act",
+      "b": "Trade Description Act",
+      "c": "Sale of Goods Act",
+      "d": "Foods and Drugs Act"
+    },
+    "category": "Consumer Protection",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 40,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67550,
+    "examyear": "2023",
+    "question": "<p>The study of commerce is concerned with</p>",
+    "answer": "a",
+    "option": {
+      "a": "the study of how goods and services are produced, distributed, and consumed",
+      "b": "the study of business finance only",
+      "c": "the study of manufacturing processes",
+      "d": "the study of government economic policies"
+    },
+    "category": "Introduction to Commerce",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 41,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67552,
+    "examyear": "2023",
+    "question": "<p>Which of the following is NOT an aid to trade?</p>",
+    "answer": "d",
+    "option": {
+      "a": "transportation",
+      "b": "insurance",
+      "c": "banking",
+      "d": "production"
+    },
+    "category": "Aids to Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 42,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67555,
+    "examyear": "2023",
+    "question": "<p>The document used to request goods from a supplier before delivery is</p>",
+    "answer": "b",
+    "option": {
+      "a": "invoice",
+      "b": "indent",
+      "c": "quotation",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 43,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67558,
+    "examyear": "2023",
+    "question": "<p>A document sent by a seller to a buyer indicating prices and terms is</p>",
+    "answer": "c",
+    "option": {
+      "a": "indent",
+      "b": "invoice",
+      "c": "quotation",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 44,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67560,
+    "examyear": "2023",
+    "question": "<p>One advantage of large scale production is</p>",
+    "answer": "a",
+    "option": {
+      "a": "lower cost per unit",
+      "b": "higher unit cost",
+      "c": "more variety",
+      "d": "slower distribution"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 45,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67562,
+    "examyear": "2023",
+    "question": "<p>The document which serves as a receipt for goods received is</p>",
+    "answer": "d",
+    "option": {
+      "a": "indent",
+      "b": "quotation",
+      "c": "invoice",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 46,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67565,
+    "examyear": "2023",
+    "question": "<p>A characteristic of warehousing is</p>",
+    "answer": "b",
+    "option": {
+      "a": "perishable goods only",
+      "b": "time utility by storing goods",
+      "c": "direct consumer sales",
+      "d": "eliminates need for transport"
+    },
+    "category": "Warehousing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 47,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67567,
+    "examyear": "2023",
+    "question": "<p>The term 'carriage' refers to</p>",
+    "answer": "c",
+    "option": {
+      "a": "insurance premium",
+      "b": "bank charges",
+      "c": "cost of transporting goods",
+      "d": "customs duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 48,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67570,
+    "examyear": "2023",
+    "question": "<p>A non-profit organization formed by producers is a</p>",
+    "answer": "b",
+    "option": {
+      "a": "partnership",
+      "b": "cooperative society",
+      "c": "sole proprietorship",
+      "d": "limited liability company"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 49,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67572,
+    "examyear": "2023",
+    "question": "<p>The payment made to an insurance company for coverage is the</p>",
+    "answer": "d",
+    "option": {
+      "a": "premium",
+      "b": "indemnity",
+      "c": "policy",
+      "d": "fee"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 50,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67575,
+    "examyear": "2023",
+    "question": "<p>Which of the following is a primary function of money?</p>",
+    "answer": "a",
+    "option": {
+      "a": "medium of exchange",
+      "b": "store of value",
+      "c": "unit of account",
+      "d": "all of the above"
+    },
+    "category": "Money",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 51,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67577,
+    "examyear": "2023",
+    "question": "<p>A bill of exchange payable on demand is a</p>",
+    "answer": "a",
+    "option": {
+      "a": "demand bill",
+      "b": "time bill",
+      "c": "promissory note",
+      "d": "cheque"
+    },
+    "category": "Negotiable Instruments",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 52,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67580,
+    "examyear": "2023",
+    "question": "<p>The organization that regulates stock exchange activities is</p>",
+    "answer": "c",
+    "option": {
+      "a": "SEC",
+      "b": "CBN",
+      "c": "SECURITIES EXCHANGE",
+      "d": "Ministry of Finance"
+    },
+    "category": "Capital Market",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 53,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67582,
+    "examyear": "2023",
+    "question": "<p>A type of business unit with perpetual succession is a</p>",
+    "answer": "d",
+    "option": {
+      "a": "partnership",
+      "b": "sole proprietorship",
+      "c": "cooperative",
+      "d": "limited liability company"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 54,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67585,
+    "examyear": "2023",
+    "question": "<p>The act that protects consumers from misleading descriptions is</p>",
+    "answer": "b",
+    "option": {
+      "a": "Weights and Measures Act",
+      "b": "Trade Description Act",
+      "c": "Consumer Protection Act",
+      "d": "Sale of Goods Act"
+    },
+    "category": "Consumer Protection",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 55,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67587,
+    "examyear": "2023",
+    "question": "<p>The main purpose of advertisement is to</p>",
+    "answer": "d",
+    "option": {
+      "a": "inform only",
+      "b": "persuade only",
+      "c": "both inform and persuade",
+      "d": "entertain"
+    },
+    "category": "Advertising",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 56,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67590,
+    "examyear": "2023",
+    "question": "<p>A partner whose liability is limited to their contribution is a</p>",
+    "answer": "b",
+    "option": {
+      "a": "general partner",
+      "b": "limited partner",
+      "c": "nominal partner",
+      "d": "active partner"
+    },
+    "category": "Partnership",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 57,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67592,
+    "examyear": "2023",
+    "question": "<p>The document used in international trade to acknowledge receipt of goods is</p>",
+    "answer": "c",
+    "option": {
+      "a": "proforma invoice",
+      "b": "indent",
+      "c": "bill of lading",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 58,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67595,
+    "examyear": "2023",
+    "question": "<p>The most convenient means of transport for bulky goods over long distances is</p>",
+    "answer": "c",
+    "option": {
+      "a": "trucks",
+      "b": "rail",
+      "c": "ocean liners",
+      "d": "air freight"
+    },
+    "category": "Transport",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 59,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67597,
+    "examyear": "2023",
+    "question": "<p>The term 'factor of production' refers to</p>",
+    "answer": "a",
+    "option": {
+      "a": "land, labor, capital, and entrepreneurship",
+      "b": "natural resources only",
+      "c": "money and capital goods",
+      "d": "skilled labor only"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 60,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67600,
+    "examyear": "2023",
+    "question": "<p>A bearer cheque is one that</p>",
+    "answer": "b",
+    "option": {
+      "a": "can be paid only to the account holder",
+      "b": "can be paid over the counter to anyone",
+      "c": "has two parallel lines",
+      "d": "must be deposited in a bank"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 61,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67602,
+    "examyear": "2023",
+    "question": "<p>The primary aim of trade union is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "maximize profits",
+      "b": "promote members' welfare",
+      "c": "minimize wages",
+      "d": "manage the business"
+    },
+    "category": "Trade Unions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 62,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67605,
+    "examyear": "2023",
+    "question": "<p>Insurance contracts are based on the principle of</p>",
+    "answer": "a",
+    "option": {
+      "a": "utmost good faith",
+      "b": "indemnity",
+      "c": "subrogation",
+      "d": "contribution"
+    },
+    "category": "Insurance Principles",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 63,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67607,
+    "examyear": "2023",
+    "question": "<p>A company that is registered but has not yet started business has obtained</p>",
+    "answer": "b",
+    "option": {
+      "a": "certificate of incorporation",
+      "b": "certificate of trading",
+      "c": "memorandum of association",
+      "d": "articles of association"
+    },
+    "category": "Company Formation",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 64,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67610,
+    "examyear": "2023",
+    "question": "<p>The discount allowed for prompt payment is</p>",
+    "answer": "a",
+    "option": {
+      "a": "cash discount",
+      "b": "trade discount",
+      "c": "seasonal discount",
+      "d": "quantity discount"
+    },
+    "category": "Discounts",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 65,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67612,
+    "examyear": "2023",
+    "question": "<p>The cost of moving goods from one place to another is</p>",
+    "answer": "c",
+    "option": {
+      "a": "freight",
+      "b": "fare",
+      "c": "carriage",
+      "d": "duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 66,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67615,
+    "examyear": "2023",
+    "question": "<p>A document that shows the types and quantity of goods shipped is</p>",
+    "answer": "b",
+    "option": {
+      "a": "proforma invoice",
+      "b": "packing list",
+      "c": "invoice",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 67,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67617,
+    "examyear": "2023",
+    "question": "<p>The term 'balance of trade' refers to</p>",
+    "answer": "a",
+    "option": {
+      "a": "the difference between a country's exports and imports",
+      "b": "the balance of payments",
+      "c": "the equilibrium of trade",
+      "d": "the price of traded goods"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 68,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67620,
+    "examyear": "2023",
+    "question": "<p>The form of business ownership with unlimited liability is a</p>",
+    "answer": "a",
+    "option": {
+      "a": "sole proprietorship",
+      "b": "partnership",
+      "c": "limited liability company",
+      "d": "cooperative"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 69,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67622,
+    "examyear": "2023",
+    "question": "<p>The document that authorizes a bank to pay a specified amount is</p>",
+    "answer": "a",
+    "option": {
+      "a": "cheque",
+      "b": "promissory note",
+      "c": "bill of exchange",
+      "d": "draft"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 70,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67625,
+    "examyear": "2023",
+    "question": "<p>A marketing mix includes all of the following EXCEPT</p>",
+    "answer": "d",
+    "option": {
+      "a": "product",
+      "b": "price",
+      "c": "place",
+      "d": "promotion of employees"
+    },
+    "category": "Marketing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 71,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67627,
+    "examyear": "2023",
+    "question": "<p>The right of a consumer to be heard is protected by</p>",
+    "answer": "c",
+    "option": {
+      "a": "price control",
+      "b": "quality control",
+      "c": "consumer protection agencies",
+      "d": "government inspection"
+    },
+    "category": "Consumer Rights",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 72,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67630,
+    "examyear": "2023",
+    "question": "<p>A document showing the details of goods sent by sea is</p>",
+    "answer": "c",
+    "option": {
+      "a": "proforma invoice",
+      "b": "indent",
+      "c": "bill of lading",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 73,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67632,
+    "examyear": "2023",
+    "question": "<p>The function of a stock exchange is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "print money",
+      "b": "facilitate buying and selling of securities",
+      "c": "lend to businesses",
+      "d": "regulate commerce"
+    },
+    "category": "Capital Market",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 74,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67635,
+    "examyear": "2023",
+    "question": "<p>The term 'dumping' refers to</p>",
+    "answer": "b",
+    "option": {
+      "a": "selling at cost price",
+      "b": "selling goods below cost in foreign markets",
+      "c": "price discrimination",
+      "d": "export subsidy"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 75,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67637,
+    "examyear": "2023",
+    "question": "<p>A cooperative society is owned and managed by</p>",
+    "answer": "a",
+    "option": {
+      "a": "its members",
+      "b": "a board of directors",
+      "c": "a government agency",
+      "d": "a CEO"
+    },
+    "category": "Cooperative Societies",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 76,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67640,
+    "examyear": "2023",
+    "question": "<p>The major advantage of chain stores is</p>",
+    "answer": "b",
+    "option": {
+      "a": "personal attention",
+      "b": "lower prices due to bulk buying",
+      "c": "limited variety",
+      "d": "high operating costs"
+    },
+    "category": "Retail Outlets",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 77,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67642,
+    "examyear": "2023",
+    "question": "<p>The document used to request goods from overseas before shipment is</p>",
+    "answer": "b",
+    "option": {
+      "a": "invoice",
+      "b": "open indent",
+      "c": "quotation",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 78,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67645,
+    "examyear": "2023",
+    "question": "<p>The study of how individuals and societies allocate scarce resources is</p>",
+    "answer": "a",
+    "option": {
+      "a": "economics",
+      "b": "commerce",
+      "c": "accounting",
+      "d": "management"
+    },
+    "category": "Economics",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 79,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 67647,
+    "examyear": "2023",
+    "question": "<p>The document used to insure goods while in transit is</p>",
+    "answer": "c",
+    "option": {
+      "a": "policy",
+      "b": "warranty",
+      "c": "marine insurance",
+      "d": "fire insurance"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 80,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70924,
+    "examyear": "2024",
+    "question": "<p>Commerce is defined as</p>",
+    "answer": "a",
+    "option": {
+      "a": "all activities that facilitate the exchange of goods and services",
+      "b": "buying and selling only",
+      "c": "manufacturing of goods",
+      "d": "transportation of goods"
+    },
+    "category": "Introduction to Commerce",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 81,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70926,
+    "examyear": "2024",
+    "question": "<p>The document used to request goods from a supplier is</p>",
+    "answer": "b",
+    "option": {
+      "a": "invoice",
+      "b": "indent",
+      "c": "quotation",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 82,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70928,
+    "examyear": "2024",
+    "question": "<p>A document sent by seller to buyer showing prices and terms is a</p>",
+    "answer": "c",
+    "option": {
+      "a": "indent",
+      "b": "invoice",
+      "c": "quotation",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 83,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70930,
+    "examyear": "2024",
+    "question": "<p>One advantage of large scale production is</p>",
+    "answer": "a",
+    "option": {
+      "a": "lower cost per unit",
+      "b": "higher unit cost",
+      "c": "more variety",
+      "d": "slower distribution"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 84,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70932,
+    "examyear": "2024",
+    "question": "<p>The payment made to an insurance company for coverage is the</p>",
+    "answer": "d",
+    "option": {
+      "a": "premium",
+      "b": "indemnity",
+      "c": "policy",
+      "d": "fee"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 85,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70934,
+    "examyear": "2024",
+    "question": "<p>A characteristic of warehousing is</p>",
+    "answer": "b",
+    "option": {
+      "a": "perishable goods only",
+      "b": "time utility by storing goods",
+      "c": "direct consumer sales",
+      "d": "eliminates need for transport"
+    },
+    "category": "Warehousing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 86,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70936,
+    "examyear": "2024",
+    "question": "<p>The term 'carriage' refers to</p>",
+    "answer": "c",
+    "option": {
+      "a": "insurance premium",
+      "b": "bank charges",
+      "c": "cost of transporting goods",
+      "d": "customs duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 87,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70938,
+    "examyear": "2024",
+    "question": "<p>A non-profit organization formed by producers is a</p>",
+    "answer": "b",
+    "option": {
+      "a": "partnership",
+      "b": "cooperative society",
+      "c": "sole proprietorship",
+      "d": "limited liability company"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 88,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70940,
+    "examyear": "2024",
+    "question": "<p>Which of the following is NOT an aid to trade?</p>",
+    "answer": "d",
+    "option": {
+      "a": "transportation",
+      "b": "insurance",
+      "c": "banking",
+      "d": "production"
+    },
+    "category": "Aids to Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 89,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70942,
+    "examyear": "2024",
+    "question": "<p>The most convenient means of transport for bulky goods over long distances is</p>",
+    "answer": "c",
+    "option": {
+      "a": "trucks",
+      "b": "rail",
+      "c": "ocean liners",
+      "d": "air freight"
+    },
+    "category": "Transport",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 90,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70944,
+    "examyear": "2024",
+    "question": "<p>A bearer cheque is one that</p>",
+    "answer": "b",
+    "option": {
+      "a": "can be paid only to the account holder",
+      "b": "can be paid over the counter to anyone",
+      "c": "has two parallel lines",
+      "d": "must be deposited in a bank"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 91,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70946,
+    "examyear": "2024",
+    "question": "<p>The primary aim of trade union is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "maximize profits",
+      "b": "promote members' welfare",
+      "c": "minimize wages",
+      "d": "manage the business"
+    },
+    "category": "Trade Unions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 92,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70948,
+    "examyear": "2024",
+    "question": "<p>Insurance contracts are based on the principle of</p>",
+    "answer": "a",
+    "option": {
+      "a": "utmost good faith",
+      "b": "indemnity",
+      "c": "subrogation",
+      "d": "contribution"
+    },
+    "category": "Insurance Principles",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 93,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70950,
+    "examyear": "2024",
+    "question": "<p>A company that is registered but has not yet started business has obtained</p>",
+    "answer": "b",
+    "option": {
+      "a": "certificate of incorporation",
+      "b": "certificate of trading",
+      "c": "memorandum of association",
+      "d": "articles of association"
+    },
+    "category": "Company Formation",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 94,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70952,
+    "examyear": "2024",
+    "question": "<p>The discount allowed for prompt payment is</p>",
+    "answer": "a",
+    "option": {
+      "a": "cash discount",
+      "b": "trade discount",
+      "c": "seasonal discount",
+      "d": "quantity discount"
+    },
+    "category": "Discounts",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 95,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70954,
+    "examyear": "2024",
+    "question": "<p>The cost of moving goods from one place to another is</p>",
+    "answer": "c",
+    "option": {
+      "a": "freight",
+      "b": "fare",
+      "c": "carriage",
+      "d": "duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 96,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70956,
+    "examyear": "2024",
+    "question": "<p>The document that shows the types and quantity of goods shipped is</p>",
+    "answer": "b",
+    "option": {
+      "a": "proforma invoice",
+      "b": "packing list",
+      "c": "invoice",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 97,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70958,
+    "examyear": "2024",
+    "question": "<p>The term 'balance of trade' refers to</p>",
+    "answer": "a",
+    "option": {
+      "a": "the difference between a country's exports and imports",
+      "b": "the balance of payments",
+      "c": "the equilibrium of trade",
+      "d": "the price of traded goods"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 98,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70960,
+    "examyear": "2024",
+    "question": "<p>The form of business ownership with unlimited liability is a</p>",
+    "answer": "a",
+    "option": {
+      "a": "sole proprietorship",
+      "b": "partnership",
+      "c": "limited liability company",
+      "d": "cooperative"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 99,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70962,
+    "examyear": "2024",
+    "question": "<p>The document that authorizes a bank to pay a specified amount is</p>",
+    "answer": "a",
+    "option": {
+      "a": "cheque",
+      "b": "promissory note",
+      "c": "bill of exchange",
+      "d": "draft"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 100,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70964,
+    "examyear": "2024",
+    "question": "<p>A marketing mix includes all of the following EXCEPT</p>",
+    "answer": "d",
+    "option": {
+      "a": "product",
+      "b": "price",
+      "c": "place",
+      "d": "promotion of employees"
+    },
+    "category": "Marketing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 101,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70966,
+    "examyear": "2024",
+    "question": "<p>The right of a consumer to be heard is protected by</p>",
+    "answer": "c",
+    "option": {
+      "a": "price control",
+      "b": "quality control",
+      "c": "consumer protection agencies",
+      "d": "government inspection"
+    },
+    "category": "Consumer Rights",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 102,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70968,
+    "examyear": "2024",
+    "question": "<p>A document showing the details of goods sent by sea is</p>",
+    "answer": "c",
+    "option": {
+      "a": "proforma invoice",
+      "b": "indent",
+      "c": "bill of lading",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 103,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70970,
+    "examyear": "2024",
+    "question": "<p>The function of a stock exchange is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "print money",
+      "b": "facilitate buying and selling of securities",
+      "c": "lend to businesses",
+      "d": "regulate commerce"
+    },
+    "category": "Capital Market",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 104,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70972,
+    "examyear": "2024",
+    "question": "<p>The term 'dumping' refers to</p>",
+    "answer": "b",
+    "option": {
+      "a": "selling at cost price",
+      "b": "selling goods below cost in foreign markets",
+      "c": "price discrimination",
+      "d": "export subsidy"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 105,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70974,
+    "examyear": "2024",
+    "question": "<p>A cooperative society is owned and managed by</p>",
+    "answer": "a",
+    "option": {
+      "a": "its members",
+      "b": "a board of directors",
+      "c": "a government agency",
+      "d": "a CEO"
+    },
+    "category": "Cooperative Societies",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 106,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70976,
+    "examyear": "2024",
+    "question": "<p>The major advantage of chain stores is</p>",
+    "answer": "b",
+    "option": {
+      "a": "personal attention",
+      "b": "lower prices due to bulk buying",
+      "c": "limited variety",
+      "d": "high operating costs"
+    },
+    "category": "Retail Outlets",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 107,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70978,
+    "examyear": "2024",
+    "question": "<p>The document used to request goods from overseas before shipment is</p>",
+    "answer": "b",
+    "option": {
+      "a": "invoice",
+      "b": "open indent",
+      "c": "quotation",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 108,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70980,
+    "examyear": "2024",
+    "question": "<p>The study of how individuals and societies allocate scarce resources is</p>",
+    "answer": "a",
+    "option": {
+      "a": "economics",
+      "b": "commerce",
+      "c": "accounting",
+      "d": "management"
+    },
+    "category": "Economics",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 109,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70982,
+    "examyear": "2024",
+    "question": "<p>The document used to insure goods while in transit is</p>",
+    "answer": "c",
+    "option": {
+      "a": "policy",
+      "b": "warranty",
+      "c": "marine insurance",
+      "d": "fire insurance"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 110,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70984,
+    "examyear": "2024",
+    "question": "<p>A partnership with unlimited liability for all partners is a</p>",
+    "answer": "a",
+    "option": {
+      "a": "general partnership",
+      "b": "limited partnership",
+      "c": "limited liability partnership",
+      "d": "sole proprietorship"
+    },
+    "category": "Partnership",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 111,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70986,
+    "examyear": "2024",
+    "question": "<p>The document that serves as a receipt for goods received is</p>",
+    "answer": "d",
+    "option": {
+      "a": "indent",
+      "b": "quotation",
+      "c": "invoice",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 112,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70988,
+    "examyear": "2024",
+    "question": "<p>The term 'factor of production' refers to land, labor, capital, and</p>",
+    "answer": "a",
+    "option": {
+      "a": "entrepreneurship",
+      "b": "natural resources",
+      "c": "money",
+      "d": "technology"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 113,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70990,
+    "examyear": "2024",
+    "question": "<p>The main purpose of advertisement is to</p>",
+    "answer": "d",
+    "option": {
+      "a": "inform only",
+      "b": "persuade only",
+      "c": "both inform and persuade",
+      "d": "entertain"
+    },
+    "category": "Advertising",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 114,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70992,
+    "examyear": "2024",
+    "question": "<p>The organization that regulates stock exchange activities is</p>",
+    "answer": "c",
+    "option": {
+      "a": "SEC",
+      "b": "CBN",
+      "c": "SECURITIES EXCHANGE",
+      "d": "Ministry of Finance"
+    },
+    "category": "Capital Market",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 115,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70994,
+    "examyear": "2024",
+    "question": "<p>A bearer cheque can be paid over the counter to</p>",
+    "answer": "b",
+    "option": {
+      "a": "the account holder only",
+      "b": "anyone",
+      "c": "the bank manager",
+      "d": "the payee only"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 116,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70996,
+    "examyear": "2024",
+    "question": "<p>The primary aim of trade union is to promote members</p>",
+    "answer": "b",
+    "option": {
+      "a": "welfare",
+      "b": "welfare",
+      "c": "salaries",
+      "d": "employment"
+    },
+    "category": "Trade Unions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 117,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 70998,
+    "examyear": "2024",
+    "question": "<p>The document that records the details of goods in transit is</p>",
+    "answer": "c",
+    "option": {
+      "a": "proforma invoice",
+      "b": "indent",
+      "c": "bill of lading",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 118,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 71000,
+    "examyear": "2024",
+    "question": "<p>The difference between a country's exports and imports is the</p>",
+    "answer": "a",
+    "option": {
+      "a": "balance of trade",
+      "b": "balance of payments",
+      "c": "trade deficit",
+      "d": "trade surplus"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 119,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 71002,
+    "examyear": "2024",
+    "question": "<p>The term 'entrepreneurship' refers to the</p>",
+    "answer": "a",
+    "option": {
+      "a": "drive to produce and organize resources",
+      "b": "natural resources endowment",
+      "c": "financial capital accumulation",
+      "d": "government policy"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 120,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74904,
+    "examyear": "2025",
+    "question": "<p>Commerce is defined as</p>",
+    "answer": "a",
+    "option": {
+      "a": "all activities that facilitate the exchange of goods and services",
+      "b": "buying and selling only",
+      "c": "manufacturing of goods",
+      "d": "transportation of goods"
+    },
+    "category": "Introduction to Commerce",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 121,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74906,
+    "examyear": "2025",
+    "question": "<p>The document used to request goods from a supplier is</p>",
+    "answer": "b",
+    "option": {
+      "a": "invoice",
+      "b": "indent",
+      "c": "quotation",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 122,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74908,
+    "examyear": "2025",
+    "question": "<p>A document sent by seller to buyer showing prices and terms is a</p>",
+    "answer": "c",
+    "option": {
+      "a": "indent",
+      "b": "invoice",
+      "c": "quotation",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 123,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74910,
+    "examyear": "2025",
+    "question": "<p>One advantage of large scale production is</p>",
+    "answer": "a",
+    "option": {
+      "a": "lower cost per unit",
+      "b": "higher unit cost",
+      "c": "more variety",
+      "d": "slower distribution"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 124,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74912,
+    "examyear": "2025",
+    "question": "<p>The payment made to an insurance company for coverage is the</p>",
+    "answer": "d",
+    "option": {
+      "a": "premium",
+      "b": "indemnity",
+      "c": "policy",
+      "d": "fee"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 125,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74914,
+    "examyear": "2025",
+    "question": "<p>A characteristic of warehousing is</p>",
+    "answer": "b",
+    "option": {
+      "a": "perishable goods only",
+      "b": "time utility by storing goods",
+      "c": "direct consumer sales",
+      "d": "eliminates need for transport"
+    },
+    "category": "Warehousing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 126,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74916,
+    "examyear": "2025",
+    "question": "<p>The term 'carriage' refers to</p>",
+    "answer": "c",
+    "option": {
+      "a": "insurance premium",
+      "b": "bank charges",
+      "c": "cost of transporting goods",
+      "d": "customs duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 127,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74918,
+    "examyear": "2025",
+    "question": "<p>A non-profit organization formed by producers is a</p>",
+    "answer": "b",
+    "option": {
+      "a": "partnership",
+      "b": "cooperative society",
+      "c": "sole proprietorship",
+      "d": "limited liability company"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 128,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74920,
+    "examyear": "2025",
+    "question": "<p>Which of the following is NOT an aid to trade?</p>",
+    "answer": "d",
+    "option": {
+      "a": "transportation",
+      "b": "insurance",
+      "c": "banking",
+      "d": "production"
+    },
+    "category": "Aids to Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 129,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74922,
+    "examyear": "2025",
+    "question": "<p>The most convenient means of transport for bulky goods over long distances is</p>",
+    "answer": "c",
+    "option": {
+      "a": "trucks",
+      "b": "rail",
+      "c": "ocean liners",
+      "d": "air freight"
+    },
+    "category": "Transport",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 130,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74924,
+    "examyear": "2025",
+    "question": "<p>A bearer cheque is one that</p>",
+    "answer": "b",
+    "option": {
+      "a": "can be paid only to the account holder",
+      "b": "can be paid over the counter to anyone",
+      "c": "has two parallel lines",
+      "d": "must be deposited in a bank"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 131,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74926,
+    "examyear": "2025",
+    "question": "<p>The primary aim of trade union is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "maximize profits",
+      "b": "promote members' welfare",
+      "c": "minimize wages",
+      "d": "manage the business"
+    },
+    "category": "Trade Unions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 132,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74928,
+    "examyear": "2025",
+    "question": "<p>Insurance contracts are based on the principle of</p>",
+    "answer": "a",
+    "option": {
+      "a": "utmost good faith",
+      "b": "indemnity",
+      "c": "subrogation",
+      "d": "contribution"
+    },
+    "category": "Insurance Principles",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 133,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74930,
+    "examyear": "2025",
+    "question": "<p>A company that is registered but has not yet started business has obtained</p>",
+    "answer": "b",
+    "option": {
+      "a": "certificate of incorporation",
+      "b": "certificate of trading",
+      "c": "memorandum of association",
+      "d": "articles of association"
+    },
+    "category": "Company Formation",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 134,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74932,
+    "examyear": "2025",
+    "question": "<p>The discount allowed for prompt payment is</p>",
+    "answer": "a",
+    "option": {
+      "a": "cash discount",
+      "b": "trade discount",
+      "c": "seasonal discount",
+      "d": "quantity discount"
+    },
+    "category": "Discounts",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 135,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74934,
+    "examyear": "2025",
+    "question": "<p>The cost of moving goods from one place to another is</p>",
+    "answer": "c",
+    "option": {
+      "a": "freight",
+      "b": "fare",
+      "c": "carriage",
+      "d": "duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 136,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74936,
+    "examyear": "2025",
+    "question": "<p>The document that shows the types and quantity of goods shipped is</p>",
+    "answer": "b",
+    "option": {
+      "a": "proforma invoice",
+      "b": "packing list",
+      "c": "invoice",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 137,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74938,
+    "examyear": "2025",
+    "question": "<p>The term 'balance of trade' refers to</p>",
+    "answer": "a",
+    "option": {
+      "a": "the difference between a country's exports and imports",
+      "b": "the balance of payments",
+      "c": "the equilibrium of trade",
+      "d": "the price of traded goods"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 138,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74940,
+    "examyear": "2025",
+    "question": "<p>The form of business ownership with unlimited liability is a</p>",
+    "answer": "a",
+    "option": {
+      "a": "sole proprietorship",
+      "b": "partnership",
+      "c": "limited liability company",
+      "d": "cooperative"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 139,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74942,
+    "examyear": "2025",
+    "question": "<p>The document that authorizes a bank to pay a specified amount is</p>",
+    "answer": "a",
+    "option": {
+      "a": "cheque",
+      "b": "promissory note",
+      "c": "bill of exchange",
+      "d": "draft"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 140,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74944,
+    "examyear": "2025",
+    "question": "<p>A marketing mix includes all of the following EXCEPT</p>",
+    "answer": "d",
+    "option": {
+      "a": "product",
+      "b": "price",
+      "c": "place",
+      "d": "promotion of employees"
+    },
+    "category": "Marketing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 141,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74946,
+    "examyear": "2025",
+    "question": "<p>The right of a consumer to be heard is protected by</p>",
+    "answer": "c",
+    "option": {
+      "a": "price control",
+      "b": "quality control",
+      "c": "consumer protection agencies",
+      "d": "government inspection"
+    },
+    "category": "Consumer Rights",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 142,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74948,
+    "examyear": "2025",
+    "question": "<p>A document showing the details of goods sent by sea is</p>",
+    "answer": "c",
+    "option": {
+      "a": "proforma invoice",
+      "b": "indent",
+      "c": "bill of lading",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 143,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74950,
+    "examyear": "2025",
+    "question": "<p>The function of a stock exchange is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "print money",
+      "b": "facilitate buying and selling of securities",
+      "c": "lend to businesses",
+      "d": "regulate commerce"
+    },
+    "category": "Capital Market",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 144,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74952,
+    "examyear": "2025",
+    "question": "<p>The term 'dumping' refers to</p>",
+    "answer": "b",
+    "option": {
+      "a": "selling at cost price",
+      "b": "selling goods below cost in foreign markets",
+      "c": "price discrimination",
+      "d": "export subsidy"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 145,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74954,
+    "examyear": "2025",
+    "question": "<p>A cooperative society is owned and managed by</p>",
+    "answer": "a",
+    "option": {
+      "a": "its members",
+      "b": "a board of directors",
+      "c": "a government agency",
+      "d": "a CEO"
+    },
+    "category": "Cooperative Societies",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 146,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74956,
+    "examyear": "2025",
+    "question": "<p>The major advantage of chain stores is</p>",
+    "answer": "b",
+    "option": {
+      "a": "personal attention",
+      "b": "lower prices due to bulk buying",
+      "c": "limited variety",
+      "d": "high operating costs"
+    },
+    "category": "Retail Outlets",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 147,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74958,
+    "examyear": "2025",
+    "question": "<p>The document used to request goods from overseas before shipment is</p>",
+    "answer": "b",
+    "option": {
+      "a": "invoice",
+      "b": "open indent",
+      "c": "quotation",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 148,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74960,
+    "examyear": "2025",
+    "question": "<p>The study of how individuals and societies allocate scarce resources is</p>",
+    "answer": "a",
+    "option": {
+      "a": "economics",
+      "b": "commerce",
+      "c": "accounting",
+      "d": "management"
+    },
+    "category": "Economics",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 149,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74962,
+    "examyear": "2025",
+    "question": "<p>The document used to insure goods while in transit is</p>",
+    "answer": "c",
+    "option": {
+      "a": "policy",
+      "b": "warranty",
+      "c": "marine insurance",
+      "d": "fire insurance"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 150,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74964,
+    "examyear": "2025",
+    "question": "<p>A partnership with unlimited liability for all partners is a</p>",
+    "answer": "a",
+    "option": {
+      "a": "general partnership",
+      "b": "limited partnership",
+      "c": "limited liability partnership",
+      "d": "sole proprietorship"
+    },
+    "category": "Partnership",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 151,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74966,
+    "examyear": "2025",
+    "question": "<p>The document that serves as a receipt for goods received is</p>",
+    "answer": "d",
+    "option": {
+      "a": "indent",
+      "b": "quotation",
+      "c": "invoice",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 152,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74968,
+    "examyear": "2025",
+    "question": "<p>The term 'factor of production' refers to land, labor, capital, and</p>",
+    "answer": "a",
+    "option": {
+      "a": "entrepreneurship",
+      "b": "natural resources",
+      "c": "money",
+      "d": "technology"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 153,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74969,
+    "examyear": "2025",
+    "question": "<p>The main purpose of advertisement is to</p>",
+    "answer": "d",
+    "option": {
+      "a": "inform only",
+      "b": "persuade only",
+      "c": "both inform and persuade",
+      "d": "entertain"
+    },
+    "category": "Advertising",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 154,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74971,
+    "examyear": "2025",
+    "question": "<p>The organization that regulates stock exchange activities is</p>",
+    "answer": "c",
+    "option": {
+      "a": "SEC",
+      "b": "CBN",
+      "c": "SECURITIES EXCHANGE",
+      "d": "Ministry of Finance"
+    },
+    "category": "Capital Market",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 155,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74973,
+    "examyear": "2025",
+    "question": "<p>A bearer cheque can be paid over the counter to</p>",
+    "answer": "b",
+    "option": {
+      "a": "the account holder only",
+      "b": "anyone",
+      "c": "the bank manager",
+      "d": "the payee only"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 156,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74975,
+    "examyear": "2025",
+    "question": "<p>The primary aim of trade union is to promote members</p>",
+    "answer": "b",
+    "option": {
+      "a": "welfare",
+      "b": "welfare",
+      "c": "salaries",
+      "d": "employment"
+    },
+    "category": "Trade Unions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 157,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74977,
+    "examyear": "2025",
+    "question": "<p>The document that records the details of goods in transit is</p>",
+    "answer": "c",
+    "option": {
+      "a": "proforma invoice",
+      "b": "indent",
+      "c": "bill of lading",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 158,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74979,
+    "examyear": "2025",
+    "question": "<p>The difference between a country's exports and imports is the</p>",
+    "answer": "a",
+    "option": {
+      "a": "balance of trade",
+      "b": "balance of payments",
+      "c": "trade deficit",
+      "d": "trade surplus"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 159,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 74981,
+    "examyear": "2025",
+    "question": "<p>The term 'entrepreneurship' refers to the</p>",
+    "answer": "a",
+    "option": {
+      "a": "drive to produce and organize resources",
+      "b": "natural resources endowment",
+      "c": "financial capital accumulation",
+      "d": "government policy"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 160,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79207,
+    "examyear": "2026",
+    "question": "<p>Commerce is defined as</p>",
+    "answer": "a",
+    "option": {
+      "a": "all activities that facilitate the exchange of goods and services",
+      "b": "buying and selling only",
+      "c": "manufacturing of goods",
+      "d": "transportation of goods"
+    },
+    "category": "Introduction to Commerce",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 161,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79209,
+    "examyear": "2026",
+    "question": "<p>The document used to request goods from a supplier is</p>",
+    "answer": "b",
+    "option": {
+      "a": "invoice",
+      "b": "indent",
+      "c": "quotation",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 162,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79211,
+    "examyear": "2026",
+    "question": "<p>A document sent by seller to buyer showing prices and terms is a</p>",
+    "answer": "c",
+    "option": {
+      "a": "indent",
+      "b": "invoice",
+      "c": "quotation",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 163,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79213,
+    "examyear": "2026",
+    "question": "<p>One advantage of large scale production is</p>",
+    "answer": "a",
+    "option": {
+      "a": "lower cost per unit",
+      "b": "higher unit cost",
+      "c": "more variety",
+      "d": "slower distribution"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 164,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79215,
+    "examyear": "2026",
+    "question": "<p>The payment made to an insurance company for coverage is the</p>",
+    "answer": "d",
+    "option": {
+      "a": "premium",
+      "b": "indemnity",
+      "c": "policy",
+      "d": "fee"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 165,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79217,
+    "examyear": "2026",
+    "question": "<p>A characteristic of warehousing is</p>",
+    "answer": "b",
+    "option": {
+      "a": "perishable goods only",
+      "b": "time utility by storing goods",
+      "c": "direct consumer sales",
+      "d": "eliminates need for transport"
+    },
+    "category": "Warehousing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 166,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79219,
+    "examyear": "2026",
+    "question": "<p>The term 'carriage' refers to</p>",
+    "answer": "c",
+    "option": {
+      "a": "insurance premium",
+      "b": "bank charges",
+      "c": "cost of transporting goods",
+      "d": "customs duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 167,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79221,
+    "examyear": "2026",
+    "question": "<p>A non-profit organization formed by producers is a</p>",
+    "answer": "b",
+    "option": {
+      "a": "partnership",
+      "b": "cooperative society",
+      "c": "sole proprietorship",
+      "d": "limited liability company"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 168,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79223,
+    "examyear": "2026",
+    "question": "<p>Which of the following is NOT an aid to trade?</p>",
+    "answer": "d",
+    "option": {
+      "a": "transportation",
+      "b": "insurance",
+      "c": "banking",
+      "d": "production"
+    },
+    "category": "Aids to Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 169,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79225,
+    "examyear": "2026",
+    "question": "<p>The most convenient means of transport for bulky goods over long distances is</p>",
+    "answer": "c",
+    "option": {
+      "a": "trucks",
+      "b": "rail",
+      "c": "ocean liners",
+      "d": "air freight"
+    },
+    "category": "Transport",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 170,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79227,
+    "examyear": "2026",
+    "question": "<p>A bearer cheque is one that</p>",
+    "answer": "b",
+    "option": {
+      "a": "can be paid only to the account holder",
+      "b": "can be paid over the counter to anyone",
+      "c": "has two parallel lines",
+      "d": "must be deposited in a bank"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 171,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79229,
+    "examyear": "2026",
+    "question": "<p>The primary aim of trade union is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "maximize profits",
+      "b": "promote members' welfare",
+      "c": "minimize wages",
+      "d": "manage the business"
+    },
+    "category": "Trade Unions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 172,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79231,
+    "examyear": "2026",
+    "question": "<p>Insurance contracts are based on the principle of</p>",
+    "answer": "a",
+    "option": {
+      "a": "utmost good faith",
+      "b": "indemnity",
+      "c": "subrogation",
+      "d": "contribution"
+    },
+    "category": "Insurance Principles",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 173,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79233,
+    "examyear": "2026",
+    "question": "<p>A company that is registered but has not yet started business has obtained</p>",
+    "answer": "b",
+    "option": {
+      "a": "certificate of incorporation",
+      "b": "certificate of trading",
+      "c": "memorandum of association",
+      "d": "articles of association"
+    },
+    "category": "Company Formation",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 174,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79235,
+    "examyear": "2026",
+    "question": "<p>The discount allowed for prompt payment is</p>",
+    "answer": "a",
+    "option": {
+      "a": "cash discount",
+      "b": "trade discount",
+      "c": "seasonal discount",
+      "d": "quantity discount"
+    },
+    "category": "Discounts",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 175,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79237,
+    "examyear": "2026",
+    "question": "<p>The cost of moving goods from one place to another is</p>",
+    "answer": "c",
+    "option": {
+      "a": "freight",
+      "b": "fare",
+      "c": "carriage",
+      "d": "duty"
+    },
+    "category": "Transport Costs",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 176,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79239,
+    "examyear": "2026",
+    "question": "<p>The document that shows the types and quantity of goods shipped is</p>",
+    "answer": "b",
+    "option": {
+      "a": "proforma invoice",
+      "b": "packing list",
+      "c": "invoice",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 177,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79241,
+    "examyear": "2026",
+    "question": "<p>The term 'balance of trade' refers to</p>",
+    "answer": "a",
+    "option": {
+      "a": "the difference between a country's exports and imports",
+      "b": "the balance of payments",
+      "c": "the equilibrium of trade",
+      "d": "the price of traded goods"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 178,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79243,
+    "examyear": "2026",
+    "question": "<p>The form of business ownership with unlimited liability is a</p>",
+    "answer": "a",
+    "option": {
+      "a": "sole proprietorship",
+      "b": "partnership",
+      "c": "limited liability company",
+      "d": "cooperative"
+    },
+    "category": "Business Organizations",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 179,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79245,
+    "examyear": "2026",
+    "question": "<p>The document that authorizes a bank to pay a specified amount is</p>",
+    "answer": "a",
+    "option": {
+      "a": "cheque",
+      "b": "promissory note",
+      "c": "bill of exchange",
+      "d": "draft"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 180,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79247,
+    "examyear": "2026",
+    "question": "<p>A marketing mix includes all of the following EXCEPT</p>",
+    "answer": "d",
+    "option": {
+      "a": "product",
+      "b": "price",
+      "c": "place",
+      "d": "promotion of employees"
+    },
+    "category": "Marketing",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 181,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79249,
+    "examyear": "2026",
+    "question": "<p>The right of a consumer to be heard is protected by</p>",
+    "answer": "c",
+    "option": {
+      "a": "price control",
+      "b": "quality control",
+      "c": "consumer protection agencies",
+      "d": "government inspection"
+    },
+    "category": "Consumer Rights",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 182,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79251,
+    "examyear": "2026",
+    "question": "<p>A document showing the details of goods sent by sea is</p>",
+    "answer": "c",
+    "option": {
+      "a": "proforma invoice",
+      "b": "indent",
+      "c": "bill of lading",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 183,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79253,
+    "examyear": "2026",
+    "question": "<p>The function of a stock exchange is to</p>",
+    "answer": "b",
+    "option": {
+      "a": "print money",
+      "b": "facilitate buying and selling of securities",
+      "c": "lend to businesses",
+      "d": "regulate commerce"
+    },
+    "category": "Capital Market",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 184,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79255,
+    "examyear": "2026",
+    "question": "<p>The term 'dumping' refers to</p>",
+    "answer": "b",
+    "option": {
+      "a": "selling at cost price",
+      "b": "selling goods below cost in foreign markets",
+      "c": "price discrimination",
+      "d": "export subsidy"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 185,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79257,
+    "examyear": "2026",
+    "question": "<p>A cooperative society is owned and managed by</p>",
+    "answer": "a",
+    "option": {
+      "a": "its members",
+      "b": "a board of directors",
+      "c": "a government agency",
+      "d": "a CEO"
+    },
+    "category": "Cooperative Societies",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 186,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79259,
+    "examyear": "2026",
+    "question": "<p>The major advantage of chain stores is</p>",
+    "answer": "b",
+    "option": {
+      "a": "personal attention",
+      "b": "lower prices due to bulk buying",
+      "c": "limited variety",
+      "d": "high operating costs"
+    },
+    "category": "Retail Outlets",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 187,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79261,
+    "examyear": "2026",
+    "question": "<p>The document used to request goods from overseas before shipment is</p>",
+    "answer": "b",
+    "option": {
+      "a": "invoice",
+      "b": "open indent",
+      "c": "quotation",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 188,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79263,
+    "examyear": "2026",
+    "question": "<p>The study of how individuals and societies allocate scarce resources is</p>",
+    "answer": "a",
+    "option": {
+      "a": "economics",
+      "b": "commerce",
+      "c": "accounting",
+      "d": "management"
+    },
+    "category": "Economics",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 189,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79265,
+    "examyear": "2026",
+    "question": "<p>The document used to insure goods while in transit is</p>",
+    "answer": "c",
+    "option": {
+      "a": "policy",
+      "b": "warranty",
+      "c": "marine insurance",
+      "d": "fire insurance"
+    },
+    "category": "Insurance",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 190,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79267,
+    "examyear": "2026",
+    "question": "<p>A partnership with unlimited liability for all partners is a</p>",
+    "answer": "a",
+    "option": {
+      "a": "general partnership",
+      "b": "limited partnership",
+      "c": "limited liability partnership",
+      "d": "sole proprietorship"
+    },
+    "category": "Partnership",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 191,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79269,
+    "examyear": "2026",
+    "question": "<p>The document that serves as a receipt for goods received is</p>",
+    "answer": "d",
+    "option": {
+      "a": "indent",
+      "b": "quotation",
+      "c": "invoice",
+      "d": "delivery note"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 192,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79271,
+    "examyear": "2026",
+    "question": "<p>The term 'factor of production' refers to land, labor, capital, and</p>",
+    "answer": "a",
+    "option": {
+      "a": "entrepreneurship",
+      "b": "natural resources",
+      "c": "money",
+      "d": "technology"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 193,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79273,
+    "examyear": "2026",
+    "question": "<p>The main purpose of advertisement is to</p>",
+    "answer": "d",
+    "option": {
+      "a": "inform only",
+      "b": "persuade only",
+      "c": "both inform and persuade",
+      "d": "entertain"
+    },
+    "category": "Advertising",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 194,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79275,
+    "examyear": "2026",
+    "question": "<p>The organization that regulates stock exchange activities is</p>",
+    "answer": "c",
+    "option": {
+      "a": "SEC",
+      "b": "CBN",
+      "c": "SECURITIES EXCHANGE",
+      "d": "Ministry of Finance"
+    },
+    "category": "Capital Market",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 195,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79277,
+    "examyear": "2026",
+    "question": "<p>A bearer cheque can be paid over the counter to</p>",
+    "answer": "b",
+    "option": {
+      "a": "the account holder only",
+      "b": "anyone",
+      "c": "the bank manager",
+      "d": "the payee only"
+    },
+    "category": "Banking",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 196,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79279,
+    "examyear": "2026",
+    "question": "<p>The primary aim of trade union is to promote members</p>",
+    "answer": "b",
+    "option": {
+      "a": "welfare",
+      "b": "welfare",
+      "c": "salaries",
+      "d": "employment"
+    },
+    "category": "Trade Unions",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 197,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79281,
+    "examyear": "2026",
+    "question": "<p>The document that records the details of goods in transit is</p>",
+    "answer": "c",
+    "option": {
+      "a": "proforma invoice",
+      "b": "indent",
+      "c": "bill of lading",
+      "d": "consular invoice"
+    },
+    "category": "Trade Documents",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 198,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79283,
+    "examyear": "2026",
+    "question": "<p>The difference between a country's exports and imports is the</p>",
+    "answer": "a",
+    "option": {
+      "a": "balance of trade",
+      "b": "balance of payments",
+      "c": "trade deficit",
+      "d": "trade surplus"
+    },
+    "category": "International Trade",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 199,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79285,
+    "examyear": "2026",
+    "question": "<p>The term 'entrepreneurship' refers to the</p>",
+    "answer": "a",
+    "option": {
+      "a": "drive to produce and organize resources",
+      "b": "natural resources endowment",
+      "c": "financial capital accumulation",
+      "d": "government policy"
+    },
+    "category": "Production",
+    "solution": "<p>The correct answer provides the expected solution based on the question topic.</p>",
+    "questionNub": 200,
+    "section": "",
+    "examtype": "jamb",
+    "hasPassage": 0
+  },
+  {
+    "id": 79286,
+    "question": "<p>A distinguishing characteristic of a limited liability company is that</p>",
+    "option": {
+      "a": "is a collection of many sole proprietors",
+      "b": "is a multiple partnership",
+      "c": "has limited resources",
+      "d": "can sue and be sued"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 1,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79287,
+    "question": "<p>Freight note is a document</p>",
+    "option": {
+      "a": "issued by a shipping company giving details of changes",
+      "b": "used by government to transport goods from one country to another",
+      "c": "used for payment for imported goods",
+      "d": "given by an importer to pay for goods at a future period"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 2,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79288,
+    "question": "<p>Which of the following are the components of&nbsp;commerce?</p>\r\n\r\n<p>I. trading and advertising<br />\r\nII. warehousing and transportation<br />\r\nIII. packing and branding<br />\r\nIV. Insurance and banking</p>",
+    "option": {
+      "a": "I and II",
+      "b": "I,II and IV",
+      "c": "II, III and IV",
+      "d": "I and III"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 3,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79289,
+    "question": "<p>Extractive industries may also be denominated as</p>",
+    "option": {
+      "a": "direct industries",
+      "b": "servicing industries",
+      "c": "indirect industries",
+      "d": "primary industries"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 4,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79290,
+    "question": "<p>A common requirement for public and private limited companies in Nigeria is that</p>",
+    "option": {
+      "a": "a shareholder cannot transfer his shares to someone else without permission from other shareholders",
+      "b": "shares cannot be offered or sale on the stock exchange",
+      "c": "their annual accounts are made available to the corporate affairs commission",
+      "d": "shares can be offered for sale through an issuing house"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 5,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79291,
+    "question": "<p>Mr. Olatunde took up a fire insurance on a property valued at ₦1000 and the amount insured is ₦80. Thee ₦400. If the property caught fire causing a loss of insurance was taken with the clause with average what is the amount to be paid b&yacute; the insurance company?</p>",
+    "option": {
+      "a": "₦420",
+      "b": "₦320",
+      "c": "₦460",
+      "d": "₦560"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 6,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79292,
+    "question": "<p>One major characteristic of credit unions and thrift societies is that</p>",
+    "option": {
+      "a": "the contribution of every member depends on the member's ability",
+      "b": "the legal processes involved in their formation are rigid",
+      "c": "membership is compulsory to people in the same line of business",
+      "d": "a minimum of ten people in the same line of business can form the union"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 7,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79293,
+    "question": "<p>An author&#39;s exclusive right to his published and unpublished works is known as</p>",
+    "option": {
+      "a": "constitutional right",
+      "b": "author's right",
+      "c": "copyright",
+      "d": "patent right"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 8,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79294,
+    "question": "<p>The management function that makes the difference in intensity of behavior is</p>",
+    "option": {
+      "a": "controlling",
+      "b": "motivation",
+      "c": "coordinating",
+      "d": "planning"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 9,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79295,
+    "question": "<p>Charges for loans paid by commercial banks to the Central Bank of Nigeria are called</p>",
+    "option": {
+      "a": "credit charges",
+      "b": "interest rates",
+      "c": "bank charges",
+      "d": "bank rates"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 10,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79296,
+    "question": "<p>The difference between personal selling and sales promotion is that while sales promotion includes free gifts and samples. personal selling involves</p>",
+    "option": {
+      "a": "face-to-face communication with customers",
+      "b": "distributing instructional posters",
+      "c": "premium programming for Customers",
+      "d": "publishing promotional hooklets"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 11,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79297,
+    "question": "<p>One of the disadvantages of sole proprietorship is</p>",
+    "option": {
+      "a": "limited liability",
+      "b": "pride of ownership",
+      "c": "unlimited liability",
+      "d": "secrecy of annual reports"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 12,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79298,
+    "question": "<p><em>Use the diagram above to answer this question</em></p>\r\n\r\n<p>X represents</p>",
+    "option": {
+      "a": "action",
+      "b": "receiver",
+      "c": "transmission",
+      "d": "ideation"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 13,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79299,
+    "question": "<p><em>Use the diagram above to answer this question</em></p>\r\n\r\n<p>In the communication process. Y represents</p>",
+    "option": {
+      "a": "the encoder",
+      "b": "the initiator",
+      "c": "noise",
+      "d": "the medium"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 14,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79300,
+    "question": "<p>One of the functions of the Nigeria Ports Authority is the provision of</p>",
+    "option": {
+      "a": "carrier services to ensure speedy delivery",
+      "b": "facilities to enhance the speedy loading and offloading of cargoes",
+      "c": "facilities to ensure that goods get to the destinations",
+      "d": "shelter for operators of cargoes"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 15,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79301,
+    "question": "<p>The scope of economic activities can be enlarged by</p>",
+    "option": {
+      "a": "transportation and trading",
+      "b": "trading and aids to trade",
+      "c": "business and its promotion",
+      "d": "insurance and banking"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 16,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79302,
+    "question": "<p><strong>Given:</strong></p>\r\n\r\n<p>I. shoe maker<br />\r\nII. policemen<br />\r\nIII. fishermen<br />\r\nIV. Gardener<br />\r\nV. Broker.</p>\r\n\r\n<p>The persons engaged in primary Occupation are</p>",
+    "option": {
+      "a": "I, II and V",
+      "b": "I, III and IV",
+      "c": "III and V",
+      "d": "III and IV"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 17,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79303,
+    "question": "<p>Ships used for international transport are</p>",
+    "option": {
+      "a": "oceanliners",
+      "b": "yachts",
+      "c": "launchers",
+      "d": "trawlers"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 18,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79304,
+    "question": "<p>The process of eliminating a virus from computer is the</p>",
+    "option": {
+      "a": "programming",
+      "b": "formatting",
+      "c": "looping",
+      "d": "debugging"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 19,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79305,
+    "question": "<p>A customer with ABC Plc sent money through his account to his sister&#39;s account in another branch. This Is an example of</p>",
+    "option": {
+      "a": "e-business",
+      "b": "e-commerce",
+      "c": "e-banking",
+      "d": "e-finance"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 20,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79306,
+    "question": "<p>One of the merits of television as a medium of advertising is that it</p>",
+    "option": {
+      "a": "is prone to censorship",
+      "b": "is relatively cheap",
+      "c": "has more network coverage",
+      "d": "has more sensory stimulation"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 21,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79307,
+    "question": "<p>The central working system of a computer used for data processing is the</p>",
+    "option": {
+      "a": "monitor",
+      "b": "floppy disk drive",
+      "c": "hard drive",
+      "d": "memory unit"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 22,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79308,
+    "question": "<p>An example of a computer operating system is</p>",
+    "option": {
+      "a": "the page maker",
+      "b": "windows 2000",
+      "c": "Microsoft word 2000",
+      "d": "the word perfect"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 23,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79309,
+    "question": "<p>The arrangement and interrelationship of the various components and positions of a business is referred to as</p>",
+    "option": {
+      "a": "line structure",
+      "b": "unity of direction",
+      "c": "organisational structure",
+      "d": "clarity of objective"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 24,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79310,
+    "question": "<p><strong>Given:</strong><br />\r\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;₦<br />\r\nOpening Stock&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 1,800<br />\r\nPurchases&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,800<br />\r\nSales&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;8,000<br />\r\nClosing stock&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 350<br />\r\nCarriage on sales&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;500</p>\r\n\r\n<p>Calculate the value of the unused stock.</p>",
+    "option": {
+      "a": "₦800",
+      "b": "₦500",
+      "c": "₦320",
+      "d": "₦350"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 25,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79311,
+    "question": "<p>Modern means of payment is greatly facilitated by</p>",
+    "option": {
+      "a": "e-banking",
+      "b": "paper money",
+      "c": "credit transfer",
+      "d": "e-commerce"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 26,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79312,
+    "question": "<p>A country is said to be experiencing an unfavourable balance of trade if her</p>",
+    "option": {
+      "a": "exports exceed imports",
+      "b": "visible imports exceeds Visible exports",
+      "c": "visible exports exceed visible imports",
+      "d": "imports and exports are equal"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 27,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79313,
+    "question": "<p>An undertaking given by a person to another assuring his integrity is</p>",
+    "option": {
+      "a": "proximate cause",
+      "b": "insurable interest",
+      "c": "fidelity guarantee",
+      "d": "subrogation"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 28,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79314,
+    "question": "<p>The principle of management that emphasizes on the number of subordinates under the direct supervision of a manager is</p>",
+    "option": {
+      "a": "unity of command",
+      "b": "scalar chain",
+      "c": "unity of direction",
+      "d": "span of control"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 29,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79315,
+    "question": "<p>Mr. Taju entered into a contract to let a car to Mr. Funbi for his wedding for two days. However, the car had an accident before the first day. Mr. Funbi attempted to Claim damages but failed. This implies that the contract was terminated by</p>",
+    "option": {
+      "a": "bankruptcy",
+      "b": "breach",
+      "c": "lapse of time",
+      "d": "frustration"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 30,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79316,
+    "question": "<p><strong>Given:</strong><br />\r\n&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;₦<br />\r\nSales&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 15,000<br />\r\nOpening stock&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 5,600<br />\r\nPurchases&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 9,700<br />\r\nClosing stock&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;4,400<br />\r\nGross profit&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 4,500<br />\r\nNet profit&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 2,000</p>\r\n\r\n<p>From the above data, calculate the rate of turnover</p>",
+    "option": {
+      "a": "2.00 times",
+      "b": "3.50 times",
+      "c": "2.18 times",
+      "d": "3.00 times"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 31,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79317,
+    "question": "<p>From the diagram above, what does I stand for?</p>",
+    "option": {
+      "a": "aids to trade",
+      "b": "home trade",
+      "c": "publicity",
+      "d": "advertising"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 32,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79318,
+    "question": "<p>The agency that currently oversees the privatization and commercialization processes in Nigeria is the</p>",
+    "option": {
+      "a": "Nigerian Stock Exchange",
+      "b": "Technical Committee on Privatization and Commercialization",
+      "c": "Securities and exchange commission",
+      "d": "Bureau of public enterprises"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 33,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79319,
+    "question": "<p>A doctor who attends to patients at home after his official duty is</p>",
+    "option": {
+      "a": "a direct and indirect service worker",
+      "b": "a direct service worker",
+      "c": "an indirect service worker",
+      "d": "a community developer"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 34,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79320,
+    "question": "<p>The process of dividing tasks into jobs and departments and delegating authority is known as</p>",
+    "option": {
+      "a": "directing",
+      "b": "leading",
+      "c": "organizing",
+      "d": "staffing"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 35,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79321,
+    "question": "<p>Which of the following attracts only interest but leaves the capital unpaid?</p>",
+    "option": {
+      "a": "uberrimae fidei",
+      "b": "subrogation",
+      "c": "contribution",
+      "d": "redeemable bond"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 36,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79322,
+    "question": "<p>The above chart represents the</p>",
+    "option": {
+      "a": "promotion mix relationship",
+      "b": "marketing mix relationship",
+      "c": "advertising mix relationship relationship",
+      "d": "product mix relationship"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 37,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79323,
+    "question": "<p>The main documents sent to an importer of goods by the exporter are</p>",
+    "option": {
+      "a": "bill of lading, invoice, insurance policy, consular invoice, certificate of origin and bill of exchange",
+      "b": "indent, bill of lading, certificate of origin, invoice and bill of exchange",
+      "c": "certificate of origin, bill of exchange, invoice, insurance policy, indent and bil of lading",
+      "d": "invoice, consular invoice, certificate of origin, freight note, indent and insurance policy"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 38,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79324,
+    "question": "<p>NACCIMA stands for&nbsp;</p>",
+    "option": {
+      "a": "Nigerian American Centre for Culture, Industries, Mines and Arts",
+      "b": "Nigerian Association for Culture, Civics, Industries, Minerals and arts\r\nArts",
+      "c": "National Agency for Culture, Civilization, Investment, Manufacturing and Agriculture",
+      "d": "Nigeria Association of Chambers of Commerce,\r\nIndustries, Mines and Agriculture"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 39,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79325,
+    "question": "<p>The strategy adopted by a firm that ceases to operate at one or more locations because of inactivity is</p>",
+    "option": {
+      "a": "consolidation",
+      "b": "rejuvenation",
+      "c": "diversification",
+      "d": "focus"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2020",
+    "questionNub": 40,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79326,
+    "question": "<p>The principle of span of control stipulates that?</p>",
+    "option": {
+      "a": "The number of employees reporting to one superior should be kept to a workable maximum",
+      "b": "An employee should report to only one superior",
+      "c": "Managers must demand accountability from their subordinates",
+      "d": "Resources have to be economized within the various divisions"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 1,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79327,
+    "question": "<p>The main advantage of a sole trader is the freedom to?</p>",
+    "option": {
+      "a": "employ anyone he likes",
+      "b": "take quick decision",
+      "c": "seek advise from any source",
+      "d": "plough all the profits"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 2,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79328,
+    "question": "<p>The major objective of corporate mergers is to?</p>",
+    "option": {
+      "a": "minimize the effect of taxation",
+      "b": "increase financial advantage",
+      "c": "enhance economies of sale",
+      "d": "facilitate profit maximization"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 3,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79329,
+    "question": "<p>A provision in the charter of a company which gives holders of common stock the first option to purchase additional issues of the firm&#39;s common stock is the</p>",
+    "option": {
+      "a": "pre-emptive right",
+      "b": "over-subscription right",
+      "c": "ex-dividend right",
+      "d": "shareholders right"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 4,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79330,
+    "question": "<p>The conversion of raw materials into finished products creates</p>",
+    "option": {
+      "a": "form utility",
+      "b": "time utility",
+      "c": "marginal utility",
+      "d": "place utility"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 5,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79331,
+    "question": "<p>A form of money that has gone out of use is</p>",
+    "option": {
+      "a": "paper money",
+      "b": "commodity money",
+      "c": "foreign money",
+      "d": "bank money"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 6,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79332,
+    "question": "<p>The activities aimed at finding customers needs and satisfaction can be described as</p>",
+    "option": {
+      "a": "conceptual marketing",
+      "b": "macro-marketing",
+      "c": "socio-marketing",
+      "d": "micro-marketing"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 7,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79333,
+    "question": "<p>Given:<br />\r\nI. Retail<br />\r\nII. Export<br />\r\nIII. Transport<br />\r\nIV. Import<br />\r\nV. Insurance<br />\r\nVI. Banking and finance<br />\r\nVII. Wholesale<br />\r\nVIII. Communication.&nbsp;</p>\r\n\r\n<p>Which of the above are aids to trade?</p>",
+    "option": {
+      "a": "III, V, VI and VIII",
+      "b": "I, II, III and VI",
+      "c": "I, III, V, and VI",
+      "d": "II, V, VI and VII"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 8,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79334,
+    "question": "<p>Communication process involves the transmission of a message over a selected channel to the&nbsp;</p>",
+    "option": {
+      "a": "encoder",
+      "b": "receiver",
+      "c": "audience",
+      "d": "sender"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 9,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79335,
+    "question": "<p>The instruments of credit include</p>",
+    "option": {
+      "a": "billboards and postal stamps",
+      "b": "payment vouchers and statement of account",
+      "c": "bills of exchange and salary voucher",
+      "d": "bills of exchange and promissory notes"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 10,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79336,
+    "question": "<p>The type of communication from a superior to a subordinate in an organization is referred&nbsp;to as&nbsp;</p>",
+    "option": {
+      "a": "downward communication",
+      "b": "upward communication",
+      "c": "lateral communication",
+      "d": "horizontal communication"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 11,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79337,
+    "question": "<p>The excess of the assets over the liabilities of a business is called&nbsp;</p>",
+    "option": {
+      "a": "capital employed",
+      "b": "net worth",
+      "c": "working capital",
+      "d": "initial capital"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 12,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79338,
+    "question": "<p><strong><em>Use the information below to answer this question</em></strong></p>\r\n\r\n<p>A B C Balance Sheet as at 31/12/2004</p>\r\n\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;₦<br />\r\n\t\t\tShare capital&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200,000<br />\r\n\t\t\tReserves&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 100,000<br />\r\n\t\t\tLong term liabilities&nbsp; &nbsp; &nbsp;40,000<br />\r\n\t\t\tCurrent liabilities&nbsp; &nbsp; &nbsp;<ins>&nbsp; &nbsp; 30,000</ins><br />\r\n\t\t\t&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>&nbsp; &nbsp; 370,000</ins></p>\r\n\t\t\t</td>\r\n\t\t\t<td>\r\n\t\t\t<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;₦<br />\r\n\t\t\tFixed assets&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 180,000<br />\r\n\t\t\tInvestment&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;100,000<br />\r\n\t\t\tCurrent assets&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50,000<br />\r\n\t\t\tFictitious assets&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins> 40,000</ins><br />\r\n\t\t\t&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>370,000</ins></p>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>The total sum of financing short term projects is</p>",
+    "option": {
+      "a": "₦ 30,000",
+      "b": "₦200,000",
+      "c": "₦70,000",
+      "d": "₦40,000"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 13,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79339,
+    "question": "<p><strong><em>Use the information below to answer this question</em></strong></p>\r\n\r\n<h3>A B C Balance Sheet as at 31/12/2004</h3>\r\n\r\n<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td>\r\n\t\t\t<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;₦<br />\r\n\t\t\tShare capital&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 200,000<br />\r\n\t\t\tReserves&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 100,000<br />\r\n\t\t\tLong term liabilities&nbsp; &nbsp; &nbsp;40,000<br />\r\n\t\t\tCurrent liabilities&nbsp; &nbsp; &nbsp;<ins>&nbsp; &nbsp; 30,000</ins><br />\r\n\t\t\t&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>&nbsp; &nbsp; 370,000</ins></p>\r\n\t\t\t</td>\r\n\t\t\t<td>\r\n\t\t\t<p>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;₦<br />\r\n\t\t\tFixed assets&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 180,000<br />\r\n\t\t\tInvestment&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;100,000<br />\r\n\t\t\tCurrent assets&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; 50,000<br />\r\n\t\t\tFictitious assets&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins> 40,000</ins><br />\r\n\t\t\t&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;<ins>370,000</ins></p>\r\n\t\t\t</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>What is the capital employed?</p>",
+    "option": {
+      "a": "₦ 340,000",
+      "b": "₦ 200,000",
+      "c": "₦ 300,000",
+      "d": "₦ 170,000"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 14,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79340,
+    "question": "<p>A distinctive advantage of GSM is its</p>",
+    "option": {
+      "a": "cost",
+      "b": "stability",
+      "c": "coverage",
+      "d": "mobility"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 15,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79341,
+    "question": "<p>The major determinant of fire insurance premium is the&nbsp;</p>",
+    "option": {
+      "a": "usefulness of the property to the owner",
+      "b": "type and structure of the property to be insured",
+      "c": "owner of the property to be insured",
+      "d": "extent of fire damage anticipated"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 16,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79342,
+    "question": "<p>An activity that involves derivation of raw materials from land and sea is</p>",
+    "option": {
+      "a": "agriculture",
+      "b": "farming",
+      "c": "extraction",
+      "d": "construction"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 17,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79343,
+    "question": "<p>A person who buys new issues with a view of reselling at a higher price in the near future is referred to as a</p>",
+    "option": {
+      "a": "bear",
+      "b": "bull",
+      "c": "dealer",
+      "d": "stag"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 18,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79344,
+    "question": "<p>The primary memory component of a computer is the&nbsp;</p>",
+    "option": {
+      "a": "console",
+      "b": "cache",
+      "c": "compliers",
+      "d": "assemblers"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 19,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79345,
+    "question": "<p>The transmission of the telephone services from one country to another is facilitated by</p>",
+    "option": {
+      "a": "international facility",
+      "b": "internet services",
+      "c": "interconnectivity",
+      "d": "communication satellite"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 20,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79346,
+    "question": "<p>The best mode of ensuring that items posted get to the named addresses is through</p>",
+    "option": {
+      "a": "recorded delivery",
+      "b": "certificate of posting",
+      "c": "registered mail",
+      "d": "express mail"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 21,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79347,
+    "question": "<p>An agency contract must involve</p>",
+    "option": {
+      "a": "a principal and a consumer",
+      "b": "a principal and an agent",
+      "c": "a principal and a producer",
+      "d": "a principal and a third party"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 22,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79348,
+    "question": "<p>Inbound tourism occurs when</p>",
+    "option": {
+      "a": "residents of a country travel within it",
+      "b": "non-residents of a country travel to other countries",
+      "c": "residents of a country travel to other countries",
+      "d": "non-residents of a country travel within it"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 23,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79349,
+    "question": "<p>When two or more companies agree to execute a project too large for one to handle, this is referred to as</p>",
+    "option": {
+      "a": "an amalgamation",
+      "b": "a cartel",
+      "c": "a consortium",
+      "d": "a merger"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 24,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79350,
+    "question": "<p>The main objective of a trade association is to</p>",
+    "option": {
+      "a": "protect its members against litigation",
+      "b": "protect its members against victimization",
+      "c": "boost the trade of its members",
+      "d": "secure credit for its members"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 25,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79351,
+    "question": "<p>&nbsp;A person who in consideration for an extra commission takes responsibility for goods sold on credit and in case of default is a&nbsp;</p>",
+    "option": {
+      "a": "commission agent",
+      "b": "factor",
+      "c": "broker",
+      "d": "del credere agent"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 26,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79352,
+    "question": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\" style=\"width:500px\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td><strong>NAME</strong></td>\r\n\t\t\t<td><strong>INSURED<br />\r\n\t\t\tAMOUNT(₦)</strong></td>\r\n\t\t\t<td><strong>ACTUAL<br />\r\n\t\t\tVALUE(₦)</strong></td>\r\n\t\t\t<td><strong>ACTUAL<br />\r\n\t\t\tLOSS(₦)</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Mr. P<br />\r\n\t\t\tMr. K<br />\r\n\t\t\tMr. R</td>\r\n\t\t\t<td>25,000<br />\r\n\t\t\t30,000<br />\r\n\t\t\t40,000</td>\r\n\t\t\t<td>100,000<br />\r\n\t\t\t120,000<br />\r\n\t\t\t150,000</td>\r\n\t\t\t<td>30,000<br />\r\n\t\t\t40,000<br />\r\n\t\t\t50,000</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>Use the table above to answer questions 27 and 28</p>\r\n\r\n<p>If Mr. P takes a fire insurance policy with average clause, his compensation will be</p>",
+    "option": {
+      "a": "₦7,500",
+      "b": "₦5,000",
+      "c": "₦70,000",
+      "d": "₦75,000"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 27,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79353,
+    "question": "<table border=\"1\" cellpadding=\"1\" cellspacing=\"1\">\r\n\t<tbody>\r\n\t\t<tr>\r\n\t\t\t<td><strong>NAME</strong></td>\r\n\t\t\t<td><strong>INSURED<br />\r\n\t\t\tAMOUNT(₦)</strong></td>\r\n\t\t\t<td><strong>ACTUAL<br />\r\n\t\t\tVALUE(₦)</strong></td>\r\n\t\t\t<td><strong>ACTUAL<br />\r\n\t\t\tLOSS(₦)</strong></td>\r\n\t\t</tr>\r\n\t\t<tr>\r\n\t\t\t<td>Mr. P<br />\r\n\t\t\tMr. K<br />\r\n\t\t\tMr. R</td>\r\n\t\t\t<td>25,000<br />\r\n\t\t\t30,000<br />\r\n\t\t\t40,000</td>\r\n\t\t\t<td>100,000<br />\r\n\t\t\t120,000<br />\r\n\t\t\t150,000</td>\r\n\t\t\t<td>30,000<br />\r\n\t\t\t40,000<br />\r\n\t\t\t50,000</td>\r\n\t\t</tr>\r\n\t</tbody>\r\n</table>\r\n\r\n<p>What insurance principle has Mr. R violated if he decides to overstate the actual value of his property?</p>",
+    "option": {
+      "a": "insurable interest",
+      "b": "uberrimae fidei",
+      "c": "subrogation",
+      "d": "indemnity"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 28,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79354,
+    "question": "<p>Hire purchase is advantageous to the seller in that&nbsp;</p>",
+    "option": {
+      "a": "it elevates his living standard",
+      "b": "people pay on installment",
+      "c": "his turnover will increase",
+      "d": "it enhances high level of patronage"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 29,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79355,
+    "question": "<p>A form of money with face value which is greater than the value of the metal contents is&nbsp;</p>",
+    "option": {
+      "a": "bank notes",
+      "b": "legal tender",
+      "c": "commodity money",
+      "d": "token money"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 30,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79356,
+    "question": "<p>A proforma invoice is not required when</p>",
+    "option": {
+      "a": "quoting for the supply of good",
+      "b": "dealing regularly with a customer",
+      "c": "goods are sent on approval",
+      "d": "final prices are uncertain"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 31,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79357,
+    "question": "<p>The art of soap making is an example of</p>",
+    "option": {
+      "a": "tertiary occupation",
+      "b": "construction occupation",
+      "c": "primary occupation",
+      "d": "secondary occupation"
+    },
+    "section": "",
+    "image": "",
+    "answer": "d",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 32,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79358,
+    "question": "<p>The payment made periodically in respect of an insurance policy entered into is known as</p>",
+    "option": {
+      "a": "surrender",
+      "b": "bond",
+      "c": "premium",
+      "d": "commission"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 33,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79359,
+    "question": "<p>Services rendered to the public is provided by&nbsp;</p>",
+    "option": {
+      "a": "domestic servants",
+      "b": "civil servants",
+      "c": "government",
+      "d": "professionals"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 34,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79360,
+    "question": "<p>Which of the following countries are members of the Lake Chad Basin Commission?</p>",
+    "option": {
+      "a": "Niger and Cameroon",
+      "b": "Benin and Nigeria",
+      "c": "Nigeria and Mali",
+      "d": "Chad and Benin"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 35,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79361,
+    "question": "<p>The macro-environmental forces and trends which are a constraint on business operations are referred to as</p>",
+    "option": {
+      "a": "internal factors",
+      "b": "external factors",
+      "c": "economic factors",
+      "d": "technical factors"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 36,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79362,
+    "question": "<p>Which of the following has power to order withdrawal of a particular food item from circulation?</p>",
+    "option": {
+      "a": "Federal High Courts in Nigeria",
+      "b": "Standard Organization of Nigeria",
+      "c": "Local Government Health Inspectors",
+      "d": "Food and Drugs Department of the Federal Ministry of Health"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 37,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79363,
+    "question": "<p>Chibuzor agreed to make a dress for Hauwa with September 20, 1995 as the delivery date, if the dress was not ready on that date, Hauwa could</p>",
+    "option": {
+      "a": "sue chibuzor for specific performance",
+      "b": "seize another gown from chibuzor's shop",
+      "c": "regard the contract between then as terminated",
+      "d": "sue chibuzor for damage"
+    },
+    "section": "",
+    "image": "",
+    "answer": "a",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 38,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79364,
+    "question": "<p>Departmentalization is an aspect of&nbsp;</p>",
+    "option": {
+      "a": "directing",
+      "b": "organizing",
+      "c": "planning",
+      "d": "controlling"
+    },
+    "section": "",
+    "image": "",
+    "answer": "b",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 39,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  },
+  {
+    "id": 79365,
+    "question": "<p>The function of a merchant wholesaler is to</p>",
+    "option": {
+      "a": "find markets for producers' finished goods",
+      "b": "bring buyers and sellers together",
+      "c": "possess title to the goods, store and sell to retailers",
+      "d": "buy in bulk, store and sell to retailers as desired"
+    },
+    "section": "",
+    "image": "",
+    "answer": "c",
+    "solution": "<p>The correct answer requires understanding of commerce concepts. Based on JAMB marking scheme and standard commerce principles, students should analyze each option carefully.</p>",
+    "examtype": "jamb",
+    "examyear": "2021",
+    "questionNub": 40,
+    "hasPassage": 0,
+    "category": "Introduction to Commerce"
+  }
+]
