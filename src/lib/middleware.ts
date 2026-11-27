@@ -10,9 +10,8 @@ export const throttleNetwork = (
 ) => {
   return async (req: Request, res: Response, next: NextFunction) => {
     try {
-      const email = req.body?.email || "anonymous";
       const ip = req.ip || req.headers["x-forwarded-for"];
-      const key = `throttle:${email}:${ip}:${action}`;
+      const key = `throttle:${ip}:${action}`;
       const current = await redisClient.incr(key);
       if (current === 1) {
         await redisClient.expire(key, window);

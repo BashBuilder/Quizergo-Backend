@@ -1,5 +1,6 @@
 import { NextFunction, Request, Response } from "express";
 import eventEmitter from "../config/events.js";
+import Logger from "../core/Logger.js";
 import { QuizSessionService } from "../services/quiz.service.js";
 import { UserProgressService } from "../services/user.progress.service.js";
 import {
@@ -53,10 +54,7 @@ export const syncAnswers = async (
       answers,
     );
     res.status(200).json({ message: "Answers synced", ...result });
-  } catch (error: any) {
-    if (error.message === "Session not found or expired") {
-      return res.status(404).json({ message: error.message });
-    }
+  } catch (error) {
     next(error);
   }
 };
@@ -79,7 +77,7 @@ export const submitSession = async (
 
     progressService
       .saveResult(user.id, result)
-      .catch((err) => console.error("Failed to persist quiz result:", err));
+      .catch((err) => Logger.error("Failed to persist quiz result:", err));
 
     eventEmitter.emit("quiz.submitted", {
       userId: user.id,

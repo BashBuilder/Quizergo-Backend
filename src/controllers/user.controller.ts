@@ -23,7 +23,10 @@ export const getUserHistory = async (
     const user = req.user;
     if (!user) return res.status(401).json({ message: "Unauthorized" });
 
-    const userHistory = await getUserQuizHistory(user.id);
+    const page = req.query.page ? parseInt(req.query.page as string, 10) : 1;
+    const limit = req.query.limit ? parseInt(req.query.limit as string, 10) : 10;
+
+    const userHistory = await getUserQuizHistory(user.id, { page, limit });
     return res.status(200).json(userHistory);
   } catch (error: any) {
     next(error);

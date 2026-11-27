@@ -8,9 +8,9 @@ export default function registerMiddleware(app: Router) {
   app.use(helmet());
   app.use(
     cors({
-      origin: "*",
+      origin: process.env.CORS_ORIGIN ?? "http://localhost:3000",
       credentials: true,
-      methods: ["GET", "POST", "PUT", "DELETE"],
+      methods: ["GET", "POST", "PUT", "PATCH", "DELETE"],
     }),
   );
   app.use(express.json());

@@ -203,15 +203,15 @@ export const resetPassword = async (
   next: NextFunction,
 ) => {
   try {
-    const { email, newPassword } = req.body;
+    const { email, newPassword, otp } = req.body;
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) {
       throw new BadRequestError("Email is not registered");
     }
-    // const isOtpValid = await verifyOtp(email, otp, "auth");
-    // if (!(isOtpValid.status === "verified")) {
-    //   throw new BadRequestError(isOtpValid.message);
-    // }
+    const isOtpValid = await verifyOtp(email, otp, "auth");
+    if (!(isOtpValid.status === "verified")) {
+      throw new BadRequestError(isOtpValid.message);
+    }
     const hashedPassword = await hashPassword(newPassword);
     await prisma.user.update({
       where: { email },

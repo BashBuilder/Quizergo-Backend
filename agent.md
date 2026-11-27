@@ -346,45 +346,6 @@ Example: adding a `leaderboard` feature.
   extra care and a test for the failure path.
 - Keep commits focused; migration + code + tests for a feature belong together.
 
-## 12. Known issues in the current codebase
-
-Be aware of these; don't copy them into new code, and flag them if relevant to your task.
-
-1. `src/utils/env.util.ts` `handleEnv()` validates every required env var with
-   Zod (messages name the variable, never its value) and throws a
-   `ConfigurationError` when one is missing/invalid. `initializeApp()` is
-   `await`ed in `src/index.ts` before `app.listen`, so a bad environment exits
-   the process instead of starting a broken server. Keep the schema in sync
-   when adding env vars.
-2. `connectRedis()` and `prisma.$connect()` are **commented out** in
-   `initializeApp()`, so the Redis connection is not explicitly established at
-   startup. Verify the connection path before relying on Redis in new code.
-3. `resetPassword` has the OTP verification **commented out** and the schema
-   requires `otp` — as written, anyone who knows an email can reset that
-   account's password. Fix before production.
-4. `generateOtp` uses `Math.random()`; use `crypto.randomInt` for OTPs.
-   `login`/`forgot-password`/`register` also reveal whether an email exists.
-5. `quiz.controller.ts` `submitSession` persists results fire-and-forget with
-   `console.error`; failures are silently lost. Use `Logger` and consider a retry/outbox.
-6. `syncAnswers` in the controller matches the error by message string
-   (`"Session not found or expired"`) and returns 404; services should throw
-   `NotFoundError` instead. `ValidationError` is used where 403/404 fits better.
-7. Duplicated/legacy files: `core/Logger.*` exists both at the repo root and
-   in `src/core` (compiled `.js`/`.d.ts`/`.map` files are checked in and
-   `src/core` is excluded from `tsconfig`); `event.service.js` is imported
-   twice in `app.ts`.
-8. `userProgress.saveResult` and `getUserQuizHistory` have no pagination;
-   `getUserHistory` returns raw `QuizResult` rows.
-9. `questions.controller.ts` has an unfinished `gradeScore` stub.
-10. CORS is `origin: "*"` with `credentials: true`, `PATCH` is not in the
-    allowed methods list (yet `/quiz/:id/sync` uses PATCH), and the
-    `throttleNetwork` keys on client-supplied `email`.
-11. `docker-compose.yml` mounts the project and runs `pnpm dev` (a dev
-    setup); `Dockerfile` runs `pnpm start` but never runs `pnpm build`.
-12. `opencode.json` references `backend/agent.md` and `frontend/agent.md`;
-    this repo is the backend root, so adjust that path (e.g. `agent.md`) if
-    the file sits at the repo root.
-
 ---
 
 _Keep this file current: if you introduce a new pattern, dependency, env var,

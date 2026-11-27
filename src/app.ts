@@ -2,7 +2,6 @@ import express, { Express } from "express";
 import "dotenv/config.js";
 import "./cache/index.js";
 import "./services/event.service.js";
-import "./services/event.service.js";
 import { errorHandler } from "./lib/middleware.js";
 import { prisma } from "./config/prisma.js";
 import { connectRedis, disconnectRedis } from "./cache/index.js";

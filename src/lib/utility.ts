@@ -2,7 +2,7 @@ import bcrypt from "bcrypt";
 import redisClient from "../cache/index.js";
 import { sendOTPEmail } from "./resend.js";
 import jwt from "jsonwebtoken";
-import { randomBytes, createHash } from "crypto";
+import { randomBytes, createHash, randomInt } from "crypto";
 import "dotenv/config";
 import { prisma } from "../config/prisma.js";
 import {
@@ -26,7 +26,7 @@ export const generateOtp = async (email: string, action: string) => {
       throw new TooManyRequestsError(
         "OTP already sent. Please wait before requesting a new one.",
       );
-    const otp = Math.floor(100000 + Math.random() * 900000).toString();
+    const otp = randomInt(100000, 1000000).toString();
     await redisClient.set(key, otp, { EX: 7200 });
     await sendOTPEmail(email, otp);
     return otp;

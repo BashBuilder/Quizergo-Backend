@@ -1,6 +1,6 @@
 import redisClient from "../cache/index.js";
 import eventEmitter from "../config/events.js";
-import { ValidationError } from "../lib/errors.js";
+import { NotFoundError, ValidationError } from "../lib/errors.js";
 import { DbQuestionService } from "./db.question.service.js";
 import { v4 as uuidv4 } from "uuid";
 
@@ -84,7 +84,7 @@ export class QuizSessionService {
 
   async syncAnswers(sessionId: string, userId: string, answers: AnswersType[]) {
     const session = await this.getSession(sessionId);
-    if (!session) throw new ValidationError("Session not found or expired");
+    if (!session) throw new NotFoundError("Session not found or expired");
     if (session.userId !== userId) throw new ValidationError("Unauthorized");
     if (session.submitted)
       throw new ValidationError("Session already submitted");
@@ -121,7 +121,7 @@ export class QuizSessionService {
     finalAnswers: AnswersType[] | null,
   ): Promise<QuizResultReturnType> {
     const session = await this.getSession(sessionId);
-    if (!session) throw new ValidationError("Session not found or expired");
+    if (!session) throw new NotFoundError("Session not found or expired");
     if (session.userId !== userId)
       throw new ValidationError("Unauthorized submission");
     if (session.submitted) throw new ValidationError("Already submitted");

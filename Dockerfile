@@ -12,7 +12,9 @@ RUN corepack prepare pnpm@10.5.2 --activate
 
 # RUN npm install -g pnpm@10.5.2
 
-RUN pnpm install
+RUN pnpm install --frozen-lockfile
+
+RUN pnpm build
 
 COPY . .
 
