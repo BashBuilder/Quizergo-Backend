@@ -8,6 +8,7 @@ import {
   userRegisterSchema,
   verifyUserSchema,
   userResetPasswordSchema,
+  ResendOtpschema,
 } from "../models/auth.model.js";
 import requireAuth from "../middleware/auth.middleware.js";
 
@@ -57,5 +58,13 @@ authRoutes
 authRoutes
   .route("/refresh")
   .post(throttleNetwork("refresh", 5, 3600), authController.refreshToken);
+
+authRoutes
+  .route("/resend-otp")
+  .post(
+    throttleNetwork("resend-otp", 5, 3600),
+    validateRequest(ResendOtpschema, ValidationSource.BODY),
+    authController.resendOtp,
+  );
 
 export default authRoutes;

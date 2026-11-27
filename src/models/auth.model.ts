@@ -61,4 +61,10 @@ export const RefreshTokenSchema = z.object({
   refreshToken: z.string().min(1, "Refresh token is required"),
 });
 
+export const ResendOtpschema = z.object({
+  email: z.email("Email not valid"),
+});
+
+export type ResendOtp = z.infer<typeof ResendOtpschema>;
+
 export type UserResetPassword = z.infer<typeof userResetPasswordSchema>;

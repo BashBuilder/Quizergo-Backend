@@ -290,3 +290,23 @@ export const refreshToken = async (
     next(error);
   }
 };
+
+export const resendOtp = async (
+  req: Request,
+  res: Response,
+  next: NextFunction,
+) => {
+  try {
+    const { email } = req.body as { email: string };
+    const user = await prisma.user.findUnique({ where: { email } });
+    if (!user) {
+      throw new ValidationError("User does not exist");
+    }
+    await generateOtp(email, "auth");
+    res.status(200).json({
+      message: "OTP sent to your email",
+    });
+  } catch (error: any) {
+    next(handleFunctionError(error));
+  }
+};
