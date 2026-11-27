@@ -6,7 +6,10 @@ export const subjectQuerySchema = z.object({
 });
 
 export const questionQuerySchema = z.object({
-  duration: z.coerce.number("Duration must be type number"),
-  subject: z.array(z.string("Subject must be type string")),
+  duration: z.coerce.number("Duration must be type number").optional(),
+  subject: z.union([
+    z.string("Subject must be type string"),
+    z.array(z.string("Subject must be type string")),
+  ]),
   limit: z.coerce.number("Question must be type number").optional(),
 });

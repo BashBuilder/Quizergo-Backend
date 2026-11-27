@@ -1,29 +1,14 @@
 import redisClient from "../cache/index.js";
 import eventEmitter from "../config/events.js";
 import { ValidationError } from "../lib/errors.js";
-import { AlocQuestionService } from "./aloc.question.service.js";
+import { DbQuestionService } from "./db.question.service.js";
 import { v4 as uuidv4 } from "uuid";
 
-const QUESTIONS_TTL = 60 * 60 * 24;
-
 export class QuizSessionService {
-  private alocService = new AlocQuestionService();
+  private dbService = new DbQuestionService();
 
-  private sanitizeQuestions(questions: AlocQuestionType[]) {
+  private sanitizeQuestions(questions: DbQuestionType[]) {
     return questions.map(({ answer, solution, ...q }) => q);
-  }
-
-  private async getCachedQuestions(
-    subject: string,
-  ): Promise<AlocQuestionType[] | null> {
-    const key = `questions:subject:${subject}`;
-    const cached = await redisClient.get(key);
-    return cached ? JSON.parse(cached) : null;
-  }
-
-  private async cacheQuestions(subject: string, questions: AlocQuestionType[]) {
-    const key = `questions:subject:${subject}`;
-    await redisClient.setEx(key, QUESTIONS_TTL, JSON.stringify(questions));
   }
 
   async createSession(
@@ -32,7 +17,6 @@ export class QuizSessionService {
       subjects: string[];
       questionCount: number;
       duration?: number;
-      retake?: boolean;
     },
   ) {
     const sessionId = uuidv4();
@@ -40,24 +24,15 @@ export class QuizSessionService {
     const allQuestions: QuizQuestionsType[] = [];
     const sanitizedQuestions: Array<{
       subject: string;
-      questions: Omit<AlocQuestionType, "answer" | "solution">[];
+      questions: Omit<DbQuestionType, "answer" | "solution">[];
     }> = [];
 
     for (const subject of config.subjects) {
-      let questions: AlocQuestionType[] | null = null;
-
-      if (config.retake) {
-        questions = await this.getCachedQuestions(subject);
-      }
-
-      if (!questions) {
-        const res = await this.alocService.getQuestionsBySubject(
-          subject,
-          config.questionCount,
-        );
-        questions = res.data;
-        await this.cacheQuestions(subject, questions);
-      }
+      const res = await this.dbService.getQuestionsBySubject(
+        subject,
+        config.questionCount,
+      );
+      const questions = res.data;
 
       const shuffled = [...questions].sort(() => Math.random() - 0.5);
       const sanitized = this.sanitizeQuestions(shuffled);

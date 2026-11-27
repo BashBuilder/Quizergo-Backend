@@ -9,13 +9,13 @@ below when adding or modifying features.
 ## 1. What this project is
 
 Quizergo is a quiz/exam-practice API (aimed at Nigerian exams such as
-JAMB/WAEC, using subjects from the ALOC question API). Users register, verify by
+JAMB/WAEC, with questions stored in the service database). Users register, verify by
 email OTP, log in, start timed quiz sessions across one or more subjects,
 sync answers while taking the quiz, submit for grading, and view their history.
 
-Questions are **not owned by this service**. They are fetched from the external
-ALOC API, cached in Redis, and graded server-side. Only finished results are
-persisted to PostgreSQL.
+Questions live in this service's PostgreSQL database (`Question` table),
+are loaded per session and graded server-side. Finished results are persisted
+to PostgreSQL as well.
 
 ## Question Format and Data Structure
 
@@ -80,7 +80,6 @@ When generating or populating questions for any subject, follow these requiremen
 | Database      | PostgreSQL 16 via Prisma 7 (`@prisma/adapter-pg`)              |
 | Cache / state | Redis (`redis` v5 client): sessions, OTPs, throttling, caching |
 | Email         | Resend (`src/lib/resend.ts`, HTML templates inline)            |
-| External API  | ALOC questions API via axios (`src/config/axios.ts`)           |
 | Auth          | JWT (access + refresh) backed by a `KeyStore` row per user     |
 | Logging       | Winston + daily rotate file (`core/Logger.ts`)                 |
 | Tests         | Vitest + Supertest                                             |
@@ -111,7 +110,7 @@ See `.env.example`. Never read, print, or commit `.env`. Code actually reads:
 
 `PORT`, `NODE_ENV`, `LOG_DIRECTORY`, `ACCESS_TOKEN_VALIDITY_SEC`,
 `REFRESH_TOKEN_VALIDITY_SEC`, `JWT_ISSUER`, `JWT_AUDIENCE`, `JWT_SECRET`,
-`JWT_ALGORITHM`, `ALOC_API_KEY`, `ALOC_BASE_URL`, `DB_URL` (Postgres connection
+`JWT_ALGORITHM`, `DB_URL` (Postgres connection
 string), `REDIS_URL`, `RESEND_API_KEY`, `RESEND_CONTACT_EMAIL`.
 
 > Note: every env var is validated at startup by the Zod schema in
@@ -158,9 +157,9 @@ loads the user, and checks the `KeyStore` row matches `prm` and is `ACTIVE`.
 Logout deletes the KeyStore row, which invalidates all tokens. Refresh tokens
 are matched against `secondaryKey`.
 
-**Quiz session.** `POST /quiz` fetches questions per subject from ALOC (or
-Redis cache when `retake`), shuffles them, stores the **full** session
-(including answers) in Redis at `session:<id>` and returns questions with
+**Quiz session.** `POST /quiz` loads questions per subject from the `Question`
+table (random window, so repeat sessions differ), shuffles them, stores the **full**
+session (including answers) in Redis at `session:<id>` and returns questions with
 `answer`/`solution` stripped. `PATCH /quiz/:id/sync` merges in-progress
 answers. `POST /quiz/:id/submit` grades server-side, deletes the session,
 persists to Postgres (`QuizResult` + `QuizAnswer`, fire-and-forget), and
@@ -283,8 +282,8 @@ Example: adding a `leaderboard` feature.
   every list endpoint (`take`/`skip` or cursor) with an upper bound.
 - Multi-step writes that must succeed together use `prisma.$transaction`.
 - Add `@@index` for filter/sort columns and `onDelete` behavior on relations.
-- Store a snapshot (like `QuizAnswer.questionSnapshot`) when upstream data
-  (ALOC) can change and history must stay stable.
+- Store a snapshot (like `QuizAnswer.questionSnapshot`) when source data can
+  change and history must stay stable.
 - Never hand-edit applied migrations; add a new one.
 
 **Redis / state**
@@ -326,7 +325,7 @@ Example: adding a `leaderboard` feature.
   (`docker compose up postgres redis`).
 - For every new endpoint cover: happy path, validation failure (400),
   auth failure (401/403), not found (404), and any rate-limit/ownership rule.
-- Mock external services (ALOC, Resend) with `vi.mock`; never call real ones in tests.
+- Mock external services (Resend) with `vi.mock`; never call real ones in tests.
 - Use the exported `version` from `src/routes/index.ts` to build URLs.
 - Clean up any new tables you write to in `setup.test.ts` or in the test itself.
 
@@ -370,15 +369,13 @@ Be aware of these; don't copy them into new code, and flag them if relevant to y
 6. `syncAnswers` in the controller matches the error by message string
    (`"Session not found or expired"`) and returns 404; services should throw
    `NotFoundError` instead. `ValidationError` is used where 403/404 fits better.
-7. Duplicated/legacy files: `src/controllers/aloc.questions.controller.ts` is
-   unused; `core/Logger.*` exists both at the repo root and in `src/core`
-   (compiled `.js`/`.d.ts`/`.map` files are checked in and `src/core` is
-   excluded from `tsconfig`); `event.service.js` is imported twice in `app.ts`.
+7. Duplicated/legacy files: `core/Logger.*` exists both at the repo root and
+   in `src/core` (compiled `.js`/`.d.ts`/`.map` files are checked in and
+   `src/core` is excluded from `tsconfig`); `event.service.js` is imported
+   twice in `app.ts`.
 8. `userProgress.saveResult` and `getUserQuizHistory` have no pagination;
    `getUserHistory` returns raw `QuizResult` rows.
-9. `questions.controller.ts` has an unfinished `gradeScore` stub and relies on
-   `@ts-expect-error`; `questionQuerySchema` expects `subject` as an array
-   while the controller treats it as a string.
+9. `questions.controller.ts` has an unfinished `gradeScore` stub.
 10. CORS is `origin: "*"` with `credentials: true`, `PATCH` is not in the
     allowed methods list (yet `/quiz/:id/sync` uses PATCH), and the
     `throttleNetwork` keys on client-supplied `email`.

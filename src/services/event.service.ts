@@ -2,8 +2,8 @@ import eventEmitter from "../config/events.js";
 import Logger from "../core/Logger.js";
 import { sendWelcomeEmail } from "../lib/resend.js";
 
-eventEmitter.on("aloc.question.fetched", async (questions) => {
-  Logger.info(`Fetched ${questions.length} questions from ALOC`, questions);
+eventEmitter.on("question.fetched", async (questions) => {
+  Logger.info(`Fetched ${questions.length} questions from database`, questions);
 });
 
 // Email Events

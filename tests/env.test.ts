@@ -12,8 +12,6 @@ const watchedKeys = [
   "JWT_AUDIENCE",
   "JWT_SECRET",
   "JWT_ALGORITHM",
-  "ALOC_API_KEY",
-  "ALOC_BASE_URL",
   "DB_URL",
   "REDIS_URL",
   "RESEND_API_KEY",

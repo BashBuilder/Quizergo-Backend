@@ -37,11 +37,6 @@ const envSchema = z.object({
     .string("JWT_ALGORITHM is required")
     .min(1, "JWT_ALGORITHM cannot be empty"),
 
-  ALOC_API_KEY: z
-    .string("ALOC_API_KEY is required")
-    .min(1, "ALOC_API_KEY cannot be empty"),
-  ALOC_BASE_URL: z.url("ALOC_BASE_URL must be a valid URL"),
-
   DB_URL: z.url("DB_URL must be a valid connection URL"),
   REDIS_URL: z.url("REDIS_URL must be a valid connection URL"),
 

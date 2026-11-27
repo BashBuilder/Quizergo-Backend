@@ -7,33 +7,33 @@ declare global {
     e?: string;
   }
 
-  interface AlocQuestionType {
-    id: number;
+  interface DbQuestionType {
+    id: string;
     question: string;
     option: Option;
     section: string;
-    image: string;
+    image: string | null;
     answer: string;
-    solution: string;
-    examtype: string;
-    examyear: string;
-    questionNub: number;
+    solution: string | null;
+    examtype: string | null;
+    examyear: string | null;
+    questionNub: number | null;
     hasPassage: number;
-    category: string;
+    category: string | null;
   }
 
   interface AnswersType {
     subject: string;
-    answers: Record<number, string>;
+    answers: Record<string, string>;
   }
 
   interface QuizQuestionsType {
     subject: string;
-    questions: AlocQuestionType[];
+    questions: DbQuestionType[];
   }
 
   interface BreakdownQuestion {
-    questionId: number; // mockId
+    questionId: string;
     question: string;
     option: Option;
     image: string | null;
