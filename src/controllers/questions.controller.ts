@@ -1,5 +1,4 @@
 import { NextFunction, Request, Response } from "express";
-import { subjects } from "../lib/constants.js";
 import { DbQuestionService } from "../services/db.question.service.js";
 import eventEmitter from "../config/events.js";
 
@@ -9,9 +8,10 @@ export const getSubjectLists = async (
   next: NextFunction,
 ) => {
   try {
+    const subjects = await new DbQuestionService().getSubjects();
     res.status(200).json(subjects);
   } catch (error) {
-    return res.status(500).json({ message: "Unable to fetch questions" });
+    next(error);
   }
 };
 

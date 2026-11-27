@@ -1,13 +1,9 @@
 import { prisma } from "../config/prisma.js";
-import { supportedSubjects } from "../lib/constants.js";
+import { subjectImages } from "../lib/constants.js";
 import { handleFunctionError, ValidationError } from "../lib/errors.js";
 
-function assertSupportedSubject(subject: string) {
-  if (!supportedSubjects.includes(subject)) {
-    throw new ValidationError(
-      `Subject "${subject}" is not supported. Supported subjects are: ${supportedSubjects.join(", ")}`,
-    );
-  }
+function formatSubjectName(slug: string) {
+  return slug.replace(/\b\w/g, (char) => char.toUpperCase());
 }
 
 // Maps a Question row onto the shape the quiz API already returns to clients.
@@ -43,13 +39,38 @@ export function toDbQuestion(q: {
 }
 
 export class DbQuestionService {
+  async getSubjects() {
+    try {
+      const rows = await prisma.question.groupBy({
+        by: ["subject"],
+        _count: { _all: true },
+      });
+
+      return rows
+        .map(({ subject, _count }) => ({
+          name: formatSubjectName(subject),
+          apiKey: subject,
+          questions: _count._all.toLocaleString("en-US"),
+          image: subjectImages[subject] ?? "",
+        }))
+        .sort((a, b) => a.name.localeCompare(b.name));
+    } catch (error) {
+      handleFunctionError(error, "fetching subjects from database");
+    }
+  }
+
   async getQuestionsBySubject(subject: string, limit: number = 10) {
     try {
       const name = subject.toLowerCase();
-      assertSupportedSubject(name);
 
       const where = { subject: name };
       const total = await prisma.question.count({ where });
+      if (total === 0) {
+        throw new ValidationError(
+          `Subject "${subject}" has no questions available`,
+        );
+      }
+
       // Random window so repeat sessions do not always get the same questions.
       const skip =
         total > limit ? Math.floor(Math.random() * (total - limit)) : 0;
@@ -68,8 +89,6 @@ export class DbQuestionService {
   async getSubjectCount(subject: string) {
     try {
       const name = subject.toLowerCase();
-      assertSupportedSubject(name);
-
       const questions = await prisma.question.count({
         where: { subject: name },
       });

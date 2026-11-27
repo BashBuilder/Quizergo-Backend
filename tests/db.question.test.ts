@@ -44,7 +44,7 @@ describe("DbQuestionService", () => {
     });
   });
 
-  it("rejects unsupported subjects", async () => {
+  it("rejects subjects with no questions in the database", async () => {
     await expect(
       new DbQuestionService().getQuestionsBySubject("astrology"),
     ).rejects.toBeInstanceOf(ValidationError);
