@@ -50,6 +50,37 @@ export async function getChatModel(): Promise<BaseChatModel> {
     return cachedModel;
   }
 
+  if (provider === "openrouter") {
+    const { ChatOpenAI } = await import("@langchain/openai");
+    cachedModel = new ChatOpenAI({
+      apiKey,
+      model,
+      temperature,
+      maxTokens,
+      timeout: timeoutMs,
+      maxRetries,
+      streaming: true,
+      configuration: {
+        baseURL: "https://openrouter.ai/api/v1",
+      },
+    });
+    return cachedModel;
+  }
+
+  if (provider === "deepseek") {
+    const { ChatDeepSeek } = await import("@langchain/deepseek");
+    cachedModel = new ChatDeepSeek({
+      apiKey,
+      model,
+      temperature,
+      maxTokens,
+      timeout: timeoutMs,
+      maxRetries,
+      streaming: true,
+    });
+    return cachedModel;
+  }
+
   throw new ConfigurationError(`Unsupported Qbot LLM provider: ${provider}`);
 }
 

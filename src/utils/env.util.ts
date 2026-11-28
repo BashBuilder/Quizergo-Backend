@@ -48,7 +48,7 @@ const envSchema = z.object({
   ),
 
   // Qbot LLM Configuration
-  Qbot_LLM_PROVIDER: z.enum(["openai", "anthropic"]).default("openai"),
+  Qbot_LLM_PROVIDER: z.enum(["openai", "anthropic", "openrouter", "deepseek"]).default("openai"),
   Qbot_LLM_API_KEY: z.string("Qbot_LLM_API_KEY is required").min(1),
   Qbot_LLM_MODEL: z.string("Qbot_LLM_MODEL is required").min(1),
   Qbot_LLM_TEMPERATURE: z.coerce.number().min(0).max(2).default(0.7),

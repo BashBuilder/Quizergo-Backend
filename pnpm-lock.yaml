@@ -17,6 +17,9 @@ importers:
       '@langchain/core':
         specifier: ^1.5.1
         version: 1.5.1(@opentelemetry/api@1.10.0)(openai@7.65.0(ws@8.23.0)(zod@4.3.6))(ws@8.23.0)
+      '@langchain/deepseek':
+        specifier: ^1.1.26
+        version: 1.1.26(@langchain/core@1.5.1(@opentelemetry/api@1.10.0)(openai@7.65.0(ws@8.23.0)(zod@4.3.6))(ws@8.23.0))(ws@8.23.0)
       '@langchain/langgraph':
         specifier: ^1.7.5
         version: 1.7.5(@langchain/core@1.5.1(@opentelemetry/api@1.10.0)(openai@7.65.0(ws@8.23.0)(zod@4.3.6))(ws@8.23.0))(react-dom@19.2.5(react@19.2.5))(react@19.2.5)(zod@4.3.6)
@@ -751,6 +754,12 @@ packages:
   '@langchain/core@1.5.1':
     resolution: {integrity: sha512-vPtTZGYxzpJBDJ4BHkPJZpC4+ceAFl+Fs1YCXy2VQiUsPRvNEJmXIE/sJLza5MroKRltPLMfJ/qIsSPHqUBr1w==}
     engines: {node: '>=20'}
+
+  '@langchain/deepseek@1.1.26':
+    resolution: {integrity: sha512-xzX2l5jw8+BtKVIFVE/AZpV2e9ho4eZVML8LSzZR3SoTBeHx/hyQllxgL8mt1stLwxrC4T6KDLIVuncFY5mw4w==}
+    engines: {node: '>=20'}
+    peerDependencies:
+      '@langchain/core': ^1.0.0
 
   '@langchain/langgraph-checkpoint@1.2.3':
     resolution: {integrity: sha512-7pjMUAA23SgENm4kyrPACmvjh+hVb/dT9nutYlCWEErhZTPbBZe0KWcuAA62ZU+Xqopu7r/wDNxGjRXCrpYFVA==}
@@ -2982,6 +2991,18 @@ snapshots:
       - '@opentelemetry/exporter-trace-otlp-proto'
       - '@opentelemetry/sdk-trace-base'
       - openai
+      - ws
+
+  '@langchain/deepseek@1.1.26(@langchain/core@1.5.1(@opentelemetry/api@1.10.0)(openai@7.65.0(ws@8.23.0)(zod@4.3.6))(ws@8.23.0))(ws@8.23.0)':
+    dependencies:
+      '@langchain/core': 1.5.1(@opentelemetry/api@1.10.0)(openai@7.65.0(ws@8.23.0)(zod@4.3.6))(ws@8.23.0)
+      '@langchain/openai': 1.8.5(@langchain/core@1.5.1(@opentelemetry/api@1.10.0)(openai@7.65.0(ws@8.23.0)(zod@4.3.6))(ws@8.23.0))(ws@8.23.0)
+    transitivePeerDependencies:
+      - '@aws-sdk/credential-provider-node'
+      - '@smithy/hash-node'
+      - '@smithy/signature-v4'
+      - google-auth-library
+      - undici
       - ws
 
   '@langchain/langgraph-checkpoint@1.2.3(@langchain/core@1.5.1(@opentelemetry/api@1.10.0)(openai@7.65.0(ws@8.23.0)(zod@4.3.6))(ws@8.23.0))':
