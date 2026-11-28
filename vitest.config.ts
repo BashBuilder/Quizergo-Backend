@@ -5,7 +5,10 @@ export default defineConfig({
     globals: true,
     environment: "node",
     setupFiles: "./tests/setup.test.ts",
-    isolate: false,
-    testTimeout: 10000,
+    include: ["tests/**/*.test.ts"],
+    exclude: ["tests/setup.test.ts"],
+    isolate: true,  // Use isolated test mode
+    testTimeout: 30000,
+    hookTimeout: 30000,
   },
 });

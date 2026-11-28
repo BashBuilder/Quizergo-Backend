@@ -1,9 +1,35 @@
-import { it, describe, expect, beforeAll, afterAll } from "vitest";
+import { it, describe, expect, beforeAll, afterAll, beforeEach, afterEach } from "vitest";
 import request from "supertest";
 import app from "../src/app.js";
 import { prisma } from "../src/config/prisma.js";
 import redisClient from "../src/cache/index.js";
 import { version } from "../src/routes/index.js";
+
+// Helper to safely delete from Redis (handles closed client)
+async function safeRedisDel(key: string) {
+  try {
+    if (redisClient.isOpen) {
+      await redisClient.del(key);
+    }
+  } catch {
+    // Redis might be closed, ignore
+  }
+}
+
+// Helper to clean up user with proper FK handling
+async function cleanupUser(email: string) {
+  try {
+    const user = await prisma.user.findUnique({ where: { email } });
+    if (user) {
+      // Delete keyStore by user id (FK constraint)
+      await prisma.keyStore.deleteMany({ where: { client: user.id } });
+      await prisma.user.delete({ where: { email } });
+    }
+  } catch {
+    // Ignore errors in cleanup
+  }
+  await safeRedisDel(`otp:auth:${email}`);
+}
 
 describe("OTP verification pending flow", () => {
   const userPayload = {
@@ -14,17 +40,16 @@ describe("OTP verification pending flow", () => {
     confirmPassword: "123456",
   };
 
-  let registeredOtp: string;
-
-  beforeAll(async () => {
-    // Clean up before tests
+  beforeEach(async () => {
+    // Clean up before each test
     await prisma.user.deleteMany({ where: { email: "test-pending@doe.com" } });
-    await redisClient.del("otp:auth:test-pending@doe.com");
+    await safeRedisDel("otp:auth:test-pending@doe.com");
   });
 
-  afterAll(async () => {
+  afterEach(async () => {
+    // Clean up after each test
     await prisma.user.deleteMany({ where: { email: "test-pending@doe.com" } });
-    await redisClient.del("otp:auth:test-pending@doe.com");
+    await safeRedisDel("otp:auth:test-pending@doe.com");
   });
 
   it("should return pending_otp_verification when logging in with existing OTP", async () => {
@@ -37,10 +62,11 @@ describe("OTP verification pending flow", () => {
       });
     expect(registerRes.status).toBe(201);
 
-    // Get OTP from Redis
-    const otp = await redisClient.get("otp:auth:otp-exists@doe.com");
-    expect(otp).toBeTruthy();
-    registeredOtp = otp!;
+    // Get OTP from Redis (new format: JSON with otp and createdAt)
+    const otpDataRaw = await redisClient.get("otp:auth:otp-exists@doe.com");
+    expect(otpDataRaw).toBeTruthy();
+    const otpData = JSON.parse(otpDataRaw!);
+    const otp = otpData.otp;
 
     // Try to login without verifying
     const loginRes = await request(app)
@@ -57,8 +83,7 @@ describe("OTP verification pending flow", () => {
     expect(loginRes.body.message).toBe("OTP verification pending. Please verify your email.");
 
     // Clean up
-    await prisma.user.delete({ where: { email: "otp-exists@doe.com" } });
-    await redisClient.del("otp:auth:otp-exists@doe.com");
+    await cleanupUser("otp-exists@doe.com");
   });
 
   it("should generate new OTP and return pending status when no OTP exists for unverified user", async () => {
@@ -72,24 +97,39 @@ describe("OTP verification pending flow", () => {
     expect(registerRes.status).toBe(201);
 
     // Delete the OTP to simulate expired/missing OTP
-    await redisClient.del("otp:auth:otp-new@doe.com");
+    await safeRedisDel("otp:auth:otp-new@doe.com");
 
     // Verify user first
-    const otp = await redisClient.get("otp:auth:otp-new@doe.com");
+    const otpDataRaw = await redisClient.get("otp:auth:otp-new@doe.com");
     // OTP was deleted, need to check the flow
 
     // Clean up
-    await prisma.user.delete({ where: { email: "otp-new@doe.com" } });
+    await cleanupUser("otp-new@doe.com");
   });
 });
 
 describe("Signup with existing unverified user", () => {
+  beforeEach(async () => {
+    // Clean up before each test
+    await prisma.user.deleteMany({ where: { email: "existing-unverified@doe.com" } });
+    await prisma.user.deleteMany({ where: { email: "existing-no-otp@doe.com" } });
+    await safeRedisDel("otp:auth:existing-unverified@doe.com");
+    await safeRedisDel("otp:auth:existing-no-otp@doe.com");
+  });
+
+  afterEach(async () => {
+    // Clean up after each test
+    await prisma.user.deleteMany({ where: { email: "existing-unverified@doe.com" } });
+    await prisma.user.deleteMany({ where: { email: "existing-no-otp@doe.com" } });
+    await safeRedisDel("otp:auth:existing-unverified@doe.com");
+    await safeRedisDel("otp:auth:existing-no-otp@doe.com");
+  });
+
   it("should return pending_otp_verification when signing up with existing unverified user that has OTP", async () => {
     const email = "existing-unverified@doe.com";
 
     // Clean up first
-    await prisma.user.deleteMany({ where: { email } });
-    await redisClient.del(`otp:auth:${email}`);
+    await cleanupUser(email);
 
     // Register user
     const registerRes = await request(app)
@@ -103,9 +143,9 @@ describe("Signup with existing unverified user", () => {
       });
     expect(registerRes.status).toBe(201);
 
-    // Get OTP from Redis
-    const otp = await redisClient.get(`otp:auth:${email}`);
-    expect(otp).toBeTruthy();
+    // Get OTP from Redis (new format: JSON with otp and createdAt)
+    const otpDataRaw = await redisClient.get(`otp:auth:${email}`);
+    expect(otpDataRaw).toBeTruthy();
 
     // Try to register again with same email
     const secondRegisterRes = await request(app)
@@ -125,16 +165,14 @@ describe("Signup with existing unverified user", () => {
     expect(secondRegisterRes.body.message).toBe("OTP verification pending. Please verify your email.");
 
     // Clean up
-    await prisma.user.delete({ where: { email } });
-    await redisClient.del(`otp:auth:${email}`);
+    await cleanupUser(email);
   });
 
   it("should generate new OTP and return pending status when signing up with existing unverified user but no OTP in Redis", async () => {
     const email = "existing-no-otp@doe.com";
 
     // Clean up first
-    await prisma.user.deleteMany({ where: { email } });
-    await redisClient.del(`otp:auth:${email}`);
+    await cleanupUser(email);
 
     // Register user
     const registerRes = await request(app)
@@ -149,10 +187,11 @@ describe("Signup with existing unverified user", () => {
     expect(registerRes.status).toBe(201);
 
     // Get OTP and delete it
-    const oldOtp = await redisClient.get(`otp:auth:${email}`);
-    await redisClient.del(`otp:auth:${email}`);
+    const oldOtpDataRaw = await redisClient.get(`otp:auth:${email}`);
+    await safeRedisDel(`otp:auth:${email}`);
 
     // Try to register again - should generate new OTP and return pending status
+    // This will generate a NEW OTP via resend-otp because user not verified
     const secondRegisterRes = await request(app)
       .post(`/${version}/auth/register`)
       .send({
@@ -170,11 +209,10 @@ describe("Signup with existing unverified user", () => {
     expect(secondRegisterRes.body.message).toBe("OTP sent to your email. Please verify to complete registration.");
 
     // Verify new OTP exists in Redis
-    const newOtp = await redisClient.get(`otp:auth:${email}`);
-    expect(newOtp).toBeTruthy();
+    const newOtpDataRaw = await redisClient.get(`otp:auth:${email}`);
+    expect(newOtpDataRaw).toBeTruthy();
 
     // Clean up
-    await prisma.user.delete({ where: { email } });
-    await redisClient.del(`otp:auth:${email}`);
+    await cleanupUser(email);
   });
 });

@@ -18,16 +18,49 @@ interface TokenResponse {
   refreshToken: string;
 }
 
-export const generateOtp = async (email: string, action: string) => {
+// Default cooldown period before allowing OTP regeneration (60 seconds)
+const OTP_REGENERATION_COOLDOWN_MS = 60 * 1000;
+
+export const generateOtp = async (email: string, action: string, allowResend = false) => {
   try {
     const key = `otp:${action}:${email}`;
-    const existingOtp = await redisClient.get(key);
-    if (existingOtp)
-      throw new TooManyRequestsError(
-        "OTP already sent. Please wait before requesting a new one.",
-      );
+    const existingOtpData = await redisClient.get(key);
+    if (existingOtpData) {
+      // Check if existing OTP is in new JSON format with timestamp
+      let isExpired = false;
+      let hasValidTimestamp = false;
+      try {
+        const parsed = JSON.parse(existingOtpData);
+        if (typeof parsed === "object" && parsed !== null && "otp" in parsed && "createdAt" in parsed) {
+          const elapsed = Date.now() - (parsed as { createdAt: number }).createdAt;
+          isExpired = elapsed >= OTP_REGENERATION_COOLDOWN_MS;
+          hasValidTimestamp = true;
+        }
+      } catch {
+        // Legacy format (plain OTP string) - no timestamp
+      }
+      // Case 1: JSON OTP with timestamp within cooldown period
+      if (hasValidTimestamp && !isExpired) {
+        // OTP sent within last 60 seconds - reject
+        throw new TooManyRequestsError(
+          "OTP already sent. Please wait before requesting a new one.",
+        );
+      }
+      // Case 2: JSON OTP with timestamp in cooldown OR legacy format OR expired OTP
+      // For register (allowResend=false): any existing OTP means user already started verification
+      if (!allowResend) {
+        throw new TooManyRequestsError(
+          "User already has a pending verification. Please verify or wait for OTP to expire.",
+        );
+      }
+      // Case 3: allowResend=true and (expired OTP or legacy format)
+      // Delete old OTP before generating new one
+      await redisClient.del(key);
+    }
     const otp = randomInt(100000, 1000000).toString();
-    await redisClient.set(key, otp, { EX: 7200 });
+    await redisClient.set(key, JSON.stringify({ otp, createdAt: Date.now() }), {
+      EX: 7200,
+    });
     await sendOTPEmail(email, otp);
     return otp;
   } catch (error) {
@@ -38,15 +71,25 @@ export const generateOtp = async (email: string, action: string) => {
 export const verifyOtp = async (email: string, otp: string, action: string) => {
   try {
     const key = `otp:${action}:${email}`;
-    const storedOtp = await redisClient.get(key);
-    if (!storedOtp) {
+    const storedOtpData = await redisClient.get(key);
+    if (!storedOtpData) {
       await generateOtp(email, action);
       return {
         message: "OTP expired. A new OTP has been sent to your email.",
         status: "expired",
       };
     }
-    if (storedOtp === otp) {
+    let otpValue: string | null = null;
+    try {
+      const parsed = JSON.parse(storedOtpData);
+      if (typeof parsed === "object" && parsed !== null && "otp" in parsed) {
+        otpValue = (parsed as { otp: string }).otp as string;
+      }
+    } catch {
+      // Legacy format: plain string
+      otpValue = storedOtpData as string;
+    }
+    if (otpValue === otp) {
       await redisClient.del(key); // OTP is valid, remove it from cache
       return {
         message: "OTP verified successfully",

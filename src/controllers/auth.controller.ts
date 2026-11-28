@@ -339,7 +339,7 @@ export const resendOtp = async (
     if (!user) {
       throw new ValidationError("User does not exist");
     }
-    await generateOtp(email, "auth");
+    await generateOtp(email, "auth", true);
     res.status(200).json({
       message: "OTP sent to your email",
     });

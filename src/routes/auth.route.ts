@@ -62,7 +62,7 @@ authRoutes
 authRoutes
   .route("/resend-otp")
   .post(
-    throttleNetwork("resend-otp", 5, 3600),
+    throttleNetwork("resend-otp", 3, 120),
     validateRequest(ResendOtpschema, ValidationSource.BODY),
     authController.resendOtp,
   );
