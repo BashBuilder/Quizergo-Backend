@@ -52,7 +52,8 @@ export async function getChatModel(): Promise<BaseChatModel> {
 
   if (provider === "openrouter") {
     const { ChatOpenAI } = await import("@langchain/openai");
-    cachedModel = new ChatOpenAI({
+    // OpenRouter requires specific headers for API usage statistics and features
+    const openrouterModel = new ChatOpenAI({
       apiKey,
       model,
       temperature,
@@ -64,6 +65,16 @@ export async function getChatModel(): Promise<BaseChatModel> {
         baseURL: "https://openrouter.ai/api/v1",
       },
     });
+    // Pass headers through the model's internal client
+    const openaiClient = (openrouterModel as any).openai;
+    if (openaiClient) {
+      openaiClient.defaultHeaders = {
+        ...openaiClient.defaultHeaders,
+        "HTTP-Referer": "https://quizergo.com",
+        "X-Title": "Quizergo",
+      };
+    }
+    cachedModel = openrouterModel;
     return cachedModel;
   }
 
