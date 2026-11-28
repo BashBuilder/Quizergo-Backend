@@ -12,6 +12,7 @@ export enum ErrorCode {
   TIMEOUT = "TIMEOUT",
   INTERNAL_SERVER_ERROR = "INTERNAL_SERVER_ERROR",
   CONFIGURATION_ERROR = "CONFIGURATION_ERROR",
+  PENDING_OTP_VERIFICATION = "PENDING_OTP_VERIFICATION",
 }
 
 // errors/AppError.ts
@@ -80,6 +81,12 @@ export class ConflictError extends AppError {
 export class TooManyRequestsError extends AppError {
   constructor(message = "Too Many Requests") {
     super(message, 429, ErrorCode.TOO_MANY_REQUESTS);
+  }
+}
+
+export class PendingOtpVerificationError extends AppError {
+  constructor(message = "OTP verification pending") {
+    super(message, 403, ErrorCode.PENDING_OTP_VERIFICATION);
   }
 }
 

@@ -13,6 +13,7 @@ import {
   BadTokenError,
   handleFunctionError,
   ValidationError,
+  ErrorCode,
 } from "../lib/errors.js";
 import crypto from "node:crypto";
 import { saveUserToken } from "./keystore.controller.js";
@@ -29,8 +30,29 @@ export const registerUser = async (
   try {
     const { email, firstName, lastName, password } = req.body as UserRegister;
     const user = await prisma.user.findUnique({ where: { email } });
-    if (user)
+    if (user) {
+      if (!user.isVerified) {
+        // Check if OTP already exists in Redis for this user
+        const existingOtp = await redisClient.get(`otp:auth:${email}`);
+        if (existingOtp) {
+          return res.status(403).json({
+            success: false,
+            message: "OTP verification pending. Please verify your email.",
+            code: ErrorCode.PENDING_OTP_VERIFICATION,
+            status: "pending_otp_verification",
+          });
+        }
+        // Generate new OTP and send it
+        await generateOtp(email, "auth");
+        return res.status(403).json({
+          success: false,
+          message: "OTP sent to your email. Please verify to complete registration.",
+          code: ErrorCode.PENDING_OTP_VERIFICATION,
+          status: "pending_otp_verification",
+        });
+      }
       throw new ValidationError("User already exist, login to continue");
+    }
     const hashedPassword = await hashPassword(password);
     await generateOtp(email, "auth");
     await prisma.user.create({
@@ -89,10 +111,25 @@ export const loginUser = async (
     const user = await prisma.user.findUnique({ where: { email } });
     if (!user) throw new ValidationError("User does not exist");
     if (!user.isVerified) {
+      // Check if OTP already exists in Redis for this user
+      const existingOtp = await redisClient.get(`otp:auth:${email}`);
+      if (existingOtp) {
+        // Return 403 with status for frontend to navigate to verification page
+        return res.status(403).json({
+          success: false,
+          message: "OTP verification pending. Please verify your email.",
+          code: ErrorCode.PENDING_OTP_VERIFICATION,
+          status: "pending_otp_verification",
+        });
+      }
+      // Generate new OTP and send it
       await generateOtp(email, "auth");
-      throw new ValidationError(
-        "User not verified, check your email to complete registration",
-      );
+      return res.status(403).json({
+        success: false,
+        message: "OTP sent to your email. Please verify to complete login.",
+        code: ErrorCode.PENDING_OTP_VERIFICATION,
+        status: "pending_otp_verification",
+      });
     }
     const isPasswordValid = await decryptPassword(password, user.password);
     if (!isPasswordValid) throw new ValidationError("Invalid credentials");
