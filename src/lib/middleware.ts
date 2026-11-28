@@ -61,6 +61,37 @@ export const throttleNetwork = (
 //   };
 // };
 
+export const throttleUserAction = (
+  action: string,
+  limit: number = 30,
+  window: number = 60,
+) => {
+  return async (req: Request, res: Response, next: NextFunction) => {
+    try {
+      const userId = req.user?.id;
+      if (!userId) {
+        return next(); // Let auth middleware handle unauthenticated
+      }
+      const key = `throttle:user:${userId}:${action}`;
+      const current = await redisClient.incr(key);
+      if (current === 1) {
+        await redisClient.expire(key, window);
+      }
+      if (current > limit) {
+        const ttl = await redisClient.ttl(key);
+        return res.status(429).json({
+          message: "Too many requests. Please try again later.",
+          retryAfter: ttl,
+        });
+      }
+      req.retriesLeft = limit - current;
+      next();
+    } catch (error) {
+      next(error);
+    }
+  };
+};
+
 export const errorHandler = (
   err: any,
   req: Request,

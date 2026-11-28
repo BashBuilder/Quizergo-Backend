@@ -46,6 +46,13 @@ const envSchema = z.object({
   RESEND_CONTACT_EMAIL: z.email(
     "RESEND_CONTACT_EMAIL must be a valid email address",
   ),
+
+  // Qbot LLM Configuration
+  Qbot_LLM_PROVIDER: z.enum(["openai", "anthropic"]).default("openai"),
+  Qbot_LLM_API_KEY: z.string("Qbot_LLM_API_KEY is required").min(1),
+  Qbot_LLM_MODEL: z.string("Qbot_LLM_MODEL is required").min(1),
+  Qbot_LLM_TEMPERATURE: z.coerce.number().min(0).max(2).default(0.7),
+  Qbot_LLM_MAX_TOKENS: z.coerce.number().int().positive().default(4000),
 });
 
 export type Env = z.infer<typeof envSchema>;

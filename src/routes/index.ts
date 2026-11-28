@@ -4,6 +4,7 @@ import questionRoutes from "./question.route.js";
 import quizRoutes from "./quiz.route.js";
 import { userRoutes } from "./user.route.js";
 import { webhookRoutes } from "./webhook.route.js";
+import qbotRoutes from "./qbot.route.js";
 
 export const version = "api/v1";
 
@@ -19,6 +20,7 @@ export const registerRoutes = (app: Router) => {
   app.use(`/${version}/questions`, questionRoutes);
   app.use(`/${version}/quiz`, quizRoutes);
   app.use(`/${version}/user`, userRoutes);
+  app.use(`/${version}/qbot`, qbotRoutes);
 
   app.use((_, res) => {
     res.status(404).send("Not found");
