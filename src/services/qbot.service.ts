@@ -1,483 +1,430 @@
+import type { BaseChatModel } from "@langchain/core/language_models/chat_models";
+import { AIMessage, HumanMessage, type BaseMessage } from "@langchain/core/messages";
 import { prisma } from "../config/prisma.js";
-import redisClient from "../cache/index.js";
 import { qbotConfig } from "../config/qbot.js";
-import Logger from "../core/Logger.js";
-import { NotFoundError, ValidationError } from "../lib/errors.js";
-import { ChatPromptTemplate, MessagesPlaceholder } from "@langchain/core/prompts";
-import { BaseMessage, HumanMessage, AIMessage, SystemMessage } from "@langchain/core/messages";
-import { RunnableSequence } from "@langchain/core/runnables";
-import { StringOutputParser } from "@langchain/core/output_parsers";
-import { v4 as uuidv4 } from "uuid";
+import { InternalServerError, NotFoundError } from "../lib/errors.js";
+import { QbotGraph, type QbotGraphInput } from "./qbot/graph.js";
+import { getChatModel } from "./qbot/llm.js";
+import { QbotMemoryService } from "./qbot/memory.js";
 
-// Initialize LLM based on provider
-let llm: any;
-
-async function initializeLLM() {
-  const { provider, apiKey, model, temperature, maxTokens } = qbotConfig;
-  
-  if (provider === "openai") {
-    const { ChatOpenAI } = await import("@langchain/openai");
-    llm = new ChatOpenAI({
-      apiKey,
-      model,
-      temperature,
-      maxTokens,
-      streaming: true,
-    });
-  } else if (provider === "anthropic") {
-    const { ChatAnthropic } = await import("@langchain/anthropic");
-    llm = new ChatAnthropic({
-      apiKey,
-      model,
-      temperature,
-      maxTokens,
-      streaming: true,
-    });
-  } else {
-    throw new Error(`Unsupported LLM provider: ${provider}`);
-  }
-  
-  return llm;
+export interface QbotMessage {
+  id: string;
+  conversationId: string;
+  role: "user" | "assistant";
+  content: string;
+  reasoning: string | null;
+  createdAt: string;
 }
 
-// System prompt for Qbot - the AI tutor
-const QBOT_SYSTEM_PROMPT = `You are Qbot, a friendly, patient, and knowledgeable AI tutor for secondary school students preparing for Nigerian examinations (WAEC, JAMB, NECO). 
+export interface QbotConversation {
+  id: string;
+  userId: string;
+  title: string | null;
+  createdAt: string;
+  updatedAt: string;
+  messageCount?: number;
+  lastMessage?: QbotMessage;
+}
 
-Your teaching approach:
-- **Simple language**: Explain concepts in language that a child or secondary school student can easily understand
-- **Stay on topic**: Keep explanations relevant to the question without introducing unnecessary information
-- **Relatable analogies**: Use everyday examples and comparisons to make difficult concepts easier to understand
-- **Step-by-step explanations**: For mathematical problems and questions requiring calculations or logical reasoning, break the solution into clear, manageable steps
-- **Clarity over complexity**: Avoid unnecessary technical jargon. When technical terms are unavoidable, explain what they mean in simple language
-- **Accuracy**: Ensure answers and explanations are factually correct. Never sacrifice correctness for simplicity
-- **Encourage understanding**: Focus on helping students understand WHY an answer is correct rather than simply providing the answer
+export interface QbotConversationDetail extends QbotConversation {
+  messageCount: number;
+  messages: QbotMessage[];
+}
 
-Behavior guidelines:
-- Give direct answers before providing detailed explanations where appropriate
-- Adapt explanations to the subject and complexity of the question
-- Use examples, analogies, and practical illustrations where they genuinely improve understanding
-- Understand follow-up questions that depend on previous messages
-- If a question is ambiguous, ask for clarification instead of making unsupported assumptions
-- If you don't know an answer, acknowledge this rather than fabricate information
-- Be encouraging and supportive - students may be stressed about exams
+export interface QbotMessageHistory {
+  messages: QbotMessage[];
+  total: number;
+  limit: number;
+  offset: number;
+  hasMore: boolean;
+}
 
-You have access to conversation history. Reference previous messages when relevant to provide continuity in learning.`;
+export type QbotStreamEvent =
+  | { type: "start"; conversationId: string; messageId: string }
+  | { type: "chunk"; content: string; reasoning: string }
+  | {
+      type: "complete";
+      conversationId: string;
+      messageId: string;
+      content: string;
+      reasoning: string;
+    };
+
+type ConversationRow = {
+  id: string;
+  userId: string;
+  title: string | null;
+  createdAt: Date;
+  updatedAt: Date;
+};
+
+type MessageRow = {
+  id: string;
+  conversationId: string;
+  role: string;
+  content: string;
+  reasoning: string | null;
+  createdAt: Date;
+};
+
+function toMessage(message: MessageRow): QbotMessage {
+  return {
+    id: message.id,
+    conversationId: message.conversationId,
+    role: message.role === "assistant" ? "assistant" : "user",
+    content: message.content,
+    reasoning: message.reasoning,
+    createdAt: message.createdAt.toISOString(),
+  };
+}
+
+function toConversation(conversation: ConversationRow): QbotConversation {
+  return {
+    id: conversation.id,
+    userId: conversation.userId,
+    title: conversation.title,
+    createdAt: conversation.createdAt.toISOString(),
+    updatedAt: conversation.updatedAt.toISOString(),
+  };
+}
 
 export class QbotService {
-  private conversationChain: any = null;
-  private initialized = false;
+  private engine: {
+    graph: QbotGraph;
+    memory: QbotMemoryService;
+  } | null = null;
 
-  async ensureInitialized() {
-    if (!this.initialized) {
-      await initializeLLM();
-      this.conversationChain = this.createConversationChain();
-      this.initialized = true;
-    }
+  // Test seam: integration tests swap in a fake model without a provider key.
+  /** @internal */
+  setModelForTesting(model: BaseChatModel): void {
+    this.engine = {
+      graph: new QbotGraph(model),
+      memory: new QbotMemoryService(model),
+    };
   }
 
-  private createConversationChain() {
-    const prompt = ChatPromptTemplate.fromMessages([
-      ["system", QBOT_SYSTEM_PROMPT],
-      new MessagesPlaceholder("history"),
-      ["human", "{input}"],
+  private async ensureInitialized() {
+    if (!this.engine) {
+      const model = await getChatModel();
+      this.engine = {
+        graph: new QbotGraph(model),
+        memory: new QbotMemoryService(model),
+      };
+    }
+
+    return this.engine;
+  }
+
+  async createConversation(
+    userId: string,
+    title?: string,
+  ): Promise<QbotConversation> {
+    const conversation = await prisma.conversation.create({
+      data: {
+        userId,
+        title: title?.trim() || "New Conversation",
+      },
+    });
+
+    return toConversation(conversation);
+  }
+
+  async listConversations(
+    userId: string,
+    limit: number,
+    offset: number,
+  ): Promise<{ conversations: QbotConversation[]; total: number }> {
+    const [total, conversations] = await prisma.$transaction([
+      prisma.conversation.count({ where: { userId } }),
+      prisma.conversation.findMany({
+        where: { userId },
+        orderBy: { updatedAt: "desc" },
+        take: limit,
+        skip: offset,
+        include: {
+          messages: {
+            orderBy: [{ createdAt: "desc" }, { id: "desc" }],
+            take: 1,
+          },
+          _count: { select: { messages: true } },
+        },
+      }),
     ]);
 
-    return prompt.pipe(llm).pipe(new StringOutputParser());
+    return {
+      total,
+      conversations: conversations.map((conversation) => {
+        const lastMessage = conversation.messages[0];
+        return {
+          ...toConversation(conversation),
+          messageCount: conversation._count.messages,
+          ...(lastMessage ? { lastMessage: toMessage(lastMessage) } : {}),
+        };
+      }),
+    };
   }
 
-  // Redis keys for conversation memory
-  private getConversationKey(conversationId: string) {
-    return `qbot:conversation:${conversationId}`;
-  }
-
-  private getSummaryKey(conversationId: string) {
-    return `qbot:summary:${conversationId}`;
-  }
-
-  private getUserConversationsKey(userId: string) {
-    return `qbot:user:${userId}:conversations`;
-  }
-
-  // Get conversation from Redis cache or database
-  async getConversation(conversationId: string, userId: string) {
-    // Try Redis first
-    const cached = await redisClient.get(this.getConversationKey(conversationId));
-    if (cached) {
-      const data = JSON.parse(cached);
-      if (data.userId === userId) return data;
-    }
-
-    // Fallback to database
+  async getConversation(
+    conversationId: string,
+    userId: string,
+  ): Promise<QbotConversationDetail | null> {
     const conversation = await prisma.conversation.findFirst({
       where: { id: conversationId, userId },
-      include: {
-        messages: {
-          orderBy: { createdAt: "asc" },
-          take: qbotConfig.maxHistoryMessages,
-        },
-      },
+      include: { _count: { select: { messages: true } } },
     });
 
     if (!conversation) return null;
 
-    const result = {
-      id: conversation.id,
-      userId: conversation.userId,
-      title: conversation.title,
-      createdAt: conversation.createdAt.toISOString(),
-      updatedAt: conversation.updatedAt.toISOString(),
-      messages: conversation.messages.map(m => ({
-        id: m.id,
-        role: m.role,
-        content: m.content,
-        reasoning: m.reasoning,
-        createdAt: m.createdAt.toISOString(),
-      })),
-    };
-
-    // Cache in Redis
-    await redisClient.setEx(
-      this.getConversationKey(conversationId),
-      3600, // 1 hour TTL
-      JSON.stringify(result)
-    );
-
-    return result;
-  }
-
-  // Get or create a conversation
-  async getOrCreateConversation(userId: string, conversationId?: string, title?: string) {
-    if (conversationId) {
-      const existing = await this.getConversation(conversationId, userId);
-      if (existing) return existing;
-      throw new NotFoundError("Conversation not found");
-    }
-
-    // Create new conversation
-    const newConversation = await prisma.conversation.create({
-      data: {
-        userId,
-        title: title || "New Conversation",
-      },
+    const messages = await prisma.message.findMany({
+      where: { conversationId },
+      orderBy: [{ createdAt: "desc" }, { id: "desc" }],
+      take: qbotConfig.maxHistoryMessages,
     });
-
-    const result = {
-      id: newConversation.id,
-      userId: newConversation.userId,
-      title: newConversation.title,
-      createdAt: newConversation.createdAt.toISOString(),
-      updatedAt: newConversation.updatedAt.toISOString(),
-      messages: [],
-    };
-
-    // Update user's conversation list in Redis
-    await this.addConversationToUserList(userId, result);
-
-    return result;
-  }
-
-  // Add message to conversation
-  async addMessage(
-    conversationId: string,
-    userId: string,
-    role: "user" | "assistant",
-    content: string,
-    reasoning?: string | null
-  ) {
-    const message = await prisma.message.create({
-      data: {
-        conversationId,
-        role,
-        content,
-        reasoning: reasoning ?? null,
-      },
-    });
-
-    // Invalidate Redis cache
-    await redisClient.del(this.getConversationKey(conversationId));
-    
-    // Update conversation updatedAt
-    await prisma.conversation.update({
-      where: { id: conversationId },
-      data: { updatedAt: new Date() },
-    });
-
-    // Check if we need to summarize
-    await this.maybeSummarizeConversation(conversationId, userId);
 
     return {
-      id: message.id,
-      conversationId: message.conversationId,
-      role: message.role,
-      content: message.content,
-      reasoning: message.reasoning,
-      createdAt: message.createdAt.toISOString(),
+      ...toConversation(conversation),
+      messageCount: conversation._count.messages,
+      messages: messages.reverse().map(toMessage),
     };
   }
 
-  // Summarize conversation when it gets too long
-  private async maybeSummarizeConversation(conversationId: string, userId: string) {
-    const conversation = await this.getConversation(conversationId, userId);
-    if (!conversation) return;
+  async getMessageHistory(
+    conversationId: string,
+    userId: string,
+    limit: number,
+    offset: number,
+  ): Promise<QbotMessageHistory> {
+    await this.requireConversation(conversationId, userId);
 
-    const messageCount = conversation.messages.length;
-    if (messageCount < qbotConfig.summaryThreshold) return;
+    const [total, messages] = await prisma.$transaction([
+      prisma.message.count({ where: { conversationId } }),
+      prisma.message.findMany({
+        where: { conversationId },
+        orderBy: [{ createdAt: "asc" }, { id: "asc" }],
+        take: limit,
+        skip: offset,
+      }),
+    ]);
 
-    // Check if we already have a recent summary
-    const summaryKey = this.getSummaryKey(conversationId);
-    const existingSummary = await redisClient.get(summaryKey);
-    if (existingSummary) return;
-
-    // Create summary using LLM
-    await this.createSummary(conversationId, userId, conversation.messages);
-  }
-
-  private async createSummary(conversationId: string, userId: string, messages: any[]) {
-    try {
-      // Take older messages (excluding recent ones)
-      const recentCount = Math.min(5, messages.length);
-      const olderMessages = messages.slice(0, -recentCount);
-      
-      if (olderMessages.length < 3) return; // Not enough to summarize
-
-      const summaryPrompt = `Summarize the following conversation between a student and an AI tutor. 
-Focus on:
-- Key topics discussed
-- Important concepts explained
-- Questions the student asked
-- Solutions/approaches provided
-- Any ongoing context the student might reference later
-
-Keep the summary concise but informative (200-400 words).`;
-
-      const historyText = olderMessages
-        .map(m => `${m.role === "user" ? "Student" : "Qbot"}: ${m.content}`)
-        .join("\n\n");
-
-      const summary = await llm.invoke([
-        new SystemMessage(summaryPrompt),
-        new HumanMessage(historyText),
-      ]);
-
-      await redisClient.setEx(
-        this.getSummaryKey(conversationId),
-        86400 * 7, // 7 days TTL
-        summary.content.toString()
-      );
-
-      Logger.info(`Created summary for conversation ${conversationId}`);
-    } catch (error) {
-      Logger.error("Failed to create conversation summary:", error);
-    }
-  }
-
-  // Get conversation summary
-  async getConversationSummary(conversationId: string) {
-    return await redisClient.get(this.getSummaryKey(conversationId));
-  }
-
-  // Build history for LLM (including summary if available)
-  async buildLLMHistory(conversationId: string, userId: string): Promise<BaseMessage[]> {
-    const conversation = await this.getConversation(conversationId, userId);
-    if (!conversation) return [];
-
-    const messages: BaseMessage[] = [];
-
-    // Add summary as system context if available
-    const summary = await this.getConversationSummary(conversationId);
-    if (summary) {
-      messages.push(new SystemMessage(`Previous conversation summary:\n${summary}`));
-    }
-
-    // Add recent messages
-    const recentMessages = conversation.messages.slice(-qbotConfig.maxHistoryMessages);
-    for (const msg of recentMessages) {
-      if (msg.role === "user") {
-        messages.push(new HumanMessage(msg.content));
-      } else if (msg.role === "assistant") {
-        messages.push(new AIMessage(msg.content));
-      }
-    }
-
-    return messages;
-  }
-
-  // Stream response from LLM
-  async *streamResponse(conversationId: string, userId: string, userMessage: string) {
-    await this.ensureInitialized();
-
-    // Build history
-    const history = await this.buildLLMHistory(conversationId, userId);
-
-    // Add user message to history for this invocation
-    const fullHistory = [...history, new HumanMessage(userMessage)];
-
-    // Stream the response
-    const stream = await llm.stream(fullHistory);
-    
-    let fullResponse = "";
-    let fullReasoning = "";
-    
-    for await (const chunk of stream) {
-      const content = chunk.content?.toString() || "";
-      const reasoning = chunk.additional_kwargs?.reasoning?.toString() || "";
-      
-      fullResponse += content;
-      fullReasoning += reasoning;
-      
-      yield {
-        content,
-        reasoning,
-        done: false,
-      };
-    }
-
-    yield {
-      content: "",
-      reasoning: fullReasoning,
-      done: true,
-      fullResponse,
-      fullReasoning,
+    return {
+      messages: messages.map(toMessage),
+      total,
+      limit,
+      offset,
+      hasMore: offset + messages.length < total,
     };
   }
 
-  // Non-streaming response (for simpler use cases)
-  async generateResponse(conversationId: string, userId: string, userMessage: string) {
-    await this.ensureInitialized();
-
-    const history = await this.buildLLMHistory(conversationId, userId);
-    const fullHistory = [...history, new HumanMessage(userMessage)];
-
-    const response = await this.conversationChain.invoke({
-      input: userMessage,
-      history: history,
-    });
-
-    return response;
-  }
-
-  // Get user's conversations list
-  async getUserConversations(userId: string, limit = 20, offset = 0) {
-    // Try Redis first
-    const cacheKey = this.getUserConversationsKey(userId);
-    const cached = await redisClient.get(cacheKey);
-    if (cached) {
-      const data = JSON.parse(cached);
-      return data.slice(offset, offset + limit);
-    }
-
-    // Fallback to database
-    const conversations = await prisma.conversation.findMany({
-      where: { userId },
-      orderBy: { updatedAt: "desc" },
-      take: limit,
-      skip: offset,
-      include: {
-        messages: {
-          orderBy: { createdAt: "desc" },
-          take: 1,
-        },
-        _count: {
-          select: { messages: true },
-        },
-      },
-    });
-
-    const result = conversations.map(c => ({
-      id: c.id,
-      userId: c.userId,
-      title: c.title,
-      createdAt: c.createdAt.toISOString(),
-      updatedAt: c.updatedAt.toISOString(),
-      messageCount: c._count.messages,
-      lastMessage: c.messages[0] ? {
-        id: c.messages[0].id,
-        conversationId: c.messages[0].conversationId,
-        role: c.messages[0].role,
-        content: c.messages[0].content,
-        reasoning: c.messages[0].reasoning,
-        createdAt: c.messages[0].createdAt.toISOString(),
-      } : undefined,
-    }));
-
-    // Cache in Redis
-    await redisClient.setEx(cacheKey, 300, JSON.stringify(result)); // 5 min TTL
-
-    return result;
-  }
-
-  // Update conversation title
-  async updateConversation(conversationId: string, userId: string, title: string) {
-    const conversation = await prisma.conversation.findFirst({
-      where: { id: conversationId, userId },
-    });
-
-    if (!conversation) throw new NotFoundError("Conversation not found");
+  async updateConversation(
+    conversationId: string,
+    userId: string,
+    title: string,
+  ): Promise<QbotConversation> {
+    await this.requireConversation(conversationId, userId);
 
     const updated = await prisma.conversation.update({
       where: { id: conversationId },
       data: { title },
     });
 
-    // Invalidate cache
-    await redisClient.del(this.getConversationKey(conversationId));
-    await redisClient.del(this.getUserConversationsKey(userId));
-
-    return {
-      id: updated.id,
-      userId: updated.userId,
-      title: updated.title,
-      createdAt: updated.createdAt.toISOString(),
-      updatedAt: updated.updatedAt.toISOString(),
-    };
+    return toConversation(updated);
   }
 
-  // Delete conversation
-  async deleteConversation(conversationId: string, userId: string) {
-    const conversation = await prisma.conversation.findFirst({
-      where: { id: conversationId, userId },
-    });
+  async deleteConversation(
+    conversationId: string,
+    userId: string,
+  ): Promise<{ success: true }> {
+    await this.requireConversation(conversationId, userId);
 
-    if (!conversation) throw new NotFoundError("Conversation not found");
-
-    // Delete messages (cascade will handle this, but explicit is clearer)
-    await prisma.message.deleteMany({
-      where: { conversationId },
-    });
-
-    await prisma.conversation.delete({
-      where: { id: conversationId },
-    });
-
-    // Invalidate cache
-    await redisClient.del(this.getConversationKey(conversationId));
-    await redisClient.del(this.getSummaryKey(conversationId));
-    await redisClient.del(this.getUserConversationsKey(userId));
+    // Messages are removed by the Conversation -> Message cascade.
+    await prisma.conversation.delete({ where: { id: conversationId } });
 
     return { success: true };
   }
 
-  // Add conversation to user's list cache
-  private async addConversationToUserList(userId: string, conversation: any) {
-    const cacheKey = this.getUserConversationsKey(userId);
-    const cached = await redisClient.get(cacheKey);
-    let list = cached ? JSON.parse(cached) : [];
-    list.unshift(conversation);
-    list = list.slice(0, 50); // Keep only latest 50
-    await redisClient.setEx(cacheKey, 300, JSON.stringify(list));
+  async getSummary(conversationId: string, userId: string): Promise<string | null> {
+    await this.requireConversation(conversationId, userId);
+    const { memory } = await this.ensureInitialized();
+    return memory.getSummary(conversationId, userId);
   }
 
-  // Get conversation message history
-  async getMessageHistory(conversationId: string, userId: string, limit = 50, offset = 0) {
-    const conversation = await this.getConversation(conversationId, userId);
-    if (!conversation) throw new NotFoundError("Conversation not found");
+  /** @internal - for testing, lets tests inject a mock model so no provider key is needed */
+  resetForTesting(): void {
+    this.engine = null;
+  }
 
-    const messages = conversation.messages.slice(offset, offset + limit);
-    return {
-      messages,
-      total: conversation.messages.length,
-      hasMore: offset + limit < conversation.messages.length,
+  async *streamMessage(
+    conversationId: string | undefined,
+    userId: string,
+    content: string,
+  ): AsyncGenerator<QbotStreamEvent> {
+    const { graph, memory } = await this.ensureInitialized();
+    const { conversation, userMessage } = await this.prepareMessage(
+      conversationId,
+      userId,
+      content,
+    );
+
+    yield {
+      type: "start",
+      conversationId: conversation.id,
+      messageId: userMessage.id,
     };
+
+    const input = await this.buildGraphInput(conversation.id, userId);
+    let complete: { content: string; reasoning: string } | null = null;
+
+    for await (const chunk of graph.stream(input)) {
+      if (chunk.type === "chunk") {
+        yield chunk;
+      } else {
+        complete = { content: chunk.content, reasoning: chunk.reasoning };
+      }
+    }
+
+    if (!complete || !complete.content.trim()) {
+      throw new InternalServerError("Qbot returned an empty response");
+    }
+
+    const assistantMessage = await this.saveMessage(
+      conversation.id,
+      "assistant",
+      complete.content,
+      complete.reasoning || null,
+    );
+
+    // Summarisation runs in the background so it never delays the answer.
+    // Failures are logged inside the memory service and retried on the next turn.
+    void memory.maybeSummarize(conversation.id, userId);
+
+    yield {
+      type: "complete",
+      conversationId: conversation.id,
+      messageId: assistantMessage.id,
+      content: assistantMessage.content,
+      reasoning: assistantMessage.reasoning ?? "",
+    };
+  }
+
+  async sendMessage(
+    conversationId: string | undefined,
+    userId: string,
+    content: string,
+  ): Promise<{
+    conversationId: string;
+    userMessage: QbotMessage;
+    assistantMessage: QbotMessage;
+  }> {
+    const { graph, memory } = await this.ensureInitialized();
+    const { conversation, userMessage } = await this.prepareMessage(
+      conversationId,
+      userId,
+      content,
+    );
+
+    const input = await this.buildGraphInput(conversation.id, userId);
+    const result = await graph.invoke(input);
+
+    if (!result.content.trim()) {
+      throw new InternalServerError("Qbot returned an empty response");
+    }
+
+    const assistantMessage = await this.saveMessage(
+      conversation.id,
+      "assistant",
+      result.content,
+      result.reasoning || null,
+    );
+
+    // See streamMessage: the answer should not wait for summary generation.
+    void memory.maybeSummarize(conversation.id, userId);
+
+    return {
+      conversationId: conversation.id,
+      userMessage,
+      assistantMessage,
+    };
+  }
+
+  private async prepareMessage(
+    conversationId: string | undefined,
+    userId: string,
+    content: string,
+  ): Promise<{
+    conversation: ConversationRow;
+    userMessage: QbotMessage;
+  }> {
+    const conversation = conversationId
+      ? await this.requireConversation(conversationId, userId)
+      : await prisma.conversation.create({
+          data: {
+            userId,
+            title: content.trim().slice(0, 60) || "New Conversation",
+          },
+        });
+
+    const userMessage = await this.saveMessage(
+      conversation.id,
+      "user",
+      content,
+    );
+
+    return { conversation, userMessage };
+  }
+
+  private async buildGraphInput(
+    conversationId: string,
+    userId: string,
+  ): Promise<QbotGraphInput> {
+    const { memory } = await this.ensureInitialized();
+    const context = await memory.buildContext(conversationId, userId);
+
+    const messages: BaseMessage[] = context.messages.map((message) =>
+      message.role === "assistant"
+        ? new AIMessage(message.content)
+        : new HumanMessage(message.content),
+    );
+
+    return {
+      conversationId,
+      summary: context.summary ?? "",
+      messages,
+      subject: "",
+    };
+  }
+
+  private async saveMessage(
+    conversationId: string,
+    role: "user" | "assistant",
+    content: string,
+    reasoning: string | null = null,
+  ): Promise<QbotMessage> {
+    const [message] = await prisma.$transaction([
+      prisma.message.create({
+        data: { conversationId, role, content, reasoning },
+      }),
+      prisma.conversation.update({
+        where: { id: conversationId },
+        data: { updatedAt: new Date() },
+      }),
+    ]);
+
+    return toMessage(message);
+  }
+
+  private async requireConversation(
+    conversationId: string,
+    userId: string,
+  ): Promise<ConversationRow> {
+    const conversation = await prisma.conversation.findFirst({
+      where: { id: conversationId, userId },
+    });
+
+    if (!conversation) {
+      throw new NotFoundError("Conversation not found");
+    }
+
+    return conversation;
   }
 }
 

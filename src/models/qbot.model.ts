@@ -1,14 +1,18 @@
 import z from "zod";
 
 export const sendMessageModel = z.object({
-  message: z.string().min(1, "Message cannot be empty").max(5000, "Message too long"),
+  message: z
+    .string()
+    .trim()
+    .min(1, "Message cannot be empty")
+    .max(5000, "Message too long"),
   conversationId: z.string().uuid("Invalid conversation ID").optional(),
 });
 
 export type SendMessageType = z.infer<typeof sendMessageModel>;
 
 export const createConversationModel = z.object({
-  title: z.string().max(200).optional(),
+  title: z.string().trim().min(1, "Title cannot be empty").max(200).optional(),
 });
 
 export type CreateConversationType = z.infer<typeof createConversationModel>;
@@ -20,15 +24,21 @@ export const conversationIdParams = z.object({
 export type ConversationIdParams = z.infer<typeof conversationIdParams>;
 
 export const messageHistoryModel = z.object({
-  conversationId: z.string().uuid("Invalid conversation ID"),
   limit: z.coerce.number().int().positive().max(100).default(50),
   offset: z.coerce.number().int().nonnegative().default(0),
 });
 
 export type MessageHistoryType = z.infer<typeof messageHistoryModel>;
 
+export const listConversationsModel = z.object({
+  limit: z.coerce.number().int().positive().max(100).default(20),
+  offset: z.coerce.number().int().nonnegative().default(0),
+});
+
+export type ListConversationsType = z.infer<typeof listConversationsModel>;
+
 export const updateConversationModel = z.object({
-  title: z.string().max(200).optional(),
+  title: z.string().trim().min(1, "Title cannot be empty").max(200),
 });
 
 export type UpdateConversationType = z.infer<typeof updateConversationModel>;
@@ -37,7 +47,7 @@ export type UpdateConversationType = z.infer<typeof updateConversationModel>;
 export const messageResponseModel = z.object({
   id: z.string(),
   conversationId: z.string(),
-  role: z.string(),
+  role: z.enum(["user", "assistant"]),
   content: z.string(),
   reasoning: z.string().nullable(),
   createdAt: z.string(),

@@ -1,85 +1,110 @@
 import { NextFunction, Request, Response } from "express";
-import { qbotService } from "../services/qbot.service.js";
-import { sendMessageModel, createConversationModel, conversationIdParams, messageHistoryModel, updateConversationModel } from "../models/qbot.model.js";
-import { NotFoundError, ValidationError } from "../lib/errors.js";
+import { qbotService, type QbotStreamEvent } from "../services/qbot.service.js";
+import { AppError, InternalServerError, NotFoundError } from "../lib/errors.js";
 import Logger from "../core/Logger.js";
+
+function writeEvent(res: Response, event: unknown): void {
+  res.write(`data: ${JSON.stringify(event)}\n\n`);
+}
+
+function publicErrorMessage(error: unknown): string {
+  return error instanceof AppError
+    ? error.message
+    : "Qbot is temporarily unavailable. Please try again.";
+}
+
+// Provider errors can contain request details, so only typed AppErrors keep
+// their message. Everything else becomes a generic 500 for the client.
+function toHttpError(error: unknown): Error {
+  return error instanceof AppError
+    ? error
+    : new InternalServerError("Qbot is temporarily unavailable. Please try again.");
+}
+
+function loggableError(error: unknown): string {
+  if (error instanceof AppError) return `${error.code}: ${error.message}`;
+  return error instanceof Error ? error.name : "unknown error";
+}
+
+function pagination(
+  query: Request["query"],
+  fallbackLimit: number,
+): { limit: number; offset: number } {
+  const parsedLimit = Number.parseInt(String(query.limit ?? ""), 10);
+  const parsedOffset = Number.parseInt(String(query.offset ?? ""), 10);
+
+  return {
+    limit: Number.isFinite(parsedLimit)
+      ? Math.min(Math.max(parsedLimit, 1), 100)
+      : fallbackLimit,
+    offset: Number.isFinite(parsedOffset) ? Math.max(parsedOffset, 0) : 0,
+  };
+}
 
 export const sendMessage = async (
   req: Request,
   res: Response,
   next: NextFunction,
 ) => {
-  try {
-    const user = req.user!;
-    const { message, conversationId } = req.body;
+  const user = req.user!;
+  const { message, conversationId } = req.body;
 
-    // Get or create conversation
-    const conversation = await qbotService.getOrCreateConversation(
+  try {
+    const stream: AsyncGenerator<QbotStreamEvent> = qbotService.streamMessage(
+      conversationId,
       user.id,
-      conversationId
+      message,
     );
 
-    // Save user message
-    await qbotService.addMessage(conversation.id, user.id, "user", message);
-
-    // Set up streaming response
-    res.setHeader("Content-Type", "text/event-stream");
-    res.setHeader("Cache-Control", "no-cache");
-    res.setHeader("Connection", "keep-alive");
-    res.flushHeaders();
-
-    let fullResponse = "";
-    let fullReasoning = "";
-    let messageId: string | null = null;
-
-    try {
-      for await (const chunk of qbotService.streamResponse(
-        conversation.id,
-        user.id,
-        message
-      )) {
-        if (chunk.done) {
-          fullResponse = chunk.fullResponse ?? "";
-          fullReasoning = chunk.fullReasoning ?? "";
-          
-          // Save assistant message
-          const savedMessage = await qbotService.addMessage(
-            conversation.id,
-            user.id,
-            "assistant",
-            fullResponse,
-            fullReasoning || null
-          );
-          messageId = savedMessage.id;
-
-          // Send final chunk with message ID
-          res.write(`data: ${JSON.stringify({
-            type: "complete",
-            messageId,
-            conversationId: conversation.id,
-            content: fullResponse,
-            reasoning: fullReasoning,
-          })}\n\n`);
-        } else {
-          // Send streaming chunk
-          res.write(`data: ${JSON.stringify({
-            type: "chunk",
-            content: chunk.content,
-            reasoning: chunk.reasoning,
-          })}\n\n`);
-        }
-      }
-    } catch (streamError) {
-      Logger.error("Streaming error:", streamError);
-      res.write(`data: ${JSON.stringify({
-        type: "error",
-        message: "Failed to generate response",
-      })}\n\n`);
+    // Pull the first event before sending headers so conversation validation
+    // errors still produce a normal JSON 4xx response.
+    const first = await stream.next();
+    if (first.done) {
+      throw new InternalServerError("Qbot did not start a response");
     }
 
-    res.end();
+    res.status(200);
+    res.setHeader("Content-Type", "text/event-stream; charset=utf-8");
+    res.setHeader("Cache-Control", "no-cache, no-transform");
+    res.setHeader("Connection", "keep-alive");
+    res.setHeader("X-Accel-Buffering", "no");
+    res.flushHeaders();
+    writeEvent(res, first.value);
+
+    let clientClosed = false;
+    res.on("close", () => {
+      clientClosed = true;
+    });
+
+    for await (const event of stream) {
+      if (clientClosed || res.writableEnded || res.destroyed) break;
+      writeEvent(res, event);
+    }
+
+    if (!res.writableEnded && !res.destroyed) res.end();
   } catch (error) {
-    next(error);
+    Logger.error("Qbot message failed", {
+      userId: user.id,
+      conversationId,
+      error: loggableError(error),
+    });
+
+    if (res.headersSent) {
+      try {
+        if (!res.writableEnded) {
+          writeEvent(res, {
+            type: "error",
+            message: publicErrorMessage(error),
+          });
+          res.end();
+        }
+      } catch {
+        // The client closed the stream first; nothing left to send.
+      }
+      return;
+    }
+
+    next(toHttpError(error));
   }
 };
 
@@ -88,42 +113,31 @@ export const sendMessageNonStreaming = async (
   res: Response,
   next: NextFunction,
 ) => {
+  const user = req.user!;
+  const { message, conversationId } = req.body;
+
   try {
-    const user = req.user!;
-    const { message, conversationId } = req.body;
-
-    const conversation = await qbotService.getOrCreateConversation(
+    const result = await qbotService.sendMessage(
+      conversationId,
       user.id,
-      conversationId
-    );
-
-    // Save user message
-    await qbotService.addMessage(conversation.id, user.id, "user", message);
-
-    // Generate response
-    const response = await qbotService.generateResponse(
-      conversation.id,
-      user.id,
-      message
-    );
-
-    // Save assistant message
-    const savedMessage = await qbotService.addMessage(
-      conversation.id,
-      user.id,
-      "assistant",
-      response,
-      undefined
+      message,
     );
 
     res.status(200).json({
       message: "Response generated",
-      conversationId: conversation.id,
-      messageId: savedMessage.id,
-      content: response,
+      conversationId: result.conversationId,
+      userMessageId: result.userMessage.id,
+      messageId: result.assistantMessage.id,
+      content: result.assistantMessage.content,
+      reasoning: result.assistantMessage.reasoning,
     });
   } catch (error) {
-    next(error);
+    Logger.error("Qbot non-streaming message failed", {
+      userId: user.id,
+      conversationId,
+      error: loggableError(error),
+    });
+    next(toHttpError(error));
   }
 };
 
@@ -136,11 +150,7 @@ export const createConversation = async (
     const user = req.user!;
     const { title } = req.body;
 
-    const conversation = await qbotService.getOrCreateConversation(
-      user.id,
-      undefined,
-      title
-    );
+    const conversation = await qbotService.createConversation(user.id, title);
 
     res.status(201).json({
       message: "Conversation created",
@@ -158,17 +168,13 @@ export const getConversations = async (
 ) => {
   try {
     const user = req.user!;
-    const limit = parseInt(req.query.limit as string) || 20;
-    const offset = parseInt(req.query.offset as string) || 0;
+    const { limit, offset } = pagination(req.query, 20);
 
-    const conversations = await qbotService.getUserConversations(
-      user.id,
-      limit,
-      offset
-    );
+    const result = await qbotService.listConversations(user.id, limit, offset);
 
     res.status(200).json({
-      conversations,
+      conversations: result.conversations,
+      total: result.total,
       limit,
       offset,
     });
@@ -188,7 +194,7 @@ export const getConversation = async (
 
     const conversation = await qbotService.getConversation(
       conversationId,
-      user.id
+      user.id,
     );
 
     if (!conversation) {
@@ -209,14 +215,13 @@ export const getMessageHistory = async (
   try {
     const user = req.user!;
     const { conversationId } = req.params as { conversationId: string };
-    const limit = parseInt(req.query.limit as string) || 50;
-    const offset = parseInt(req.query.offset as string) || 0;
+    const { limit, offset } = pagination(req.query, 50);
 
     const result = await qbotService.getMessageHistory(
       conversationId,
       user.id,
       limit,
-      offset
+      offset,
     );
 
     res.status(200).json(result);
@@ -238,7 +243,7 @@ export const updateConversation = async (
     const conversation = await qbotService.updateConversation(
       conversationId,
       user.id,
-      title
+      title,
     );
 
     res.status(200).json({

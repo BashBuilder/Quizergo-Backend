@@ -37,7 +37,7 @@ When generating or populating questions for any subject, follow these requiremen
    - Questions must follow the standard JAMB examination structure and conventions.
    - Format question content for HTML rendering using appropriate semantic HTML elements where necessary.
    - Use elements such as `<strong>`, `<em>`, `<u>`, `<sub>`, `<sup>`, `<p>`, `<ol>`, `<ul>`, `<br>` and others where appropriate.
-   - Preserve mathematical expressions use <math xmlns="http://www.w3.org/1998/Math/MathML"> where necessary with math elements, scientific notation, special characters, tables, passages, and other subject-specific formatting requirements.
+   - Preserve mathematical expressions use Use KaTeX or <math xmlns="http://www.w3.org/1998/Math/MathML"> where necessary with math elements, scientific notation, special characters, tables, passages, and other subject-specific formatting requirements.
    - Ensure questions remain readable and render correctly in the application's question interface.
 
 4. **Question Structure**
@@ -111,7 +111,9 @@ See `.env.example`. Never read, print, or commit `.env`. Code actually reads:
 `PORT`, `NODE_ENV`, `LOG_DIRECTORY`, `ACCESS_TOKEN_VALIDITY_SEC`,
 `REFRESH_TOKEN_VALIDITY_SEC`, `JWT_ISSUER`, `JWT_AUDIENCE`, `JWT_SECRET`,
 `JWT_ALGORITHM`, `DB_URL` (Postgres connection
-string), `REDIS_URL`, `RESEND_API_KEY`, `RESEND_CONTACT_EMAIL`.
+string), `REDIS_URL`, `RESEND_API_KEY`, `RESEND_CONTACT_EMAIL`, and the Qbot
+settings (`Qbot_LLM_*`, `Qbot_MAX_HISTORY_MESSAGES`, `Qbot_SUMMARY_THRESHOLD`,
+`Qbot_RECENT_MESSAGES_KEEP`, `Qbot_RATE_LIMIT_*`).
 
 > Note: every env var is validated at startup by the Zod schema in
 > `src/utils/env.util.ts` (`handleEnv`), so keep that schema, `.env.example`
@@ -143,7 +145,7 @@ tests/                # vitest + supertest integration tests
 ```
 
 Routes are mounted in `src/routes/index.ts` under `api/v1/<resource>`:
-`/webhook`, `/auth`, `/questions`, `/quiz`, `/user`.
+`/webhook`, `/auth`, `/questions`, `/quiz`, `/user`, `/qbot`.
 
 ## 6. Core flows (how the system works today)
 

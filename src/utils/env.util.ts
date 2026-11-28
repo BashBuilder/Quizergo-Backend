@@ -53,6 +53,13 @@ const envSchema = z.object({
   Qbot_LLM_MODEL: z.string("Qbot_LLM_MODEL is required").min(1),
   Qbot_LLM_TEMPERATURE: z.coerce.number().min(0).max(2).default(0.7),
   Qbot_LLM_MAX_TOKENS: z.coerce.number().int().positive().default(4000),
+  Qbot_LLM_TIMEOUT_MS: z.coerce.number().int().positive().default(60000),
+  Qbot_LLM_MAX_RETRIES: z.coerce.number().int().nonnegative().default(2),
+  Qbot_MAX_HISTORY_MESSAGES: z.coerce.number().int().positive().default(20),
+  Qbot_SUMMARY_THRESHOLD: z.coerce.number().int().positive().default(16),
+  Qbot_RECENT_MESSAGES_KEEP: z.coerce.number().int().nonnegative().default(6),
+  Qbot_RATE_LIMIT_MAX: z.coerce.number().int().positive().default(30),
+  Qbot_RATE_LIMIT_WINDOW_SEC: z.coerce.number().int().positive().default(60),
 });
 
 export type Env = z.infer<typeof envSchema>;

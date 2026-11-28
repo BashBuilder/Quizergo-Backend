@@ -158,16 +158,20 @@ model QuizAnswer {
 }
 
 model Conversation {
-  id          String   @id @default(uuid())
-  userId      String
-  title       String?
-  createdAt   DateTime @default(now())
-  updatedAt   DateTime @updatedAt
+  id                  String    @id @default(uuid())
+  userId              String
+  title               String?
+  summary             String?
+  summaryMessageCount Int       @default(0)
+  summaryUpdatedAt    DateTime?
+  createdAt           DateTime  @default(now())
+  updatedAt           DateTime  @updatedAt
 
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
   messages Message[]
 
   @@index([userId])
+  @@index([userId, updatedAt])
   @@index([createdAt])
 }
 

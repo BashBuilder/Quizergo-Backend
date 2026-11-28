@@ -27,7 +27,7 @@ Never execute or generate migrations containing the following without prior expl
 - `TRUNCATE`
 - `DELETE` statements (unless explicitly requested for specific test/seed cleanup)
 - Column type changes or constraints (`ALTER COLUMN ... TYPE`, `SET NOT NULL`) that could cause data truncation or fail on existing rows
-- Reset commands (e.g., `prisma migrate reset`, `drizzle-kit drop`, `alembic downgrade`, `knex migrate:rollback`)
+- Reset commands prisma migrate reset
 
 ### 2. Mandatory Migration Workflow
 
