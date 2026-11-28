@@ -1,14 +1,31 @@
 import Logger from "../core/Logger.js";
 import { resend, RESEND_CONTACT_EMAIL } from "../config/resend.js";
 
-const LOGO_URL = "https://i.postimg.cc/0jXWMx1m/logo.png";
+// const LOGO_URL = "https://quizergo.online/assets/icon.svg";
+const LOGO_URL = "assets/icon.svg";
 const APP_URL = "https://quizergo.online";
 const SUPPORT_EMAIL = "contact@quizergo.online";
 
-const BRAND_ORANGE = "#f97316";
-const BRAND_DARK = "#1c1917";
-const BRAND_MUTED = "#78716c";
+// Design tokens
+const COLORS = {
+  brand: {
+    primary: "#2563eb", // Royal blue - trust, education
+    accent: "#f97316", // Orange - energy, action
+    dark: "#1e293b", // Slate 800 - professional, mature
+    muted: "#64748b", // Slate 500 - subtle, readable
+    light: "#f1f5f9", // Slate 100 - soft contrast
+  },
+  backgrounds: {
+    primary: "#ffffff", // Clean white
+    secondary: "#f8fafc", // Slate 50 - subtle
+    accent: "#eff6ff", // Blue 50 - soft brand tint
+  },
+  borders: "#e2e8f0", // Slate 200
+};
 
+/**
+ * Modern email layout with sophisticated design
+ */
 function emailLayout({
   previewText,
   bodyHtml,
@@ -22,55 +39,59 @@ function emailLayout({
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="color-scheme" content="light" />
-<title>QuizerGo</title>
+<title>Quizergo</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+</style>
 </head>
-<body style="margin:0; padding:0; background-color:#f4f1ee; font-family: Helvetica, Arial, sans-serif;">
+<body style="margin:0; padding:0; background-color:${COLORS.backgrounds.primary}; font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; color:${COLORS.brand.dark}; line-height:1.5;">
   <!-- Preheader: shows as the preview snippet in the inbox list, hidden in the body -->
-  <div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all;">
+  <div style="display:none; max-height:0; overflow:hidden; opacity:0; mso-hide:all; font-size:1px; color:#ffffff; line-height:1px;">
     ${previewText}
   </div>
 
-  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:#f4f1ee; padding: 32px 16px;">
+  <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="background-color:${COLORS.backgrounds.secondary}; padding:32px 16px;">
     <tr>
       <td align="center">
-        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px; background-color:#ffffff; border-radius:20px; overflow:hidden; box-shadow: 0 2px 12px rgba(28,25,23,0.06);">
+        <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="max-width:560px; background-color:${COLORS.backgrounds.primary}; border-radius:12px; overflow:hidden; box-shadow: 0 1px 3px rgba(0,0,0,0.05), 0 1px 2px rgba(0,0,0,0.03);">
 
           <!-- Header -->
           <tr>
-            <td align="center" style="background-color:#fff3e6; padding: 40px 24px 28px;">
-              <table role="presentation" cellpadding="0" cellspacing="0">
+            <td style="padding:40px 32px 28px; text-align:center; background-color:${COLORS.backgrounds.accent};">
+              <table role="presentation" cellpadding="0" cellspacing="0" width="100%">
                 <tr>
-                  <td style="width:64px; height:64px; border-radius:50%; background-color:#ffffff; box-shadow: 0 4px 14px rgba(249,115,22,0.25);" align="center" valign="middle">
-                    <img src="${LOGO_URL}" width="40" height="40" alt="QuizerGo" style="display:block; border:0;" />
+                  <td align="center">
+                    <div style="width:64px; height:64px; border-radius:50%; background-color:${COLORS.backgrounds.primary}; display:inline-flex; align-items:center; justify-content:center; margin-bottom:16px; box-shadow: 0 2px 8px rgba(0,0,0,0.08);">
+                      <img src="${LOGO_URL}" width="36" height="36" alt="Quizergo" style="display:block; border:0;" />
+                    </div>
                   </td>
                 </tr>
               </table>
-              <div style="margin-top:16px; font-size:22px; font-weight:700; color:${BRAND_DARK}; letter-spacing:-0.5px;">
-                Quizer<span style="color:${BRAND_ORANGE};">Go</span>
+              <div style="font-size:28px; font-weight:700; color:${COLORS.brand.dark}; letter-spacing:-0.5px; margin:0;">
+                Quizergo
               </div>
             </td>
           </tr>
 
           <!-- Body -->
           <tr>
-            <td style="padding: 32px 32px 24px;">
+            <td style="padding:32px 32px 24px;">
               ${bodyHtml}
             </td>
           </tr>
 
           <!-- Footer -->
           <tr>
-            <td style="padding: 24px 32px 32px; border-top:1px solid #f1ede9;">
+            <td style="padding:24px 32px 32px; border-top:1px solid ${COLORS.borders}; background-color:${COLORS.backgrounds.secondary};">
               <table role="presentation" width="100%" cellpadding="0" cellspacing="0">
                 <tr>
                   <td align="center">
-                    <img src="${LOGO_URL}" width="20" height="20" alt="" style="display:block; margin: 0 auto 10px; opacity:0.5;" />
-                    <p style="margin:0; font-size:12px; color:${BRAND_MUTED}; line-height:18px;">
-                      Questions? Reach us at
-                      <a href="mailto:${SUPPORT_EMAIL}" style="color:${BRAND_ORANGE}; text-decoration:none;">${SUPPORT_EMAIL}</a>
+                    <p style="margin:0 0 8px; font-size:14px; color:${COLORS.brand.muted}; line-height:1.4;">
+                      Questions? Reach us at 
+                      <a href="mailto:${SUPPORT_EMAIL}" style="color:${COLORS.brand.primary}; text-decoration:none; font-weight:500;">${SUPPORT_EMAIL}</a>
                     </p>
-                    <p style="margin:6px 0 0; font-size:12px; color:#a8a29e;">
-                      &copy; ${new Date().getFullYear()} QuizerGo. All rights reserved.
+                    <p style="margin:0; font-size:13px; color:${COLORS.brand.muted}; opacity:0.8;">
+                      &copy; ${new Date().getFullYear()} Quizergo. All rights reserved.
                     </p>
                   </td>
                 </tr>
@@ -88,40 +109,33 @@ function emailLayout({
 
 // --- Welcome email ---------------------------------------------------------
 
-// <table role="presentation" cellpadding="0" cellspacing="0" style="margin: 0 0 28px;">
-//   <tr>
-//     <td style="border-radius:12px; background-color:${BRAND_ORANGE};">
-//       <a href="${APP_URL}" style="display:inline-block; padding:14px 28px; font-size:15px; font-weight:600; color:#ffffff; text-decoration:none;">
-//         Start practicing &rarr;
-//       </a>
-//     </td>
-//   </tr>
-// </table>
-
 export const sendWelcomeEmail = async (email: string, name: string) => {
   const bodyHtml = `
-    <h1 style="margin:0 0 12px; font-size:24px; font-weight:700; color:${BRAND_DARK};">
-      Welcome, ${name}! 
-    </h1>
-    <p style="margin:0 0 24px; font-size:15px; line-height:24px; color:${BRAND_MUTED};">
-      You're all set. QuizerGo gives you real past questions, timed mock exams, and instant
-      feedback on every attempt -- everything you need to walk into your next exam prepared.
-    </p>
-
-
-    <p style="margin:0; font-size:14px; line-height:22px; color:${BRAND_MUTED};">
-      Best,<br />
-      <strong style="color:${BRAND_DARK};">The QuizerGo Team</strong>
-    </p>
+    <div style="margin-bottom:24px;">
+      <h1 style="margin:0 0 12px; font-size:24px; font-weight:700; color:${COLORS.brand.dark}; letter-spacing:-0.5px;">
+        Welcome, ${name}!
+      </h1>
+      <p style="margin:0 0 16px; font-size:15px; color:${COLORS.brand.muted};">
+        You're all set. Quizergo gives you authentic past questions, timed mock exams, and instant feedback on every attempt — everything you need to walk into your next exam prepared.
+      </p>
+      <p style="margin:0; font-size:14px; color:${COLORS.brand.muted};">
+        Best,<br />
+        <strong style="color:${COLORS.brand.dark};">The Quizergo Team</strong>
+      </p>
+    </div>
+    
+    <a href="${APP_URL}" style="display:inline-block; padding:14px 28px; font-size:15px; font-weight:600; color:#ffffff; text-decoration:none; background-color:${COLORS.brand.primary}; border-radius:8px; transition: background-color 0.2s; font-family: 'Inter', sans-serif;">
+      Start practicing
+    </a>
   `;
 
   try {
     await resend.emails.send({
-      from: "QuizerGo <anthony@quizergo.online>",
+      from: "Quizergo <contact@quizergo.online>",
       to: email,
-      subject: "Welcome to QuizerGo!",
+      subject: "Welcome to Quizergo!",
       html: emailLayout({
-        previewText: `Welcome to QuizerGo, ${name} -- let's get you exam-ready.`,
+        previewText: `Welcome to Quizergo, ${name} — let's get you exam-ready.`,
         bodyHtml,
       }),
     });
@@ -135,38 +149,42 @@ export const sendWelcomeEmail = async (email: string, name: string) => {
 
 export const sendOTPEmail = async (email: string, otp: string) => {
   const bodyHtml = `
-    <h1 style="margin:0 0 12px; font-size:24px; font-weight:700; color:${BRAND_DARK};">
-      Verify your email
-    </h1>
-    <p style="margin:0 0 24px; font-size:15px; line-height:24px; color:${BRAND_MUTED};">
-      Enter this code in the app to confirm it's really you. It expires in 10 minutes.
-    </p>
+    <div style="margin-bottom:24px;">
+      <h1 style="margin:0 0 12px; font-size:24px; font-weight:700; color:${COLORS.brand.dark}; letter-spacing:-0.5px;">
+        Verify your email
+      </h1>
+      <p style="margin:0 0 24px; font-size:15px; color:${COLORS.brand.muted};">
+        Enter this code to confirm it's really you. It expires in 10 minutes.
+      </p>
 
-    <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:20px;">
-      <tr>
-        <td align="center" style="background-color:#fff7ed; border:1.5px dashed ${BRAND_ORANGE}; border-radius:16px; padding:24px;">
-          <span style="font-size:34px; font-weight:700; letter-spacing:10px; color:${BRAND_DARK}; font-family: 'Courier New', Courier, monospace;">
-            ${otp}
-          </span>
-        </td>
-      </tr>
-    </table>
+      <table role="presentation" width="100%" cellpadding="0" cellspacing="0" style="margin-bottom:24px;">
+        <tr>
+          <td align="center">
+            <div style="background-color:#ffffff; border:2px solid ${COLORS.borders}; border-radius:12px; padding:28px; text-align:center; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+              <span style="font-size:32px; font-weight:700; letter-spacing:8px; color:${COLORS.brand.dark}; font-family: 'Inter', sans-serif; font-variant-numeric: tabular-nums;">
+                ${otp}
+              </span>
+            </div>
+          </td>
+        </tr>
+      </table>
 
-    <p style="margin:0 0 24px; font-size:13px; line-height:20px; color:#a8a29e;">
-      Didn't request this code? You can safely ignore this email.
-    </p>
+      <p style="margin:0 0 16px; font-size:14px; color:${COLORS.brand.muted}; text-align:center;">
+        Didn't request this code? You can safely ignore this email.
+      </p>
 
-    <p style="margin:0; font-size:14px; line-height:22px; color:${BRAND_MUTED};">
-      Best,<br />
-      <strong style="color:${BRAND_DARK};">The QuizerGo Team</strong>
-    </p>
+      <p style="margin:0; font-size:14px; color:${COLORS.brand.muted};">
+        Best,<br />
+        <strong style="color:${COLORS.brand.dark};">The Quizergo Team</strong>
+      </p>
+    </div>
   `;
 
   try {
     await resend.emails.send({
-      from: "QuizerGo <anthony@quizergo.online>",
+      from: "Quizergo <contact@quizergo.online>",
       to: email,
-      subject: "Your QuizerGo verification code",
+      subject: "Your Quizergo verification code",
       html: emailLayout({
         previewText: `Your verification code is ${otp}`,
         bodyHtml,
@@ -184,30 +202,34 @@ export const forwardContactEmail = async (
   message: string,
 ) => {
   const bodyHtml = `
-    <h1 style="margin:0 0 12px; font-size:24px; font-weight:700; color:${BRAND_DARK};">
-      New contact message from QuizerGo user with email ${email}
-    </h1>
-    <p style="margin:0 0 24px; font-size:15px; line-height:24px; color:${BRAND_MUTED};">
-      ${message}
-    </p>
+    <div style="margin-bottom:24px;">
+      <h1 style="margin:0 0 12px; font-size:20px; font-weight:600; color:${COLORS.brand.dark}; letter-spacing:-0.3px;">
+        New contact message from Quizergo user
+      </h1>
+      
+      <div style="background-color:${COLORS.backgrounds.secondary}; border-left:4px solid ${COLORS.brand.primary}; border-radius:0 8px 8px 0; padding:16px 20px; margin-bottom:24px;">
+        <p style="margin:0 0 8px; font-size:14px; color:${COLORS.brand.muted}; font-weight:500;">
+          <span style="color:${COLORS.brand.dark};">${email}</span>
+        </p>
+        <p style="margin:0; font-size:15px; color:${COLORS.brand.dark}; white-space:pre-wrap;">
+          ${message}
+        </p>
+      </div>
 
-    <p style="margin:0 0 24px; font-size:13px; line-height:20px; color:#a8a29e;">
-      Didn't request this code? You can safely ignore this email.
-    </p>
-
-    <p style="margin:0; font-size:14px; line-height:22px; color:${BRAND_MUTED};">
-      Best,<br />
-      <strong style="color:${BRAND_DARK};">The QuizerGo Team</strong>
-    </p>
+      <p style="margin:0; font-size:14px; color:${COLORS.brand.muted};">
+        Best,<br />
+        <strong style="color:${COLORS.brand.dark};">The Quizergo Team</strong>
+      </p>
+    </div>
   `;
 
   try {
     await resend.emails.send({
-      from: "QuizerGo Contact <contact@quizergo.online>",
+      from: "Quizergo Contact <contact@quizergo.online>",
       to: RESEND_CONTACT_EMAIL,
-      subject: subject,
+      subject: `[Quizergo] ${subject}`,
       html: emailLayout({
-        previewText: `You have a new contact message from QuizerGo user.`,
+        previewText: `New contact message from ${email}`,
         bodyHtml,
       }),
     });
